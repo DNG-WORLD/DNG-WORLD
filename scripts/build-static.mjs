@@ -53,6 +53,44 @@ function inject(dir){
     count++;
   }
 }
+
+// V30: Canonical URL, indexability, robots and sitemap QA.
+// Actual published GitHub Pages host is dng-world.github.io, not dngworld.github.io.
+const liveSite = 'https://dng-world.github.io';
+const xmlEscape = x => String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const validPages=[];
+function seoNormalize(dir){
+  for(const n of fs.readdirSync(dir)){
+    const file=path.join(dir,n);
+    if(fs.statSync(file).isDirectory()){seoNormalize(file);continue;}
+    if(!n.endsWith('.html'))continue;
+    let html=fs.readFileSync(file,'utf8');
+    // Also fix hardcoded old-domain metadata in old localized/static pages.
+    html=html.replace(/https:\/\/dngworld\.github\.io/gi,liveSite);
+    const rel=path.relative(out,file).replace(/\\/g,'/');
+    const route=rel==='index.html'?'/':rel.endsWith('/index.html')?'/'+rel.slice(0,-'index.html'.length):'/'+rel;
+    const redirect=/<meta\b[^>]*http-equiv\s*=\s*["']?refresh/i.test(html);
+    const ephemeral=route.startsWith('/insights/read/') || route.startsWith('/success/');
+    const hasNoindex=/<meta\b(?=[^>]*name\s*=\s*["']robots["'])(?=[^>]*content\s*=\s*["'][^"']*noindex)/i.test(html);
+    if((redirect||ephemeral) && !hasNoindex){html=html.replace('</head>','<meta name="robots" content="noindex,follow"></head>');}
+    const hasCanonical=/<link\b[^>]*rel\s*=\s*["']canonical["']/i.test(html);
+    if(!hasCanonical && !redirect && !ephemeral && !hasNoindex){
+      html=html.replace('</head>',`<link rel="canonical" href="${liveSite+route}"></head>`);
+    }
+    fs.writeFileSync(file,html);
+    if(!redirect && !ephemeral && !hasNoindex && !route.endsWith('.html') && !route.startsWith('/public/') && !route.startsWith('/assets/') && !route.startsWith('/content/') && !route.startsWith('/data/')){
+      validPages.push(route);
+    }
+  }
+}
 inject(out);
+seoNormalize(out);
+// Pages is deployed from _site; root sitemap from source was previously omitted entirely.
+const sitemapRoutes=[...new Set(validPages)].sort((a,b)=>a==='/'?-1:b==='/'?1:a.localeCompare(b));
+const siteMap=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',...sitemapRoutes.map(x=>'  <url><loc>'+xmlEscape(liveSite+x)+'</loc></url>'),'</urlset>',''].join('\n');
+fs.writeFileSync(path.join(out,'sitemap.xml'),siteMap);
+fs.writeFileSync(path.join(out,'robots.txt'),'User-agent: *\nAllow: /\nSitemap: '+liveSite+'/sitemap.xml\n');
+console.log('V30 canonical + sitemap:',sitemapRoutes.length,'routes.');
+
 fs.writeFileSync(path.join(out,'.nojekyll'),'');
 console.log('DNGWORLD build: compact inline phone widget on '+count+' pages.');
