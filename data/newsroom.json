@@ -1,8 +1,8 @@
 {
   "version": 31,
   "translation_status": "not_configured",
-  "updated_at": "2026-10-14T18:39:13.239820+00:00",
-  "attempted_at": "2026-10-14T18:39:13.239820+00:00",
+  "updated_at": "2026-10-14T22:19:08.903565+00:00",
+  "attempted_at": "2026-10-14T22:19:08.903565+00:00",
   "status": "ok",
   "video_mode": "official_channels_latest",
   "video_api_note": "YOUTUBE_API_KEY not configured (official-channel mode)",
@@ -32,15 +32,609 @@
   "sources_failed": [
     "Search Engine Land / marketing (HTTP Error 403: Forbidden)",
     "Tuổi Trẻ / world (empty or no recent records)",
-    "Tuổi Trẻ / vietnam (empty or no recent records)",
     "Tuổi Trẻ / economy (empty or no recent records)",
+    "Tuổi Trẻ / vietnam (empty or no recent records)",
     "VietnamPlus / vietnam (not well-formed (invalid token): line 1, column 0)"
   ],
   "news": [
     {
+      "id": "162541f59fe12beba9",
+      "title": "The best feature of Apple’s HomeView might be its simplicity",
+      "summary": "I'm just going to come right out and say it. I love the approach Apple has taken with the HomeView. I think it's the shared, always-available household interface that my family might finally use. Is Apple's first smart display my dream smart home dashboard? No. But is it the right product for Apple Home at […]",
+      "source": "The Verge",
+      "category": "technology",
+      "url": "https://www.theverge.com/tech/1011431/apple-homeview-smart-display-best-feature",
+      "image": "",
+      "published_at": "2026-10-14T22:00:02+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "The best feature of Apple’s HomeView might be its simplicity",
+          "summary": "I'm just going to come right out and say it. I love the approach Apple has taken with the HomeView. I think it's the shared, always-available household interface that my family might finally use. Is Apple's first smart display my dream smart home dashboard? No. But is it the right product for Apple Home at […]"
+        }
+      }
+    },
+    {
+      "id": "7945101da15fb847f0",
+      "title": "CedarDB wants one database to handle both transactions and analytics, as AI agents raise the stakes",
+      "summary": "Databases have traditionally been designed either for analytical data or for operational data. But database engine CedarDB supports both, and its approach has gained relevance with the rise of agentic AI.",
+      "source": "TechCrunch",
+      "category": "ai",
+      "url": "https://techcrunch.com/2026/10/14/cedardb-wants-one-database-to-handle-both-transactions-and-analytics-as-ai-agents-raise-the-stakes/",
+      "image": "",
+      "published_at": "2026-10-14T22:00:00+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "CedarDB wants one database to handle both transactions and analytics, as AI agents raise the stakes",
+          "summary": "Databases have traditionally been designed either for analytical data or for operational data. But database engine CedarDB supports both, and its approach has gained relevance with the rise of agentic AI."
+        }
+      }
+    },
+    {
+      "id": "daba783dcc2a697b94",
+      "title": "Internet vệ tinh Starlink hoạt động thế nào",
+      "summary": "Internet vệ tinh đã xuất hiện hàng chục năm, nhưng giải pháp của Starlink khắc phục được vấn đề độ trễ, chảo thu cũng chỉ cần đặt ở vị trí cố định.",
+      "source": "VnExpress",
+      "category": "technology",
+      "url": "https://vnexpress.net/internet-ve-tinh-starlink-hoat-dong-the-nao-5131556.html",
+      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/10/13/Thumb-1791856183.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Ri-IuoiDu3dG5fzrnPuHWg",
+      "published_at": "2026-10-14T22:00:00+00:00",
+      "kind": "source_brief",
+      "source_lang": "vi",
+      "translations": {
+        "vi": {
+          "title": "Internet vệ tinh Starlink hoạt động thế nào",
+          "summary": "Internet vệ tinh đã xuất hiện hàng chục năm, nhưng giải pháp của Starlink khắc phục được vấn đề độ trễ, chảo thu cũng chỉ cần đặt ở vị trí cố định."
+        }
+      }
+    },
+    {
+      "id": "cfc366382975c0312b",
+      "title": "Australian politics live: Lambie condemns defence force culture after recording device found on navy ship; AEC warns about AI",
+      "summary": "Follow the day’s news live. Get our breaking news email , free app or daily news podcast Private health insurance changes ‘recalibrating precious taxpayer dollars’, says Wells The health minister, Mark Butler, yesterday promised to reintroduce a bill to reduce private health insurance rebates for over-65s, after it was thrown ou…",
+      "source": "The Guardian",
+      "category": "ai",
+      "url": "https://www.theguardian.com/australia-news/live/2026/oct/15/anthony-albanese-labor-pauline-hanson-monoculture-victorian-election-coalition-angus-taylor-ntwnfb",
+      "image": "https://i.guim.co.uk/img/media/a98a0869c0ad1ca6084c7013061c4ac044f26d5f/1034_0_6125_4900/master/6125.jpg?width=140&quality=85&auto=format&fit=max&s=96fecac6eaac49bbe344e70a418c0121",
+      "published_at": "2026-10-14T21:54:59+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Australian politics live: Lambie condemns defence force culture after recording device found on navy ship; AEC warns about AI",
+          "summary": "Follow the day’s news live. Get our breaking news email , free app or daily news podcast Private health insurance changes ‘recalibrating precious taxpayer dollars’, says Wells The health minister, Mark Butler, yesterday promised to reintroduce a bill to reduce private health insurance rebates for over-65s, after it was thrown ou…"
+        }
+      }
+    },
+    {
+      "id": "bf0f4509cf75a915e5",
+      "title": "Eight states accuse OpenAI of coaching children to harm themselves in lawsuit",
+      "summary": "US states sue ChatGPT maker and seek to force the company to change how its products work for young users Eight US states sued OpenAI Wednesday, alleging the ChatGPT maker is harming children en masse. Kansas, Arizona, Montana, Iowa and four others allege the company’s products carried out “willful, dangerous, reckless and unlaw…",
+      "source": "The Guardian",
+      "category": "ai",
+      "url": "https://www.theguardian.com/technology/2026/oct/14/openai-child-self-harm-lawsuit",
+      "image": "https://i.guim.co.uk/img/media/8f1d52dd128124b20d65f31b5f7791fd3dc1e307/560_0_5600_4480/master/5600.jpg?width=140&quality=85&auto=format&fit=max&s=593d1744e9bb0ea8bed0aba037cee5f1",
+      "published_at": "2026-10-14T21:50:29+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Eight states accuse OpenAI of coaching children to harm themselves in lawsuit",
+          "summary": "US states sue ChatGPT maker and seek to force the company to change how its products work for young users Eight US states sued OpenAI Wednesday, alleging the ChatGPT maker is harming children en masse. Kansas, Arizona, Montana, Iowa and four others allege the company’s products carried out “willful, dangerous, reckless and unlaw…"
+        }
+      }
+    },
+    {
+      "id": "540a32b46af68f1e8b",
+      "title": "Ambani’s Jio seeks to raise $3.2B in what could be India’s biggest IPO",
+      "summary": "Jio plans to use most of its IPO proceeds to repay debt as it expands beyond telecom.",
+      "source": "TechCrunch",
+      "category": "technology",
+      "url": "https://techcrunch.com/2026/10/14/ambanis-jio-seeks-to-raise-3-2b-in-what-could-be-indias-biggest-ipo/",
+      "image": "",
+      "published_at": "2026-10-14T21:48:20+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Ambani’s Jio seeks to raise $3.2B in what could be India’s biggest IPO",
+          "summary": "Jio plans to use most of its IPO proceeds to repay debt as it expands beyond telecom."
+        }
+      }
+    },
+    {
+      "id": "c64ad844173458df31",
+      "title": "Flock CEO says its microphones detect ‘just gunshots’ — its website says different",
+      "summary": "Langley’s comments come amid mounting scrutiny of Flock from privacy advocates, including the ACLU, and members of the public who are concerned about the misuse of its technology.",
+      "source": "TechCrunch",
+      "category": "technology",
+      "url": "https://techcrunch.com/2026/10/14/flock-ceo-says-its-microphones-detect-just-gunshots-its-website-says-different/",
+      "image": "",
+      "published_at": "2026-10-14T21:30:33+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Flock CEO says its microphones detect ‘just gunshots’ — its website says different",
+          "summary": "Langley’s comments come amid mounting scrutiny of Flock from privacy advocates, including the ACLU, and members of the public who are concerned about the misuse of its technology."
+        }
+      }
+    },
+    {
+      "id": "8a22c30be0dc847e80",
+      "title": "UK threatens to ban Eritreans over migrant return policy",
+      "summary": "The home secretary said she would not hesitate to impose measures on other countries \"refusing to co-operate\".",
+      "source": "BBC News",
+      "category": "politics",
+      "url": "https://www.bbc.co.uk/news/articles/c30rl1q1j200o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/935c/live/1c24f8c0-22eb-11f1-abe1-05da6de99c2b.png",
+      "published_at": "2026-10-14T21:30:13+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "UK threatens to ban Eritreans over migrant return policy",
+          "summary": "The home secretary said she would not hesitate to impose measures on other countries \"refusing to co-operate\"."
+        }
+      }
+    },
+    {
+      "id": "9194e801adbca278e9",
+      "title": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
+      "summary": "OpenAI is facing a new wave of lawsuits from eight US states that accuse the company of harming children and misleading customers about the safety of ChatGPT, as reported earlier by Reuters. The lawsuits, filed separately by Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho, and Montana, allege OpenAI unlawfully pu…",
+      "source": "The Verge",
+      "category": "ai",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+      "image": "",
+      "published_at": "2026-10-14T21:11:28+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
+          "summary": "OpenAI is facing a new wave of lawsuits from eight US states that accuse the company of harming children and misleading customers about the safety of ChatGPT, as reported earlier by Reuters. The lawsuits, filed separately by Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho, and Montana, allege OpenAI unlawfully pu…"
+        }
+      }
+    },
+    {
+      "id": "96ea52d21ea17d09b1",
+      "title": "Colossal Biosciences announces new AI platform to help accelerate de-extinction efforts",
+      "summary": "Colossal announced a new AI platform to help accelerate its de-extinction efforts and Peter Diamandis has launched a new fund to back startups who use it.",
+      "source": "TechCrunch",
+      "category": "ai",
+      "url": "https://techcrunch.com/2026/10/14/colossal-biosciences-announces-new-ai-platform-to-help-accelerate-de-extinction-efforts/",
+      "image": "",
+      "published_at": "2026-10-14T21:00:00+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Colossal Biosciences announces new AI platform to help accelerate de-extinction efforts",
+          "summary": "Colossal announced a new AI platform to help accelerate its de-extinction efforts and Peter Diamandis has launched a new fund to back startups who use it."
+        }
+      }
+    },
+    {
+      "id": "eabcd42a819b6b051d",
+      "title": "Musk says any limits on Ukraine's Starlink access down to US, not his firm",
+      "summary": "Ukraine says Starlink access has improved but it is still facing speed limits which are disrupting its battlefield \"missions\".",
+      "source": "BBC News",
+      "category": "world",
+      "url": "https://www.bbc.co.uk/news/articles/c8wy9veedgygo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a29b/live/2b9027f0-c807-11f1-aff0-65f8bbf884f7.jpg",
+      "published_at": "2026-10-14T20:55:24+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Musk says any limits on Ukraine's Starlink access down to US, not his firm",
+          "summary": "Ukraine says Starlink access has improved but it is still facing speed limits which are disrupting its battlefield \"missions\"."
+        }
+      }
+    },
+    {
+      "id": "e7349a7954fa22d8bf",
+      "title": "Things are finally looking up for NASA's first missions to Venus in a generation",
+      "summary": "\"This is great news for us. We're staffing up. We're accelerating.\"",
+      "source": "Ars Technica",
+      "category": "technology",
+      "url": "https://arstechnica.com/space/2026/10/nasas-embattled-venus-missions-are-back-on-track-after-cancellation-threat/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/davinci-heat-test-3-1152x648-1792007515.jpg",
+      "published_at": "2026-10-14T20:48:07+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Things are finally looking up for NASA's first missions to Venus in a generation",
+          "summary": "\"This is great news for us. We're staffing up. We're accelerating.\""
+        }
+      }
+    },
+    {
+      "id": "11709b8f262f35755f",
+      "title": "Why Zelensky's meeting with Burnham matters",
+      "summary": "Prime Minister Andy Burnham welcomed President Zelensky to Downing Street on Wednesday, as Ukraine's leader looks to shore up his European allies five years into Russia's war on Ukraine.",
+      "source": "BBC News",
+      "category": "politics",
+      "url": "https://www.bbc.co.uk/news/videos/c65yngxdzdd5o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/069c/live/567fb8d0-c817-11f1-a64c-550be9e3c66b.jpg",
+      "published_at": "2026-10-14T20:41:03+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Why Zelensky's meeting with Burnham matters",
+          "summary": "Prime Minister Andy Burnham welcomed President Zelensky to Downing Street on Wednesday, as Ukraine's leader looks to shore up his European allies five years into Russia's war on Ukraine."
+        }
+      }
+    },
+    {
+      "id": "9f581cc3b654b52338",
+      "title": "OpenAI accuses employee who left for Apple of leaking plans for unreleased device",
+      "summary": "Hours before Apple and the ChatGPT maker were due to face off in court, a new allegation delayed the showdown An ⁠ OpenAI employee who left the ChatGPT maker for Apple sent more than 100 files about an unreleased product to a personal ⁠account and later ⁠made a presentation ​about the unreleased product to senior Apple leadershi…",
+      "source": "The Guardian",
+      "category": "ai",
+      "url": "https://www.theguardian.com/technology/2026/oct/14/openai-apple-employee-leak-lawsuit",
+      "image": "https://i.guim.co.uk/img/media/ebf66ef2fc761ca986ec34ee126faa393835c357/479_0_4771_3819/master/4771.jpg?width=140&quality=85&auto=format&fit=max&s=49598467932deaad38c34b1c32751dc9",
+      "published_at": "2026-10-14T20:31:15+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "OpenAI accuses employee who left for Apple of leaking plans for unreleased device",
+          "summary": "Hours before Apple and the ChatGPT maker were due to face off in court, a new allegation delayed the showdown An ⁠ OpenAI employee who left the ChatGPT maker for Apple sent more than 100 files about an unreleased product to a personal ⁠account and later ⁠made a presentation ​about the unreleased product to senior Apple leadershi…"
+        }
+      }
+    },
+    {
+      "id": "056f4bacd70046a7f1",
+      "title": "Student protesters attack government buildings in Tirana",
+      "summary": "Thousands of students in Albania are calling for better university conditions and job prospects, but buildings have been set on fire in the unrest.",
+      "source": "BBC News",
+      "category": "politics",
+      "url": "https://www.bbc.co.uk/news/articles/cq80zk5k2ep4o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4571/live/704a3630-c7f6-11f1-9a39-31b474234113.jpg",
+      "published_at": "2026-10-14T20:29:05+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Student protesters attack government buildings in Tirana",
+          "summary": "Thousands of students in Albania are calling for better university conditions and job prospects, but buildings have been set on fire in the unrest."
+        }
+      }
+    },
+    {
+      "id": "b4abe8ca90eff08e79",
+      "title": "Flock CEO: We haven’t ‘fired’ any police departments as customers",
+      "summary": "Flock CEO Garrett Langley said that the surveillance company has not canceled contracts of any police department or law enforcement agency, despite reports of abuse.",
+      "source": "TechCrunch",
+      "category": "technology",
+      "url": "https://techcrunch.com/2026/10/14/flock-ceo-we-havent-fired-any-police-departments-as-customers/",
+      "image": "",
+      "published_at": "2026-10-14T20:26:25+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Flock CEO: We haven’t ‘fired’ any police departments as customers",
+          "summary": "Flock CEO Garrett Langley said that the surveillance company has not canceled contracts of any police department or law enforcement agency, despite reports of abuse."
+        }
+      }
+    },
+    {
+      "id": "a712ab5828bf66e23d",
+      "title": "Schools across US protest FCC plan that could disconnect kids from Internet",
+      "summary": "FCC chair threatens E-Rate fund, blames schools for kids' excessive screen time.",
+      "source": "Ars Technica",
+      "category": "technology",
+      "url": "https://arstechnica.com/tech-policy/2026/10/schools-libraries-plead-with-fcc-to-scrap-idea-of-killing-2b-broadband-program/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/classroom-tablets-1152x648.jpg",
+      "published_at": "2026-10-14T20:15:56+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Schools across US protest FCC plan that could disconnect kids from Internet",
+          "summary": "FCC chair threatens E-Rate fund, blames schools for kids' excessive screen time."
+        }
+      }
+    },
+    {
+      "id": "8b7613795f605e73a8",
+      "title": "Electric vehicle sales in the US are showing signs of life",
+      "summary": "The electric vehicle market in the U.S. has been growing for the last three consecutive quarters.",
+      "source": "TechCrunch",
+      "category": "technology",
+      "url": "https://techcrunch.com/2026/10/14/electric-vehicle-sales-in-the-u-s-are-showing-signs-of-life/",
+      "image": "",
+      "published_at": "2026-10-14T20:12:07+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Electric vehicle sales in the US are showing signs of life",
+          "summary": "The electric vehicle market in the U.S. has been growing for the last three consecutive quarters."
+        }
+      }
+    },
+    {
+      "id": "fa361691c0a6800a4d",
+      "title": "Microsoft and Japan took down a cybercrime network behind over a billion scam messages",
+      "summary": "We've all gotten a scam text about a nonexistent parking ticket or a fake package delivery, but hopefully you'll start seeing fewer of them. Microsoft says it helped dismantle a marketplace for scammers sending phishing messages like those around the world. Through an investigation with Japan's National Police Agency, it tracked…",
+      "source": "The Verge",
+      "category": "technology",
+      "url": "https://www.theverge.com/tech/1011487/microsoft-scam-messages-marketplace-takedown",
+      "image": "",
+      "published_at": "2026-10-14T20:03:43+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Microsoft and Japan took down a cybercrime network behind over a billion scam messages",
+          "summary": "We've all gotten a scam text about a nonexistent parking ticket or a fake package delivery, but hopefully you'll start seeing fewer of them. Microsoft says it helped dismantle a marketplace for scammers sending phishing messages like those around the world. Through an investigation with Japan's National Police Agency, it tracked…"
+        }
+      }
+    },
+    {
+      "id": "336c85b7372552af62",
+      "title": "TimeTeller puts our internal clocks at the center of personalized medicine",
+      "summary": "German startup TimeTeller has developed a saliva test kit to help anyone understand their circadian rhythm; it aims to reduce side effects from cancer treatments.",
+      "source": "TechCrunch",
+      "category": "technology",
+      "url": "https://techcrunch.com/2026/10/14/timeteller-puts-our-internal-clocks-at-the-center-of-personalized-medicine/",
+      "image": "",
+      "published_at": "2026-10-14T20:00:00+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "TimeTeller puts our internal clocks at the center of personalized medicine",
+          "summary": "German startup TimeTeller has developed a saliva test kit to help anyone understand their circadian rhythm; it aims to reduce side effects from cancer treatments."
+        }
+      }
+    },
+    {
+      "id": "bebdf350da27fc3145",
+      "title": "Georgia man sues Flock, sheriff's office over alleged ALPR-fueled retaliation",
+      "summary": "Plaintiff claims cameras enabled warrantless tracking and monitoring after he previously sued over excessive force.",
+      "source": "Ars Technica",
+      "category": "technology",
+      "url": "https://arstechnica.com/tech-policy/2026/10/georgia-man-sues-flock-sheriffs-office-over-alleged-alpr-fueled-retaliation/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2213769379-1152x648.jpg",
+      "published_at": "2026-10-14T19:53:01+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Georgia man sues Flock, sheriff's office over alleged ALPR-fueled retaliation",
+          "summary": "Plaintiff claims cameras enabled warrantless tracking and monitoring after he previously sued over excessive force."
+        }
+      }
+    },
+    {
+      "id": "6dbdbd1096f471b83f",
+      "title": "Why is Starlink internet so important on the battlefield in Ukraine?",
+      "summary": "It is the \"backbone of military communications in Ukraine\" that provides vital high-speed internet to forces across the country.",
+      "source": "BBC News",
+      "category": "world",
+      "url": "https://www.bbc.co.uk/news/articles/cqkgk4zg54reo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/109c/live/7b3da5c0-c807-11f1-9a39-31b474234113.jpg",
+      "published_at": "2026-10-14T19:52:04+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Why is Starlink internet so important on the battlefield in Ukraine?",
+          "summary": "It is the \"backbone of military communications in Ukraine\" that provides vital high-speed internet to forces across the country."
+        }
+      }
+    },
+    {
+      "id": "3bc6f63b3e89cdd5ff",
+      "title": "Ambrosia Energy will build a 10 GWh factory in Texas to make batteries for off-grid data centers",
+      "summary": "Startup Ambrosia Energy will build a massive factory to crank out batteries to augment solar panels, creating a round-the-clock clean power plant.",
+      "source": "TechCrunch",
+      "category": "technology",
+      "url": "https://techcrunch.com/2026/10/14/ambrosia-energy-will-build-a-10-gwh-factory-in-texas-to-make-batteries-for-off-grid-data-centers/",
+      "image": "",
+      "published_at": "2026-10-14T19:51:34+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Ambrosia Energy will build a 10 GWh factory in Texas to make batteries for off-grid data centers",
+          "summary": "Startup Ambrosia Energy will build a massive factory to crank out batteries to augment solar panels, creating a round-the-clock clean power plant."
+        }
+      }
+    },
+    {
+      "id": "488313703a0c362959",
+      "title": "Software development and rules stability: Prototype racing in 2030",
+      "summary": "With the end of IMSA’s 2026 season, we have thoughts about the future of the sport.",
+      "source": "Ars Technica",
+      "category": "technology",
+      "url": "https://arstechnica.com/cars/2026/10/software-development-and-rules-stability-prototype-racing-in-2030/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/img_3-1152x648.jpg",
+      "published_at": "2026-10-14T19:44:26+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Software development and rules stability: Prototype racing in 2030",
+          "summary": "With the end of IMSA’s 2026 season, we have thoughts about the future of the sport."
+        }
+      }
+    },
+    {
+      "id": "1b2b48980cc8a6afc7",
+      "title": "We are behind you and that will not change, PM tells Zelensky",
+      "summary": "The Ukrainian president visited London in an effort to bolster support among European allies following a row with Donald Trump.",
+      "source": "BBC News",
+      "category": "politics",
+      "url": "https://www.bbc.co.uk/news/articles/cm0rl1gkz97do?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a2be/live/2e4043e0-c7f3-11f1-9909-8f8db2b4c4ac.png",
+      "published_at": "2026-10-14T19:22:28+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "We are behind you and that will not change, PM tells Zelensky",
+          "summary": "The Ukrainian president visited London in an effort to bolster support among European allies following a row with Donald Trump."
+        }
+      }
+    },
+    {
+      "id": "b07c795d57e14f1c7c",
+      "title": "OpenAI’s London staff receive average of £2.3m per person annually",
+      "summary": "Accounts for the Westminster-based company behind ChatGPT show that 110 staff shared £87m in salaries and £168m in shares last year OpenAI’s London staff each received £2,318,181 on average last year, as the ChatGPT-maker poured Premier League football salaries into its bid to dominate the global AI race. Accounts for OpenAI UK…",
+      "source": "The Guardian",
+      "category": "economy",
+      "url": "https://www.theguardian.com/technology/2026/oct/14/openai-london-staff-earnings-2million-per-person",
+      "image": "https://i.guim.co.uk/img/media/6e3f91a7c491ffbb06b0d75f239e2786a37ee2e3/450_0_2915_2333/master/2915.jpg?width=140&quality=85&auto=format&fit=max&s=45ef221d694807bf66fe5f37fffa77bb",
+      "published_at": "2026-10-14T19:15:14+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "OpenAI’s London staff receive average of £2.3m per person annually",
+          "summary": "Accounts for the Westminster-based company behind ChatGPT show that 110 staff shared £87m in salaries and £168m in shares last year OpenAI’s London staff each received £2,318,181 on average last year, as the ChatGPT-maker poured Premier League football salaries into its bid to dominate the global AI race. Accounts for OpenAI UK…"
+        }
+      }
+    },
+    {
+      "id": "eba0fd83e74fe20c65",
+      "title": "Greta Gerwig channels Bowie in psychedelic The Magician's Nephew trailer",
+      "summary": "\"Have you ever seen a world born?\"",
+      "source": "Ars Technica",
+      "category": "technology",
+      "url": "https://arstechnica.com/culture/2026/10/greta-gerwig-channels-bowie-in-psychedelic-the-magicians-nephew-trailer/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/narniaTOP-1152x648.jpg",
+      "published_at": "2026-10-14T19:10:58+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Greta Gerwig channels Bowie in psychedelic The Magician's Nephew trailer",
+          "summary": "\"Have you ever seen a world born?\""
+        }
+      }
+    },
+    {
+      "id": "0a3035ce11f254c377",
+      "title": "The AI race is back on",
+      "summary": "Last week, Anthropic and OpenAI looked like they had the AI race to themselves, pulling ahead with increasingly powerful models that left their rivals in the dust. Google seemed hopelessly far behind, while Meta, despite spending billions to revive its floundering AI ambitions, had yet to establish itself as a serious contender.…",
+      "source": "The Verge",
+      "category": "ai",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
+      "image": "",
+      "published_at": "2026-10-14T19:06:03+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "The AI race is back on",
+          "summary": "Last week, Anthropic and OpenAI looked like they had the AI race to themselves, pulling ahead with increasingly powerful models that left their rivals in the dust. Google seemed hopelessly far behind, while Meta, despite spending billions to revive its floundering AI ambitions, had yet to establish itself as a serious contender.…"
+        }
+      }
+    },
+    {
+      "id": "6593b2bbec90339904",
+      "title": "Zimbabwean author Simbarashe Kundizeza denies using AI to write prize-winning story",
+      "summary": "Article in Atlantic claims The Blue Fighter was artificially generated, days after it won Caine prize for African writers The Zimbabwean writer Simbarashe Kundizeza has denied using AI to write a prize-winning short story after an article in the Atlantic said software had flagged it as almost completely AI-generated. Kundizeza’s…",
+      "source": "The Guardian",
+      "category": "ai",
+      "url": "https://www.theguardian.com/technology/2026/oct/14/zimbabwean-author-simbarashe-kundizeza-denies-ai-story",
+      "image": "https://i.guim.co.uk/img/media/6487803463c6c4e3138642f657eeb1cd90cd5acc/0_113_1078_862/master/1078.jpg?width=140&quality=85&auto=format&fit=max&s=6e0f4e5dcae2b2a9e886d0f5ebb34561",
+      "published_at": "2026-10-14T19:01:29+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Zimbabwean author Simbarashe Kundizeza denies using AI to write prize-winning story",
+          "summary": "Article in Atlantic claims The Blue Fighter was artificially generated, days after it won Caine prize for African writers The Zimbabwean writer Simbarashe Kundizeza has denied using AI to write a prize-winning short story after an article in the Atlantic said software had flagged it as almost completely AI-generated. Kundizeza’s…"
+        }
+      }
+    },
+    {
+      "id": "5852c29630a81df5f6",
+      "title": "Hiyd is a health tracker that attaches to the watch you already wear",
+      "summary": "Former Apple engineers figured out how to get a biometric sensor to attach to your watch without any magnets or adhesives.",
+      "source": "TechCrunch",
+      "category": "technology",
+      "url": "https://techcrunch.com/2026/10/14/hiyd-is-a-health-tracker-that-attaches-to-the-watch-you-already-wear/",
+      "image": "",
+      "published_at": "2026-10-14T19:00:00+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Hiyd is a health tracker that attaches to the watch you already wear",
+          "summary": "Former Apple engineers figured out how to get a biometric sensor to attach to your watch without any magnets or adhesives."
+        }
+      }
+    },
+    {
+      "id": "78b2c7c2d782cb910d",
+      "title": "In Ukraine, civilian casualties were already rising. Restrictions on Starlink will only worsen the death toll",
+      "summary": "Throttling of mobile internet system will affect Kyiv’s air defences more than its strikes on oil refineries. Now Zelenskyy must be hoping that US intel holds In Ukraine the situation was already jittery enough. Donald Trump has been inventing ceasefires and buying Russian diesel to shore up his flagging popularity, while a sini…",
+      "source": "The Guardian",
+      "category": "world",
+      "url": "https://www.theguardian.com/world/2026/oct/14/ukraine-starlink-civilian-casualties-death-toll",
+      "image": "https://i.guim.co.uk/img/media/e8990bf376e8e1b165ba1ff98381c304d2cfe4b3/0_0_7200_5760/master/7200.jpg?width=140&quality=85&auto=format&fit=max&s=6db6b21abbf0ba8782a663524addd352",
+      "published_at": "2026-10-14T18:54:34+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "In Ukraine, civilian casualties were already rising. Restrictions on Starlink will only worsen the death toll",
+          "summary": "Throttling of mobile internet system will affect Kyiv’s air defences more than its strikes on oil refineries. Now Zelenskyy must be hoping that US intel holds In Ukraine the situation was already jittery enough. Donald Trump has been inventing ceasefires and buying Russian diesel to shore up his flagging popularity, while a sini…"
+        }
+      }
+    },
+    {
+      "id": "45dfe01c4dcdbd6bc5",
+      "title": "Now that Character.AI is going bankrupt, what happens to all of its users’ data?",
+      "summary": "New York Attorney General Letitia James revealed a years-long multi-state investigation against Character.AI as they now seek to require protections on consumer data sold through its bankruptcy proceeding. James is among 40 bipartisan AGs who filed a notice of interest in Character.AI's bankruptcy case \"to put all parties on not…",
+      "source": "The Verge",
+      "category": "ai",
+      "url": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
+      "image": "",
+      "published_at": "2026-10-14T18:47:54+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Now that Character.AI is going bankrupt, what happens to all of its users’ data?",
+          "summary": "New York Attorney General Letitia James revealed a years-long multi-state investigation against Character.AI as they now seek to require protections on consumer data sold through its bankruptcy proceeding. James is among 40 bipartisan AGs who filed a notice of interest in Character.AI's bankruptcy case \"to put all parties on not…"
+        }
+      }
+    },
+    {
+      "id": "ee1acf01cecd743644",
+      "title": "As a TV enthusiast, I was hoping for more from the Apple TV 4K",
+      "summary": "It's been four long years since the last Apple TV 4K was released, and in that time there have been lots of hopes and dreams for features in whatever comes next. A new chip, 4K/120Hz support, audio passthrough, a remote locator, better home control integration - the 2022 Apple TV 4K is a great box, […]",
+      "source": "The Verge",
+      "category": "technology",
+      "url": "https://www.theverge.com/tech/1011324/apple-tv-4k-missed-features",
+      "image": "",
+      "published_at": "2026-10-14T18:38:59+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "As a TV enthusiast, I was hoping for more from the Apple TV 4K",
+          "summary": "It's been four long years since the last Apple TV 4K was released, and in that time there have been lots of hopes and dreams for features in whatever comes next. A new chip, 4K/120Hz support, audio passthrough, a remote locator, better home control integration - the 2022 Apple TV 4K is a great box, […]"
+        }
+      }
+    },
+    {
       "id": "f2a56b50bd832f0a2e",
       "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
-      "summary": "The label will appear on the player page and include songs entirely generated by AI or partially, such as involved in composition and vocals.",
+      "summary": "The label will appear on the player page and include songs entirely generated by AI or partially, such as AI involved in composition and vocals.",
       "source": "TechCrunch",
       "category": "ai",
       "url": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
@@ -51,7 +645,7 @@
       "translations": {
         "en": {
           "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
-          "summary": "The label will appear on the player page and include songs entirely generated by AI or partially, such as involved in composition and vocals."
+          "summary": "The label will appear on the player page and include songs entirely generated by AI or partially, such as AI involved in composition and vocals."
         }
       }
     },
@@ -220,7 +814,7 @@
     {
       "id": "00cf6b96095217ecd7",
       "title": "Student protests in Albania turn violent as demonstrators clash with police",
-      "summary": "Government building and two banks set on fire as tens of thousands take to streets over education costs and corruption Tens of thousands of students have taken to the streets of Tirana, the Albanian capital, setting alight a government building and two banks and hurling stones at police during a protest over rising education cos…",
+      "summary": "Government building and two banks set on fire as tens of thousands march over education costs and corruption Tens of thousands of students have taken to the streets of Tirana, the Albanian capital, setting alight a government building and two banks and hurling stones at police during a protest over rising education costs and ⁠co…",
       "source": "The Guardian",
       "category": "politics",
       "url": "https://www.theguardian.com/world/2026/oct/14/student-protests-tirana-albania-police-clashes",
@@ -231,25 +825,7 @@
       "translations": {
         "en": {
           "title": "Student protests in Albania turn violent as demonstrators clash with police",
-          "summary": "Government building and two banks set on fire as tens of thousands take to streets over education costs and corruption Tens of thousands of students have taken to the streets of Tirana, the Albanian capital, setting alight a government building and two banks and hurling stones at police during a protest over rising education cos…"
-        }
-      }
-    },
-    {
-      "id": "1b2b48980cc8a6afc7",
-      "title": "We are behind you and that will not change, PM tells Zelensky",
-      "summary": "The Ukrainian president visited London in an effort to bolster support among European allies following a row with Donald Trump.",
-      "source": "BBC News",
-      "category": "politics",
-      "url": "https://www.bbc.co.uk/news/articles/cm0rl1gkz97do?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a2be/live/2e4043e0-c7f3-11f1-9909-8f8db2b4c4ac.png",
-      "published_at": "2026-10-14T17:20:58+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "We are behind you and that will not change, PM tells Zelensky",
-          "summary": "The Ukrainian president visited London in an effort to bolster support among European allies following a row with Donald Trump."
+          "summary": "Government building and two banks set on fire as tens of thousands march over education costs and corruption Tens of thousands of students have taken to the streets of Tirana, the Albanian capital, setting alight a government building and two banks and hurling stones at police during a protest over rising education costs and ⁠co…"
         }
       }
     },
@@ -272,20 +848,20 @@
       }
     },
     {
-      "id": "254114c8f099046d94",
-      "title": "Anbernic’s next dual-screen handheld could replace your aging Nintendo 3DS",
-      "summary": "Anbernic shared a new video of its upcoming dual-screen handheld it announced last week showing the device playing 3DS, Xbox, and PS3 games through emulation. While competitors like Ayaneo have been making dual-screen handhelds for a few years, Anbernic only recently introduced its own dual-screen devices including the RG DS and…",
-      "source": "The Verge",
-      "category": "technology",
-      "url": "https://www.theverge.com/tech/1011200/anbernic-rg-dds-dual-screen-handheld-emulator-nintendo-3ds",
-      "image": "",
-      "published_at": "2026-10-14T17:13:27+00:00",
+      "id": "830300933bbd262cc3",
+      "title": "Researchers use AI to design proteins that cut up other proteins",
+      "summary": "AI design tools make proteins that break bonds that are stable for hundreds of years.",
+      "source": "Ars Technica",
+      "category": "ai",
+      "url": "https://arstechnica.com/science/2026/10/researchers-use-ai-to-design-proteins-that-cut-up-other-proteins/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2298087641-1152x648.jpg",
+      "published_at": "2026-10-14T17:10:15+00:00",
       "kind": "source_brief",
       "source_lang": "en",
       "translations": {
         "en": {
-          "title": "Anbernic’s next dual-screen handheld could replace your aging Nintendo 3DS",
-          "summary": "Anbernic shared a new video of its upcoming dual-screen handheld it announced last week showing the device playing 3DS, Xbox, and PS3 games through emulation. While competitors like Ayaneo have been making dual-screen handhelds for a few years, Anbernic only recently introduced its own dual-screen devices including the RG DS and…"
+          "title": "Researchers use AI to design proteins that cut up other proteins",
+          "summary": "AI design tools make proteins that break bonds that are stable for hundreds of years."
         }
       }
     },
@@ -340,24 +916,6 @@
         "en": {
           "title": "Mosqitter is turning its mosquito traps into an AI-powered surveillance network",
           "summary": "Mosqitter is turning its mosquito-trapping hardware into an AI-powered surveillance network designed to identify species, monitor populations, and provide earlier warnings of mosquito-borne disease risks."
-        }
-      }
-    },
-    {
-      "id": "bce858a37e75c4f00f",
-      "title": "My AI doppelganger tells me what to eat",
-      "summary": "This is Optimizer, a weekly newsletter sent from Verge senior reviewer Victoria Song that dissects and discusses the latest gizmos and potions that swear they're going to change your life. Opt in for Optimizer here. For the past 100 days or so, my mornings have had a new rhythm. When I wake up, the first […]",
-      "source": "The Verge",
-      "category": "ai",
-      "url": "https://www.theverge.com/column/1011264/digital-twin-metabolism-ai-twin-health",
-      "image": "",
-      "published_at": "2026-10-14T17:00:00+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "My AI doppelganger tells me what to eat",
-          "summary": "This is Optimizer, a weekly newsletter sent from Verge senior reviewer Victoria Song that dissects and discusses the latest gizmos and potions that swear they're going to change your life. Opt in for Optimizer here. For the past 100 days or so, my mornings have had a new rhythm. When I wake up, the first […]"
         }
       }
     },
@@ -434,20 +992,20 @@
       }
     },
     {
-      "id": "52cefc42575c00abb3",
-      "title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
-      "summary": "OpenAI claims a former employee took more than 100 files related to its product plans before joining Apple. In a document filed on Wednesday, OpenAI accuses the unnamed employee of sending this information to a personal account and then presenting it to Apple leadership, including the vice president of the company's operations i…",
-      "source": "The Verge",
+      "id": "4e5c842a87933e5d02",
+      "title": "Recording device hidden in toilet paper found in top-secret OpenAI meeting room",
+      "summary": "OpenAI engineer faces 5 years and $250K fine as FBI lobs foreign spy charges.",
+      "source": "Ars Technica",
       "category": "ai",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
-      "image": "",
-      "published_at": "2026-10-14T16:43:24+00:00",
+      "url": "https://arstechnica.com/tech-policy/2026/10/fbi-arrests-openai-engineer-suspected-of-planting-bug-in-conference-room/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/open-ai-bugged-1152x648.jpg",
+      "published_at": "2026-10-14T16:41:49+00:00",
       "kind": "source_brief",
       "source_lang": "en",
       "translations": {
         "en": {
-          "title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
-          "summary": "OpenAI claims a former employee took more than 100 files related to its product plans before joining Apple. In a document filed on Wednesday, OpenAI accuses the unnamed employee of sending this information to a personal account and then presenting it to Apple leadership, including the vice president of the company's operations i…"
+          "title": "Recording device hidden in toilet paper found in top-secret OpenAI meeting room",
+          "summary": "OpenAI engineer faces 5 years and $250K fine as FBI lobs foreign spy charges."
         }
       }
     },
@@ -470,27 +1028,9 @@
       }
     },
     {
-      "id": "4b2d544d56832edfe1",
-      "title": "Repairing the iPhone Duo’s folding screen costs as much as a new iPhone",
-      "summary": "If you don't get AppleCare Plus for the iPhone Duo, any repairs are going to be pretty expensive. Apple published the estimated repair costs for the iPhone Duo without AppleCare Plus today, as reported by MacRumors, and they can be high: Battery service, for example, will cost $229, inner display damage will cost $999, and […]",
-      "source": "The Verge",
-      "category": "technology",
-      "url": "https://www.theverge.com/tech/1011245/iphone-duo-repair-costs-applecare",
-      "image": "",
-      "published_at": "2026-10-14T16:21:28+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Repairing the iPhone Duo’s folding screen costs as much as a new iPhone",
-          "summary": "If you don't get AppleCare Plus for the iPhone Duo, any repairs are going to be pretty expensive. Apple published the estimated repair costs for the iPhone Duo without AppleCare Plus today, as reported by MacRumors, and they can be high: Battery service, for example, will cost $229, inner display damage will cost $999, and […]"
-        }
-      }
-    },
-    {
       "id": "d90c17e4b1366366bf",
       "title": "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
-      "summary": "Launch of Russian ballistic missiles on Ukraine, with no US warning, coincides with outage of Starlink managed by Musk’s SpaceX Europe live – latest updates Ukraine’s military has suddenly had its access to Starlink satellite internet terminals restricted as the Trump administration has increased pressure on Ukraine to halt long…",
+      "summary": "Launch of Russian ballistic missiles on Ukraine, with no US warning, coincides with outage of Starlink managed by Musk’s SpaceX Ukraine’s military has suddenly had its access to Starlink satellite internet terminals restricted as the Trump administration has increased pressure on Ukraine to halt long-range strikes on Russia’s oi…",
       "source": "The Guardian",
       "category": "world",
       "url": "https://www.theguardian.com/world/2026/oct/14/ukraine-soldiers-combat-access-starlink-satellite-internet-restricted",
@@ -501,25 +1041,7 @@
       "translations": {
         "en": {
           "title": "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
-          "summary": "Launch of Russian ballistic missiles on Ukraine, with no US warning, coincides with outage of Starlink managed by Musk’s SpaceX Europe live – latest updates Ukraine’s military has suddenly had its access to Starlink satellite internet terminals restricted as the Trump administration has increased pressure on Ukraine to halt long…"
-        }
-      }
-    },
-    {
-      "id": "62ba3cc81fe7b5dec2",
-      "title": "Honey, Xbox shrunk its controller",
-      "summary": "Microsoft is officially announcing its Xbox Nano controller today, a smaller and cheaper controller that's designed to fit into your pocket. The more compact controller is also designed for \"younger players, smaller hands, or anyone seeking something portable for play on the go.\" The $49.99 Xbox Nano is Microsoft's smallest cont…",
-      "source": "The Verge",
-      "category": "technology",
-      "url": "https://www.theverge.com/news/1011216/xbox-nano-controller-release-date-pricing",
-      "image": "",
-      "published_at": "2026-10-14T16:16:46+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Honey, Xbox shrunk its controller",
-          "summary": "Microsoft is officially announcing its Xbox Nano controller today, a smaller and cheaper controller that's designed to fit into your pocket. The more compact controller is also designed for \"younger players, smaller hands, or anyone seeking something portable for play on the go.\" The $49.99 Xbox Nano is Microsoft's smallest cont…"
+          "summary": "Launch of Russian ballistic missiles on Ukraine, with no US warning, coincides with outage of Starlink managed by Musk’s SpaceX Ukraine’s military has suddenly had its access to Starlink satellite internet terminals restricted as the Trump administration has increased pressure on Ukraine to halt long-range strikes on Russia’s oi…"
         }
       }
     },
@@ -560,38 +1082,20 @@
       }
     },
     {
-      "id": "0ffd9a974781584f9f",
-      "title": "Microsoft has a new machine learning tool to improve weather forecasts",
-      "summary": "Old-school physics-based weather forecasting and even new AI models typically become less reliable beyond two weeks, a problem Microsoft claims to have solved using machine learning. Researchers with the company say they've found a new, cost-effective way to make more accurate weather forecasts two to six weeks in advance - allo…",
-      "source": "The Verge",
-      "category": "ai",
-      "url": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
-      "image": "",
-      "published_at": "2026-10-14T16:05:21+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Microsoft has a new machine learning tool to improve weather forecasts",
-          "summary": "Old-school physics-based weather forecasting and even new AI models typically become less reliable beyond two weeks, a problem Microsoft claims to have solved using machine learning. Researchers with the company say they've found a new, cost-effective way to make more accurate weather forecasts two to six weeks in advance - allo…"
-        }
-      }
-    },
-    {
-      "id": "67353a91d3b1bc6607",
-      "title": "Prismm helps banks keep inherited money in-house",
-      "summary": "With Prismm, account holders can give designated family members access to their accounts and documents ahead of time.",
-      "source": "TechCrunch",
+      "id": "ea01b779c63f71e9bf",
+      "title": "Legendary FPS level designer Richard \"Levelord\" Gray dies at 68",
+      "summary": "Tributes pour in for the man behind iconic Duke Nukem 3D levels and much more.",
+      "source": "Ars Technica",
       "category": "technology",
-      "url": "https://techcrunch.com/2026/10/14/prismm-helps-banks-keep-inherited-money-in-house/",
-      "image": "",
-      "published_at": "2026-10-14T16:00:00+00:00",
+      "url": "https://arstechnica.com/gaming/2026/10/legendary-fps-level-designer-richard-levelord-gray-passes-away-at-68/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/levelord-1152x648.png",
+      "published_at": "2026-10-14T16:02:08+00:00",
       "kind": "source_brief",
       "source_lang": "en",
       "translations": {
         "en": {
-          "title": "Prismm helps banks keep inherited money in-house",
-          "summary": "With Prismm, account holders can give designated family members access to their accounts and documents ahead of time."
+          "title": "Legendary FPS level designer Richard \"Levelord\" Gray dies at 68",
+          "summary": "Tributes pour in for the man behind iconic Duke Nukem 3D levels and much more."
         }
       }
     },
@@ -704,24 +1208,6 @@
       }
     },
     {
-      "id": "41899f60d22930b2f8",
-      "title": "Was this Mark Zuckerberg’s first – and last – taste of Guinness?",
-      "summary": "The Meta boss looked traumatised when he sipped stout on the Cheeky Pint podcast. An hour later, his glass was still half full Name: Guinness. Age: Arthur Guinness began brewing porter in the 1770s. Guinness draft was first poured in 1959. Continue reading...",
-      "source": "The Guardian",
-      "category": "technology",
-      "url": "https://www.theguardian.com/food/2026/oct/14/mark-zuckerberg-guinness",
-      "image": "https://i.guim.co.uk/img/media/92f1fda20f2c01242b97a2623f3a110f4e8f0311/256_0_2054_1644/master/2054.jpg?width=140&quality=85&auto=format&fit=max&s=02f57705a2b04e49996a3a43a04774db",
-      "published_at": "2026-10-14T15:33:52+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Was this Mark Zuckerberg’s first – and last – taste of Guinness?",
-          "summary": "The Meta boss looked traumatised when he sipped stout on the Cheeky Pint podcast. An hour later, his glass was still half full Name: Guinness. Age: Arthur Guinness began brewing porter in the 1770s. Guinness draft was first poured in 1959. Continue reading..."
-        }
-      }
-    },
-    {
       "id": "96faa508b0e30813b5",
       "title": "US inflation rises more than expected - here's what is happening with prices",
       "summary": "The pace of price rises increased to 3.7% in the year to September, driving by higher motor fuel costs.",
@@ -794,78 +1280,6 @@
       }
     },
     {
-      "id": "e4249aa490a6b9a4d9",
-      "title": "Zenzap raises $44M for its AI chat app that aims to replace WhatsApp in the workplace",
-      "summary": "Zenzap is used by organizations including Starbucks and Taco Bell.",
-      "source": "TechCrunch",
-      "category": "ai",
-      "url": "https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/",
-      "image": "",
-      "published_at": "2026-10-14T15:08:00+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Zenzap raises $44M for its AI chat app that aims to replace WhatsApp in the workplace",
-          "summary": "Zenzap is used by organizations including Starbucks and Taco Bell."
-        }
-      }
-    },
-    {
-      "id": "4458c877a3c243f70a",
-      "title": "EU says ‘no indication’ intelligence sharing with Ukraine has stopped as Russian attacks leave 600,000 without power – as it happened",
-      "summary": "European Commission declined to comment on reported disruption to Starlink’s services in Ukraine Ukrainian soldiers have access to Starlink satellite internet restricted Rutte gets asked “is Russia foolish enough to consider attacking any of Nato countries?” He says “we don’t think so” and that there is “no imminent threat again…",
-      "source": "The Guardian",
-      "category": "world",
-      "url": "https://www.theguardian.com/world/live/2026/oct/14/russia-ukraine-war-latest-updates-zelenskyy-europe",
-      "image": "https://i.guim.co.uk/img/media/3635e9a89739096bcac6b91d39acfc80ccf1e88f/850_330_4496_3597/master/4496.jpg?width=140&quality=85&auto=format&fit=max&s=54cec62fcb7fc43a7982242e2171100b",
-      "published_at": "2026-10-14T15:02:35+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "EU says ‘no indication’ intelligence sharing with Ukraine has stopped as Russian attacks leave 600,000 without power – as it happened",
-          "summary": "European Commission declined to comment on reported disruption to Starlink’s services in Ukraine Ukrainian soldiers have access to Starlink satellite internet restricted Rutte gets asked “is Russia foolish enough to consider attacking any of Nato countries?” He says “we don’t think so” and that there is “no imminent threat again…"
-        }
-      }
-    },
-    {
-      "id": "43380d664f34c7605c",
-      "title": "Floqer’s AI agents research sales prospects so teams don’t have to",
-      "summary": "The problem Floqer is trying to solve is familiar to anyone who has worked in sales or revenue operations.",
-      "source": "TechCrunch",
-      "category": "ai",
-      "url": "https://techcrunch.com/2026/10/14/floqers-ai-agents-help-b2b-revenue-teams-research-customers/",
-      "image": "",
-      "published_at": "2026-10-14T15:00:00+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Floqer’s AI agents research sales prospects so teams don’t have to",
-          "summary": "The problem Floqer is trying to solve is familiar to anyone who has worked in sales or revenue operations."
-        }
-      }
-    },
-    {
-      "id": "be6c37dce88bdd9925",
-      "title": "Guide your campaign spending with new priority and allocation features",
-      "summary": "New controls in Google Ads let marketers categorize channel groupings by priority and better control how budget is allocated",
-      "source": "Google Blog",
-      "category": "ai",
-      "url": "https://blog.google/products/ads-commerce/channel-prioritization-budget-allocation/",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Waterfall_Search_Chart_01_No_Li.max-600x600.format-webp.webp",
-      "published_at": "2026-10-14T15:00:00+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Guide your campaign spending with new priority and allocation features",
-          "summary": "New controls in Google Ads let marketers categorize channel groupings by priority and better control how budget is allocated"
-        }
-      }
-    },
-    {
       "id": "3edd29900dc4ef99c0",
       "title": "Ba nhà băng tư nhân tăng vốn lên hơn 100.000 tỷ đồng",
       "summary": "Techcombank, VPBank và MB liên tục tăng vốn lên trên 100.000 tỷ đồng, vượt quy mô của khối Big 4 có vốn nhà nước.",
@@ -880,42 +1294,6 @@
         "vi": {
           "title": "Ba nhà băng tư nhân tăng vốn lên hơn 100.000 tỷ đồng",
           "summary": "Techcombank, VPBank và MB liên tục tăng vốn lên trên 100.000 tỷ đồng, vượt quy mô của khối Big 4 có vốn nhà nước."
-        }
-      }
-    },
-    {
-      "id": "2615ff273e13fa1a22",
-      "title": "Netflix to lay off 1,000 staff amid intensifying competition for user attention",
-      "summary": "Netflix said most of the cuts would affect its product, tech, legal, and human resources departments.",
-      "source": "TechCrunch",
-      "category": "technology",
-      "url": "https://techcrunch.com/2026/10/14/netflix-to-lay-off-1000-staff-amid-intensifying-competition-for-user-attention/",
-      "image": "",
-      "published_at": "2026-10-14T14:55:47+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Netflix to lay off 1,000 staff amid intensifying competition for user attention",
-          "summary": "Netflix said most of the cuts would affect its product, tech, legal, and human resources departments."
-        }
-      }
-    },
-    {
-      "id": "6371c6dc0f453b8468",
-      "title": "TechCrunch Disrupt 2026: Day 2",
-      "summary": "Day 2 at TechCrunch Disrupt 2026, full of all themes across AI, as well as an investor-only session, more roundtables, Side Events, and more. Register to save 50% on your pass.",
-      "source": "TechCrunch",
-      "category": "ai",
-      "url": "https://techcrunch.com/2026/10/14/techcrunch-disrupt-2026-day-2/",
-      "image": "",
-      "published_at": "2026-10-14T14:30:00+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "TechCrunch Disrupt 2026: Day 2",
-          "summary": "Day 2 at TechCrunch Disrupt 2026, full of all themes across AI, as well as an investor-only session, more roundtables, Side Events, and more. Register to save 50% on your pass."
         }
       }
     },
@@ -952,60 +1330,6 @@
         "en": {
           "title": "Hundreds of thousands of workers on strike across Republic of Ireland",
           "summary": "It comes amidst an an ongoing pay dispute between public sector workers and the Irish government."
-        }
-      }
-    },
-    {
-      "id": "0c4edad28763e44194",
-      "title": "Ready player one? Why the games arcade is having a rebirth",
-      "summary": "After years of sprawling ‘forever’ games, players are rediscovering the pleasures of more focused experiences. Could a new wave of independent arcades bring back the social side of gaming? • Don’t get Pushing Buttons delivered to your inbox? Sign up here There’s an important semi-nostalgic movement happening in games, and I’m ex…",
-      "source": "The Guardian",
-      "category": "technology",
-      "url": "https://www.theguardian.com/games/2026/oct/14/ready-player-one-why-the-games-arcade-is-having-a-rebirth",
-      "image": "https://i.guim.co.uk/img/media/85ce458be333a264a98168404e284eb550307179/191_4_2938_2351/master/2938.jpg?width=140&quality=85&auto=format&fit=max&s=099d3f8a4108d082671799aebb19940a",
-      "published_at": "2026-10-14T14:00:03+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Ready player one? Why the games arcade is having a rebirth",
-          "summary": "After years of sprawling ‘forever’ games, players are rediscovering the pleasures of more focused experiences. Could a new wave of independent arcades bring back the social side of gaming? • Don’t get Pushing Buttons delivered to your inbox? Sign up here There’s an important semi-nostalgic movement happening in games, and I’m ex…"
-        }
-      }
-    },
-    {
-      "id": "459ae6e7c3c0313c0b",
-      "title": "NTangible bets it can predict how athletes will perform under pressure",
-      "summary": "NTangible is building an analytics platform for collegiate sports organizations and other clubs to measure an athlete's \"clutch\" factor.",
-      "source": "TechCrunch",
-      "category": "technology",
-      "url": "https://techcrunch.com/2026/10/14/ntangible-bets-it-can-predict-how-athletes-will-perform-under-pressure/",
-      "image": "",
-      "published_at": "2026-10-14T14:00:00+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "NTangible bets it can predict how athletes will perform under pressure",
-          "summary": "NTangible is building an analytics platform for collegiate sports organizations and other clubs to measure an athlete's \"clutch\" factor."
-        }
-      }
-    },
-    {
-      "id": "9560058cdce3811b7b",
-      "title": "Ukraine blindsided by Starlink throttling restrictions and intelligence gaps",
-      "summary": "Kyiv’s forces experience connectivity problems on Elon Musk’s satellite network.",
-      "source": "Ars Technica",
-      "category": "technology",
-      "url": "https://arstechnica.com/gadgets/2026/10/ukraine-blindsided-by-starlink-throttling-restrictions-and-intelligence-gaps/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-1259126916-1024x648.jpg",
-      "published_at": "2026-10-14T13:56:11+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Ukraine blindsided by Starlink throttling restrictions and intelligence gaps",
-          "summary": "Kyiv’s forces experience connectivity problems on Elon Musk’s satellite network."
         }
       }
     },
@@ -1064,24 +1388,6 @@
       }
     },
     {
-      "id": "2fc83b0b57b3a14f76",
-      "title": "Nữ tiến sĩ Việt thắng Giải Khoa học ASEAN - Mỹ 2026",
-      "summary": "TS Hà Thị Thanh Hương thắng giải nhất với nghiên cứu ứng dụng AI trong chăm sóc sức khỏe não bộ.",
-      "source": "VnExpress",
-      "category": "ai",
-      "url": "https://vnexpress.net/nu-tien-si-viet-thang-giai-khoa-hoc-asean-my-2026-5132391.html",
-      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/10/14/dsc02968-jpg-1791977062-6387-1791977256.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=dUifsKDl64NDZasvkTd91Q",
-      "published_at": "2026-10-14T13:32:06+00:00",
-      "kind": "source_brief",
-      "source_lang": "vi",
-      "translations": {
-        "vi": {
-          "title": "Nữ tiến sĩ Việt thắng Giải Khoa học ASEAN - Mỹ 2026",
-          "summary": "TS Hà Thị Thanh Hương thắng giải nhất với nghiên cứu ứng dụng AI trong chăm sóc sức khỏe não bộ."
-        }
-      }
-    },
-    {
       "id": "839cea1524e53f9f81",
       "title": "Are the European Women's World Cup play-offs working?",
       "summary": "The ease in which England saw off Greece in round one of the Women's World Cup qualifying play-offs showed just how inefficient the structure currently is.",
@@ -1118,60 +1424,6 @@
       }
     },
     {
-      "id": "38baf772a938d90fba",
-      "title": "Starlink restrictions in Ukraine war linked to political situation, Zelensky aide says",
-      "summary": "Elon Musk's system allows Kyiv to protect Ukrainian skies and effectively guide drones to Russian targets.",
-      "source": "BBC News",
-      "category": "world",
-      "url": "https://www.bbc.co.uk/news/articles/cm2d6e62p49do?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d0ee/live/d48bf4b0-c7c6-11f1-9a39-31b474234113.jpg",
-      "published_at": "2026-10-14T13:11:17+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Starlink restrictions in Ukraine war linked to political situation, Zelensky aide says",
-          "summary": "Elon Musk's system allows Kyiv to protect Ukrainian skies and effectively guide drones to Russian targets."
-        }
-      }
-    },
-    {
-      "id": "66012765c3220b8d29",
-      "title": "The Legend of Zelda: Ocarina of Time preview – Link faces his scariest challenge yet: the 4K era",
-      "summary": "The kingdom of Hyrule has been prettified, the soundtrack is newly orchestrated and our hero feels strikingly different under the thumbs … we play a hands-on demo of Nintendo’s Switch 2 remake of a 1998 game-changer When beloved art is revisited and revised, a familiar cry is often heard: “You’re ruining my childhood!” But with…",
-      "source": "The Guardian",
-      "category": "technology",
-      "url": "https://www.theguardian.com/games/2026/oct/14/the-legend-of-zelda-ocarina-of-time-preview-4k-era-switch-2-remake",
-      "image": "https://i.guim.co.uk/img/media/c2a1544dfcc137112f74b2641d33f3025f183feb/595_0_2700_2160/master/2700.jpg?width=140&quality=85&auto=format&fit=max&s=960d08bed805518267ad0f1995325129",
-      "published_at": "2026-10-14T13:00:02+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "The Legend of Zelda: Ocarina of Time preview – Link faces his scariest challenge yet: the 4K era",
-          "summary": "The kingdom of Hyrule has been prettified, the soundtrack is newly orchestrated and our hero feels strikingly different under the thumbs … we play a hands-on demo of Nintendo’s Switch 2 remake of a 1998 game-changer When beloved art is revisited and revised, a familiar cry is often heard: “You’re ruining my childhood!” But with…"
-        }
-      }
-    },
-    {
-      "id": "d249d26945c2841eca",
-      "title": "Anthropic warns small AI models could self-replicate through IoT devices",
-      "summary": "\"Small weight-based replicators\" could usher in a new generation of computer worms.",
-      "source": "Ars Technica",
-      "category": "ai",
-      "url": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-caution-threat-1152x648.jpg",
-      "published_at": "2026-10-14T12:55:06+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Anthropic warns small AI models could self-replicate through IoT devices",
-          "summary": "\"Small weight-based replicators\" could usher in a new generation of computer worms."
-        }
-      }
-    },
-    {
       "id": "c805f95cd6b31ec1d8",
       "title": "Burnham had two hospitality dinners with Man City chairman, deleted records show",
       "summary": "The prime minister has been under growing pressure since the club was found guilty of Premier League rule breaches.",
@@ -1190,24 +1442,6 @@
       }
     },
     {
-      "id": "63031f496b3d8a8d21",
-      "title": "What we know about the Pope's lung cancer diagnosis",
-      "summary": "The Pope is recovering in hospital after a successful surgery to remove part of his right lung.",
-      "source": "BBC News",
-      "category": "world",
-      "url": "https://www.bbc.co.uk/news/videos/cwyvrmp9qgrgo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3145/live/67da1f80-c7cc-11f1-a64c-550be9e3c66b.jpg",
-      "published_at": "2026-10-14T12:37:33+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "What we know about the Pope's lung cancer diagnosis",
-          "summary": "The Pope is recovering in hospital after a successful surgery to remove part of his right lung."
-        }
-      }
-    },
-    {
       "id": "fcdee5de1875209fbb",
       "title": "Wayfair among firms fined millions for misleading sales tactics",
       "summary": "The Competition and Markets Authority has fined Wayfair, Appliances Direct, and Gold's Gym £6m in total.",
@@ -1222,60 +1456,6 @@
         "en": {
           "title": "Wayfair among firms fined millions for misleading sales tactics",
           "summary": "The Competition and Markets Authority has fined Wayfair, Appliances Direct, and Gold's Gym £6m in total."
-        }
-      }
-    },
-    {
-      "id": "4e181c171390031be9",
-      "title": "Check out this year’s buzziest Halloween trends.",
-      "summary": "Ready or not, spooky season is here. To help you prepare, we’re launching Google Frightgeist, our annual interactive website highlighting the top trending searches for H…",
-      "source": "Google Blog",
-      "category": "ai",
-      "url": "https://blog.google/products-and-platforms/products/search/frightgeist-halloween-trends-2026/",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/HalloweenTrends2026_social.max-600x600.format-webp.webp",
-      "published_at": "2026-10-14T12:00:00+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Check out this year’s buzziest Halloween trends.",
-          "summary": "Ready or not, spooky season is here. To help you prepare, we’re launching Google Frightgeist, our annual interactive website highlighting the top trending searches for H…"
-        }
-      }
-    },
-    {
-      "id": "3d4f03cc82948ccccc",
-      "title": "6 ways to trick-or-treat yourself to the ultimate Halloween with Search",
-      "summary": "Whether you need a last-minute costume or a scary movie watchlist, let Google handle heavy lifting for your Halloween prep.",
-      "source": "Google Blog",
-      "category": "ai",
-      "url": "https://blog.google/products-and-platforms/products/search/halloween-tips-2026/",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Frightgeist_BlogHero_2.max-600x600.format-webp.webp",
-      "published_at": "2026-10-14T12:00:00+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "6 ways to trick-or-treat yourself to the ultimate Halloween with Search",
-          "summary": "Whether you need a last-minute costume or a scary movie watchlist, let Google handle heavy lifting for your Halloween prep."
-        }
-      }
-    },
-    {
-      "id": "6736ccb33d028a0d27",
-      "title": "Người Việt đặt mua iPhone Duo phải cọc 30 triệu đồng",
-      "summary": "Người Việt khi đặt mua điện thoại gập đầu tiên của Apple là iPhone Duo sẽ phải cọc 30 triệu đồng thay vì một triệu đồng như iPhone 18 Pro series.",
-      "source": "VnExpress",
-      "category": "technology",
-      "url": "https://vnexpress.net/nguoi-viet-dat-mua-iphone-duo-phai-coc-30-trieu-dong-5132370.html",
-      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/10/14/dscf0037-1791974527-8325-1791974554.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Egi0lpz5uK-cIGKcZUAicw",
-      "published_at": "2026-10-14T12:00:00+00:00",
-      "kind": "source_brief",
-      "source_lang": "vi",
-      "translations": {
-        "vi": {
-          "title": "Người Việt đặt mua iPhone Duo phải cọc 30 triệu đồng",
-          "summary": "Người Việt khi đặt mua điện thoại gập đầu tiên của Apple là iPhone Duo sẽ phải cọc 30 triệu đồng thay vì một triệu đồng như iPhone 18 Pro series."
         }
       }
     },
@@ -1352,24 +1532,6 @@
       }
     },
     {
-      "id": "0adfdddd930842e8c8",
-      "title": "The Internet’s undersea backbone is slipping into the danger zone",
-      "summary": "Elisabeth Braw’s book Undersea War on rising risks for undersea infrastructure.",
-      "source": "Ars Technica",
-      "category": "technology",
-      "url": "https://arstechnica.com/gadgets/2026/10/the-internets-undersea-backbone-is-slipping-into-to-the-danger-zone/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Undersea-cable-ship-1152x648.jpg",
-      "published_at": "2026-10-14T11:15:24+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "The Internet’s undersea backbone is slipping into the danger zone",
-          "summary": "Elisabeth Braw’s book Undersea War on rising risks for undersea infrastructure."
-        }
-      }
-    },
-    {
       "id": "d671b97964ae110534",
       "title": "Faisal Islam: What surprise praise for UK economy tells us about the Budget",
       "summary": "On three occasions in the past 24 hours, top IMF officials have praised UK plans to reduce its annual levels of borrowing.",
@@ -1406,24 +1568,6 @@
       }
     },
     {
-      "id": "bdfd949b4a772ffeee",
-      "title": "‘Like being in a vortex’: US report details extent of ‘devastating’ dating-app scams",
-      "summary": "Congress calls for Match Group and others to do more to help victims like Mary, who lost $100,000 to app scammer Mary met a man on the dating app Plenty of Fish in 2024. She told the Guardian she had been looking for a connection, but instead became the victim of a romance scam that cost her almost $100,000. “There was a lot of…",
-      "source": "The Guardian",
-      "category": "technology",
-      "url": "https://www.theguardian.com/us-news/2026/oct/14/dating-app-scams-us-congress",
-      "image": "https://i.guim.co.uk/img/media/39ad56bf99c1f8e26f0f088ecc640f415267bd2f/581_0_2917_2334/master/2917.jpg?width=140&quality=85&auto=format&fit=max&s=6688f343729d09a835c6d016603a575d",
-      "published_at": "2026-10-14T10:00:00+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "‘Like being in a vortex’: US report details extent of ‘devastating’ dating-app scams",
-          "summary": "Congress calls for Match Group and others to do more to help victims like Mary, who lost $100,000 to app scammer Mary met a man on the dating app Plenty of Fish in 2024. She told the Guardian she had been looking for a connection, but instead became the victim of a romance scam that cost her almost $100,000. “There was a lot of…"
-        }
-      }
-    },
-    {
       "id": "4dc7eb59188e5d57ef",
       "title": "Ông Phạm Nhật Minh Hoàng: Green SM sẽ bổ sung phúc lợi cho tài xế",
       "summary": "Tân CEO GSM Phạm Nhật Minh Hoàng cho biết đang bổ sung gói khám sức khỏe, tư vấn hồ sơ nhà ở xã hội, mở rộng quyền lợi y tế cho người thân tài xế.",
@@ -1438,42 +1582,6 @@
         "vi": {
           "title": "Ông Phạm Nhật Minh Hoàng: Green SM sẽ bổ sung phúc lợi cho tài xế",
           "summary": "Tân CEO GSM Phạm Nhật Minh Hoàng cho biết đang bổ sung gói khám sức khỏe, tư vấn hồ sơ nhà ở xã hội, mở rộng quyền lợi y tế cho người thân tài xế."
-        }
-      }
-    },
-    {
-      "id": "fcd01b7e9f9a501ef8",
-      "title": "Watch: Block of flats destroyed in Russian strikes on Ukraine",
-      "summary": "BBC Ukraine Correspondent Dan Johnson is in Kyiv, where at least three people were killed in overnight strikes.",
-      "source": "BBC News",
-      "category": "world",
-      "url": "https://www.bbc.co.uk/news/videos/cmx280x092x7o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/20a4/live/9e0a4240-c7b0-11f1-a64c-550be9e3c66b.jpg",
-      "published_at": "2026-10-14T09:25:03+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Watch: Block of flats destroyed in Russian strikes on Ukraine",
-          "summary": "BBC Ukraine Correspondent Dan Johnson is in Kyiv, where at least three people were killed in overnight strikes."
-        }
-      }
-    },
-    {
-      "id": "3f2963d28eaa8fc788",
-      "title": "Bank of England and IMF bosses warn of cyber threat to trust in financial system",
-      "summary": "Kristalina Georgieva says online fraud could lead people to opt out of system and turn to ‘shoeboxes under their bed’ The heads of the Bank of England and the International Monetary Fund have issued a stark warning that rising cyber-attacks risk undermining trust in the financial system. Speaking on a panel about online fraud at…",
-      "source": "The Guardian",
-      "category": "technology",
-      "url": "https://www.theguardian.com/business/2026/oct/14/bank-of-england-imf-bosses-warning-cyber-threat-to-trust",
-      "image": "https://i.guim.co.uk/img/media/a69c2863a51dad63d1de1240ba6c2c08ccfcf13a/293_0_4158_3326/master/4158.jpg?width=140&quality=85&auto=format&fit=max&s=0fbcf64df434b52bf196b6539009dc3d",
-      "published_at": "2026-10-14T09:07:59+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Bank of England and IMF bosses warn of cyber threat to trust in financial system",
-          "summary": "Kristalina Georgieva says online fraud could lead people to opt out of system and turn to ‘shoeboxes under their bed’ The heads of the Bank of England and the International Monetary Fund have issued a stark warning that rising cyber-attacks risk undermining trust in the financial system. Speaking on a panel about online fraud at…"
         }
       }
     },
@@ -1770,7 +1878,7 @@
       "title": "Công ty tài sản số liên quan con trai ông Nguyễn Đức Thụy tăng vốn lên 10.000 tỷ đồng",
       "summary": "SCEX, công ty tài sản số do con trai ông Nguyễn Đức Thụy giữ chức Phó chủ tịch, hoàn tất tăng vốn từ 5.000 tỷ đồng lên 10.000 tỷ đồng - mức vốn tối thiểu để lập sàn giao dịch.",
       "source": "VnExpress",
-      "category": "vietnam",
+      "category": "economy",
       "url": "https://vnexpress.net/cong-ty-tai-san-so-lien-quan-con-trai-ong-nguyen-duc-thuy-tang-von-len-10-000-ty-dong-5132208.html",
       "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/10/14/a-1791954099-1795-1791954106.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=zhQQyH4OsLA8EAzqF5cLmw",
       "published_at": "2026-10-14T07:34:37+00:00",
@@ -1906,114 +2014,6 @@
         "vi": {
           "title": "Đây là thành ngữ quen thuộc nào?",
           "summary": "Hình ảnh bia mộ, chú mèo và con gà giữa cánh đồng khiến cư dân mạng xoắn não suy đoán, bạn có đoán ra câu thành ngữ quen thuộc này?"
-        }
-      }
-    },
-    {
-      "id": "d665eecdb86e7933ad",
-      "title": "Video recording device found in cabin of HMAS Leeuwin navy ship in Cairns",
-      "summary": "Defence announcement comes after Jacqui Lambie tells parliament a camera had been found concealed in a women’s shower on board Get our breaking news email , free app or daily news podcast A “video recording device” was found in the cabin of a Royal Australian Navy ship in Cairns, the defence department has revealed, just hours a…",
-      "source": "The Guardian",
-      "category": "politics",
-      "url": "https://www.theguardian.com/australia-news/2026/oct/14/video-recording-device-found-in-cabin-of-hmas-leeuwin-navy-ship-in-cairns",
-      "image": "https://i.guim.co.uk/img/media/98d448ae505f5429bb15574a19d2212a28b995b8/369_0_2444_1955/master/2444.jpg?width=140&quality=85&auto=format&fit=max&s=e17c484cc2367d0f881f1e2bfd628166",
-      "published_at": "2026-10-14T07:19:06+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Video recording device found in cabin of HMAS Leeuwin navy ship in Cairns",
-          "summary": "Defence announcement comes after Jacqui Lambie tells parliament a camera had been found concealed in a women’s shower on board Get our breaking news email , free app or daily news podcast A “video recording device” was found in the cabin of a Royal Australian Navy ship in Cairns, the defence department has revealed, just hours a…"
-        }
-      }
-    },
-    {
-      "id": "9b0c771212c8427277",
-      "title": "Hundreds of Royal Mail staff quitting each week under new efficiency plans",
-      "summary": "The CWU says more posties are leaving since a new delivery system was brought in that it claims is not working in hundreds of offices.",
-      "source": "BBC News",
-      "category": "economy",
-      "url": "https://www.bbc.co.uk/news/articles/cm5ynp0vz3p7o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a4d4/live/9551bda0-c796-11f1-9a39-31b474234113.jpg",
-      "published_at": "2026-10-14T07:18:08+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Hundreds of Royal Mail staff quitting each week under new efficiency plans",
-          "summary": "The CWU says more posties are leaving since a new delivery system was brought in that it claims is not working in hundreds of offices."
-        }
-      }
-    },
-    {
-      "id": "15d4ebabb4a3747688",
-      "title": "6 dấu hiệu ung thư ruột nhiều người tưởng 'rối loạn tiêu hóa'",
-      "summary": "Ung thư ruột đang gia tăng ở người trẻ, cần đi khám ngay nếu mệt mỏi, rối loạn tiêu hóa, sút cân hay phân bất thường kéo dài trên ba tuần.",
-      "source": "VnExpress",
-      "category": "vietnam",
-      "url": "https://vnexpress.net/6-dau-hieu-ung-thu-ruot-nhieu-nguoi-tuong-roi-loan-tieu-hoa-5131639.html",
-      "image": "https://vcdn1-suckhoe.vnecdn.net/2026/10/13/screenshot-at-1791864198-2919-1791864216.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=eRRaxgtl-eC2mV-YCyGAbw",
-      "published_at": "2026-10-14T07:17:13+00:00",
-      "kind": "source_brief",
-      "source_lang": "vi",
-      "translations": {
-        "vi": {
-          "title": "6 dấu hiệu ung thư ruột nhiều người tưởng 'rối loạn tiêu hóa'",
-          "summary": "Ung thư ruột đang gia tăng ở người trẻ, cần đi khám ngay nếu mệt mỏi, rối loạn tiêu hóa, sút cân hay phân bất thường kéo dài trên ba tuần."
-        }
-      }
-    },
-    {
-      "id": "da45adf60e5d884fcd",
-      "title": "Tôi bị con trai bỏ rơi sau nhiều năm cực khổ nuôi con khôn lớn",
-      "summary": "Đến nay cháu ra ở trọ cả tháng nhưng tôi vẫn không biết cháu đang ở đâu, thỉnh thoảng cháu chỉ gọi cho bà chứ không gọi cho tôi.",
-      "source": "VnExpress",
-      "category": "vietnam",
-      "url": "https://vnexpress.net/toi-bi-con-trai-bo-roi-sau-nhieu-nam-cuc-kho-nuoi-con-khon-lon-5132029.html",
-      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/10/14/GeminiGeneratedImagezi03z9zi03-4052-3927-1791959710.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=7eDBUzzC7wMI_ph1ydYv0A",
-      "published_at": "2026-10-14T07:17:08+00:00",
-      "kind": "source_brief",
-      "source_lang": "vi",
-      "translations": {
-        "vi": {
-          "title": "Tôi bị con trai bỏ rơi sau nhiều năm cực khổ nuôi con khôn lớn",
-          "summary": "Đến nay cháu ra ở trọ cả tháng nhưng tôi vẫn không biết cháu đang ở đâu, thỉnh thoảng cháu chỉ gọi cho bà chứ không gọi cho tôi."
-        }
-      }
-    },
-    {
-      "id": "d64f0993f7e4809a37",
-      "title": "'Người chuột chũi' tiếp tục chui xuống miệng cống New York",
-      "summary": "Cảnh sát New York đang truy tìm ba \"người chuột chũi\" chui xuống cống ngầm nhằm làm rõ động cơ của họ, sau các sự việc tương tự gây lo ngại về an ninh.",
-      "source": "VnExpress",
-      "category": "vietnam",
-      "url": "https://vnexpress.net/nguoi-chuot-chui-tiep-tuc-chui-xuong-mieng-cong-new-york-5132183.html",
-      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/10/14/40mofficers30thprecinct1446503-7750-3131-1791954365.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=oGJX0K_ZyoN0p00TSmDgxg",
-      "published_at": "2026-10-14T07:10:00+00:00",
-      "kind": "source_brief",
-      "source_lang": "vi",
-      "translations": {
-        "vi": {
-          "title": "'Người chuột chũi' tiếp tục chui xuống miệng cống New York",
-          "summary": "Cảnh sát New York đang truy tìm ba \"người chuột chũi\" chui xuống cống ngầm nhằm làm rõ động cơ của họ, sau các sự việc tương tự gây lo ngại về an ninh."
-        }
-      }
-    },
-    {
-      "id": "c08f99083fe2ccf8df",
-      "title": "Bệnh viện Từ Dũ được cấp phép thông tim can thiệp bào thai",
-      "summary": "Bộ Y tế vừa cấp phép cho Bệnh viện Từ Dũ thực hiện thông tim can thiệp bào thai, mở rộng cơ hội chữa trị các dị tật tim bẩm sinh nặng cho thai nhi ngay trong bụng mẹ.",
-      "source": "VnExpress",
-      "category": "vietnam",
-      "url": "https://vnexpress.net/benh-vien-tu-du-duoc-cap-phep-thong-tim-can-thiep-bao-thai-5132173.html",
-      "image": "https://vcdn1-suckhoe.vnecdn.net/2026/10/14/ba-c-si-can-thie-p-tim-thai-17-9408-2041-1791952228.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=OuVwOhSiEn5RQWsJ6r82Vw",
-      "published_at": "2026-10-14T07:03:13+00:00",
-      "kind": "source_brief",
-      "source_lang": "vi",
-      "translations": {
-        "vi": {
-          "title": "Bệnh viện Từ Dũ được cấp phép thông tim can thiệp bào thai",
-          "summary": "Bộ Y tế vừa cấp phép cho Bệnh viện Từ Dũ thực hiện thông tim can thiệp bào thai, mở rộng cơ hội chữa trị các dị tật tim bẩm sinh nặng cho thai nhi ngay trong bụng mẹ."
         }
       }
     }
@@ -2159,137 +2159,137 @@
     ],
     "world": [
       {
-        "id": "qKJgbSLY6x4",
-        "title": "Aramco HQ Hit as Houthi Missiles Strike Saudi Arabia",
-        "channel": "Bloomberg Quicktake",
-        "category": "world",
-        "published_at": "2026-10-14T18:00:10+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/qKJgbSLY6x4/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
-        "source_lang": "en",
-        "translations": {
-          "en": {
-            "title": "Aramco HQ Hit as Houthi Missiles Strike Saudi Arabia",
-            "summary": ""
-          }
-        }
-      },
-      {
-        "id": "mn94TGnq4qM",
-        "title": "Russell Brand was a 'sexual predator', prosecutors allege. #BBCNews",
+        "id": "kymNLc1ZCtM",
+        "title": "President Trump has ousted Kimberly Guilfoyle as US ambassador to Greece - but who is she? #BBCNews",
         "channel": "BBC News",
         "category": "world",
-        "published_at": "2026-10-14T17:45:17+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/mn94TGnq4qM/hqdefault.jpg",
+        "published_at": "2026-10-14T22:00:24+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/kymNLc1ZCtM/hqdefault.jpg",
         "popularity": null,
         "provenance": "official_channel",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Russell Brand was a 'sexual predator', prosecutors allege. #BBCNews",
+            "title": "President Trump has ousted Kimberly Guilfoyle as US ambassador to Greece - but who is she? #BBCNews",
             "summary": ""
           }
         }
       },
       {
-        "id": "uo819k4cjhs",
-        "title": "No warning before Kyiv hit by Russian missiles and other stories | Global News Podcast",
+        "id": "G8KzjAkrWMc",
+        "title": "Kelly Clarkson in feud with New York City store. #BBCNews",
         "channel": "BBC News",
         "category": "world",
-        "published_at": "2026-10-14T17:15:23+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/uo819k4cjhs/hqdefault.jpg",
+        "published_at": "2026-10-14T21:35:26+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/G8KzjAkrWMc/hqdefault.jpg",
         "popularity": null,
         "provenance": "official_channel",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "No warning before Kyiv hit by Russian missiles and other stories | Global News Podcast",
+            "title": "Kelly Clarkson in feud with New York City store. #BBCNews",
             "summary": ""
           }
         }
       },
       {
-        "id": "TzKJP3-fbiQ",
-        "title": "OpenAI Staffer Arrested for Hiding Recording Device in Office",
-        "channel": "Bloomberg Quicktake",
-        "category": "world",
-        "published_at": "2026-10-14T17:00:24+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/TzKJP3-fbiQ/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
-        "source_lang": "en",
-        "translations": {
-          "en": {
-            "title": "OpenAI Staffer Arrested for Hiding Recording Device in Office",
-            "summary": ""
-          }
-        }
-      },
-      {
-        "id": "JA_iZjKVYUk",
-        "title": "Behind-the-scenes look at Ghosts: The Possession of Button House | BBC News",
+        "id": "huxEUQ-HoqI",
+        "title": "Did An OpenAI Employee Bug Their Boardroom? | BBC Newscast",
         "channel": "BBC News",
         "category": "world",
-        "published_at": "2026-10-14T16:30:06+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/JA_iZjKVYUk/hqdefault.jpg",
+        "published_at": "2026-10-14T21:30:03+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/huxEUQ-HoqI/hqdefault.jpg",
         "popularity": null,
         "provenance": "official_channel",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Behind-the-scenes look at Ghosts: The Possession of Button House | BBC News",
+            "title": "Did An OpenAI Employee Bug Their Boardroom? | BBC Newscast",
             "summary": ""
           }
         }
       },
       {
-        "id": "vpJFRbijkrI",
-        "title": "Guilfoyle Out as US Ambassador to Greece Amid Conduct Probe",
-        "channel": "Bloomberg Quicktake",
-        "category": "world",
-        "published_at": "2026-10-14T16:00:00+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/vpJFRbijkrI/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
-        "source_lang": "en",
-        "translations": {
-          "en": {
-            "title": "Guilfoyle Out as US Ambassador to Greece Amid Conduct Probe",
-            "summary": ""
-          }
-        }
-      },
-      {
-        "id": "hroCXsjkZrQ",
-        "title": "Inside a Belgian factory making cigarettes. #BBCNews",
+        "id": "rl3bO_uiLfc",
+        "title": "Could India's gen Z bring down Narendra Modi? #BBCNews",
         "channel": "BBC News",
         "category": "world",
-        "published_at": "2026-10-14T15:46:48+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/hroCXsjkZrQ/hqdefault.jpg",
+        "published_at": "2026-10-14T21:00:28+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/rl3bO_uiLfc/hqdefault.jpg",
         "popularity": null,
         "provenance": "official_channel",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Inside a Belgian factory making cigarettes. #BBCNews",
+            "title": "Could India's gen Z bring down Narendra Modi? #BBCNews",
             "summary": ""
           }
         }
       },
       {
-        "id": "azOa70-rwmk",
-        "title": "Russell Brand was a 'sexual predator', prosecution alleges as rape trial begins | BBC News",
+        "id": "0amQPCRWhXc",
+        "title": "Inside the Nord Stream trial: How pipeline blast evidence leads back to Ukraine | BBC News",
         "channel": "BBC News",
         "category": "world",
-        "published_at": "2026-10-14T15:35:16+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/azOa70-rwmk/hqdefault.jpg",
+        "published_at": "2026-10-14T20:45:04+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/0amQPCRWhXc/hqdefault.jpg",
         "popularity": null,
         "provenance": "official_channel",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Russell Brand was a 'sexual predator', prosecution alleges as rape trial begins | BBC News",
+            "title": "Inside the Nord Stream trial: How pipeline blast evidence leads back to Ukraine | BBC News",
+            "summary": ""
+          }
+        }
+      },
+      {
+        "id": "uzYEdy5S3hU",
+        "title": "Ukraine was just hit. Did the US know it was coming? | BBC News",
+        "channel": "BBC News",
+        "category": "world",
+        "published_at": "2026-10-14T20:05:01+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/uzYEdy5S3hU/hqdefault.jpg",
+        "popularity": null,
+        "provenance": "official_channel",
+        "source_lang": "en",
+        "translations": {
+          "en": {
+            "title": "Ukraine was just hit. Did the US know it was coming? | BBC News",
+            "summary": ""
+          }
+        }
+      },
+      {
+        "id": "5Fn4NSWzBiU",
+        "title": "Man 'faked illness with make-up' to juggle five jobs worth £350k. #BBCNews",
+        "channel": "BBC News",
+        "category": "world",
+        "published_at": "2026-10-14T20:00:05+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/5Fn4NSWzBiU/hqdefault.jpg",
+        "popularity": null,
+        "provenance": "official_channel",
+        "source_lang": "en",
+        "translations": {
+          "en": {
+            "title": "Man 'faked illness with make-up' to juggle five jobs worth £350k. #BBCNews",
+            "summary": ""
+          }
+        }
+      },
+      {
+        "id": "B2QtJKMlYTo",
+        "title": "How Gen Z are fighting to change India | BBC News",
+        "channel": "BBC News",
+        "category": "world",
+        "published_at": "2026-10-14T19:30:30+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/B2QtJKMlYTo/hqdefault.jpg",
+        "popularity": null,
+        "provenance": "official_channel",
+        "source_lang": "en",
+        "translations": {
+          "en": {
+            "title": "How Gen Z are fighting to change India | BBC News",
             "summary": ""
           }
         }
@@ -2297,143 +2297,160 @@
     ],
     "economy": [
       {
-        "id": "sC0tGppM_MM",
-        "title": "Open Interest 10/14/2026",
+        "id": "Y4lMuvapTik",
+        "title": "Stocks Slide as Hot Inflation & AI Credit Fears Hit Markets",
         "channel": "Bloomberg Television",
         "category": "economy",
-        "published_at": "2026-10-14T16:45:13+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/sC0tGppM_MM/hqdefault.jpg",
+        "published_at": "2026-10-14T22:11:35+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/Y4lMuvapTik/hqdefault.jpg",
         "popularity": null,
         "provenance": "official_channel",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Open Interest 10/14/2026",
+            "title": "Stocks Slide as Hot Inflation & AI Credit Fears Hit Markets",
             "summary": ""
           }
         }
       },
       {
-        "id": "9bCiqNAyJT8",
-        "title": "Bloomberg Surveillance 10/14/2026",
+        "id": "coEl3Sxi41k",
+        "title": "Apple to Release AI Platform in Mainland China",
         "channel": "Bloomberg Television",
         "category": "economy",
-        "published_at": "2026-10-14T16:02:33+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/9bCiqNAyJT8/hqdefault.jpg",
+        "published_at": "2026-10-14T20:52:06+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/coEl3Sxi41k/hqdefault.jpg",
         "popularity": null,
         "provenance": "official_channel",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Bloomberg Surveillance 10/14/2026",
+            "title": "Apple to Release AI Platform in Mainland China",
             "summary": ""
           }
         }
       },
       {
-        "id": "8ZUtxyI5UiA",
-        "title": "Why South Texas Could Hold The Key To The House",
-        "channel": "CNBC Television",
+        "id": "R_pW9EQOXyM",
+        "title": "US Prices Rise Most Since April",
+        "channel": "Bloomberg Television",
         "category": "economy",
-        "published_at": "2026-10-14T14:00:16+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/8ZUtxyI5UiA/hqdefault.jpg",
+        "published_at": "2026-10-14T20:24:19+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/R_pW9EQOXyM/hqdefault.jpg",
         "popularity": null,
         "provenance": "official_channel",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Why South Texas Could Hold The Key To The House",
+            "title": "US Prices Rise Most Since April",
             "summary": ""
           }
         }
       },
       {
-        "id": "U8KehDduxlI",
-        "title": "Bank of America Results Hit by Weaker Trading, $1.2 Billion Penalty",
+        "id": "PZoa93Cyuio",
+        "title": "Bank of America Slides on $1.21 Billion Fine as Chip Stocks Tumble | Closing Bell",
         "channel": "Bloomberg Television",
         "category": "economy",
-        "published_at": "2026-10-14T13:37:43+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/U8KehDduxlI/hqdefault.jpg",
+        "published_at": "2026-10-14T20:17:51+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/PZoa93Cyuio/hqdefault.jpg",
         "popularity": null,
         "provenance": "official_channel",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Bank of America Results Hit by Weaker Trading, $1.2 Billion Penalty",
+            "title": "Bank of America Slides on $1.21 Billion Fine as Chip Stocks Tumble | Closing Bell",
             "summary": ""
           }
         }
       },
       {
-        "id": "L4sXrnxUbyg",
-        "title": "Morgan Stanley Profit Climbs on Equity Trading, Wealth Management",
+        "id": "FLtdtTMi46U",
+        "title": "Oak Hill, Fortress at CAIS, Bumble Goes Private, Media Moves",
         "channel": "Bloomberg Television",
         "category": "economy",
-        "published_at": "2026-10-14T13:37:24+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/L4sXrnxUbyg/hqdefault.jpg",
+        "published_at": "2026-10-14T19:47:29+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/FLtdtTMi46U/hqdefault.jpg",
         "popularity": null,
         "provenance": "official_channel",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Morgan Stanley Profit Climbs on Equity Trading, Wealth Management",
+            "title": "Oak Hill, Fortress at CAIS, Bumble Goes Private, Media Moves",
             "summary": ""
           }
         }
       },
       {
-        "id": "mkkhtp-AqJ4",
-        "title": "US Consumer Prices Rise at Fastest Pace in Five Months",
+        "id": "1yaFmxoCMdA",
+        "title": "Republicans Need to Unite in Texas, Latcham Says",
         "channel": "Bloomberg Television",
         "category": "economy",
-        "published_at": "2026-10-14T13:01:28+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/mkkhtp-AqJ4/hqdefault.jpg",
+        "published_at": "2026-10-14T19:26:21+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/1yaFmxoCMdA/hqdefault.jpg",
         "popularity": null,
         "provenance": "official_channel",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "US Consumer Prices Rise at Fastest Pace in Five Months",
+            "title": "Republicans Need to Unite in Texas, Latcham Says",
             "summary": ""
           }
         }
       },
       {
-        "id": "zMJsFXyobns",
-        "title": "Aramco Headquarters Hit as Houthis Widen Saudi Arabia Attacks",
+        "id": "17d8iSjJK48",
+        "title": "Texas Has Always Been Vexing for Democrats, Poersch Says",
         "channel": "Bloomberg Television",
         "category": "economy",
-        "published_at": "2026-10-14T12:35:08+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/zMJsFXyobns/hqdefault.jpg",
+        "published_at": "2026-10-14T19:24:24+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/17d8iSjJK48/hqdefault.jpg",
         "popularity": null,
         "provenance": "official_channel",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Aramco Headquarters Hit as Houthis Widen Saudi Arabia Attacks",
+            "title": "Texas Has Always Been Vexing for Democrats, Poersch Says",
             "summary": ""
           }
         }
       },
       {
-        "id": "WAAr-n0xFcc",
-        "title": "Stocks Waver Ahead of CPI, Bank Earnings; Aramco Hit By Houthis",
+        "id": "6kYP2XIAHDE",
+        "title": "BofA Takes US Regulatory Fines Seriously, CEO Moynihan Says",
         "channel": "Bloomberg Television",
         "category": "economy",
-        "published_at": "2026-10-14T11:26:12+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/WAAr-n0xFcc/hqdefault.jpg",
+        "published_at": "2026-10-14T18:45:41+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/6kYP2XIAHDE/hqdefault.jpg",
         "popularity": null,
         "provenance": "official_channel",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Stocks Waver Ahead of CPI, Bank Earnings; Aramco Hit By Houthis",
+            "title": "BofA Takes US Regulatory Fines Seriously, CEO Moynihan Says",
             "summary": ""
           }
         }
       }
     ],
     "technology": [
+      {
+        "id": "oLBr_nYkfCc",
+        "title": "Apple's HomeView ad is confusing #Vergecast",
+        "channel": "The Verge",
+        "category": "technology",
+        "published_at": "2026-10-14T19:38:33+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/oLBr_nYkfCc/hqdefault.jpg",
+        "popularity": null,
+        "provenance": "official_channel",
+        "source_lang": "en",
+        "translations": {
+          "en": {
+            "title": "Apple's HomeView ad is confusing #Vergecast",
+            "summary": ""
+          }
+        }
+      },
       {
         "id": "OzCSF16I_fQ",
         "title": "The $8 million AI music scam | The Vergecast",
@@ -2549,23 +2566,6 @@
         "translations": {
           "en": {
             "title": "Would you drive the Telo MT1?",
-            "summary": ""
-          }
-        }
-      },
-      {
-        "id": "IpZOMrY-G58",
-        "title": "Is Netflix in trouble?",
-        "channel": "The Verge",
-        "category": "technology",
-        "published_at": "2026-10-10T14:00:39+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/IpZOMrY-G58/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
-        "source_lang": "en",
-        "translations": {
-          "en": {
-            "title": "Is Netflix in trouble?",
             "summary": ""
           }
         }
