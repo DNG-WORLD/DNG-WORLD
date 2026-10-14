@@ -1,0 +1,87 @@
+{
+  "source_files": 757,
+  "source_bytes": 68055451,
+  "public_files": 223,
+  "public_bytes": 32209131,
+  "base_v24_mesh": {
+    "original_mesh_sha256": "76a0b5778a3fb004e129ed8aa61996a0680eac0279e3e81d15f33e43785ebf55",
+    "current_mesh_sha256": "76a0b5778a3fb004e129ed8aa61996a0680eac0279e3e81d15f33e43785ebf55",
+    "byte_identical": true
+  },
+  "ids_kept": {
+    "ambientFx": true,
+    "farField": true,
+    "quantumCanvas": true,
+    "heroFx": true,
+    "art": true,
+    "artCanvas": true,
+    "quantumForeground": true,
+    "cameraMode": true,
+    "tiltMode": true,
+    "motionPause": true
+  },
+  "pages": {
+    "index.html": {
+      "bytes": 2603728,
+      "title": "DNGWORLD® | Business Growth Intelligence — Strategy × Marketing × Media × Data × AI",
+      "brand_old_count": 0,
+      "links_checked": 12,
+      "missing_internal_links": 0
+    },
+    "services/index.html": {
+      "bytes": 19668,
+      "title": "Giải Pháp Tăng Trưởng Doanh Nghiệp | DNGWORLD",
+      "brand_old_count": 0,
+      "links_checked": 38,
+      "missing_internal_links": 0
+    },
+    "tools/index.html": {
+      "bytes": 12339,
+      "title": "DNG Lab | Tiện Ích Đo Lường & Chẩn Đoán Tăng Trưởng – DNGWORLD",
+      "brand_old_count": 0,
+      "links_checked": 34,
+      "missing_internal_links": 0
+    },
+    "insights/index.html": {
+      "bytes": 35374,
+      "title": "DNG Intelligence | Newsroom & Phân Tích Tăng Trưởng Thương Mại",
+      "brand_old_count": 0,
+      "links_checked": 31,
+      "missing_internal_links": 0
+    },
+    "about/index.html": {
+      "bytes": 11761,
+      "title": "Về DNGWORLD | Business Growth Intelligence Platform",
+      "brand_old_count": 0,
+      "links_checked": 30,
+      "missing_internal_links": 0
+    },
+    "contact/index.html": {
+      "bytes": 12559,
+      "title": "Liên Hệ Tư Vấn Chiến Lược | DNGWORLD",
+      "brand_old_count": 0,
+      "links_checked": 30,
+      "missing_internal_links": 0
+    },
+    "en/index.html": {
+      "bytes": 24199,
+      "title": "DNGWORLD | Business Growth Intelligence Platform – Dung Nguyen",
+      "brand_old_count": 0,
+      "links_checked": 50,
+      "missing_internal_links": 0
+    },
+    "zh/index.html": {
+      "bytes": 696538,
+      "title": "DNGWORLD | AI 营销、增长与自动化 – Dũng Nguyễn",
+      "brand_old_count": 0,
+      "links_checked": 18,
+      "missing_internal_links": 0
+    }
+  },
+  "missing_links": {},
+  "homepage_inline_js_syntax_errors": [],
+  "json_parse_errors": [],
+  "webgl_browser_test": "UNVERIFIED: Chromium blocked local HTML and localhost with ERR_BLOCKED_BY_ADMINISTRATOR",
+  "contact_delivery": "NO REMOTE SUBMIT: homepage brief copy; /contact/ mail draft",
+  "readiness": "Source integrated + static QA; requires manual GPU, responsive and live deployment QA."
+}

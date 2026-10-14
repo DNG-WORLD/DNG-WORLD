@@ -1,0 +1,16 @@
+[
+  {
+    "screen": "desktop",
+    "url": "http://127.0.0.1:9876",
+    "errors": [],
+    "failed": [],
+    "runner_error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:9876/\nCall log:\n  - navigating to \"http://127.0.0.1:9876/\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "screen": "mobile",
+    "url": "http://127.0.0.1:9876",
+    "errors": [],
+    "failed": [],
+    "runner_error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:9876/\nCall log:\n  - navigating to \"http://127.0.0.1:9876/\", waiting until \"domcontentloaded\"\n"
+  }
+]

@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FFFFFF">
+  <title>DNG Intelligence | Newsroom & Phân Tích Tăng Trưởng Thương Mại</title>
+  <meta name="description" content="Ấn phẩm tin tức kinh doanh, góc nhìn phân tích thị trường độc lập và khung chiến lược vận hành thương mại thực chiến từ DNGWORLD.">
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/assets/css/dng-system.css">
+  <style>
+    .news-tag {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-soft);
+      color: var(--muted);
+      border: 1px solid var(--border);
+    }
+    .news-tag.analysis {
+      background: var(--primary-soft);
+      color: var(--primary);
+      border-color: rgba(35, 87, 232, 0.25);
+    }
+    .news-tag.ai {
+      background: var(--mint-soft);
+      color: var(--mint-ink);
+      border-color: rgba(51, 201, 167, 0.3);
+    }
+    .filter-tab {
+      padding: 7px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      white-space: nowrap;
+    }
+    .filter-tab:hover, .filter-tab.active {
+      background: var(--primary);
+      color: #FFFFFF;
+      border-color: var(--primary);
+    }
+    .bookmark-btn {
+      background: none;
+      border: none;
+      color: var(--dim);
+      font-size: 13px;
+      cursor: pointer;
+      padding: 4px;
+      transition: color var(--transition-fast);
+    }
+    .bookmark-btn:hover, .bookmark-btn.saved {
+      color: #925805;
+      font-weight: 700;
+    }
+    /* Reader Modal */
+    .article-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(21, 37, 62, 0.6);
+      backdrop-filter: blur(8px);
+      z-index: 200;
+      padding: 20px;
+      overflow-y: auto;
+      align-items: center;
+      justify-content: center;
+    }
+    .article-modal.open {
+      display: flex;
+    }
+    .article-dialog {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      max-width: 820px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: clamp(24px, 5vw, 44px);
+      box-shadow: 0 20px 50px rgba(21, 37, 62, 0.2);
+      border: 1px solid var(--border);
+      position: relative;
+    }
+    .modal-close-btn {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 16px;
+      color: var(--ink);
+    }
+    .takeaways-box {
+      background: var(--bg-soft);
+      border-left: 4px solid var(--primary);
+      border-radius: var(--radius-sm);
+      padding: 14px 18px;
+      margin: 20px 0;
+    }
+  </style>
+<link rel="stylesheet" href="/assets/css/dngworld-v24-bridge.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="brand-logo">
+        <span class="brand-name">DNGWORLD</span>
+        <span class="brand-tag">INTELLIGENCE</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="/services/">Giải pháp</a>
+        <a href="/tools/">Công cụ</a>
+        <a href="/insights/" class="active">Tin tức & Phân tích</a>
+        <a href="/about/">Về DNGWORLD</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="/contact/" class="btn btn-sm">Liên hệ tư vấn</a>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Mở menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <nav class="mobile-nav-list">
+      <a href="/services/">Giải pháp</a>
+      <a href="/tools/">Công cụ</a>
+      <a href="/insights/" style="color: var(--primary);">Tin tức & Phân tích</a>
+      <a href="/about/">Về DNGWORLD</a>
+      <a href="/contact/" style="color: var(--primary);">Liên hệ tư vấn →</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- NEWSROOM MASTHEAD -->
+    <section class="section" style="padding-top: 50px; padding-bottom: 24px; border-bottom: 1px solid var(--border); background: var(--bg-soft);">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px; margin-bottom: 24px;">
+          <div>
+            <div class="eyebrow" style="margin-bottom: 8px;">ẤN PHẨM CHIẾN LƯỢC · DNG INTELLIGENCE NEWSROOM</div>
+            <h1 style="font-size: clamp(32px, 4vw, 48px); margin-bottom: 8px;">Tin tức & Góc nhìn Tăng trưởng</h1>
+            <p style="font-size: 15px; color: var(--muted); margin: 0; max-width: 680px;">
+              Dữ liệu thật. Phân tích độc lập. Khung chiến lược vận hành thương mại có thể hành động ngay cho doanh nghiệp.
+            </p>
+          </div>
+          <div style="min-width: 260px; max-width: 340px; width: 100%;">
+            <input type="text" id="newsSearch" class="form-input" placeholder="Tìm kiếm tin tức, phân tích, từ khóa..." style="padding: 10px 14px; font-size: 13px;">
+          </div>
+        </div>
+
+        <!-- TAXONOMY TABS -->
+        <div style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px;">
+          <button type="button" class="filter-tab active" data-cat="all">Tất cả bài & tin</button>
+          <button type="button" class="filter-tab" data-cat="analysis">Phân tích DNG (9 bài)</button>
+          <button type="button" class="filter-tab" data-cat="ai">AI & Công nghệ</button>
+          <button type="button" class="filter-tab" data-cat="marketing">Marketing & Quảng cáo</button>
+          <button type="button" class="filter-tab" data-cat="business">Kinh doanh & Thị trường</button>
+          <button type="button" class="filter-tab" data-cat="saved">Đã lưu (<span id="savedCount">0</span>)</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSROOM CONTENT SECTION -->
+    <section class="section" style="padding-top: 36px;">
+      <div class="container">
+
+        <!-- ROW 1: EDITORIAL LEAD STORY (2/3) + GÓC NHÌN CHỌN LỌC (1/3) -->
+        <div style="display: grid; grid-template-columns: 1.7fr 1fr; gap: 32px; margin-bottom: 48px;" id="featuredEditorialRow">
+
+          <!-- LEAD STORY WITH PHOTOGRAPHIC VISUAL 16:10 -->
+          <article class="dng-card featured" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+            <div style="position: relative; aspect-ratio: 16/10; width: 100%; overflow: hidden; background: #E6EBF5;">
+              <img src="/assets/images/insights/dng_news_lead.jpg" alt="Tiêu điểm phân tích tăng trưởng thương mại DNGWORLD" style="width: 100%; height: 100%; object-fit: cover;" loading="eager">
+              <div style="position: absolute; top: 16px; left: 16px;">
+                <span class="news-tag analysis" style="background: rgba(255,255,255,0.95); backdrop-filter: blur(4px);">TIÊU ĐIỂM CHIẾN LƯỢC · DNG</span>
+              </div>
+            </div>
+            <div style="padding: clamp(22px, 3.2vw, 32px); display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                  <span style="font-size: 12px; font-weight: 700; color: var(--primary);">HỆ THỐNG DOANH THU</span>
+                  <span style="font-size: 12px; color: var(--dim);">Tháng 8, 2026 · Đọc 9 phút</span>
+                </div>
+                <h2 style="font-size: clamp(22px, 2.4vw, 28px); line-height: 1.35; margin-bottom: 14px;">
+                  <a href="#article-revenue-leakage" class="open-article" data-slug="revenue-leakage-marketing-sales-crm" style="color: var(--ink);">7 điểm rò rỉ doanh thu giữa Marketing – Sales – CRM</a>
+                </h2>
+                <p style="font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 18px;">
+                  Một funnel không hỏng ở một chỗ. Doanh thu thường thất thoát qua nhiều bước nhỏ: định nghĩa lead không đồng nhất, tốc độ phản hồi chậm, bàn giao mơ hồ, chuỗi follow-up lỏng lẻo và đo lường thiếu vòng lặp phản hồi.
+                </p>
+                <div class="takeaways-box" style="margin: 0 0 20px 0;">
+                  <div style="font-size: 12px; font-weight: 700; color: var(--ink); margin-bottom: 6px;">3 ĐIỂM RÚT RA CỐT LÕI (KEY TAKEAWAYS):</div>
+                  <ul style="margin: 0; padding-left: 18px; font-size: 13px; color: var(--body); line-height: 1.6;">
+                    <li>Định nghĩa lead đủ điều kiện trước khi chạy thêm quảng cáo.</li>
+                    <li>Mọi lead phải có owner, SLA phản hồi và bước tiếp theo.</li>
+                    <li>Dashboard phải nối được nguồn lead với trạng thái bán hàng và doanh thu.</li>
+                  </ul>
+                </div>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 16px; font-size: 13px;">
+                <span style="color: var(--muted); font-weight: 500;">Tác giả: <strong>Ban biên tập DNGWORLD</strong></span>
+                <button type="button" class="btn btn-outline btn-sm open-article" data-slug="revenue-leakage-marketing-sales-crm">Đọc toàn bộ phân tích →</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- SIDEBAR: GÓC NHÌN CHỌN LỌC (1/3) -->
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink); border-bottom: 2px solid var(--primary); padding-bottom: 8px;">
+              Góc nhìn chọn lọc nổi bật
+            </div>
+
+            <!-- SIDEBAR ITEM 1 -->
+            <article class="dng-card" style="padding: 22px;">
+              <span class="news-tag ai" style="margin-bottom: 10px;">AI & DATA INSIGHTS</span>
+              <h3 style="font-size: 16px; line-height: 1.4; margin-bottom: 8px;">
+                <a href="#article-ai-search" class="open-article" data-slug="ai-search-b2b-customer-journey">AI Search đang thay đổi hành trình mua B2B như thế nào?</a>
+              </h3>
+              <p style="font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 12px;">
+                Khách hàng không còn chỉ tìm một từ khóa rồi mở mười tab. Họ đặt câu hỏi dài, yêu cầu so sánh và mong nhận câu trả lời đã được tổng hợp.
+              </p>
+              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--dim); border-top: 1px solid var(--border); padding-top: 10px;">
+                <span>Đọc 8 phút · DNG Analysis</span>
+                <a href="#article-ai-search" class="open-article" data-slug="ai-search-b2b-customer-journey" style="color: var(--primary); font-weight: 600;">Xem chi tiết →</a>
+              </div>
+            </article>
+
+            <!-- SIDEBAR ITEM 2 -->
+            <article class="dng-card" style="padding: 22px;">
+              <span class="news-tag" style="margin-bottom: 10px;">HẠ TẦNG DỮ LIỆU</span>
+              <h3 style="font-size: 16px; line-height: 1.4; margin-bottom: 8px;">
+                <a href="#article-crm" class="open-article" data-slug="crm-vs-spreadsheet-decision">Google Sheet hay CRM: khi nào doanh nghiệp nên chuyển?</a>
+              </h3>
+              <p style="font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 12px;">
+                Sheet linh hoạt và rẻ, nhưng không thể phân quyền chi tiết, không tự động gán lead và khó dựng báo cáo pipeline theo thời gian thực.
+              </p>
+              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--dim); border-top: 1px solid var(--border); padding-top: 10px;">
+                <span>Đọc 7 phút · DNG Analysis</span>
+                <a href="#article-crm" class="open-article" data-slug="crm-vs-spreadsheet-decision" style="color: var(--primary); font-weight: 600;">Xem chi tiết →</a>
+              </div>
+            </article>
+
+            <!-- SIDEBAR ITEM 3 -->
+            <article class="dng-card" style="padding: 22px; background: var(--bg-blue);">
+              <span class="news-tag analysis" style="margin-bottom: 10px;">QUẢN TRỊ PHỄU</span>
+              <h3 style="font-size: 16px; line-height: 1.4; margin-bottom: 8px;">
+                <a href="#article-funnel" class="open-article" data-slug="funnel-audit-60-minutes">Funnel audit trong 60 phút: kiểm tra gì trước?</a>
+              </h3>
+              <p style="font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 12px;">
+                Một quy trình rà soát nhanh 60 phút để phát hiện điểm nghẽn chuyển đổi lớn nhất mà không bị sa lầy vào tiểu tiết.
+              </p>
+              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--dim); border-top: 1px solid var(--border); padding-top: 10px;">
+                <span>Đọc 8 phút · DNG Analysis</span>
+                <a href="#article-funnel" class="open-article" data-slug="funnel-audit-60-minutes" style="color: var(--primary); font-weight: 600;">Xem chi tiết →</a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+        <!-- ROW 2: KHUNG CHIẾN LƯỢC & PHÂN TÍCH CHUYÊN SÂU DNG -->
+        <div id="dngAnalysesSection" style="margin-bottom: 48px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 24px; border-bottom: 1px solid var(--border); padding-bottom: 12px;">
+            <div>
+              <div class="eyebrow">ẤN PHẨM GỐC</div>
+              <h2 style="font-size: 22px; margin: 0;">Khung phân tích chuyên môn DNGWORLD</h2>
+            </div>
+            <span style="font-size: 13px; color: var(--dim);">9 bài viết và tài liệu chiến lược đầy đủ</span>
+          </div>
+
+          <div id="analysesGrid" class="grid-3" style="gap: 20px;">
+            <!-- Populated dynamically via JS -->
+          </div>
+        </div>
+
+        <!-- ROW 3: BẢN TIN THỜI SỰ & TÍN HIỆU NGÀNH THỰC TẾ (CURATED NEWSWIRE) -->
+        <div id="newswireSection" style="margin-top: 24px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 12px;">
+            <div>
+              <div class="eyebrow">DÒNG TIN THỜI SỰ</div>
+              <h2 style="font-size: 22px; margin: 0;">Bản tin thị trường & Tín hiệu ngành</h2>
+            </div>
+            <span id="newsMetaCount" style="font-size: 12px; color: var(--dim);">Cập nhật từ các nguồn báo chí kinh tế chính thống</span>
+          </div>
+
+          <div id="newsGrid" class="grid-3" style="gap: 20px;">
+            <div style="grid-column: 1 / -1; text-align: center; padding: 40px; color: var(--muted);">
+              Đang tải dữ liệu bản tin mới nhất...
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ARTICLE DETAIL MODAL / READER -->
+  <div class="article-modal" id="articleModal">
+    <div class="article-dialog">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Đóng">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- QUICKBAR -->
+  <div class="quickbar">
+    <a href="/services/">Giải pháp</a>
+    <a href="/tools/">Công cụ</a>
+    <a href="/insights/">Tin tức</a>
+    <a href="/contact/" class="book">Liên hệ tư vấn</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="font-size: 18px; font-weight: 800; color: var(--ink);">DNGWORLD</div>
+          <p>Business Growth Intelligence Platform. Tư vấn chiến lược, tối ưu hóa tiếp thị và chuyển đổi số thương mại cho doanh nghiệp.</p>
+          <div style="margin-top: 14px; font-size: 12px; color: var(--dim);">
+            Đà Nẵng & TP. Hồ Chí Minh, Việt Nam
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>GIẢI PHÁP</h4>
+          <ul>
+            <li><a href="/services/#strategy">Chiến lược tăng trưởng</a></li>
+            <li><a href="/services/#acquisition">Performance Marketing</a></li>
+            <li><a href="/services/#cro">Tối ưu chuyển đổi (CRO)</a></li>
+            <li><a href="/services/#automation">CRM & Tự động hóa</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>CÔNG CỤ (DNG LAB)</h4>
+          <ul>
+            <li><a href="/tools/calculators/#roas">Máy tính ROAS</a></li>
+            <li><a href="/tools/calculators/#break-even">Break-even ROAS</a></li>
+            <li><a href="/tools/calculators/#cac">Chi phí thu hút CAC</a></li>
+            <li><a href="/tools/utm-qr/">Tạo mã UTM & QR</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>NỘI DUNG</h4>
+          <ul>
+            <li><a href="/insights/">Bản tin thị trường</a></li>
+            <li><a href="/insights/#playbooks">Khung chiến lược</a></li>
+            <li><a href="/about/">Về DNGWORLD</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>LIÊN HỆ</h4>
+          <ul>
+            <li><a href="/contact/">Gửi yêu cầu tư vấn</a></li>
+            <li><a href="mailto:nguyendhungdung@gmail.com">nguyendhungdung@gmail.com</a></li>
+            <li><a href="https://zalo.me/0377348008" target="_blank" rel="noopener">Zalo: 0377 348 008</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 DNGWORLD. Mọi quyền được bảo lưu.</div>
+        <div>Hiểu đúng vấn đề · Không số ảo · Tăng trưởng thực chất</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // --- STATE MANAGEMENT ---
+    let articlesDict = {};
+    let allNewsItems = [];
+    let dngArticlesList = [];
+
+    // --- BOOKMARKING SYSTEM ---
+    const getSaved = () => JSON.parse(localStorage.getItem('dng_saved_news') || '[]');
+    const updateSavedCount = () => {
+      const el = document.getElementById('savedCount');
+      if (el) el.textContent = getSaved().length;
+    };
+
+    window.toggleSave = (id) => {
+      let saved = getSaved();
+      if (saved.includes(id)) {
+        saved = saved.filter(x => x !== id);
+      } else {
+        saved.push(id);
+      }
+      localStorage.setItem('dng_saved_news', JSON.stringify(saved));
+      updateSavedCount();
+      document.querySelectorAll(`.bookmark-btn[data-id="${id}"]`).forEach(btn => {
+        btn.classList.toggle('saved', saved.includes(id));
+        btn.textContent = saved.includes(id) ? '★ Đã lưu' : '🔖 Lưu';
+      });
+    };
+
+    // --- ARTICLE MODAL VIEWER ---
+    const modal = document.getElementById('articleModal');
+    const modalContent = document.getElementById('modalContent');
+    const modalClose = document.getElementById('modalCloseBtn');
+
+    const openArticle = (slug) => {
+      const art = articlesDict[slug];
+      if (!art || !modal || !modalContent) return;
+
+      const currentIndex = dngArticlesList.findIndex(a => a.slug === slug);
+      const nextArticle = currentIndex >= 0 && currentIndex < dngArticlesList.length - 1 ? dngArticlesList[currentIndex + 1] : (dngArticlesList.length > 1 ? dngArticlesList[0] : null);
+
+      const takeawaysHtml = art.takeaways && art.takeaways.length > 0 ? `
+        <div class="takeaways-box">
+          <div style="font-size: 13px; font-weight: 700; color: var(--ink); margin-bottom: 8px;">ĐIỂM RÚT RA HÀNH ĐỘNG (ACTIONABLE TAKEAWAYS):</div>
+          <ul style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.7; color: var(--body);">
+            ${art.takeaways.map(t => `<li>${t}</li>`).join('')}
+          </ul>
+        </div>
+      ` : '';
+
+      modalContent.innerHTML = `
+        <div style="font-size: 12px; font-weight: 700; color: var(--primary); text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.06em;">
+          ${art.category || 'PHÂN TÍCH CHUYÊN MÔN'}
+        </div>
+        <h1 style="font-size: clamp(24px, 3.5vw, 34px); line-height: 1.28; margin-bottom: 14px; color: var(--ink);">
+          ${art.title}
+        </h1>
+        <div style="display: flex; gap: 16px; font-size: 13px; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 14px; margin-bottom: 20px; flex-wrap: wrap;">
+          <span>Tác giả: <strong>${art.author || 'Ban biên tập DNGWORLD'}</strong></span>
+          <span>Ngày phát hành: <strong>${art.date || 'Tháng 8, 2026'}</strong></span>
+        </div>
+        ${takeawaysHtml}
+        <div style="font-size: 15px; color: var(--text); line-height: 1.85;">
+          ${art.body || art.excerpt || ''}
+        </div>
+
+        ${nextArticle ? `
+          <div style="margin-top: 28px; background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;">
+            <div>
+              <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--primary); letter-spacing: 0.06em;">ĐỌC BÀI TIẾP THEO THEO MẠCH CHIẾN LƯỢC</div>
+              <div style="font-size: 15px; font-weight: 700; color: var(--ink); margin-top: 4px;">${nextArticle.title}</div>
+            </div>
+            <button type="button" class="btn btn-sm" onclick="window.openArticleBySlug('${nextArticle.slug}'); document.querySelector('.article-dialog').scrollTop = 0;">Đọc tiếp bài này →</button>
+          </div>
+        ` : ''}
+
+        <div style="margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <span style="font-size: 13px; color: var(--dim);">Ấn phẩm chuyên môn · DNGWORLD Intelligence</span>
+          <div style="display: flex; gap: 10px;">
+            <button type="button" class="btn btn-outline btn-sm bookmark-btn" data-id="${slug}" onclick="toggleSave('${slug}')">
+              ${getSaved().includes(slug) ? '★ Đã lưu' : '🔖 Lưu bài này'}
+            </button>
+            <button type="button" class="btn btn-sm" onclick="document.getElementById('articleModal').classList.remove('open')">Đóng bài đọc</button>
+          </div>
+        </div>
+      `;
+      modal.classList.add('open');
+    };
+
+    window.openArticleBySlug = openArticle;
+
+    modalClose?.addEventListener('click', () => modal.classList.remove('open'));
+    modal?.addEventListener('click', (e) => {
+      if (e.target === modal) modal.classList.remove('open');
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal?.classList.contains('open')) {
+        modal.classList.remove('open');
+      }
+    });
+
+    // --- RENDER DNG ANALYTICAL ARTICLES GRID ---
+    const renderAnalyses = (articles) => {
+      const grid = document.getElementById('analysesGrid');
+      if (!grid) return;
+
+      if (!articles || articles.length === 0) {
+        grid.innerHTML = '<div style="grid-column:1/-1; padding:24px; text-align:center; color:var(--muted);">Không có bài phân tích phù hợp.</div>';
+        return;
+      }
+
+      grid.innerHTML = articles.map(art => {
+        const isSaved = getSaved().includes(art.slug);
+        const takeawaySnippet = art.takeaways && art.takeaways.length > 0 ? art.takeaways[0] : '';
+
+        return `
+          <article class="dng-card" style="display: flex; flex-direction: column; justify-content: space-between; padding: 24px;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <span class="news-tag analysis">${art.category || 'Phân tích'}</span>
+                <button type="button" class="bookmark-btn ${isSaved ? 'saved' : ''}" data-id="${art.slug}" onclick="toggleSave('${art.slug}')">
+                  ${isSaved ? '★ Đã lưu' : '🔖 Lưu'}
+                </button>
+              </div>
+              <h3 style="font-size: 17px; line-height: 1.4; margin-bottom: 10px;">
+                <a href="#article-${art.slug}" onclick="event.preventDefault(); window.openArticleBySlug('${art.slug}');" style="color: var(--ink);">
+                  ${art.title}
+                </a>
+              </h3>
+              <p style="font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 14px;">
+                ${art.excerpt || ''}
+              </p>
+              ${takeawaySnippet ? `
+                <div style="font-size: 12px; color: var(--primary); background: var(--primary-soft); padding: 6px 10px; border-radius: var(--radius-sm); margin-bottom: 14px; font-weight: 500;">
+                  💡 Điểm cốt lõi: ${takeawaySnippet}
+                </div>
+              ` : ''}
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--dim); border-top: 1px solid var(--border); padding-top: 12px; margin-top: 12px;">
+              <span>${art.date || 'Tháng 8, 2026'}</span>
+              <button type="button" class="btn btn-outline btn-sm" onclick="window.openArticleBySlug('${art.slug}')" style="font-size: 12px; padding: 4px 10px;">
+                Đọc bài viết →
+              </button>
+            </div>
+          </article>
+        `;
+      }).join('');
+    };
+
+    // --- RENDER CURATED NEWS ITEMS ---
+    const renderNews = (items) => {
+      const grid = document.getElementById('newsGrid');
+      if (!grid) return;
+      const saved = getSaved();
+
+      if (!items || items.length === 0) {
+        grid.innerHTML = '<div style="grid-column:1/-1; padding:32px; text-align:center; color:var(--muted);">Không tìm thấy bản tin phù hợp với từ khóa hoặc bộ lọc này.</div>';
+        return;
+      }
+
+      grid.innerHTML = items.slice(0, 18).map(item => {
+        const isSaved = saved.includes(item.id);
+        const cleanDesc = (item.summary || item.description || item.title || '').replace(/https?:\/\/[^\s]+/g, '').trim().slice(0, 120);
+
+        return `
+          <article class="dng-card" style="display: flex; flex-direction: column; justify-content: space-between; padding: 22px;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <span class="news-tag">${item.source || 'Tin tức'}</span>
+                <button type="button" class="bookmark-btn ${isSaved ? 'saved' : ''}" data-id="${item.id}" onclick="toggleSave('${item.id}')">
+                  ${isSaved ? '★ Đã lưu' : '🔖 Lưu'}
+                </button>
+              </div>
+              <h3 style="font-size: 16px; line-height: 1.4; margin-bottom: 8px;">
+                <a href="${item.link || item.url}" target="_blank" rel="noopener noreferrer" style="color: var(--ink);">
+                  ${item.title}
+                </a>
+              </h3>
+              ${cleanDesc ? `<p style="font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 12px;">${cleanDesc}...</p>` : ''}
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--dim); border-top: 1px solid var(--border); padding-top: 10px; margin-top: 12px;">
+              <span>${item.pubDate || 'Mới cập nhật'}</span>
+              <a href="${item.link || item.url}" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 600;">Xem nguồn gốc ↗</a>
+            </div>
+          </article>
+        `;
+      }).join('');
+    };
+
+    // --- FETCH LIVE DATA FROM /api/news ---
+    const fetchNews = async () => {
+      try {
+        const res = await fetch('/api/news?lang=vi');
+        const data = await res.json();
+
+        // 1. Populate DNG articles
+        dngArticlesList = data.dng_articles || [];
+        dngArticlesList.forEach(a => {
+          articlesDict[a.slug] = a;
+        });
+
+        // 2. Populate External News
+        allNewsItems = (data.items || []).map((item, idx) => {
+          const t = (item.title || '').toLowerCase();
+          const cat = t.includes('ai') || t.includes('trí tuệ nhân tạo') ? 'ai' :
+                      t.includes('quảng cáo') || t.includes('marketing') || t.includes('truyền thông') ? 'marketing' : 'business';
+          return {
+            ...item,
+            id: item.id || `feed-${idx}`,
+            cat: item.categorySlug || cat
+          };
+        });
+
+        // Bind open article triggers on existing static elements
+        document.querySelectorAll('.open-article').forEach(el => {
+          el.addEventListener('click', (e) => {
+            e.preventDefault();
+            openArticle(el.getAttribute('data-slug'));
+          });
+        });
+
+        // Render initial lists
+        renderAnalyses(dngArticlesList);
+        renderNews(allNewsItems);
+
+        const metaCount = document.getElementById('newsMetaCount');
+        if (metaCount) {
+          metaCount.textContent = `Tổng cộng ${allNewsItems.length} bản tin thị trường đã chuẩn hóa`;
+        }
+      } catch (err) {
+        console.error('Fetch error:', err);
+        const grid = document.getElementById('newsGrid');
+        if (grid) {
+          grid.innerHTML = '<div style="grid-column:1/-1; padding:24px; text-align:center; color:var(--muted);">Chưa tải được luồng tin tức trực tiếp. Vui lòng tải lại trang.</div>';
+        }
+      }
+    };
+
+    // --- TAB FILTERING & SEARCH ---
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const searchInput = document.getElementById('newsSearch');
+
+    const applyFilter = () => {
+      const activeTab = document.querySelector('.filter-tab.active')?.getAttribute('data-cat') || 'all';
+      const query = (searchInput?.value || '').trim().toLowerCase();
+      const saved = getSaved();
+
+      const analysesSection = document.getElementById('dngAnalysesSection');
+      const newswireSection = document.getElementById('newswireSection');
+      const featuredEditorialRow = document.getElementById('featuredEditorialRow');
+
+      if (activeTab === 'analysis') {
+        // Show only DNG analyses prominently
+        if (featuredEditorialRow) featuredEditorialRow.style.display = 'grid';
+        if (analysesSection) analysesSection.style.display = 'block';
+        if (newswireSection) newswireSection.style.display = 'none';
+
+        let filteredAnalyses = dngArticlesList.filter(a => {
+          if (!query) return true;
+          return (a.title || '').toLowerCase().includes(query) ||
+                 (a.excerpt || '').toLowerCase().includes(query) ||
+                 (a.category || '').toLowerCase().includes(query);
+        });
+        renderAnalyses(filteredAnalyses);
+        return;
+      }
+
+      if (activeTab === 'saved') {
+        if (featuredEditorialRow) featuredEditorialRow.style.display = 'none';
+        if (analysesSection) analysesSection.style.display = 'block';
+        if (newswireSection) newswireSection.style.display = 'block';
+
+        const savedAnalyses = dngArticlesList.filter(a => saved.includes(a.slug));
+        const savedNews = allNewsItems.filter(item => saved.includes(item.id));
+        renderAnalyses(savedAnalyses);
+        renderNews(savedNews);
+        return;
+      }
+
+      // 'all', 'ai', 'marketing', 'business'
+      if (query || activeTab !== 'all') {
+        if (featuredEditorialRow) featuredEditorialRow.style.display = 'none';
+      } else {
+        if (featuredEditorialRow) featuredEditorialRow.style.display = 'grid';
+      }
+
+      if (analysesSection) analysesSection.style.display = 'block';
+      if (newswireSection) newswireSection.style.display = 'block';
+
+      let filteredAnalyses = dngArticlesList.filter(a => {
+        if (activeTab !== 'all') {
+          if (activeTab === 'ai') return (a.title + a.category).toLowerCase().includes('ai');
+          if (activeTab === 'marketing') return (a.title + a.category).toLowerCase().includes('marketing') || (a.title + a.category).toLowerCase().includes('chiến lược');
+          if (activeTab === 'business') return true;
+        }
+        if (query) {
+          return (a.title || '').toLowerCase().includes(query) ||
+                 (a.excerpt || '').toLowerCase().includes(query);
+        }
+        return true;
+      });
+
+      let filteredNews = allNewsItems.filter(item => {
+        if (activeTab !== 'all') {
+          if (activeTab === 'ai') return item.cat === 'ai' || (item.title || '').toLowerCase().includes('ai');
+          if (activeTab === 'marketing') return item.cat === 'marketing' || (item.title || '').toLowerCase().includes('marketing') || (item.title || '').toLowerCase().includes('quảng cáo');
+          if (activeTab === 'business') return item.cat === 'business' || item.cat === 'tech';
+        }
+        if (query) {
+          return (item.title || '').toLowerCase().includes(query) ||
+                 (item.summary || '').toLowerCase().includes(query);
+        }
+        return true;
+      });
+
+      renderAnalyses(filteredAnalyses);
+      renderNews(filteredNews);
+    };
+
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        applyFilter();
+      });
+    });
+
+    searchInput?.addEventListener('input', applyFilter);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updateSavedCount();
+      fetchNews();
+    });
+
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    if (mobileBtn && mobileDrawer) {
+      mobileBtn.addEventListener('click', () => {
+        mobileDrawer.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>

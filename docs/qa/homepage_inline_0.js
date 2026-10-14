@@ -1,0 +1,1 @@
+window.DNGFusion={x:0,y:0,tx:0,ty:0,chapter:0,paused:matchMedia('(prefers-reduced-motion: reduce)').matches,mode:'pointer',lastInteraction:0};

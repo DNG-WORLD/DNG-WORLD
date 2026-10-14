@@ -1,0 +1,8 @@
+{
+  "name": "DNGWORLD | AI Marketing, Growth & Automation – Dũng Nguyễn",
+  "description": "DNGWORLD của Dũng Nguyễn: AI Marketing, Growth Marketing, Marketing Operations, Sales & CRM, Data và Automation cho doanh nghiệp tại Việt Nam.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

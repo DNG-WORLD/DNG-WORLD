@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FFFFFF">
+  <title>DNG Growth Self-Check | Chẩn Đoán Sức Khỏe Tăng Trưởng – DNGWORLD</title>
+  <meta name="description" content="Khảo sát tự đánh giá năng lực thương mại theo 8 nhóm trụ cột vận hành giúp phát hiện điểm nghẽn và xác định ưu tiên hành động.">
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/assets/css/dng-system.css">
+<link rel="stylesheet" href="/assets/css/dngworld-v24-bridge.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="brand-logo">
+        <span class="brand-name">DNGWORLD</span>
+        <span class="brand-dot"></span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="/services/">Giải pháp</a>
+        <a href="/tools/" class="active">Công cụ</a>
+        <a href="/insights/">Tin tức & Phân tích</a>
+        <a href="/about/">Về DNGWORLD</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="/contact/" class="btn btn-sm">Liên hệ tư vấn</a>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Mở menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <nav class="mobile-nav-list">
+      <a href="/services/">Giải pháp</a>
+      <a href="/tools/" style="color: var(--primary);">Công cụ</a>
+      <a href="/insights/">Tin tức & Phân tích</a>
+      <a href="/about/">Về DNGWORLD</a>
+      <a href="/contact/" style="color: var(--primary);">Liên hệ tư vấn →</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section" style="padding-top: 60px; padding-bottom: 40px; background: linear-gradient(180deg, var(--bg-blue) 0%, var(--bg) 100%);">
+      <div class="container">
+        <div class="eyebrow">DNG LAB · SELF-ASSESSMENT RUBRIC</div>
+        <h1>DNG Growth Self-Check</h1>
+        <p style="font-size: 17px; color: var(--muted); line-height: 1.65; max-width: 740px; margin-top: 14px;">
+          Bản khảo sát tự đánh giá 8 nhóm năng lực thương mại cốt lõi. Giúp chủ doanh nghiệp và trưởng bộ phận nhận diện 3 điểm nghẽn lớn nhất và các hành động ưu tiên.
+        </p>
+      </div>
+    </section>
+
+    <!-- DIAGNOSTIC SURVEY -->
+    <section class="section" style="padding-top: 20px;">
+      <div class="container" style="max-width: 860px;">
+        <div class="dng-card" style="padding: clamp(24px, 4vw, 40px);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+            <span class="status-badge self-reported">Dữ liệu: Tự đánh giá (Self-Reported)</span>
+            <span style="font-size: 12px; font-family: var(--font-mono); color: var(--muted);">8 PILLARS</span>
+          </div>
+
+          <form id="growthCheckForm">
+            <!-- PILLAR 1 -->
+            <div class="form-group" style="padding-bottom: 18px; border-bottom: 1px solid var(--border-subtle);">
+              <label class="form-label" style="font-size: 15px;">1. Định vị & Đề xuất giá trị (Business & Offer)</label>
+              <p style="font-size: 13px; color: var(--muted); margin-bottom: 10px;">
+                Mức độ rõ ràng của lý do khách hàng chọn bạn thay vì đối thủ cạnh tranh.
+              </p>
+              <select name="business" class="form-select">
+                <option value="1">1 - Rất mơ hồ, thường xuyên phải giảm giá để có khách</option>
+                <option value="2">2 - Khách hàng có hỏi nhưng hay so sánh giá với bên khác</option>
+                <option value="3" selected>3 - Tương đối rõ ràng nhưng chưa thể hiện nổi bật trên truyền thông</option>
+                <option value="4">4 - Khách hàng hiểu rõ điểm khác biệt và sẵn sàng trả giá hợp lý</option>
+                <option value="5">5 - Định vị rất mạnh, khách hàng chủ động tìm đến vì uy tín riêng</option>
+              </select>
+            </div>
+
+            <!-- PILLAR 2 -->
+            <div class="form-group" style="padding-bottom: 18px; border-bottom: 1px solid var(--border-subtle);">
+              <label class="form-label" style="font-size: 15px;">2. Trang đích & Trải nghiệm số (Website & CRO)</label>
+              <p style="font-size: 13px; color: var(--muted); margin-bottom: 10px;">
+                Tốc độ tải, độ rõ của thông điệp và tỷ lệ khách để lại thông tin trên trang.
+              </p>
+              <select name="website" class="form-select">
+                <option value="1">1 - Chưa có website chuẩn hoặc trang web rất chậm, khó xem trên điện thoại</option>
+                <option value="2">2 - Có website nhưng tỷ lệ chuyển đổi rất thấp, ít người điền form</option>
+                <option value="3" selected>3 - Website ổn định cơ bản nhưng chưa tối ưu các điểm chạm chuyển đổi</option>
+                <option value="4">4 - Trang đích tải nhanh, form đơn giản, thu thập lead đều đặn</option>
+                <option value="5">5 - Tối ưu chuyển đổi chuyên sâu, liên tục A/B testing và đo heatmap</option>
+              </select>
+            </div>
+
+            <!-- PILLAR 3 -->
+            <div class="form-group" style="padding-bottom: 18px; border-bottom: 1px solid var(--border-subtle);">
+              <label class="form-label" style="font-size: 15px;">3. Chiến lược tiếp thị & Nhịp vận hành (Marketing Strategy)</label>
+              <p style="font-size: 13px; color: var(--muted); margin-bottom: 10px;">
+                Tính kỷ luật và kế hoạch của các hoạt động tiếp thị trong doanh nghiệp.
+              </p>
+              <select name="marketing" class="form-select">
+                <option value="1">1 - Làm ngẫu hứng, có khuyến mãi mới đăng bài hoặc chạy ads</option>
+                <option value="2">2 - Có làm đều nhưng các kênh rời rạc, không phối hợp cùng mục tiêu</option>
+                <option value="3" selected>3 - Có kế hoạch tháng nhưng thực thi chưa bám sát các chỉ số kinh doanh</option>
+                <option value="4">4 - Có lịch vận hành chuẩn, đo lường rõ chi phí và doanh số từng kênh</option>
+                <option value="5">5 - Hệ thống vận hành tự chủ, có dashboard theo dõi hằng tuần</option>
+              </select>
+            </div>
+
+            <!-- PILLAR 4 -->
+            <div class="form-group" style="padding-bottom: 18px; border-bottom: 1px solid var(--border-subtle);">
+              <label class="form-label" style="font-size: 15px;">4. Hiệu quả chi tiêu quảng cáo (Paid Advertising)</label>
+              <p style="font-size: 13px; color: var(--muted); margin-bottom: 10px;">
+                Mức độ kiểm soát chi phí trên mỗi lead/đơn hàng và tỷ suất hòa vốn.
+              </p>
+              <select name="advertising" class="form-select">
+                <option value="1">1 - Quảng cáo liên tục lỗ, không kiểm soát được giá thầu</option>
+                <option value="2">2 - Chi phí lead tăng dần đều, tăng ngân sách là hiệu quả sụt giảm</option>
+                <option value="3" selected>3 - Đạt điểm hòa vốn cơ bản nhưng khó mở rộng quy mô chi tiêu</option>
+                <option value="4">4 - Kiểm soát tốt CAC và ROAS trên các nền tảng chính (Meta/Google)</option>
+                <option value="5">5 - Tối ưu đa kênh có cấu trúc, CAPI server-side và thử nghiệm creative kỷ luật</option>
+              </select>
+            </div>
+
+            <!-- PILLAR 5 -->
+            <div class="form-group" style="padding-bottom: 18px; border-bottom: 1px solid var(--border-subtle);">
+              <label class="form-label" style="font-size: 15px;">5. Nội dung & Thẩm quyền thương hiệu (Content & Authority)</label>
+              <p style="font-size: 13px; color: var(--muted); margin-bottom: 10px;">
+                Khả năng chứng minh năng lực chuyên môn bằng tài sản bài viết, hình ảnh và case thực tế.
+              </p>
+              <select name="content" class="form-select">
+                <option value="1">1 - Nội dung sơ sài, sao chép đối thủ hoặc chỉ đăng ảnh sản phẩm</option>
+                <option value="2">2 - Đăng tải chăm chỉ nhưng ít tương tác và không tạo được niềm tin</option>
+                <option value="3" selected>3 - Có hình ảnh dự án thực tế nhưng chưa đúc kết thành case study thuyết phục</option>
+                <option value="4">4 - Có các trụ cột nội dung giáo dục thị trường và giải đáp nỗi đau khách hàng</option>
+                <option value="5">5 - Khách hàng coi doanh nghiệp là chuyên gia hàng đầu trong phân khúc</option>
+              </select>
+            </div>
+
+            <!-- PILLAR 6 -->
+            <div class="form-group" style="padding-bottom: 18px; border-bottom: 1px solid var(--border-subtle);">
+              <label class="form-label" style="font-size: 15px;">6. Quản trị cơ hội bán hàng & CRM (Conversion & CRM)</label>
+              <p style="font-size: 13px; color: var(--muted); line-height: 1.6;">
+                Quy trình tiếp nhận, lưu trữ và theo dõi tiến độ chăm sóc khách hàng.
+              </p>
+              <select name="conversion" class="form-select">
+                <option value="1">1 - Lead ghi ra sổ tay hoặc file Excel riêng, hay bỏ sót khách</option>
+                <option value="2">2 - Có danh sách chung nhưng Sales phản hồi chậm (sau nhiều giờ hoặc nhiều ngày)</option>
+                <option value="3" selected>3 - Dùng phần mềm quản lý nhưng nhân sự nhập liệu không đầy đủ</option>
+                <option value="4">4 - CRM tập trung, lead đổ về được thông báo ngay trong 15 phút</option>
+                <option value="5">5 - Pipeline chuẩn hóa, tự động phân loại và theo dõi tỷ lệ chốt từng giai đoạn</option>
+              </select>
+            </div>
+
+            <!-- PILLAR 7 -->
+            <div class="form-group" style="padding-bottom: 18px; border-bottom: 1px solid var(--border-subtle);">
+              <label class="form-label" style="font-size: 15px;">7. Chăm sóc sau mua & Giá trị trọn đời (Retention & LTV)</label>
+              <p style="font-size: 13px; color: var(--muted); margin-bottom: 10px;">
+                Mức độ quay lại mua tiếp hoặc giới thiệu khách mới (Referral).
+              </p>
+              <select name="retention" class="form-select">
+                <option value="1">1 - Bán xong là hết, không bao giờ liên hệ lại khách hàng cũ</option>
+                <option value="2">2 - Thỉnh thoảng gửi tin nhắn chúc mừng hoặc khuyến mãi đại trà</option>
+                <option value="3" selected>3 - Khách hàng cũ có quay lại tự nhiên nhưng chưa có kịch bản chăm sóc bài bản</option>
+                <option value="4">4 - Có quy trình hỏi thăm sau bán và chính sách tri ân khách hàng thân thiết</option>
+                <option value="5">5 - Doanh thu từ khách hàng cũ và giới thiệu chiếm trên 35% tổng doanh số</option>
+              </select>
+            </div>
+
+            <!-- PILLAR 8 -->
+            <div class="form-group">
+              <label class="form-label" style="font-size: 15px;">8. Sẵn sàng công nghệ & AI (Tech & AI Readiness)</label>
+              <p style="font-size: 13px; color: var(--muted); margin-bottom: 10px;">
+                Khả năng ứng dụng công nghệ và AI vào tiết kiệm thời gian vận hành.
+              </p>
+              <select name="ai" class="form-select">
+                <option value="1">1 - Chưa ứng dụng công cụ nào, phần lớn thao tác thủ công hoàn toàn</option>
+                <option value="2">2 - Nhân sự có tự dùng ChatGPT cá nhân nhưng chưa thành quy trình chung</option>
+                <option value="3" selected>3 - Ứng dụng AI vào soạn thảo văn bản sơ bộ và tóm tắt thông tin</option>
+                <option value="4">4 - Có workflow chuẩn kết hợp AI hỗ trợ nghiên cứu insight và phân tích số liệu</option>
+                <option value="5">5 - Tự động hóa nhiều mắt xích trong chuỗi cung ứng nội dung và CSKH</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-lg" style="width: 100%; margin-top: 10px;">Nhận kết quả chẩn đoán tăng trưởng →</button>
+          </form>
+
+          <div id="growthCheckResult"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- QUICKBAR -->
+  <div class="quickbar">
+    <a href="/services/">Giải pháp</a>
+    <a href="/tools/">Công cụ</a>
+    <a href="/insights/">Tin tức</a>
+    <a href="/contact/" class="book">Liên hệ tư vấn</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="font-size: 18px; font-weight: 800; color: var(--ink);">DNGWORLD</div>
+          <p>Business Growth Intelligence Platform. Tư vấn chiến lược, tối ưu hóa tiếp thị và chuyển đổi số thương mại cho doanh nghiệp.</p>
+        </div>
+        <div class="footer-col">
+          <h4>GIẢI PHÁP</h4>
+          <ul>
+            <li><a href="/services/#strategy">Chiến lược tăng trưởng</a></li>
+            <li><a href="/services/#acquisition">Performance Marketing</a></li>
+            <li><a href="/services/#cro">Tối ưu chuyển đổi (CRO)</a></li>
+            <li><a href="/services/#automation">CRM & Tự động hóa</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>CÔNG CỤ (DNG LAB)</h4>
+          <ul>
+            <li><a href="/tools/calculators/#roas">Máy tính ROAS</a></li>
+            <li><a href="/tools/calculators/#break-even">Break-even ROAS</a></li>
+            <li><a href="/tools/calculators/#cac">Chi phí thu hút CAC</a></li>
+            <li><a href="/tools/utm-qr/">Tạo mã UTM & QR</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>NỘI DUNG</h4>
+          <ul>
+            <li><a href="/insights/">Bản tin thị trường</a></li>
+            <li><a href="/insights/#playbooks">Khung chiến lược</a></li>
+            <li><a href="/about/">Về DNGWORLD</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>LIÊN HỆ</h4>
+          <ul>
+            <li><a href="/contact/">Gửi yêu cầu tư vấn</a></li>
+            <li><a href="mailto:nguyendhungdung@gmail.com">nguyendhungdung@gmail.com</a></li>
+            <li><a href="https://zalo.me/0377348008" target="_blank" rel="noopener">Zalo: 0377 348 008</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 DNGWORLD. Mọi quyền được bảo lưu.</div>
+        <div>Hiểu đúng vấn đề · Không số ảo · Tăng trưởng thực chất</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/dng-tools.js"></script>
+  <script>
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    if (mobileBtn && mobileDrawer) {
+      mobileBtn.addEventListener('click', () => {
+        mobileDrawer.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>

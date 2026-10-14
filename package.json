@@ -1,0 +1,20 @@
+{
+  "name": "dngworld-business-growth-intelligence",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "build": "node scripts/build-static.mjs",
+    "validate": "python3 scripts/validate_v19.py",
+    "qa": "python3 scripts/validate_v19.py && node scripts/build-static.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "version": "24.1.0",
+  "dependencies": {
+    "express": "^5.2.1",
+    "three": "^0.186.1"
+  }
+}

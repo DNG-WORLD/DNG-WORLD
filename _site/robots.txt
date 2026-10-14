@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Sitemap: add only after DNGWORLD's verified production domain is configured.
