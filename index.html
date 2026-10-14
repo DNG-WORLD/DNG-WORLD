@@ -295,7 +295,7 @@ footer .footer-bottom span{color:inherit!important;opacity:1!important}
 }
 
 </style>
-</head>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"><link rel="stylesheet" href="/assets/css/dngworld-v31-brand.css"></head>
 <body>
 <canvas aria-hidden="true" class="ambient-fx" id="ambientFx"></canvas>
 <header class="site-head"><div class="wrap head-row"><a aria-label="DNGWORLD Home" class="logo" href="/"><span class="glyph"></span>DNGWORLD<sup style="font-size:9px;margin-left:1px;align-self:flex-start;margin-top:3px">®</sup></a><span class="head-mid">BUSINESS GROWTH INTELLIGENCE<br/>STRATEGY — MARKETING — MEDIA — DATA — AI</span><nav class="nav-links" id="nav"><a href="/services/">GIẢI PHÁP</a><a href="/pricing/">BÁO GIÁ</a><a href="/tools/">CÔNG CỤ</a><a href="/insights/">TIN TỨC</a><a href="/about/">DNGWORLD</a><a class="nav-cta" href="/contact/">LIÊN HỆ ↗</a></nav><button aria-expanded="false" aria-label="Mở menu" class="nav-toggle" id="navToggle">☰</button></div></header>
@@ -564,9 +564,9 @@ footer .footer-bottom span{color:inherit!important;opacity:1!important}
     const fm=window.DNGFusion || {x:0,y:0,paused:false};
     const dragK=state.dragging?0:1;
     gl.uniformMatrix4fv(uniforms.uModel,false,eulerMatrix(state.rot[0] + fm.y*.33*dragK, state.rot[1] + fm.x*.52*dragK, state.rot[2] + fm.x*.08*dragK));
-    gl.uniformMatrix4fv(uniforms.uView,false,translateZ(-4.55));
-    gl.uniformMatrix4fv(uniforms.uProjection,false,perspective(47*Math.PI/180,aspect,.1,100));
-    gl.uniform3f(uniforms.uCamera,0,0,4.55);
+    gl.uniformMatrix4fv(uniforms.uView,false,translateZ(-5.32));
+    gl.uniformMatrix4fv(uniforms.uProjection,false,perspective(49*Math.PI/180,aspect,.1,100));
+    gl.uniform3f(uniforms.uCamera,0,0,5.32);
     gl.uniform1f(uniforms.uTime,now*.001);
     gl.uniform1f(uniforms.uFocus,state.selection);
 
@@ -575,8 +575,8 @@ footer .footer-bottom span{color:inherit!important;opacity:1!important}
     // Clear depth only: front silhouettes remain visually legible above the main mesh.
     gl.clear(gl.DEPTH_BUFFER_BIT);
     const isMobile=rect.width<650;
-    const cameraZ=4.55,satZ=1.88;
-    const visibleH=2*(cameraZ-satZ)*Math.tan(47*Math.PI/360);
+    const cameraZ=5.32,satZ=1.88;
+    const visibleH=2*(cameraZ-satZ)*Math.tan(49*Math.PI/360);
     const visibleW=visibleH*aspect;
     const anim=window.DNGFusion?.paused ? (state.miniClock||0) : (state.miniClock=(state.miniClock||0)+Math.min(.05,dt*.001));
     satellites3d.forEach((s,i)=>{
