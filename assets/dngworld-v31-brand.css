@@ -1,0 +1,27 @@
+/* DNGWORLD V31 — unified readable typography. Google Fonts CSS: no font binaries redistributed. */
+:root{--dng-sans:'Be Vietnam Pro','DM Sans',Arial,sans-serif;--dng-display:'DM Sans','Be Vietnam Pro',Arial,sans-serif;--dng-serif:'DM Serif Display',Georgia,serif;--dng-night:#0d231b;--dng-deep:#142820;--dng-champagne:#e5bf88;--dng-mist:#eff0e7}
+html{-webkit-text-size-adjust:100%}body,body.dngv25,body.dngv31{font-family:var(--dng-sans)!important;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+button,input,select,textarea{font-family:inherit}
+:where(h1,h2,h3,h4,.brand,.logo,.masthead-title){font-family:var(--dng-display);font-optical-sizing:auto;overflow-wrap:normal}
+:where(.signature,.serif,.masthead-title span,h1 em,h2 em,.scene-copy p){font-family:var(--dng-serif)!important}
+:where(p,li,a,button,small,span){text-wrap:pretty}
+/* Hero desktop: increase camera view (in WebGL code) and leave its bounding box within viewport. */
+@media(min-width:1000px){
+ body .hero .hero-art{left:39%!important;width:60%!important;right:auto!important;max-width:none!important;overflow:visible!important;transform:none!important}
+ body .hero .hero-art canvas,body .hero .hero-art .sculpt-fallback{width:100%!important;height:100%!important;object-fit:contain!important}
+ body .hero .hero-copy{width:43%!important;min-width:0!important;max-width:610px;z-index:35!important}
+ body .hero h1{font-family:var(--dng-display)!important;font-size:clamp(70px,7.1vw,121px)!important;line-height:.99!important;letter-spacing:-.055em!important;font-weight:700!important;margin-bottom:22px!important}
+ body .hero .hero-intro{font-size:clamp(13px,1vw,16px)!important;max-width:420px!important;line-height:1.85!important}
+ body .hero .scene-copy{right:2.5%!important;max-width:215px!important}
+}
+@media(min-width:761px) and (max-width:999px){body .hero h1{letter-spacing:-.06em!important;line-height:.99!important}}
+@media(max-width:760px){body .hero h1{line-height:1.0!important;letter-spacing:-.065em!important;font-family:var(--dng-display)!important}body .hero h1 .signature{line-height:1.14!important}body .hero .hero-art{overflow:visible!important}body .hero-copy{font-synthesis:none}}
+/* Be Vietnam Pro diacritics: avoid type clipping in headers, cards, link labels. */
+body .logo,body .brand{letter-spacing:-.045em!important;line-height:1.3!important}
+body .footer-row nav,body .footer-site-links{line-height:1.75!important}
+body :where(h1,h2,h3,h4){text-wrap:balance}
+:focus-visible{outline:2px solid var(--dng-champagne);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+@media(min-width:761px){body .site-head .head-mid{display:none!important}}
+@media(min-width:1000px){body .hero .scene-copy{font-size:inherit;right:1.6%!important}}

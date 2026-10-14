@@ -1,0 +1,20 @@
+/* DNGWORLD V31 — subtle kinetic 3D accent / deep-emerald site language */
+.dng-spatial{position:absolute;pointer-events:none;right:2%;top:50%;transform:translateY(-50%);width:clamp(145px,18vw,260px);height:clamp(145px,18vw,260px);perspective:650px;opacity:.84;filter:drop-shadow(0 18px 35px rgba(0,0,0,.20));z-index:0;contain:layout style}
+.dng-spatial-core{position:absolute;inset:24%;border-radius:26% 74% 66% 34%/43% 32% 68% 57%;background:conic-gradient(from 15deg at 45% 49%,rgba(240,230,201,.82),rgba(159,207,180,.65),rgba(50,96,75,.28),rgba(232,186,115,.78),rgba(240,230,201,.82));border:1px solid rgba(255,244,207,.7);box-shadow:inset 8px 10px 24px rgba(255,250,229,.36),inset -16px -15px 29px rgba(18,58,42,.58),0 20px 38px rgba(0,0,0,.18);transform-style:preserve-3d;animation:dngCoreTurn 21s ease-in-out infinite}
+.dng-orbit{position:absolute;inset:17% 4%;border:2px solid rgba(227,197,141,.57);border-radius:50%;transform-style:preserve-3d;box-shadow:0 0 17px rgba(221,190,131,.13);animation:dngOrbit 19s linear infinite}
+.dng-orbit:nth-child(2){inset:4% 19%;border-color:rgba(157,221,196,.52);animation-duration:16s;animation-direction:reverse}
+.dng-orbit:nth-child(3){inset:12% 12%;border-color:rgba(244,241,216,.29);animation-duration:27s}
+.dng-spatial-star{position:absolute;top:18%;left:16%;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff8de,#e0b778 58%,#5b7b67);box-shadow:0 0 19px #ddba8b;animation:dngStarlight 4s ease-in-out infinite alternate}
+@keyframes dngCoreTurn{0%,100%{transform:rotate3d(1,1,0,30deg) rotate(10deg) scale(.94)}50%{transform:rotate3d(1,-1,1,180deg) rotate(-6deg) scale(1.05)}}
+@keyframes dngOrbit{from{transform:rotateY(60deg) rotateZ(0deg)}to{transform:rotateY(60deg) rotateZ(360deg)}}
+@keyframes dngStarlight{to{opacity:.48;transform:translate(7px,15px) scale(.75)}}
+.dng-spatial-parent{position:relative!important;isolation:isolate;overflow:hidden}
+.dng-spatial-parent>:not(.dng-spatial){position:relative;z-index:1}
+body:not(.dng-home-v31) :where(.hero25,.masthead,.hero-banner,.page-hero,.section-hero){background-image:radial-gradient(ellipse at 86% 33%,rgba(201,172,114,.13),transparent 38%),radial-gradient(ellipse at 23% 83%,rgba(128,184,150,.14),transparent 48%)}
+/* restrained floating UI hierarchy */
+.dng-motion-ready :where(.panel,.story-card,.news-grid article,.feature,.metric-card,.service-card,.tool-card){transition:transform .38s cubic-bezier(.22,.76,.22,1),box-shadow .38s ease,border-color .38s ease}
+@media(hover:hover){.dng-motion-ready :where(.panel,.story-card,.news-grid article,.feature,.metric-card,.service-card,.tool-card):hover{transform:translate3d(0,-4px,0);box-shadow:0 16px 42px rgba(0,0,0,.16)}}
+.dng-reveal{opacity:0;transform:translate3d(0,14px,0);transition:opacity .85s ease,transform .9s cubic-bezier(.22,.76,.22,1)}.dng-reveal.dng-visible{opacity:1;transform:none}
+@media(max-width:900px){.dng-spatial{width:140px;height:140px;right:-20px;top:28%;opacity:.43}}
+@media(max-width:640px){.dng-spatial{top:34px;right:-30px;transform:none;width:110px;height:110px;opacity:.36}.dng-spatial-parent{min-height:unset}}
+@media(prefers-reduced-motion:reduce){.dng-spatial-core,.dng-orbit,.dng-spatial-star{animation:none!important}.dng-reveal{opacity:1;transform:none;transition:none}}
