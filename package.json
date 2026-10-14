@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "node server.mjs",
     "start": "node server.mjs",
-    "build": "node scripts/build-static.mjs",
+    "build": "node scripts/build-static.mjs && node scripts/repair-v31-assets.mjs",
     "validate": "python3 scripts/validate_v19.py",
-    "qa": "python3 scripts/validate_v19.py && node scripts/build-static.mjs"
+    "qa": "python3 scripts/validate_v19.py && npm run build"
   },
   "engines": {
     "node": ">=20"
