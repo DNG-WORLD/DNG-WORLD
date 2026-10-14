@@ -1,0 +1,12 @@
+/* DNGWORLD V27 — accessible, site-wide tap-to-call widget. */
+.dng-call-v27{position:fixed;right:clamp(16px,2.3vw,32px);bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:999;display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:11px 18px 11px 13px;border:1px solid rgba(255,236,194,.72);border-radius:100px;background:linear-gradient(135deg,#f5d9a6 0%,#e2b878 55%,#c59a5a 100%);box-shadow:0 12px 38px rgba(0,0,0,.26),0 0 25px rgba(236,200,145,.14);color:#11281e!important;text-decoration:none!important;font-family:Arial,Helvetica,sans-serif;font-weight:800;font-size:12px;letter-spacing:.095em;line-height:1.15;white-space:nowrap;-webkit-tap-highlight-color:transparent;transition:transform .18s ease,box-shadow .18s ease}
+.dng-call-v27:hover{transform:translateY(-3px);box-shadow:0 15px 38px rgba(0,0,0,.35),0 0 30px rgba(236,200,145,.23)}
+.dng-call-v27:focus-visible{outline:3px solid #d9aa65;outline-offset:4px}
+.dng-call-v27__icon{display:grid;place-items:center;width:33px;height:33px;flex:0 0 33px;border-radius:50%;background:rgba(17,40,30,.12)}
+.dng-call-v27__icon svg{height:18px;width:18px;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:2;fill:none}
+.dng-call-v27__text{display:flex;flex-direction:column;gap:2px}.dng-call-v27__text small{font-size:9px;font-weight:700;letter-spacing:0;color:#2f4436}
+@media(max-width:760px){.dng-call-v27{right:14px;bottom:calc(15px + env(safe-area-inset-bottom,0px));padding:9px 13px 9px 9px;min-height:49px;gap:7px;font-size:11px}.dng-call-v27__icon{width:31px;height:31px;flex-basis:31px}.dng-call-v27__text small{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.dng-call-v27{transition:none}}
+
+/* Reserve a clean lower-right action area on the desktop 3D homepage. */
+@media(min-width:761px){body .hero .scene-switch{right:172px}body .hero .scene-switch button{color:#bfd0bf}body .hero .scene-switch button.active{color:#f4dfb9}}
