@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 const out='_site';
-const allowedDirs=new Set(['assets','public','en','zh','about','contact','services','tools','insights','insight','portfolio','pricing','pricing-marketing','pricing-video','lang','data','content','downloads']);
-const allowedFiles=new Set(['index.html','404.html','favicon.svg','apple-touch-icon.png','robots.txt','site.webmanifest','about.html','contact.html','insights.html','insight.html','portfolio.html','pricing.html','pricing-video.html','pricing-marketing.html']);
+const allowedDirs=new Set(['assets','public','en','zh','about','contact','services','tools','insights','insight','portfolio','pricing','pricing-marketing','pricing-video','posts','success','lang','data','content','downloads']);
+const allowedFiles=new Set(['index.html','404.html','favicon.svg','apple-touch-icon.png','robots.txt','site.webmanifest','about.html','contact.html','services.html','tools.html','success.html','insights.html','insight.html','portfolio.html','pricing.html','pricing-video.html','pricing-marketing.html']);
 fs.rmSync(out,{recursive:true,force:true}); fs.mkdirSync(out);
 for (const name of fs.readdirSync('.')) {
   if (allowedDirs.has(name) && fs.statSync(name).isDirectory()) fs.cpSync(name,path.join(out,name),{recursive:true});
