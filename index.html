@@ -162,7 +162,83 @@ footer{background:#10231b}
 </style><style>/* DNGWORLD Home / navigation only. Original V24 3D and motion unchanged. */
 .site-head .nav-links{gap:clamp(10px,1.15vw,22px)}.site-head .nav-links a{white-space:nowrap;font-size:clamp(9px,.67vw,11px)}.head-mid{max-width:200px}.hero{min-height:100svh}body{background:#14231d}
 @media(max-width:1160px){.head-mid{display:none}}@media(max-width:940px){.site-head .nav-links{display:none}}
-</style></head>
+</style><style id="dngworld-home-mobile-v27">
+/* DNGWORLD V27 — mobile art direction. Desktop V24/3D untouched. */
+@media screen and (max-width:760px){
+ html{overflow-x:clip}
+ body{overflow-x:clip;background:#0e241a}
+ body .site-head{position:absolute;top:0;left:0;right:0;z-index:90}
+ body .site-head .head-row{height:70px;border-bottom:1px solid rgba(230,207,163,.21)}
+ body .site-head .logo{font-size:clamp(21px,5.6vw,26px);letter-spacing:-.075em;gap:4px;max-width:calc(100% - 75px)}
+ body .site-head .logo .glyph{width:25px;height:25px;flex-shrink:0;margin-right:7px}
+ body .site-head .nav-toggle{width:46px;height:46px;border-color:rgba(237,220,187,.30);color:#f3ead8;display:block;flex-shrink:0}
+ body .site-head .nav-links{position:absolute;left:20px;right:20px;top:72px;z-index:200;background:#0c211a;border:1px solid rgba(238,211,168,.24);padding:22px;max-height:calc(100dvh - 95px);overflow-y:auto;box-shadow:0 24px 58px rgba(0,0,0,.38)}
+ body .site-head .nav-links.show{display:flex}
+ body .site-head .nav-links a{font-size:12px;padding:8px 0;color:#e7dfcd}
+ body .hero{display:flex;flex-direction:column;position:relative;isolation:isolate;height:auto!important;min-height:0!important;max-height:none!important;padding:86px 0 18px!important;overflow:hidden}
+ body .hero .wrap{order:1;display:flex!important;flex-direction:column;align-items:stretch;width:calc(100% - 42px)!important;height:auto!important;min-height:0!important;position:relative;z-index:8}
+ body .hero .hero-copy{position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;order:0;z-index:30;width:100%!important;min-width:0!important;height:auto!important;padding:15px 0 0!important;display:flex;align-items:flex-start;justify-content:flex-start;filter:none}
+ body .hero .hero-eyebrow{margin:0 0 21px;gap:12px;color:#dfbc84;letter-spacing:.145em;font-size:9px;max-width:100%;line-height:1.4}
+ body .hero .hero-eyebrow:before{width:30px;flex-shrink:0}
+ body .hero h1{font-size:clamp(53px,14.3vw,83px)!important;line-height:.90;letter-spacing:-.085em;max-width:100%;margin:0 0 19px!important;text-wrap:nowrap}
+ body .hero h1 span{white-space:nowrap}
+ body .hero h1 .signature{font-size:1.04em;letter-spacing:-.09em;margin:2px 0 0}
+ body .hero .hero-intro{max-width:440px;font-size:13px;line-height:1.65;color:#e4e7d8;margin:4px 0 22px}
+ body .hero .hero-actions{display:flex;align-items:stretch;flex-direction:column;gap:8px;width:100%;margin:0 0 12px}
+ body .hero .action-primary{width:fit-content;min-width:240px;max-width:100%;justify-content:space-between;padding:15px 19px 15px 21px;font-size:10px;line-height:1.3;letter-spacing:.11em;box-shadow:0 14px 38px rgba(20,11,0,.19)}
+ body .hero .action-primary .arrow{font-size:21px}
+ body .hero .action-link{align-self:flex-start;font-size:10px;padding:11px 0;margin:0;letter-spacing:.12em;line-height:1.4}
+ body .hero .hero-legend{display:flex;align-items:center;gap:10px;margin:12px 0 0;color:#d7e3d0;font-size:9px;line-height:1.5;letter-spacing:.115em;max-width:330px}
+ body .hero .hero-legend .legend-dot{flex:0 0 9px}
+ body .hero .interaction-hint{display:none}
+ /* The sculpture gets its own visual stage instead of floating across the copy. */
+ body .hero .hero-art{position:relative!important;order:1;top:auto!important;bottom:auto!important;left:-21px!important;right:auto!important;width:calc(100% + 42px)!important;height:clamp(290px,89vw,430px)!important;min-height:0!important;max-height:none!important;flex:0 0 auto;margin:6px 0 0!important;z-index:14;overflow:visible}
+ body .hero .hero-art canvas,body .hero .hero-art .sculpt-fallback{inset:0!important;height:100%!important;width:100%!important;object-fit:contain}
+ body .hero .hero-art:before{bottom:0;height:18%;opacity:.64}
+ body .hero .hero-art .route-hotspot{width:50px;height:50px}
+ body .hero .art-index{display:none}
+ body .hero .art-floor{display:none}
+ body .hero .art-instruction{bottom:2px;left:50%;transform:translateX(-50%);white-space:nowrap;color:rgba(235,219,188,.7);font-size:8px;letter-spacing:.16em}
+ body .hero .scene-copy{order:2;position:relative!important;top:auto!important;bottom:auto!important;right:auto!important;left:auto!important;width:100%!important;max-width:none!important;text-align:left;margin:8px 0 12px;padding:0 0 0 15px;border-left:1px solid rgba(221,184,124,.65);z-index:18}
+ body .hero .scene-copy small{font-size:9px;color:#d4b47e;letter-spacing:.13em;margin:0 0 3px}
+ body .hero .scene-copy p{max-width:315px;font-size:19px;line-height:1.23;color:#f2e5d1}
+ body .hero .scene-switch{order:3;position:relative!important;top:auto!important;right:auto!important;left:auto!important;bottom:auto!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;width:100%;max-width:none;padding:13px 0 1px;margin:5px 0 0;border-top:1px solid rgba(230,207,169,.22);z-index:18}
+ body .hero .scene-switch button{min-width:0;color:#bbcebe;font-size:9px;letter-spacing:.045em;text-align:center;padding:8px 2px;white-space:normal;line-height:1.35}
+ body .hero .scene-switch button span{display:block;padding:0 0 3px;color:#d8ac6f}
+ body .hero .scene-switch button.active{color:#f4dfb9}
+ body .hero .scene-switch button.active:after{height:2px;margin-top:8px;background:#e9c188}
+ body .hero .motion-notice{display:none!important}
+ body .hero .motion-actions{order:2;position:relative!important;top:auto!important;right:auto!important;left:auto!important;bottom:auto!important;display:flex;justify-content:center;width:fit-content;max-width:calc(100% - 42px);margin:16px auto 2px;gap:8px;z-index:25;flex-wrap:wrap}
+ body .hero .motion-actions #pointerMode{display:none}
+ body .hero .motion-actions .motion-btn{padding:9px 12px;border:1px solid rgba(230,204,160,.25);border-radius:20px;color:#e6e1d2;font-size:9px;letter-spacing:.06em;min-height:38px}
+ body .tape{position:relative;background:#10251b;border-top:1px solid rgba(216,179,126,.24)}
+ body .tape .wrap{width:calc(100% - 42px);grid-template-columns:repeat(2,minmax(0,1fr));gap:0}
+ body .tape .wrap>*{padding:17px 8px!important;min-width:0;color:#ddd9c7!important;background:transparent;letter-spacing:.09em;font-size:9px;line-height:1.45;border-right:0;border-bottom:1px solid rgba(237,214,180,.14)}
+ body .tape .wrap>p{color:#edc68b!important;font-weight:700;padding-left:0!important}
+ body .tape .wrap>span:nth-child(even){padding-right:0!important}
+ body .footer-row{padding:27px 0 22px;gap:18px}
+ body .footer-row .logo{font-size:clamp(23px,6vw,29px)}
+ body .footer-row nav{gap:12px 18px;justify-content:flex-start}
+ body .footer-row nav a{font-size:10px;letter-spacing:.1em}
+ body .footer-site-links{padding:22px 0 26px;gap:14px 19px;line-height:1.65;color:#d2dbce}
+ body .footer-bottom{gap:17px;padding:24px 0 90px;font-size:9px;line-height:1.65;letter-spacing:.11em}
+}
+@media screen and (max-width:375px){
+ body .hero h1{font-size:clamp(48px,14.15vw,54px)!important}
+ body .hero .hero-copy{padding-top:8px!important}
+ body .hero .hero-eyebrow{font-size:8px}
+ body .hero .hero-art{height:clamp(280px,88vw,355px)!important}
+ body .hero .scene-copy p{font-size:17px}
+ body .hero .action-primary{min-width:0;width:100%;max-width:310px}
+ body .hero .motion-actions .motion-btn{font-size:8px;padding:8px 10px}
+}
+@media screen and (min-width:761px) and (max-width:940px){
+ body .site-head .nav-toggle{display:block;color:#f5ebd8;border-color:rgba(237,220,187,.30)}
+ body .site-head .nav-links.show{display:flex;position:absolute;right:26px;left:auto;top:77px;width:270px;flex-direction:column;align-items:stretch;gap:14px;padding:24px;background:#0c211a;color:#f5ebd8;border:1px solid rgba(238,211,168,.24);z-index:180}
+}
+
+</style>
+</head>
 <body>
 <canvas aria-hidden="true" class="ambient-fx" id="ambientFx"></canvas>
 <header class="site-head"><div class="wrap head-row"><a aria-label="DNGWORLD Home" class="logo" href="/"><span class="glyph"></span>DNGWORLD<sup style="font-size:9px;margin-left:1px;align-self:flex-start;margin-top:3px">®</sup></a><span class="head-mid">BUSINESS GROWTH INTELLIGENCE<br/>STRATEGY — MARKETING — MEDIA — DATA — AI</span><nav class="nav-links" id="nav"><a href="/services/">GIẢI PHÁP</a><a href="/pricing/">BÁO GIÁ</a><a href="/tools/">CÔNG CỤ</a><a href="/insights/">TIN TỨC</a><a href="/about/">DNGWORLD</a><a class="nav-cta" href="/contact/">LIÊN HỆ ↗</a></nav><button aria-expanded="false" aria-label="Mở menu" class="nav-toggle" id="navToggle">☰</button></div></header>
