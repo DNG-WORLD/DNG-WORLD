@@ -1,247 +1,218 @@
 <!DOCTYPE html>
+
 <html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#FFFFFF">
-  <title>Marketing Calculators | Máy Tính ROAS, Break-even & CAC/LTV – DNGWORLD</title>
-  <meta name="description" content="Bộ máy tính tài chính tiếp thị: ROAS, Break-even ROAS điểm hòa vốn, CAC chi phí thu hút khách hàng và LTV giá trị trọn đời.">
-  
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="stylesheet" href="/assets/css/dng-system.css">
-<link rel="stylesheet" href="/assets/css/dngworld-v24-bridge.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#FFFFFF" name="theme-color"/>
+<title>Marketing Calculators | Máy Tính ROAS, Break-even &amp; CAC/LTV – DNGWORLD</title>
+<meta content="Bộ máy tính tài chính tiếp thị: ROAS, Break-even ROAS điểm hòa vốn, CAC chi phí thu hút khách hàng và LTV giá trị trọn đời." name="description"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/css/dng-system.css" rel="stylesheet"/>
+<link href="/assets/css/dngworld-v24-bridge.css" rel="stylesheet"/>
+<link href="/assets/css/dngworld-legacy-v25.css" rel="stylesheet"></head>
 <body>
-
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="/" class="brand-logo">
-        <span class="brand-name">DNGWORLD</span>
-        <span class="brand-dot"></span>
-      </a>
-
-      <nav class="main-nav">
-        <a href="/services/">Giải pháp</a>
-        <a href="/tools/" class="active">Công cụ</a>
-        <a href="/insights/">Tin tức & Phân tích</a>
-        <a href="/about/">Về DNGWORLD</a>
-      </nav>
-
-      <div class="header-actions">
-        <a href="/contact/" class="btn btn-sm">Liên hệ tư vấn</a>
-        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Mở menu">☰</button>
-      </div>
-    </div>
-  </header>
-
-  <!-- MOBILE DRAWER -->
-  <div class="mobile-drawer" id="mobileDrawer">
-    <nav class="mobile-nav-list">
-      <a href="/services/">Giải pháp</a>
-      <a href="/tools/" style="color: var(--primary);">Công cụ</a>
-      <a href="/insights/">Tin tức & Phân tích</a>
-      <a href="/about/">Về DNGWORLD</a>
-      <a href="/contact/" style="color: var(--primary);">Liên hệ tư vấn →</a>
-    </nav>
-  </div>
-
-  <main>
-    <!-- HERO SECTION -->
-    <section class="section" style="padding-top: 60px; padding-bottom: 40px; background: linear-gradient(180deg, var(--bg-blue) 0%, var(--bg) 100%);">
-      <div class="container">
-        <div class="eyebrow">DNG LAB · FINANCIAL ENGINES</div>
-        <h1>Marketing & Unit Economics Calculators</h1>
-        <p style="font-size: 17px; color: var(--muted); line-height: 1.65; max-width: 740px; margin-top: 14px;">
+<!-- HEADER -->
+<header class="site-header">
+<div class="header-inner">
+<a class="brand-logo" href="/">
+<span class="brand-name">DNGWORLD</span>
+<span class="brand-dot"></span>
+</a>
+<nav class="main-nav">
+<a href="/services/">Giải pháp</a>
+<a href="/pricing/">Báo giá</a><a class="active" href="/tools/">Công cụ</a>
+<a href="/insights/">Tin tức &amp; Phân tích</a>
+<a href="/about/">Về DNGWORLD</a>
+</nav>
+<div class="header-actions">
+<a class="btn btn-sm" href="/contact/">Liên hệ tư vấn</a>
+<button aria-label="Mở menu" class="mobile-menu-btn" id="mobileMenuBtn" type="button">☰</button>
+</div>
+</div>
+</header>
+<!-- MOBILE DRAWER -->
+<div class="mobile-drawer" id="mobileDrawer">
+<nav class="mobile-nav-list">
+<a href="/services/">Giải pháp</a>
+<a href="/pricing/">Báo giá</a><a href="/tools/" style="color: var(--primary);">Công cụ</a>
+<a href="/insights/">Tin tức &amp; Phân tích</a>
+<a href="/about/">Về DNGWORLD</a>
+<a href="/contact/" style="color: var(--primary);">Liên hệ tư vấn →</a>
+</nav>
+</div>
+<main>
+<!-- HERO SECTION -->
+<section class="section" style="padding-top: 60px; padding-bottom: 40px; background: linear-gradient(180deg, var(--bg-blue) 0%, var(--bg) 100%);">
+<div class="container">
+<div class="eyebrow">DNG LAB · FINANCIAL ENGINES</div>
+<h1>Marketing &amp; Unit Economics Calculators</h1>
+<p style="font-size: 17px; color: var(--muted); line-height: 1.65; max-width: 740px; margin-top: 14px;">
           Đo lường tính khả thi tài chính của chiến dịch tiếp thị. Nhập số liệu thực tế để tính toán chính xác tỷ suất hoàn vốn, điểm hòa vốn và chi phí thu hút khách hàng.
         </p>
-      </div>
-    </section>
-
-    <!-- CALCULATORS -->
-    <section class="section" style="padding-top: 20px;">
-      <div class="container">
-        <div class="grid-2" style="gap: 36px; align-items: start;">
-
-          <!-- 01. ROAS CALCULATOR -->
-          <div class="dng-card" id="roas" style="padding: clamp(24px, 4vw, 36px);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <span class="status-badge live">01 · TIỆN ÍCH HOẠT ĐỘNG THẬT</span>
-              <span style="font-size: 12px; font-family: var(--font-mono); color: var(--primary);">ENGINE #1</span>
-            </div>
-            <h2 style="font-size: 22px; margin-bottom: 6px;">ROAS Calculator (Tỷ suất doanh thu)</h2>
-            <p style="font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 20px;">
+</div>
+</section>
+<!-- CALCULATORS -->
+<section class="section" style="padding-top: 20px;">
+<div class="container">
+<div class="grid-2" style="gap: 36px; align-items: start;">
+<!-- 01. ROAS CALCULATOR -->
+<div class="dng-card" id="roas" style="padding: clamp(24px, 4vw, 36px);">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<span class="status-badge live">01 · TIỆN ÍCH HOẠT ĐỘNG THẬT</span>
+<span style="font-size: 12px; font-family: var(--font-mono); color: var(--primary);">ENGINE #1</span>
+</div>
+<h2 style="font-size: 22px; margin-bottom: 6px;">ROAS Calculator (Tỷ suất doanh thu)</h2>
+<p style="font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 20px;">
               Đo lường số doanh thu tạo ra trên mỗi đồng chi tiêu cho quảng cáo (Doanh thu / Chi phí ads).
             </p>
-
-            <form id="calcRoasForm">
-              <div class="form-group">
-                <label class="form-label" for="roasSpend">Chi phí quảng cáo (VNĐ) *</label>
-                <input type="number" id="roasSpend" class="form-input" placeholder="Ví dụ: 10000000" min="1" step="any" required>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="roasRevenue">Doanh thu ghi nhận từ quảng cáo (VNĐ) *</label>
-                <input type="number" id="roasRevenue" class="form-input" placeholder="Ví dụ: 35000000" min="0" step="any" required>
-              </div>
-
-              <button type="submit" class="btn btn-sm" style="width: 100%;">Tính ROAS ngay →</button>
-            </form>
-
-            <div id="roasResult"></div>
-          </div>
-
-          <!-- 02. BREAK-EVEN ROAS -->
-          <div class="dng-card" id="break-even" style="padding: clamp(24px, 4vw, 36px);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <span class="status-badge live">02 · TIỆN ÍCH HOẠT ĐỘNG THẬT</span>
-              <span style="font-size: 12px; font-family: var(--font-mono); color: #925805;">ENGINE #2</span>
-            </div>
-            <h2 style="font-size: 22px; margin-bottom: 6px;">Break-even ROAS (Điểm hòa vốn)</h2>
-            <p style="font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 20px;">
+<form id="calcRoasForm">
+<div class="form-group">
+<label class="form-label" for="roasSpend">Chi phí quảng cáo (VNĐ) *</label>
+<input class="form-input" id="roasSpend" min="1" placeholder="Ví dụ: 10000000" required="" step="any" type="number"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="roasRevenue">Doanh thu ghi nhận từ quảng cáo (VNĐ) *</label>
+<input class="form-input" id="roasRevenue" min="0" placeholder="Ví dụ: 35000000" required="" step="any" type="number"/>
+</div>
+<button class="btn btn-sm" style="width: 100%;" type="submit">Tính ROAS ngay →</button>
+</form>
+<div id="roasResult"></div>
+</div>
+<!-- 02. BREAK-EVEN ROAS -->
+<div class="dng-card" id="break-even" style="padding: clamp(24px, 4vw, 36px);">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<span class="status-badge live">02 · TIỆN ÍCH HOẠT ĐỘNG THẬT</span>
+<span style="font-size: 12px; font-family: var(--font-mono); color: #925805;">ENGINE #2</span>
+</div>
+<h2 style="font-size: 22px; margin-bottom: 6px;">Break-even ROAS (Điểm hòa vốn)</h2>
+<p style="font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 20px;">
               Tính toán mức ROAS tối thiểu cần đạt để không bị lỗ trên biến phí sản phẩm (1 / Gross Margin).
             </p>
-
-            <form id="calcBreakEvenForm">
-              <div class="form-group">
-                <label class="form-label" for="beMargin">Biên lợi nhuận gộp (% Gross Margin) *</label>
-                <input type="number" id="beMargin" class="form-input" placeholder="Ví dụ: 40 (tương ứng 40%)" min="1" max="100" step="any" required>
-                <div style="font-size: 12px; color: var(--dim); margin-top: 4px;">Biên gộp = (Giá bán - Giá vốn sản phẩm) / Giá bán × 100%</div>
-              </div>
-
-              <button type="submit" class="btn btn-sm" style="width: 100%;">Tính điểm hòa vốn →</button>
-            </form>
-
-            <div id="beResult"></div>
-          </div>
-
-          <!-- 03. CAC CALCULATOR -->
-          <div class="dng-card" id="cac" style="padding: clamp(24px, 4vw, 36px);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <span class="status-badge live">03 · TIỆN ÍCH HOẠT ĐỘNG THẬT</span>
-              <span style="font-size: 12px; font-family: var(--font-mono); color: var(--mint-ink);">ENGINE #3</span>
-            </div>
-            <h2 style="font-size: 22px; margin-bottom: 6px;">CAC Calculator (Chi phí thu hút khách)</h2>
-            <p style="font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 20px;">
+<form id="calcBreakEvenForm">
+<div class="form-group">
+<label class="form-label" for="beMargin">Biên lợi nhuận gộp (% Gross Margin) *</label>
+<input class="form-input" id="beMargin" max="100" min="1" placeholder="Ví dụ: 40 (tương ứng 40%)" required="" step="any" type="number"/>
+<div style="font-size: 12px; color: var(--dim); margin-top: 4px;">Biên gộp = (Giá bán - Giá vốn sản phẩm) / Giá bán × 100%</div>
+</div>
+<button class="btn btn-sm" style="width: 100%;" type="submit">Tính điểm hòa vốn →</button>
+</form>
+<div id="beResult"></div>
+</div>
+<!-- 03. CAC CALCULATOR -->
+<div class="dng-card" id="cac" style="padding: clamp(24px, 4vw, 36px);">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<span class="status-badge live">03 · TIỆN ÍCH HOẠT ĐỘNG THẬT</span>
+<span style="font-size: 12px; font-family: var(--font-mono); color: var(--mint-ink);">ENGINE #3</span>
+</div>
+<h2 style="font-size: 22px; margin-bottom: 6px;">CAC Calculator (Chi phí thu hút khách)</h2>
+<p style="font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 20px;">
               Chi phí bình quân để có được 1 khách hàng mới trong kỳ (Tổng chi phí MKT + Sales / Số khách mới).
             </p>
-
-            <form id="calcCacForm">
-              <div class="form-group">
-                <label class="form-label" for="cacCost">Tổng chi phí Marketing & Bán hàng (VNĐ) *</label>
-                <input type="number" id="cacCost" class="form-input" placeholder="Ví dụ: 50000000" min="0" step="any" required>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="cacCustomers">Số lượng khách hàng mới thu được trong kỳ *</label>
-                <input type="number" id="cacCustomers" class="form-input" placeholder="Ví dụ: 100" min="1" step="1" required>
-              </div>
-
-              <button type="submit" class="btn btn-sm" style="width: 100%;">Tính CAC bình quân →</button>
-            </form>
-
-            <div id="cacResult"></div>
-          </div>
-
-          <!-- 04. LTV ESTIMATOR -->
-          <div class="dng-card" id="ltv" style="padding: clamp(24px, 4vw, 36px);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <span class="status-badge live">04 · TIỆN ÍCH HOẠT ĐỘNG THẬT</span>
-              <span style="font-size: 12px; font-family: var(--font-mono); color: var(--primary);">ENGINE #4</span>
-            </div>
-            <h2 style="font-size: 22px; margin-bottom: 6px;">LTV Estimator (Giá trị vòng đời khách)</h2>
-            <p style="font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 20px;">
+<form id="calcCacForm">
+<div class="form-group">
+<label class="form-label" for="cacCost">Tổng chi phí Marketing &amp; Bán hàng (VNĐ) *</label>
+<input class="form-input" id="cacCost" min="0" placeholder="Ví dụ: 50000000" required="" step="any" type="number"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="cacCustomers">Số lượng khách hàng mới thu được trong kỳ *</label>
+<input class="form-input" id="cacCustomers" min="1" placeholder="Ví dụ: 100" required="" step="1" type="number"/>
+</div>
+<button class="btn btn-sm" style="width: 100%;" type="submit">Tính CAC bình quân →</button>
+</form>
+<div id="cacResult"></div>
+</div>
+<!-- 04. LTV ESTIMATOR -->
+<div class="dng-card" id="ltv" style="padding: clamp(24px, 4vw, 36px);">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<span class="status-badge live">04 · TIỆN ÍCH HOẠT ĐỘNG THẬT</span>
+<span style="font-size: 12px; font-family: var(--font-mono); color: var(--primary);">ENGINE #4</span>
+</div>
+<h2 style="font-size: 22px; margin-bottom: 6px;">LTV Estimator (Giá trị vòng đời khách)</h2>
+<p style="font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 20px;">
               Ước tính tổng doanh thu trung bình một khách hàng mang lại (AOV × Tần suất mua × Thời gian gắn bó).
             </p>
-
-            <form id="calcLtvForm">
-              <div class="form-group">
-                <label class="form-label" for="ltvAov">Giá trị đơn hàng trung bình AOV (VNĐ) *</label>
-                <input type="number" id="ltvAov" class="form-input" placeholder="Ví dụ: 500000" min="1" step="any" required>
-              </div>
-
-              <div class="grid-2" style="gap: 14px;">
-                <div class="form-group">
-                  <label class="form-label" for="ltvFrequency">Tần suất mua (Lần / năm) *</label>
-                  <input type="number" id="ltvFrequency" class="form-input" placeholder="Ví dụ: 3" min="0.1" step="any" required>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="ltvLifespan">Thời gian duy trì (Năm) *</label>
-                  <input type="number" id="ltvLifespan" class="form-input" placeholder="Ví dụ: 2" min="0.1" step="any" required>
-                </div>
-              </div>
-
-              <button type="submit" class="btn btn-sm" style="width: 100%;">Tính ước tính LTV →</button>
-            </form>
-
-            <div id="ltvResult"></div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- QUICKBAR -->
-  <div class="quickbar">
-    <a href="/services/">Giải pháp</a>
-    <a href="/tools/">Công cụ</a>
-    <a href="/insights/">Tin tức</a>
-    <a href="/contact/" class="book">Liên hệ tư vấn</a>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div style="font-size: 18px; font-weight: 800; color: var(--ink);">DNGWORLD</div>
-          <p>Business Growth Intelligence Platform. Tư vấn chiến lược, tối ưu hóa tiếp thị và chuyển đổi số thương mại cho doanh nghiệp.</p>
-        </div>
-        <div class="footer-col">
-          <h4>GIẢI PHÁP</h4>
-          <ul>
-            <li><a href="/services/#strategy">Chiến lược tăng trưởng</a></li>
-            <li><a href="/services/#acquisition">Performance Marketing</a></li>
-            <li><a href="/services/#cro">Tối ưu chuyển đổi (CRO)</a></li>
-            <li><a href="/services/#automation">CRM & Tự động hóa</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>CÔNG CỤ (DNG LAB)</h4>
-          <ul>
-            <li><a href="/tools/calculators/#roas">Máy tính ROAS</a></li>
-            <li><a href="/tools/calculators/#break-even">Break-even ROAS</a></li>
-            <li><a href="/tools/calculators/#cac">Chi phí thu hút CAC</a></li>
-            <li><a href="/tools/utm-qr/">Tạo mã UTM & QR</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>NỘI DUNG</h4>
-          <ul>
-            <li><a href="/insights/">Bản tin thị trường</a></li>
-            <li><a href="/insights/#playbooks">Khung chiến lược</a></li>
-            <li><a href="/about/">Về DNGWORLD</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>LIÊN HỆ</h4>
-          <ul>
-            <li><a href="/contact/">Gửi yêu cầu tư vấn</a></li>
-            <li><a href="mailto:nguyendhungdung@gmail.com">nguyendhungdung@gmail.com</a></li>
-            <li><a href="https://zalo.me/0377348008" target="_blank" rel="noopener">Zalo: 0377 348 008</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div>© 2026 DNGWORLD. Mọi quyền được bảo lưu.</div>
-        <div>Hiểu đúng vấn đề · Không số ảo · Tăng trưởng thực chất</div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/assets/js/dng-tools.js"></script>
-  <script>
+<form id="calcLtvForm">
+<div class="form-group">
+<label class="form-label" for="ltvAov">Giá trị đơn hàng trung bình AOV (VNĐ) *</label>
+<input class="form-input" id="ltvAov" min="1" placeholder="Ví dụ: 500000" required="" step="any" type="number"/>
+</div>
+<div class="grid-2" style="gap: 14px;">
+<div class="form-group">
+<label class="form-label" for="ltvFrequency">Tần suất mua (Lần / năm) *</label>
+<input class="form-input" id="ltvFrequency" min="0.1" placeholder="Ví dụ: 3" required="" step="any" type="number"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="ltvLifespan">Thời gian duy trì (Năm) *</label>
+<input class="form-input" id="ltvLifespan" min="0.1" placeholder="Ví dụ: 2" required="" step="any" type="number"/>
+</div>
+</div>
+<button class="btn btn-sm" style="width: 100%;" type="submit">Tính ước tính LTV →</button>
+</form>
+<div id="ltvResult"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- QUICKBAR -->
+<div class="quickbar">
+<a href="/services/">Giải pháp</a>
+<a href="/tools/">Công cụ</a>
+<a href="/insights/">Tin tức</a>
+<a class="book" href="/contact/">Liên hệ tư vấn</a>
+</div>
+<!-- FOOTER -->
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div style="font-size: 18px; font-weight: 800; color: var(--ink);">DNGWORLD</div>
+<p>Business Growth Intelligence Platform. Tư vấn chiến lược, tối ưu hóa tiếp thị và chuyển đổi số thương mại cho doanh nghiệp.</p>
+</div>
+<div class="footer-col">
+<h4>GIẢI PHÁP</h4>
+<ul>
+<li><a href="/services/#strategy">Chiến lược tăng trưởng</a></li>
+<li><a href="/services/#acquisition">Performance Marketing</a></li>
+<li><a href="/services/#cro">Tối ưu chuyển đổi (CRO)</a></li>
+<li><a href="/services/#automation">CRM &amp; Tự động hóa</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>CÔNG CỤ (DNG LAB)</h4>
+<ul>
+<li><a href="/tools/calculators/#roas">Máy tính ROAS</a></li>
+<li><a href="/tools/calculators/#break-even">Break-even ROAS</a></li>
+<li><a href="/tools/calculators/#cac">Chi phí thu hút CAC</a></li>
+<li><a href="/tools/utm-qr/">Tạo mã UTM &amp; QR</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>NỘI DUNG</h4>
+<ul>
+<li><a href="/insights/">Bản tin thị trường</a></li>
+<li><a href="/insights/#playbooks">Khung chiến lược</a></li>
+<li><a href="/about/">Về DNGWORLD</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>LIÊN HỆ</h4>
+<ul>
+<li><a href="/contact/">Gửi yêu cầu tư vấn</a></li>
+<li><a href="mailto:nguyendhungdung@gmail.com">nguyendhungdung@gmail.com</a></li>
+<li><a href="https://zalo.me/0377348008" rel="noopener" target="_blank">Zalo: 0377 348 008</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<div>© 2026 DNGWORLD. Mọi quyền được bảo lưu.</div>
+<div>Hiểu đúng vấn đề · Không số ảo · Tăng trưởng thực chất</div>
+</div>
+</div>
+</footer>
+<script src="/assets/js/dng-tools.js"></script>
+<script>
     const mobileBtn = document.getElementById('mobileMenuBtn');
     const mobileDrawer = document.getElementById('mobileDrawer');
     if (mobileBtn && mobileDrawer) {
