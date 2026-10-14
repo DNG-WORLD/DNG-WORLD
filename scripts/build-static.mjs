@@ -83,7 +83,23 @@ function seoNormalize(dir){
     }
   }
 }
+// V31: all page assets are added at public-build stage to avoid editing WebGL and legacy sources.
+function injectBrandV31(dir){
+ for(const name of fs.readdirSync(dir)){
+  const full=path.join(dir,name);if(fs.statSync(full).isDirectory()){injectBrandV31(full);continue;}
+  if(!name.endsWith('.html'))continue;
+  let body=fs.readFileSync(full,'utf8');
+  if(!body.includes('</head>')||!body.includes('</body>'))continue;
+  const isNews=full.replace(/\\/g,'/').includes('/insights/');
+  if(!body.includes('dngworld-v31-brand.css'))body=body.replace('</head>','<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"><link rel="stylesheet" href="/assets/css/dngworld-v31-brand.css"></head>');
+  if(!body.includes('dngworld-v31-motion.css'))body=body.replace('</head>','<link rel="stylesheet" href="/assets/css/dngworld-v31-motion.css"></head>');
+  if(isNews && !body.includes('dngworld-newsroom-v31.css'))body=body.replace('</head>','<link rel="stylesheet" href="/assets/css/dngworld-newsroom-v31.css"></head>');
+  if(!body.includes('dngworld-v31-motion.js'))body=body.replace('</body>','<script src="/assets/js/dngworld-v31-motion.js" defer></script></body>');
+  fs.writeFileSync(full,body);
+ }
+}
 inject(out);
+injectBrandV31(out);
 seoNormalize(out);
 // Pages is deployed from _site; root sitemap from source was previously omitted entirely.
 const sitemapRoutes=[...new Set(validPages)].sort((a,b)=>a==='/'?-1:b==='/'?1:a.localeCompare(b));

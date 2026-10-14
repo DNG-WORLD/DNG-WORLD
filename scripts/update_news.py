@@ -153,7 +153,7 @@ def parse_news(source):
         else:category_actual=category
         item_id=hashlib.sha256(link.encode()).hexdigest()[:18]
         items.append({'id':item_id,'title':title,'summary':excerpt,'source':publisher,'category':category_actual,
-                      'url':link,'image':image,'published_at':published.isoformat(),'kind':'source_brief'})
+                      'url':link,'image':image,'published_at':published.isoformat(),'kind':'source_brief','source_lang':'vi' if publisher in ('VnExpress','Tuổi Trẻ','VietnamPlus') else 'en'})
     return publisher+' / '+category,items
 
 def parse_channel(source):
@@ -167,7 +167,7 @@ def parse_channel(source):
         title=text_clean(get(entry,'a:title'),170)
         if not re.fullmatch(r'[A-Za-z0-9_-]{11}',video_id or '') or not published or published<NOW-timedelta(days=10) or published>NOW+timedelta(hours=2):continue
         out.append({'id':video_id,'title':title,'channel':channel,'category':category,'published_at':published.isoformat(),
-                    'thumbnail':'https://i.ytimg.com/vi/'+video_id+'/hqdefault.jpg', 'popularity':None,'provenance':'official_channel'})
+                    'thumbnail':'https://i.ytimg.com/vi/'+video_id+'/hqdefault.jpg', 'popularity':None,'provenance':'official_channel','source_lang':'vi' if channel=='VTV24' else 'en'})
     return 'YouTube / '+channel,out
 
 def youtube_api():
@@ -193,8 +193,57 @@ def youtube_api():
             thumb=meta.get('thumbnails',{}).get('high',{}).get('url') or 'https://i.ytimg.com/vi/'+vid+'/hqdefault.jpg'
             out.append({'id':vid,'title':text_clean(meta.get('title'),170),'channel':meta.get('channelTitle','YouTube'),
                         'category':cat,'published_at':dt.isoformat(),'thumbnail':thumb,'popularity':int(item.get('statistics',{}).get('viewCount',0)),
-                        'provenance':'youtube_popular_'+region})
+                        'provenance':'youtube_popular_'+region,'source_lang':'vi' if region=='VN' and re.search('[À-ỹà-ỹ]',meta.get('title','')) else 'en'})
     return out,''
+
+
+# V31 language QA: preserve factual source, translate headline + published RSS summary only.
+# Optional OPENAI_API_KEY GitHub Actions secret is required for unattended translation.
+# No key or failed translation => do not mislabel English text as Vietnamese/Chinese.
+def enrich_languages(articles, grouped):
+    entries=articles+[v for group in grouped.values() for v in group]
+    for x in entries:
+        lang=x.get('source_lang','en')
+        x['translations']={lang:{'title':x.get('title',''),'summary':x.get('summary','')}}
+    key=os.getenv('OPENAI_API_KEY','').strip()
+    if not key:
+        print('TRANSLATION WARNING: OPENAI_API_KEY not set; news will appear only in matching source languages.')
+        return 'not_configured'
+    model=os.getenv('DNG_TRANSLATE_MODEL','gpt-4o-mini').strip()
+    from urllib.error import HTTPError
+    def batch_translate(items,target):
+        request_items=[{'id':x['id'],'title':x['title'],'summary':x.get('summary','')} for x in items]
+        system=('You translate news metadata for a multilingual news discovery website. Translate into '+
+            {'vi':'natural Vietnamese','en':'natural English','zh':'Simplified Chinese'}[target]+
+            '. Preserve names, dates, amounts, uncertainty, attribution, and meaning. Do not invent or elaborate facts. '
+            'Return ONLY valid JSON object of form {"items":[{"id":"...","title":"...","summary":"..."}]}. '
+            'All input IDs must appear exactly once. Do not include commentary.')
+        payload={'model':model,'messages':[{'role':'system','content':system},{'role':'user','content':json.dumps(request_items,ensure_ascii=False)}],
+                 'temperature':0,'response_format':{'type':'json_object'},'max_tokens':5600}
+        req=Request('https://api.openai.com/v1/chat/completions',data=json.dumps(payload,ensure_ascii=False).encode('utf-8'),
+                    headers={'Authorization':'Bearer '+key,'Content-Type':'application/json'},method='POST')
+        with urlopen(req,timeout=65) as response:res=json.loads(response.read(700000))
+        msg=res['choices'][0]['message']['content']
+        results=json.loads(msg).get('items',[])
+        available={x['id']:x for x in items}
+        ok=0
+        for item in results:
+            ident=item.get('id');original=available.get(ident)
+            title=str(item.get('title','')).strip();summary=str(item.get('summary','')).strip()
+            if not original or not title or len(title)>350 or len(summary)>850:continue
+            original['translations'][target]={'title':title,'summary':summary};ok+=1
+        return ok
+    errors=[];total=0
+    # 15 stories per API request keeps input token/response length bounded.
+    for target in ('vi','en','zh'):
+        pending=[x for x in entries if target not in x['translations']]
+        for start in range(0,len(pending),15):
+            batch=pending[start:start+15]
+            try:total+=batch_translate(batch,target)
+            except Exception as err:
+                errors.append(target+': '+str(err)[:190]);print('TRANSLATION ERROR',target,str(err)[:150])
+    print('Translated localized articles/video:',total,'errors:',len(errors))
+    return 'partial' if errors else 'ok'
 
 def main():
     info_ok=[];failed=[];articles=[];videos=[]
@@ -234,7 +283,8 @@ def main():
     for item in sorted(vids_by_id.values(),key=lambda v:(v['popularity'] is not None,v['popularity'] or 0,v['published_at']),reverse=True):
         cat=item['category']
         if cat in grouped and len(grouped[cat])<8:grouped[cat].append(item)
-    payload={'version':26,'updated_at':NOW.isoformat() if selected or any(grouped.values()) else None,
+    translation_status=enrich_languages(selected,grouped)
+    payload={'version':31,'translation_status':translation_status,'updated_at':NOW.isoformat() if selected or any(grouped.values()) else None,
              'attempted_at':NOW.isoformat(),'status':'ok' if selected else 'partial' if videos else 'unavailable',
              'video_mode':'popular_and_channel' if api_videos else 'official_channels_latest',
              'video_api_note':api_status,'source_count':len(info_ok),'sources_ok':sorted(info_ok),
