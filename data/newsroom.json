@@ -1,7 +1,7 @@
 {
   "version": 26,
-  "updated_at": "2026-10-14T07:51:41.316987+00:00",
-  "attempted_at": "2026-10-14T07:51:41.316987+00:00",
+  "updated_at": "2026-10-14T09:08:05.026150+00:00",
+  "attempted_at": "2026-10-14T09:08:05.026150+00:00",
   "status": "ok",
   "video_mode": "official_channels_latest",
   "video_api_note": "YOUTUBE_API_KEY not configured (official-channel mode)",
@@ -30,9 +30,9 @@
   ],
   "sources_failed": [
     "Search Engine Land / marketing (HTTP Error 403: Forbidden)",
-    "Tuổi Trẻ / economy (empty or no recent records)",
-    "Tuổi Trẻ / vietnam (empty or no recent records)",
     "Tuổi Trẻ / world (empty or no recent records)",
+    "Tuổi Trẻ / vietnam (empty or no recent records)",
+    "Tuổi Trẻ / economy (empty or no recent records)",
     "VietnamPlus / vietnam (not well-formed (invalid token): line 1, column 0)"
   ],
   "news": [
@@ -44,7 +44,139 @@
       "category": "world",
       "url": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e2a0/live/ccd96d30-c792-11f1-a64c-550be9e3c66b.jpg",
-      "published_at": "2026-10-14T07:23:46+00:00",
+      "published_at": "2026-10-14T08:53:40+00:00",
+      "kind": "source_brief"
+    },
+    {
+      "id": "4458c877a3c243f70a",
+      "title": "Russian attacks on Ukraine leave 600,000 without power as Zelenskyy says Moscow ‘disrespecting’ US – Europe live",
+      "summary": "Zelenskyy says Russia attacked ‘infrastructure covered by the ceasefire announced by the American president’ Ukrainian soldiers have access to Starlink satellite internet restricted in Berlin A Ukrainian soldier is to go on trial in Hamburg accused of taking part in one of the most brazen acts of sabotage in postwar European his…",
+      "source": "The Guardian",
+      "category": "politics",
+      "url": "https://www.theguardian.com/world/live/2026/oct/14/russia-ukraine-war-latest-updates-zelenskyy-europe",
+      "image": "https://i.guim.co.uk/img/media/3635e9a89739096bcac6b91d39acfc80ccf1e88f/850_330_4496_3597/master/4496.jpg?width=140&quality=85&auto=format&fit=max&s=54cec62fcb7fc43a7982242e2171100b",
+      "published_at": "2026-10-14T08:43:50+00:00",
+      "kind": "source_brief"
+    },
+    {
+      "id": "4d5064f51e74ae0688",
+      "title": "Joni Mitchell becomes US citizen: ‘A journey that began 62 years ago’",
+      "summary": "Canada-born singer-songwriter, 82, posts footage of citizenship ceremony to Instagram Joni Mitchell has become a US citizen, after first moving to the country in the mid-1960s. The Canada-born singer-songwriter, 82, posted footage of her citizenship ceremony on her Instagram account, along with a photo of her next to an American…",
+      "source": "The Guardian",
+      "category": "world",
+      "url": "https://www.theguardian.com/music/2026/oct/14/joni-mitchell-becomes-us-citizen-a-journey-that-began-62-years-ago",
+      "image": "https://i.guim.co.uk/img/media/369763803c4b71aade9b94260488cb516e1dc4f1/0_21_695_556/master/695.jpg?width=140&quality=85&auto=format&fit=max&s=3a45d804575493b18f41df01d0b5e43a",
+      "published_at": "2026-10-14T08:39:00+00:00",
+      "kind": "source_brief"
+    },
+    {
+      "id": "d4f2375d084377be7f",
+      "title": "'I applied for 200 jobs' - How 'spray and pray' AI job applications can backfire",
+      "summary": "Graduates are increasingly using AI to misrepresent themselves in job applications, research suggests. But some say their peer group has no choice.",
+      "source": "BBC News",
+      "category": "economy",
+      "url": "https://www.bbc.co.uk/news/articles/c623dnkn8pkyo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/38df/live/64af4870-c6e7-11f1-bf38-57dc5cd42af2.jpg",
+      "published_at": "2026-10-14T08:27:17+00:00",
+      "kind": "source_brief"
+    },
+    {
+      "id": "11f619156f4570458b",
+      "title": "Turkish police raid opposition TV station, halting live broadcasts",
+      "summary": "Halk TV says its staff are unable to enter the building in Istanbul and a new manager has been appointed.",
+      "source": "BBC News",
+      "category": "world",
+      "url": "https://www.bbc.co.uk/news/articles/crx23y3d970vo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e70f/live/ab877350-c7a8-11f1-a624-a3d8608fc192.png",
+      "published_at": "2026-10-14T08:17:43+00:00",
+      "kind": "source_brief"
+    },
+    {
+      "id": "28c8929f9d389b8cd4",
+      "title": "Startup Character.AI nộp đơn xin phá sản",
+      "summary": "Character.AI - startup chuyên phát triển chatbot, thông báo nộp đơn phá sản tại Mỹ và đồng ý bán một số tài sản với giá 20 triệu USD cho Disney.",
+      "source": "VnExpress",
+      "category": "ai",
+      "url": "https://vnexpress.net/startup-character-ai-nop-don-xin-pha-san-5132194.html",
+      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/10/14/CharacterAI-1791953845-2383-1791954050.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=IWCqDfEDsAFyJf2qze4Oow",
+      "published_at": "2026-10-14T08:09:06+00:00",
+      "kind": "source_brief"
+    },
+    {
+      "id": "ab056d063ef9349104",
+      "title": "Child safety officer incorrectly assessed Elizabeth Struhs as ‘safe’ day after she was admitted to hospital in coma",
+      "summary": "Inquest into death of eight-year-old Queensland girl who was denied insulin by her religious parents told her case was complex Get our breaking news email , free app or daily news podcast A child safety officer incorrectly assessed Elizabeth Struhs as “safe” one day after she arrived at hospital in a coma and nearly died due to…",
+      "source": "The Guardian",
+      "category": "world",
+      "url": "https://www.theguardian.com/australia-news/2026/oct/14/child-safety-officer-incorrectly-assessed-elizabeth-struhs-as-safe-a-day-after-she-was-admitted-to-hospital-in-a-coma-ntwnfb",
+      "image": "https://i.guim.co.uk/img/media/4f45123c0d103781f7cb5dc2ba43bfa0b98fda10/0_92_1100_880/master/1100.jpg?width=140&quality=85&auto=format&fit=max&s=a3ec0e659afe52735bb30398729dfaf6",
+      "published_at": "2026-10-14T08:08:10+00:00",
+      "kind": "source_brief"
+    },
+    {
+      "id": "d90c17e4b1366366bf",
+      "title": "Ukrainian soldiers in combat have access to Starlink satellite internet restricted",
+      "summary": "Outage of terminals managed by Elon Musk’s SpaceX comes as Russia launches ballistic missiles at Ukraine without any advance warning from US Ukrainian soldiers in combat have suddenly had their access to Starlink satellite internet terminals restricted as the Trump administration has increased pressure on Ukraine to halt long-ra…",
+      "source": "The Guardian",
+      "category": "world",
+      "url": "https://www.theguardian.com/world/2026/oct/14/ukraine-soldiers-combat-access-starlink-satellite-internet-restricted",
+      "image": "https://i.guim.co.uk/img/media/d170b63ddab42567307e41b3e7dfcc6be4b60855/314_0_3166_2534/master/3166.jpg?width=140&quality=85&auto=format&fit=max&s=0d6e990d63ba2ec8257c04aa63425240",
+      "published_at": "2026-10-14T08:05:09+00:00",
+      "kind": "source_brief"
+    },
+    {
+      "id": "06c51049c71246156e",
+      "title": "Russia arrests Japanese journalist on spying charges",
+      "summary": "The Hokkaido Shimbun journalist is accused of collecting information on Moscow's defence capabilities for Tokyo.",
+      "source": "BBC News",
+      "category": "world",
+      "url": "https://www.bbc.co.uk/news/articles/cwp9g1el7x9zo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5c43/live/65eee660-c781-11f1-b999-873e5cdc91d4.png",
+      "published_at": "2026-10-14T08:00:03+00:00",
+      "kind": "source_brief"
+    },
+    {
+      "id": "18521ab849e45ccff7",
+      "title": "We’re powering European scientific discovery with advanced AI compute and frontier models.",
+      "summary": "Google DeepMind and Google Cloud are providing up to 200 top European scientific researchers with direct access to our frontier models, together with $3 million in compu…",
+      "source": "Google Blog",
+      "category": "ai",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/were-powering-european-scientific-discovery-with-advanced-ai-compute-and-frontier-models/",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ireland-innovation-companies-st.max-600x600.format-webp.webp",
+      "published_at": "2026-10-14T08:00:00+00:00",
+      "kind": "source_brief"
+    },
+    {
+      "id": "dc582111021d2c79f8",
+      "title": "Labor’s bill to cut private health insurance rebate blocked by Greens over pensioner carve-out",
+      "summary": "Almost 80,000 older Australians expected to end private health cover by 2028-29 as a result of Albanese government’s proposal Get our breaking news email , free app or daily news podcast Labor’s bid to cut the private health insurance rebate for over-65s has been blocked in parliament, with the Greens insisting they will withhol…",
+      "source": "The Guardian",
+      "category": "politics",
+      "url": "https://www.theguardian.com/australia-news/2026/oct/14/labors-bill-to-cut-private-health-insurance-rebate-blocked-by-greens-over-pensioner-carve-out",
+      "image": "https://i.guim.co.uk/img/media/43abd0d3743d7701422debb507d594b886a5115a/195_184_3931_3145/master/3931.jpg?width=140&quality=85&auto=format&fit=max&s=c5703501aa272f6de208ffe55069b352",
+      "published_at": "2026-10-14T07:59:53+00:00",
+      "kind": "source_brief"
+    },
+    {
+      "id": "1c0e843420536ce404",
+      "title": "Công ty tài sản số liên quan con trai ông Nguyễn Đức Thụy tăng vốn lên 10.000 tỷ đồng",
+      "summary": "SCEX, công ty tài sản số do con trai ông Nguyễn Đức Thụy giữ chức Phó chủ tịch, hoàn tất tăng vốn từ 5.000 tỷ đồng lên 10.000 tỷ đồng - mức vốn tối thiểu để lập sàn giao dịch.",
+      "source": "VnExpress",
+      "category": "economy",
+      "url": "https://vnexpress.net/cong-ty-tai-san-so-lien-quan-con-trai-ong-nguyen-duc-thuy-tang-von-len-10-000-ty-dong-5132208.html",
+      "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/10/14/a-1791954099-1795-1791954106.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=zhQQyH4OsLA8EAzqF5cLmw",
+      "published_at": "2026-10-14T07:34:37+00:00",
+      "kind": "source_brief"
+    },
+    {
+      "id": "38baf772a938d90fba",
+      "title": "Russian strikes leave 600,000 without power in Ukraine, Zelensky says",
+      "summary": "Ukraine's president says \"critical\" infrastructure was hit overnight, while emergency services say at least three were killed.",
+      "source": "BBC News",
+      "category": "politics",
+      "url": "https://www.bbc.co.uk/news/articles/cm2d6e62p49do?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8d6b/live/880ad440-c79d-11f1-a64c-550be9e3c66b.jpg",
+      "published_at": "2026-10-14T07:21:50+00:00",
       "kind": "source_brief"
     },
     {
@@ -70,17 +202,6 @@
       "kind": "source_brief"
     },
     {
-      "id": "06c51049c71246156e",
-      "title": "Russia arrests Japanese journalist on spying charges",
-      "summary": "The Hokkaido Shimbun journalist is accused of collecting information on Moscow's defence capabilities for Tokyo.",
-      "source": "BBC News",
-      "category": "world",
-      "url": "https://www.bbc.co.uk/news/articles/cwp9g1el7x9zo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5c43/live/65eee660-c781-11f1-b999-873e5cdc91d4.png",
-      "published_at": "2026-10-14T07:12:37+00:00",
-      "kind": "source_brief"
-    },
-    {
       "id": "7387e7d50f77ad1580",
       "title": "Trade minister says Coalition MPs walked out of meeting on EU trade deal – as it happened",
       "summary": "This blog is now closed Get our breaking news email , free app or daily news podcast Australia missing out on $45bn of revenue from resources: Greens As Labor prepares to introduce its bill for a gas reserve, the Greens are pointing out that there are tens of billions being left on the table because the government won’t properly…",
@@ -103,6 +224,17 @@
       "kind": "source_brief"
     },
     {
+      "id": "d747920a99770cf9cd",
+      "title": "Techcombank được chấp thuận tăng vốn điều lệ lên hơn 106.000 tỷ đồng",
+      "summary": "Techcombank được phê duyệt phương án tăng vốn thông qua trả cổ tức bằng cổ phiếu tỷ lệ 50% và phát hành ESOP cho người lao động, dự kiến nâng vốn điều lệ lên gần 106.600 tỷ đồng.",
+      "source": "VnExpress",
+      "category": "economy",
+      "url": "https://vnexpress.net/techcombank-duoc-chap-thuan-tang-von-dieu-le-len-hon-106-000-ty-dong-5132236.html",
+      "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/10/14/giaodich-1791960891-8587-1791960968.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Dx6tFNl5U4_scWiuyLJKRA",
+      "published_at": "2026-10-14T07:00:00+00:00",
+      "kind": "source_brief"
+    },
+    {
       "id": "b55aaeb0585a9198eb",
       "title": "Robot NASA lập kỷ lục quãng đường xa nhất trên Sao Hỏa",
       "summary": "Hôm 11/10, robot tự hành Perseverance cán mốc di chuyển 45,22 km sau 5,5 năm trên Sao Hỏa, phá vỡ kỷ lục trước đó mà robot Opportunity thiết lập khi chạy 45,16 km trong 14 năm.",
@@ -111,28 +243,6 @@
       "url": "https://vnexpress.net/robot-nasa-lap-ky-luc-quang-duong-xa-nhat-tren-sao-hoa-5132178.html",
       "image": "https://vcdn1-vnexpress.vnecdn.net/2026/10/14/VNERobot-1791951526-5339-1791951684.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=fcc6EZjsqg1nTU6D8h_skA",
       "published_at": "2026-10-14T06:59:25+00:00",
-      "kind": "source_brief"
-    },
-    {
-      "id": "d4f2375d084377be7f",
-      "title": "'Spray and pray': How AI job applications can backfire",
-      "summary": "Graduates are increasingly using AI to misrepresent themselves in job applications, research suggests. But some say their peer group has no choice.",
-      "source": "BBC News",
-      "category": "economy",
-      "url": "https://www.bbc.co.uk/news/articles/c623dnkn8pkyo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/38df/live/64af4870-c6e7-11f1-bf38-57dc5cd42af2.jpg",
-      "published_at": "2026-10-14T06:52:33+00:00",
-      "kind": "source_brief"
-    },
-    {
-      "id": "11f619156f4570458b",
-      "title": "Turkey police raid opposition TV station, halting live broadcasts",
-      "summary": "Halk TV says its staff are unable to enter the building in Istanbul and a new manager has been appointed.",
-      "source": "BBC News",
-      "category": "world",
-      "url": "https://www.bbc.co.uk/news/articles/crx23y3d970vo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/dd58/live/148a7250-c798-11f1-b506-c77373b53604.jpg",
-      "published_at": "2026-10-14T06:32:02+00:00",
       "kind": "source_brief"
     },
     {
@@ -186,7 +296,7 @@
       "source": "BBC News",
       "category": "politics",
       "url": "https://www.bbc.co.uk/news/articles/cx8dz4235vnyo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/81d9/live/1fe91d80-c6fe-11f1-b4dd-e786ec6f11b1.jpg",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/268f/live/c260a180-c7a5-11f1-a624-a3d8608fc192.jpg",
       "published_at": "2026-10-14T05:31:14+00:00",
       "kind": "source_brief"
     },
@@ -235,28 +345,6 @@
       "kind": "source_brief"
     },
     {
-      "id": "adfa34355d97076593",
-      "title": "Beau Lamarre-Condon previously visited farm where he later allegedly tried to sink bodies, court told",
-      "summary": "Jury also shown 3D reconstruction of Paddington terrace outlining prosecution version of alleged murders of Jesse Baird and Luke Davies Follow our Australian politics live blog for latest updates Get our new political email , free app or daily news podcast Beau Lamarre-Condon previously visited a farm where he later tried to sin…",
-      "source": "The Guardian",
-      "category": "world",
-      "url": "https://www.theguardian.com/australia-news/2026/oct/14/beau-lamarre-condon-trial-shown-alleged-murder-scene-reconstruction-bullet-holes-ntwnfb",
-      "image": "https://i.guim.co.uk/img/media/21127e4ff4f078d6bc5941e4ce4904baf957cf56/73_8_1486_1188/master/1486.jpg?width=140&quality=85&auto=format&fit=max&s=4632eb8686cb9f38977f23041e877805",
-      "published_at": "2026-10-14T04:45:06+00:00",
-      "kind": "source_brief"
-    },
-    {
-      "id": "72373fdc8469d93260",
-      "title": "Russian strikes hit key power plant in Kyiv, Zelensky says",
-      "summary": "The Ukrainian president says the ballistic missile strikes came with \"no early warning from our partners\".",
-      "source": "BBC News",
-      "category": "politics",
-      "url": "https://www.bbc.co.uk/news/articles/ck20r9qpw505o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/10cd/live/79669050-c74d-11f1-a64c-550be9e3c66b.jpg",
-      "published_at": "2026-10-14T04:36:06+00:00",
-      "kind": "source_brief"
-    },
-    {
       "id": "38712b4e4ef94140b1",
       "title": "Cổ phiếu Quốc Cường Gia Lai tăng trần khi bà Như Loan trở lại điều hành",
       "summary": "QCG tăng hết biên độ lên 10.300 đồng và dư mua gần 200.000 cổ phiếu, sau thông tin bà Nguyễn Thị Như Loan quay lại làm CEO và người đại diện theo pháp luật.",
@@ -265,17 +353,6 @@
       "url": "https://vnexpress.net/co-phieu-quoc-cuong-gia-lai-tang-tran-khi-ba-nhu-loan-tro-lai-dieu-hanh-5132163.html",
       "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/10/14/chung-khoan-11-1541-1791950398.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=0p3vjxd4HlqF6lAAHvQ-cQ",
       "published_at": "2026-10-14T04:31:36+00:00",
-      "kind": "source_brief"
-    },
-    {
-      "id": "c8ec798c705b7ed33f",
-      "title": "$20m public liability insurance to rally in a park: how council red tape hinders the right to protest",
-      "summary": "Public gatherings stymied by bureaucracy, Australian Democracy Network and Deakin University researchers find Get our breaking news email , free app or daily news podcast Council red tape is stymieing the right to protest, a report has said, after a regional New South Wales council told a protest organiser they needed a $20m pub…",
-      "source": "The Guardian",
-      "category": "world",
-      "url": "https://www.theguardian.com/australia-news/2026/oct/14/councils-making-protesters-purchase-public-liability-insurance",
-      "image": "https://i.guim.co.uk/img/media/421600d7d38c2ef7a8fbe7a40193077413cc9b73/1467_1301_2084_1668/master/2084.jpg?width=140&quality=85&auto=format&fit=max&s=4add9a3c21c7bd0af1f1531e27ca558b",
-      "published_at": "2026-10-14T04:22:19+00:00",
       "kind": "source_brief"
     },
     {
@@ -382,7 +459,7 @@
       "title": "Bank of America hit with $1.2bn fine for money laundering failings",
       "summary": "The bank inadequately flagged transactions linked to potential Chinese money laundering networks, the Treasury said.",
       "source": "BBC News",
-      "category": "world",
+      "category": "economy",
       "url": "https://www.bbc.co.uk/news/articles/cm3wvxy6n3z8o?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7d37/live/18ad5d80-c797-11f1-b506-c77373b53604.jpg",
       "published_at": "2026-10-14T02:05:32+00:00",
@@ -653,19 +730,8 @@
       "kind": "source_brief"
     },
     {
-      "id": "42abfce8cf9e42e898",
-      "title": "Allies did not warn Kyiv of Russian ballistic missile strikes, says Zelenskyy",
-      "summary": "Ukrainian president’s comments on ‘particularly vile’ strikes come after US threatened to halt intelligence sharing Ukraine received no early warning from its partners about a second night of Russian ballistic missile strikes on civilian infrastructure in Kyiv, including a critical power plant struck after dark, Volodymyr Zelens…",
-      "source": "The Guardian",
-      "category": "politics",
-      "url": "https://www.theguardian.com/world/2026/oct/13/allies-did-not-warn-kyiv-of-russian-ballistic-missile-strikes-says-zelenskyy",
-      "image": "https://i.guim.co.uk/img/media/0bdf9ed7b96dc65009d999f39b3c6db73527da07/532_0_4808_3848/master/4808.jpg?width=140&quality=85&auto=format&fit=max&s=5f8a681e5385f4dd16ec7eb015810fe0",
-      "published_at": "2026-10-13T21:54:12+00:00",
-      "kind": "source_brief"
-    },
-    {
       "id": "994246342d5e43ad1f",
-      "title": "Saudi man charged with planting 'sophisticated' recording device in OpenAI office",
+      "title": "Saudi employee charged with planting recording device in OpenAI office",
       "summary": "Prosecutors say the device, wrapped in toilet paper, was found inserted in a USB port on the back of a TV in an executive conference room.",
       "source": "BBC News",
       "category": "ai",
@@ -694,17 +760,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cq98z59xdny5o?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/29cd/live/e9e20c80-c79b-11f1-9a39-31b474234113.jpg",
       "published_at": "2026-10-13T21:31:30+00:00",
-      "kind": "source_brief"
-    },
-    {
-      "id": "bddd371f683d190c7b",
-      "title": "Burnham to host Zelenskyy at No 10 in show of ‘rock-solid’ support",
-      "summary": "Prime minister reiterates UK backing after the Ukrainian president’s latest round of difficulties with Donald Trump Andy Burnham will host Volodymyr Zelenskyy at Downing Street on Wednesday as the UK seeks to further underline its support for the Ukrainian president, in contrast to his difficulties with Donald Trump. The UK prim…",
-      "source": "The Guardian",
-      "category": "politics",
-      "url": "https://www.theguardian.com/politics/2026/oct/13/burnham-to-host-zelenskyy-at-no-10-in-show-of-rock-solid-support",
-      "image": "https://i.guim.co.uk/img/media/bd56f99f083394fc778ce997855ce42ce481d469/90_0_4419_3538/master/4419.jpg?width=140&quality=85&auto=format&fit=max&s=11a6fc48bb963bd08f55a1d3c161a3c6",
-      "published_at": "2026-10-13T21:30:35+00:00",
       "kind": "source_brief"
     },
     {
@@ -917,23 +972,23 @@
       "kind": "source_brief"
     },
     {
-      "id": "c0d1db294d8f9f0c99",
-      "title": "Rivian partner Mind Robotics hires Doug Field as president",
-      "summary": "Rivian CEO RJ Scaringe's startup Mind Robotics announced the appointment of Doug Field as president in a major coup for the CEO's secretive robotics project. Field was a VP of special projects at Apple, where he was the de facto head of the company's ultimately unsuccessful Project Titan effort to make an autonomous electric car…",
-      "source": "The Verge",
-      "category": "technology",
-      "url": "https://www.theverge.com/transportation/1010050/rivian-mind-robotics-hires-doug-field-ford-tesla-apple",
-      "image": "",
-      "published_at": "2026-10-13T18:30:00+00:00",
-      "kind": "source_brief"
-    },
-    {
       "id": "c94df607d9b75d66b6",
       "title": "Flox Intelligence is building AI to keep wildlife away from trains, airports, and roads",
       "summary": "Flox's edge devices can identify animals and use species-specific sounds to drive them away from critical infrastructure.",
       "source": "TechCrunch",
       "category": "ai",
       "url": "https://techcrunch.com/2026/10/13/flox-intelligence-is-building-ai-to-keep-wildlife-away-from-trains-airports-and-roads/",
+      "image": "",
+      "published_at": "2026-10-13T18:30:00+00:00",
+      "kind": "source_brief"
+    },
+    {
+      "id": "c0d1db294d8f9f0c99",
+      "title": "Rivian partner Mind Robotics hires Doug Field as president",
+      "summary": "Rivian CEO RJ Scaringe's startup Mind Robotics announced the appointment of Doug Field as president in a major coup for the CEO's secretive robotics project. Field was a VP of special projects at Apple, where he was the de facto head of the company's ultimately unsuccessful Project Titan effort to make an autonomous electric car…",
+      "source": "The Verge",
+      "category": "technology",
+      "url": "https://www.theverge.com/transportation/1010050/rivian-mind-robotics-hires-doug-field-ford-tesla-apple",
       "image": "",
       "published_at": "2026-10-13T18:30:00+00:00",
       "kind": "source_brief"
@@ -1027,28 +1082,6 @@
       "kind": "source_brief"
     },
     {
-      "id": "a982f604a503ccf23c",
-      "title": "Laplace Intelligence red-teams robots and self-driving cars before they hit the real world",
-      "summary": "University of Michigan spinout Laplace Intelligence uses AI agents and interactive simulation to stress-test robots and self-driving vehicles before deployment. The profitable startup is competing in Startup Battlefield at TechCrunch Disrupt, October 13-15 in San Francisco.",
-      "source": "TechCrunch",
-      "category": "ai",
-      "url": "https://techcrunch.com/2026/10/13/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/",
-      "image": "",
-      "published_at": "2026-10-13T17:30:00+00:00",
-      "kind": "source_brief"
-    },
-    {
-      "id": "51e3d24adc70a0db63",
-      "title": "Pluto Security raises $42M as AI gives enterprise security teams a new headache",
-      "summary": "The problem with giving everyone in a company access to AI tools is that people will use them in unexpected ways. And that fact is steadily seeding fears that companies now have new, gaping security holes in their systems or, at least, will soon.",
-      "source": "TechCrunch",
-      "category": "ai",
-      "url": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/",
-      "image": "",
-      "published_at": "2026-10-13T17:18:25+00:00",
-      "kind": "source_brief"
-    },
-    {
       "id": "97d663ee1e040cd56b",
       "title": "MI5 chief warns against overstating Russian interference in Brexit vote",
       "summary": "It comes after Andy Burnham said Moscow had tried to interfere in the 2016 referendum.",
@@ -1126,17 +1159,6 @@
       "kind": "source_brief"
     },
     {
-      "id": "39274894f488e2317e",
-      "title": "Cục thuế yêu cầu không 'om' hồ sơ của người dân, doanh nghiệp",
-      "summary": "Theo quy tắc vừa được ban hành, cán bộ thuế không được gây khó dễ và phải chủ động xử lý khi hồ sơ đủ điều kiện thay vì chờ được nhắc mới giải quyết.",
-      "source": "VnExpress",
-      "category": "economy",
-      "url": "https://vnexpress.net/cuc-thue-yeu-cau-khong-om-ho-so-cua-nguoi-dan-doanh-nghiep-5131899.html",
-      "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/10/13/179187792383727983186517736853-1464-1674-1791895129.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=FqW5hg51fWhUqUd-fuJ-7A",
-      "published_at": "2026-10-13T13:32:25+00:00",
-      "kind": "source_brief"
-    },
-    {
       "id": "dfb25b1fe23465b121",
       "title": "Hundreds more prisoners being freed in second phase of early release scheme",
       "summary": "The second tranche of prisoners being released includes those serving up to two and a half years.",
@@ -1145,17 +1167,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cwzrdnrrmgymo?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e75b/live/c83fa290-c70a-11f1-9a39-31b474234113.jpg",
       "published_at": "2026-10-13T12:48:51+00:00",
-      "kind": "source_brief"
-    },
-    {
-      "id": "9c4c927e6cfff2ec2b",
-      "title": "Threat of AI share crash puts world financial stability at risk, says IMF",
-      "summary": "High valuations and debt put sector in danger, while fund also warns on government borrowing and cyber-attacks IMF warns global economy ‘could soon test the limits of resilience’ The threat of an AI share price crash rippling out across global markets is putting world financial stability at risk, the International Monetary fund…",
-      "source": "The Guardian",
-      "category": "economy",
-      "url": "https://www.theguardian.com/business/2026/oct/13/ai-share-crash-risk-global-imf-debt-corrowing-cyber-attacks",
-      "image": "https://i.guim.co.uk/img/media/e66d4b83821641865a2b61c557a735880c9734e0/936_0_4064_3251/master/4064.jpg?width=140&quality=85&auto=format&fit=max&s=64f8d89d1094aed1c2d57aeff5d62a4b",
-      "published_at": "2026-10-13T12:30:01+00:00",
       "kind": "source_brief"
     },
     {
@@ -1170,85 +1181,124 @@
       "kind": "source_brief"
     },
     {
-      "id": "8367d6f6f5f92243e3",
-      "title": "Poundland in rescue talks as owners seek buyer",
-      "summary": "The leadership team is attempting a buyout, but a union has warned the retailer could fall into administration instead.",
-      "source": "BBC News",
-      "category": "economy",
-      "url": "https://www.bbc.co.uk/news/articles/ckr5ydvvln0mo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c9b1/live/c0667080-c6e7-11f1-bf38-57dc5cd42af2.jpg",
-      "published_at": "2026-10-13T12:17:17+00:00",
+      "id": "2532d749ea6e11b3ce",
+      "title": "Việt Nam lên án các cuộc tấn công vào mục tiêu dân sự tại Arab Saudi",
+      "summary": "Việt Nam lên án các cuộc tấn công gần đây nhằm vào các cơ sở hạ tầng dân sự tại Arab Saudi, khiến nhiều dân thường thương vong, đe dọa đến hòa bình, ổn định.",
+      "source": "VnExpress",
+      "category": "vietnam",
+      "url": "https://vnexpress.net/viet-nam-len-an-cac-cuoc-tan-cong-vao-muc-tieu-dan-su-tai-arab-saudi-5131807.html",
+      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/10/13/131026NPNBNGPhamThuHang-179188-4335-4397-1791883495.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=h0uNwWjLs8aJnj09xe4s0Q",
+      "published_at": "2026-10-13T09:42:19+00:00",
       "kind": "source_brief"
     },
     {
-      "id": "47d1c4550dfdec70fd",
-      "title": "Khánh thành bếp ăn bán trú cho hơn 400 học sinh tiểu học ở Tây Ninh",
-      "summary": "Bếp ăn mới do De Heus tài trợ thông qua Quỹ Hy vọng tại Phân hiệu 1 - Trường Tiểu học Lê Văn Tám sẽ phục vụ hơn 400 học sinh bán trú từ 14/10.",
+      "id": "f7e4c85b56b18800e7",
+      "title": "Doãn Quốc Đam đóng người chồng vũ phu",
+      "summary": "Diễn viên Doãn Quốc Đam hóa thân Bình, người chồng bạo hành vợ trong phim truyền hình \"Căn nhà không mái che\".",
       "source": "VnExpress",
       "category": "vietnam",
-      "url": "https://vnexpress.net/khanh-thanh-bep-an-ban-tru-cho-hon-400-hoc-sinh-tieu-hoc-o-tay-ninh-5131673.html",
-      "image": "https://vcdn1-giadinh.vnecdn.net/2026/10/13/a-nh-ma-n-hi-nh-lu-1791865854-7492-1791865961.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=EKM5KzVNSiDZ3SBLfKhZBQ",
-      "published_at": "2026-10-13T07:55:04+00:00",
+      "url": "https://vnexpress.net/doan-quoc-dam-dong-nguoi-chong-vu-phu-5131346.html",
+      "image": "https://vcdn1-giaitri.vnecdn.net/2026/10/13/doa-n-quo-c-dam-1791879934-9877-1791879967.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=MT5v3nIu0QiZOZhdy2IIYw",
+      "published_at": "2026-10-13T09:41:26+00:00",
       "kind": "source_brief"
     },
     {
-      "id": "7017ef508fcabad4bf",
-      "title": "Bão Rachel biến 'thành phố sa mạc' thành sông",
-      "summary": "Hoàn lưu bão nhiệt đới Rachel gây mưa lớn kỷ lục, khiến các tuyến đường ở \"thành phố sa mạc\" Las Vegas ngập như sông.",
+      "id": "1295378b8056e97cbf",
+      "title": "Hà Nội dự thu từ đất kỷ lục 146.000 tỷ đồng năm nay",
+      "summary": "TP Hà Nội ước tính thu ngân sách từ đất 146.000 tỷ đồng cả năm nay, tăng hơn 35% so với 2025 và cao nhất từ trước đến nay.",
       "source": "VnExpress",
       "category": "vietnam",
-      "url": "https://vnexpress.net/bao-rachel-bien-thanh-pho-sa-mac-thanh-song-5131638.html",
-      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/10/13/lasvegas-1791876271-4893-1791876342.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=xilBa0L1MnCmOvVE6u3zFQ",
-      "published_at": "2026-10-13T07:52:47+00:00",
+      "url": "https://vnexpress.net/ha-noi-du-thu-tu-dat-ky-luc-146-000-ty-dong-nam-nay-5131619.html",
+      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/10/13/51791529838-1791878572-6017-1791878886.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=WJw0vtPBMAA5zCLMHvFGgg",
+      "published_at": "2026-10-13T09:30:00+00:00",
       "kind": "source_brief"
     },
     {
-      "id": "c17f3db485395dba23",
-      "title": "Tài xế công nghệ chê bảo hiểm hưu trí vì áp lực mưu sinh",
-      "summary": "Trước áp lực mưu sinh, hàng loạt tài xế giao đồ ăn tại Trung Quốc từ chối tham gia bảo hiểm hưu trí dù các nền tảng công nghệ đã tung ra nhiều chương trình trợ giá hấp dẫn.",
+      "id": "018533a160b9e4795d",
+      "title": "Aeon Thanh Hóa mở cửa đón khách",
+      "summary": "Trung tâm Bách hóa tổng hợp và Siêu thị Aeon Thanh Hóa sẽ mở cửa đón khách từ ngày 15/10, phục vụ nhu cầu thiết yếu hàng ngày của người dân địa phương và du khách.",
       "source": "VnExpress",
       "category": "vietnam",
-      "url": "https://vnexpress.net/tai-xe-cong-nghe-che-bao-hiem-huu-tri-vi-ap-luc-muu-sinh-5131711.html",
-      "image": "https://vcdn1-giadinh.vnecdn.net/2026/10/13/001-1791873649-6106-1791873795.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=9NBxh995PFMdz5wD7vyonQ",
-      "published_at": "2026-10-13T07:50:47+00:00",
+      "url": "https://vnexpress.net/aeon-thanh-hoa-mo-cua-don-khach-5131411.html",
+      "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/10/13/image001-1791875536-8080-1791875560.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=0mlr9frYjSQHrbht7UiWAg",
+      "published_at": "2026-10-13T09:30:00+00:00",
       "kind": "source_brief"
     },
     {
-      "id": "5debf3ef5272603015",
-      "title": "Túi Hermès dùng 'đựng phân chó' giá hơn 40 triệu đồng",
-      "summary": "Hãng Hermès tung mẫu túi có chức năng chứa phân, chất thải của chó cưng, giá 11.050 nhân dân tệ (42,7 triệu đồng).",
+      "id": "1bce2dfa1520bb21e3",
+      "title": "Chồng không bao giờ gọi điện hỏi thăm mẹ vợ kể cả khi bà ốm đau",
+      "summary": "Nhân lúc vợ chồng vui vẻ, tôi nhẹ nhàng đề nghị anh quan tâm mẹ vợ hơn, anh thái độ khó chịu, bảo nhắc đến là vợ chồng cãi nhau.",
       "source": "VnExpress",
       "category": "vietnam",
-      "url": "https://vnexpress.net/tui-hermes-dung-dung-phan-cho-gia-hon-40-trieu-dong-5131651.html",
-      "image": "https://vcdn1-giaitri.vnecdn.net/2026/10/13/tui-png-1791876290-5228-1791876658.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=juYII8iFcYkxynrb2eB2uA",
-      "published_at": "2026-10-13T07:42:55+00:00",
+      "url": "https://vnexpress.net/chong-khong-bao-gio-goi-dien-hoi-tham-me-vo-ke-ca-khi-ba-om-dau-5131803.html",
+      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/10/13/gemini-generated-image-falrd4f-8625-8972-1791881938.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=VfMKZeFAczt0t-aVU2Au5w",
+      "published_at": "2026-10-13T09:29:17+00:00",
       "kind": "source_brief"
     },
     {
-      "id": "cff683072744b4ffe7",
-      "title": "Nga thu được gì từ thỏa thuận diesel với Mỹ?",
-      "summary": "Thỏa thuận diesel với Mỹ không chỉ giúp Nga thu về hàng tỷ USD, mà còn có thể làm suy yếu nỗ lực cô lập Moskva của phương Tây.",
+      "id": "6091798d9cdcbb88c6",
+      "title": "Việt Nam - Lào tăng cường hợp tác công nghiệp quốc phòng",
+      "summary": "Việt Nam và Lào thống nhất thúc đẩy hợp tác công nghiệp quốc phòng, bảo vệ biên giới, đào tạo nhân lực và tìm kiếm, quy tập hài cốt liệt sĩ Việt Nam hy sinh tại Lào.",
       "source": "VnExpress",
       "category": "vietnam",
-      "url": "https://vnexpress.net/nga-thu-duoc-gi-tu-thoa-thuan-diesel-voi-my-5131525.html",
-      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/10/13/ap26248676815333-1791867194-1968-1791867563.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=2u_Kq-nrnYnGxRMKOvTj0w",
-      "published_at": "2026-10-13T07:37:35+00:00",
-      "kind": "source_brief"
-    },
-    {
-      "id": "f79a3b1410bfbc62b4",
-      "title": "Chở 6.500 người đi viện miễn phí bằng xe máy",
-      "summary": "Chứng kiến mẹ qua đời vì không có xe cấp cứu, ông Karimul Haque đã biến xe máy thành xe cứu thương chở hơn 6.500 bệnh nhân nghèo suốt 28 năm.",
-      "source": "VnExpress",
-      "category": "vietnam",
-      "url": "https://vnexpress.net/cho-6-500-nguoi-di-vien-mien-phi-bang-xe-may-5131675.html",
-      "image": "https://vcdn1-giadinh.vnecdn.net/2026/10/13/a-nh-ma-n-hi-nh-lu-c-179186777-5904-5377-1791867959.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=wSjAIe_jp0IsNY6WSTmGQQ",
-      "published_at": "2026-10-13T07:28:52+00:00",
+      "url": "https://vnexpress.net/viet-nam-lao-tang-cuong-hop-tac-cong-nghiep-quoc-phong-5131764.html",
+      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/10/13/dsc-1791883768-5698-1791883783.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=3dFM99BmWnsBUjhsE3qvHg",
+      "published_at": "2026-10-13T09:18:42+00:00",
       "kind": "source_brief"
     }
   ],
   "videos": {
     "vietnam": [
+      {
+        "id": "_EJ4AyXd5do",
+        "title": "Nguy cơ tin tặc tấn công thiết bị gia dụng | VTV24",
+        "channel": "VTV24",
+        "category": "vietnam",
+        "published_at": "2026-10-14T09:00:29+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/_EJ4AyXd5do/hqdefault.jpg",
+        "popularity": null,
+        "provenance": "official_channel"
+      },
+      {
+        "id": "Obum2o2pUC8",
+        "title": "Sự trở về của một phần lịch sử | VTV24",
+        "channel": "VTV24",
+        "category": "vietnam",
+        "published_at": "2026-10-14T08:52:10+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/Obum2o2pUC8/hqdefault.jpg",
+        "popularity": null,
+        "provenance": "official_channel"
+      },
+      {
+        "id": "PkfGFXAT6hQ",
+        "title": "Phạt lái xe tải tự đổ vi phạm về tốc độ và khoảng cách an toàn | VTV24",
+        "channel": "VTV24",
+        "category": "vietnam",
+        "published_at": "2026-10-14T08:44:22+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/PkfGFXAT6hQ/hqdefault.jpg",
+        "popularity": null,
+        "provenance": "official_channel"
+      },
+      {
+        "id": "ApHf8Dy-FEU",
+        "title": "Có một bài ca không bao giờ quên | VTV24",
+        "channel": "VTV24",
+        "category": "vietnam",
+        "published_at": "2026-10-14T08:41:57+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/ApHf8Dy-FEU/hqdefault.jpg",
+        "popularity": null,
+        "provenance": "official_channel"
+      },
+      {
+        "id": "_FH-2cPZRz8",
+        "title": "Đời đời ghi nhớ công ơn các Anh hùng liệt sĩ | VTV24",
+        "channel": "VTV24",
+        "category": "vietnam",
+        "published_at": "2026-10-14T08:15:38+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/_FH-2cPZRz8/hqdefault.jpg",
+        "popularity": null,
+        "provenance": "official_channel"
+      },
       {
         "id": "IbkSGTpPe9A",
         "title": "Nhật Bản nỗ lực duy trì doanh nghiệp lâu năm | VTV24",
@@ -1278,62 +1328,12 @@
         "thumbnail": "https://i.ytimg.com/vi/b7Hsrbxk5DM/hqdefault.jpg",
         "popularity": null,
         "provenance": "official_channel"
-      },
-      {
-        "id": "amwjXut2BPw",
-        "title": "Tiễn đưa 731 hài cốt liệt sĩ từ Công viên Lê Thị Riêng về Nghĩa trang Liệt sĩ TP. Hồ Chí Minh |VTV24",
-        "channel": "VTV24",
-        "category": "vietnam",
-        "published_at": "2026-10-14T05:08:42+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/amwjXut2BPw/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel"
-      },
-      {
-        "id": "Q_zQkqE7ZeY",
-        "title": "Mỗi tuyến phố Hà Nội sẽ có một loại cây đặc trưng | VTV24",
-        "channel": "VTV24",
-        "category": "vietnam",
-        "published_at": "2026-10-14T04:06:52+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/Q_zQkqE7ZeY/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel"
-      },
-      {
-        "id": "yy6omah10d0",
-        "title": "Tiêm kích không quân Đức hộ tống máy bay nghi có không tặc | Cụm tin | VTV24",
-        "channel": "VTV24",
-        "category": "vietnam",
-        "published_at": "2026-10-14T03:00:33+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/yy6omah10d0/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel"
-      },
-      {
-        "id": "eKMLHGxCbn8",
-        "title": "BẢN TIN SÁNG 14/10: Tiễn đưa 731 liệt sĩ về nơi an nghỉ tại Nghĩa trang Liệt sĩ TP. Hồ Chí Minh",
-        "channel": "VTV24",
-        "category": "vietnam",
-        "published_at": "2026-10-14T02:30:26+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/eKMLHGxCbn8/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel"
-      },
-      {
-        "id": "0A7wBfE8mKY",
-        "title": "Thế giới toàn cảnh 14/10: Cơ sở dầu mỏ của Houthi ở gần thủ đô Sanaa của Yemen bị không kích | VTV24",
-        "channel": "VTV24",
-        "category": "vietnam",
-        "published_at": "2026-10-14T02:00:09+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/0A7wBfE8mKY/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel"
       }
     ],
     "world": [
       {
         "id": "Dsw7JJvFu9o",
-        "title": "Stolen: Chasing Britain's car thieves | BBC News",
+        "title": "Inside the police battle against hi-tech car theft gangs | BBC News",
         "channel": "BBC News",
         "category": "world",
         "published_at": "2026-10-14T06:45:08+00:00",
