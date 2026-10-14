@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-# Sitemap: add only after DNGWORLD's verified production domain is configured.
+Sitemap: https://dngworld.github.io/sitemap.xml
