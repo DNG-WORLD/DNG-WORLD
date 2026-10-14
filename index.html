@@ -238,6 +238,63 @@ footer{background:#10231b}
 }
 
 </style>
+<style id="dngworld-desktop-layout-v29">
+
+/* DNGWORLD V29 — precise homepage layout repairs (desktop hero, disciplines + footer).
+   No WebGL, shaders, animations, meshes or brand font/color system is modified. */
+.tape{color:#e9e2d1!important;background:#11281f!important;border-top:1px solid rgba(229,191,136,.26)!important}
+.tape .wrap>p,.tape .wrap>span{color:#dde7d8!important;opacity:1!important;visibility:visible!important;text-shadow:none!important;background:transparent!important}
+.tape .wrap>p{color:#e5bf88!important;font-weight:700!important}
+.tape .wrap>span{font-weight:500!important}
+footer{color:#e8e9db!important;background:#10251c!important}
+footer .footer-row{padding-top:32px;padding-bottom:30px}
+footer .footer-row nav a,footer .footer-site-links a{color:#e3e7da!important;opacity:1!important;transition:color .2s ease!important}
+footer .footer-row nav a:hover,footer .footer-site-links a:hover{color:#e5bf88!important}
+footer .footer-row nav{display:flex;align-items:center;gap:clamp(12px,2vw,26px);flex-wrap:wrap}
+footer .footer-row nav a{font-size:clamp(10px,.84vw,13px);letter-spacing:.09em}
+footer .footer-site-links{display:flex;align-items:center;flex-wrap:wrap;gap:10px clamp(14px,1.4vw,26px);padding:19px 0 14px;border-bottom:1px solid rgba(232,215,180,.12)}
+footer .footer-site-links a{font-size:clamp(11px,.86vw,14px)}
+footer .footer-bottom{color:#b8cabc!important;gap:12px;padding-top:23px;padding-bottom:29px;line-height:1.65}
+footer .footer-bottom span{color:inherit!important;opacity:1!important}
+@media screen and (min-width:761px){
+ /* The sculpture must never sit under the headline on desktop or laptop. */
+ .hero .wrap{width:min(calc(100% - clamp(52px,7.7vw,144px)),1460px)}
+ .hero .hero-copy{position:relative;z-index:27;width:43%;min-width:0!important;max-width:620px;filter:none}
+ .hero .hero-copy h1{font-size:clamp(68px,7.7vw,120px);line-height:.88;letter-spacing:-.088em;max-width:100%;text-wrap:nowrap}
+ .hero .hero-copy h1 span{white-space:nowrap}
+ .hero .hero-intro{max-width:min(360px,100%);line-height:1.64}
+ .hero .hero-art{position:absolute;left:48%;top:6%;height:87%;width:53%;z-index:14}
+ .hero .scene-copy{top:20%;right:0;max-width:205px;width:205px}
+ .hero .scene-copy p{font-size:clamp(16px,1.2vw,20px)}
+ .hero .scene-switch{right:0;max-width:47%}
+ .hero .motion-actions{z-index:40}
+}
+@media screen and (min-width:761px) and (max-width:1180px){
+ .hero .hero-copy{width:49%}
+ .hero .hero-copy h1{font-size:clamp(62px,7.6vw,89px)}
+ .hero .hero-art{left:50%;width:50%;top:10%;height:80%}
+ .hero .scene-copy{right:0;top:18%;width:158px;max-width:158px}
+ .hero .scene-copy p{font-size:15px}
+ .hero .hero-intro{max-width:295px}
+ .hero .scene-switch{max-width:49%}
+}
+@media screen and (min-width:1600px){
+ .hero .hero-copy{width:45%}
+ .hero .hero-art{left:49%;top:6%;width:51%;height:87%}
+ .hero .hero-copy h1{font-size:clamp(105px,6.6vw,129px)}
+}
+@media screen and (max-width:760px){
+ /* Keep V27 mobile art stage; fix formerly invisible chapter labels too. */
+ .tape .wrap>p,.tape .wrap>span{color:#dfdfcc!important}
+ .tape .wrap>p{color:#e5bf88!important}
+ footer .footer-row{padding-top:30px;padding-bottom:24px}
+ footer .footer-site-links{padding:20px 0 22px;gap:12px 18px}
+ footer .footer-site-links a{font-size:13px}
+ footer .footer-row nav a{font-size:11px}
+ footer .footer-bottom{font-size:10px;letter-spacing:.075em;padding-bottom:calc(90px + env(safe-area-inset-bottom,0px))}
+}
+
+</style>
 </head>
 <body>
 <canvas aria-hidden="true" class="ambient-fx" id="ambientFx"></canvas>
