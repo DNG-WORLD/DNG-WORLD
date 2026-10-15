@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "node server.mjs",
     "start": "node server.mjs",
-    "build": "node scripts/build-static.mjs && node scripts/repair-v31-assets.mjs && node scripts/dngworld-v33.mjs",
+    "build": "node scripts/build-static.mjs && node scripts/repair-v31-assets.mjs && node scripts/dngworld-v33.mjs && node scripts/polish-ui.mjs && node scripts/check-ui.mjs",
     "validate": "python3 scripts/validate_v19.py",
-    "qa": "python3 scripts/validate_v19.py && npm run build"
+    "qa": "python3 scripts/validate_v19.py && npm run build",
+    "check:ui": "node scripts/check-ui.mjs"
   },
   "engines": {
     "node": ">=20"

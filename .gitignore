@@ -1,0 +1,9 @@
+# Generated website, dependencies, local secrets and test artifacts
+/_site/
+/node_modules/
+/vendor/
+/coverage/
+/.env
+/.env.*
+!/.env.example
+/QA-REPORT-V19.json

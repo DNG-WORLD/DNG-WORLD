@@ -11,3 +11,7 @@
 **Deploy**: `npm run build`, then publish `_site/` using GitHub Pages workflow. The existing domain is NOT assumed to be the new brand's official domain. Configure a real domain before adding SEO canonical URLs.
 
 **Contact**: The home page copies a project brief. The contact page opens a mail draft; no automated sending or CRM endpoint is claimed.
+
+## V38 · Design system & source maintenance
+
+The original V24 WebGL scene, text, all five service pricing groups and news automation are preserved. The post-build UI layer and smoke tests are applied by `npm run build` / `npm run check:ui`. `_site/` is now generated, not committed. See [V38 audit](docs/V38_UI_CLEANUP.md).
