@@ -27,7 +27,7 @@ try{
    });
    results.push({route,width,...metrics});
    const id=route==='/'?'home':route.replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-|-$/g,'');
-   if((width===390||width===1440)&&['home','pricing','tools','insights','portfolio','404-html'].includes(id))await page.screenshot({path:path.join(out,id+'-'+width+'.png'),animations:'disabled',timeout:13000});
+   if((width===390||width===1440)&&['home','services','pricing','tools','insights','portfolio','404-html'].includes(id))await page.screenshot({path:path.join(out,id+'-'+width+'.png'),animations:'disabled',timeout:13000});
    if(response?.status()!==200)errors.push(route+' @'+width+': HTTP '+response?.status());
    if(metrics.headers!==1||metrics.footers!==1||metrics.visibleOriginal!==0)errors.push(route+' @'+width+': duplicate visible site shells '+JSON.stringify([metrics.headers,metrics.footers,metrics.visibleOriginal]));
    if(metrics.scrollWidth>width+7)errors.push(route+' @'+width+': horizontal overflow '+metrics.scrollWidth);
@@ -37,6 +37,11 @@ try{
     await page.locator('.dng-global-toggle').click();
     const isOpen=await page.locator('.dng-global-panel').isVisible();
     if(!isOpen)errors.push(route+': mobile menu fails to open');
+   }
+   if(route==='/services/'&&width===390){
+     const cards=await page.locator('.s44-case').count();
+     const object=await page.locator('.s44-object').boundingBox();
+     if(cards!==5||!object||object.x<0||object.x+object.width>width+6)errors.push('V44 Solutions visual art/5 deliverable cards invalid: '+cards);
    }
    if(route==='/'&&width===390&&metrics.art&&(metrics.art.width>width+7||metrics.art.height>420||metrics.art.x<0))errors.push('Homepage mobile 3D geometry is offscreen: '+JSON.stringify(metrics.art));
    await page.close();
