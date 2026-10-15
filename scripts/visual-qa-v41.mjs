@@ -28,6 +28,7 @@ try{
    results.push({route,width,...metrics});
    const id=route==='/'?'home':route.replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-|-$/g,'');
    if((width===390||width===1440)&&['home','services','about','contact','pricing','tools','insights','portfolio','404-html'].includes(id))await page.screenshot({path:path.join(out,id+'-'+width+'.png'),animations:'disabled',timeout:13000});
+   if(id==='services'&&(width===390||width===1440))await page.screenshot({path:path.join(out,'solutions-'+width+'-full.png'),animations:'disabled',fullPage:true,timeout:17000});
    if(response?.status()!==200)errors.push(route+' @'+width+': HTTP '+response?.status());
    if(metrics.headers!==1||metrics.footers!==1||metrics.visibleOriginal!==0)errors.push(route+' @'+width+': duplicate visible site shells '+JSON.stringify([metrics.headers,metrics.footers,metrics.visibleOriginal]));
    if(metrics.scrollWidth>width+7)errors.push(route+' @'+width+': horizontal overflow '+metrics.scrollWidth);
@@ -45,7 +46,8 @@ try{
       const img=page.locator('.dng-master-art-v46 img');
       if(await img.count()){const ok=await img.evaluate(el=>el.complete&&el.naturalWidth>100);if(!ok)errors.push(route+' @390: original V24 sculpture failed to load');}
     }
-    if(route==='/'&&width===390&&metrics.art&&(metrics.art.width>width+7||metrics.art.height>420||metrics.art.x<0))errors.push('Homepage mobile 3D geometry is offscreen: '+JSON.stringify(metrics.art));
+    if(route==='/services/'&&width===390){const count=await page.locator('.v47-case').count();const tiers=await page.locator('.v47-service').count();if(count!==6||tiers!==5)errors.push('V47 missing authentic scopes: '+count+'/'+tiers);}
+   if(route==='/'&&width===390&&metrics.art&&(metrics.art.width>width+7||metrics.art.height>420||metrics.art.x<0))errors.push('Homepage mobile 3D geometry is offscreen: '+JSON.stringify(metrics.art));
    await page.close();
   }
   await context.close();

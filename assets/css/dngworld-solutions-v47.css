@@ -1,0 +1,68 @@
+/* DNGWORLD V47 / concrete buyer-first Solutions. V46 owns the shared 3D art. */
+.v47-main{--v47-dark:#0b2118;--v47-ink:#132d20;--v47-cream:#f4f2e9;--v47-paper:#fffefa;--v47-muted:#586e60;--v47-gold:#d9bc89;font-family:'Be Vietnam Pro',system-ui,sans-serif;overflow-x:clip}
+.v47-main *{box-sizing:border-box}
+.v47-main :where(h1,h2,h3,p){margin:0}
+.v47-main :where(h1,h2,h3){font-family:'DM Sans','Be Vietnam Pro',sans-serif;letter-spacing:-.046em;line-height:1.16;text-wrap:balance}
+.v47-main a{text-decoration:none}
+.v47-container{width:min(1192px,calc(100% - 64px));margin:auto}
+.v47-hero>.shell{width:min(1192px,calc(100% - 64px))}
+.v47-hero h1{max-width:650px!important;line-height:1.1!important}
+.v47-hero h1 em{color:var(--v47-gold);font:400 italic 1em/1.12 'DM Serif Display',Georgia,serif!important}
+.v47-hero .lead{line-height:1.74!important}
+.v47-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:26px 0}
+.v47-primary,.v47-secondary{display:inline-flex;min-height:47px;align-items:center;justify-content:center;border-radius:60px;gap:14px;font:700 12px/1.5 'Be Vietnam Pro',sans-serif;padding:12px 21px;text-align:center}
+.v47-primary{background:#dfbd88;color:#10271b!important;border:1px solid #dfbd88}.v47-primary:hover{background:#f5d59f}
+.v47-secondary{border:1px solid rgba(223,189,136,.46);background:transparent;color:#f3e0be!important}
+.v47-hero .v47-note{color:#98ad9b!important;font-size:11px!important;line-height:1.7!important;max-width:620px}
+.v47-section{padding:clamp(63px,6.4vw,98px) 0}
+.v47-heading{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:30px;align-items:end;margin-bottom:33px}
+.v47-kicker{color:#9b7040;font-size:10px;letter-spacing:.15em;font-weight:800;text-transform:uppercase}
+.v47-heading h2,.v47-process h2,.v47-close h2{font-size:clamp(33px,3.9vw,53px);margin:11px 0 0}
+.v47-heading>p{font-size:14px;line-height:1.85;max-width:410px}
+.v47-problems{background:#f4f3ec;color:#163023}
+.v47-problems .v47-heading>p{color:#566b5c}
+.v47-case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.v47-case{min-width:0;display:flex;flex-direction:column;padding:28px 29px;background:#fffefa;border:1px solid #dbe3d7;border-radius:14px}
+.v47-case-num{font-size:10px;font-weight:800;letter-spacing:.15em;color:#937246}
+.v47-case h3{font-size:clamp(20px,1.9vw,26px);color:#143024;margin:14px 0 18px}
+.v47-case dl{display:grid;gap:15px;margin:0 0 22px}.v47-case dl>div{padding-left:14px;border-left:2px solid #dce3d8}
+.v47-case dl>div.v47-result{border-left-color:#bc9d69}
+.v47-case dt{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#997344;margin:0 0 4px}
+.v47-case dd{font-size:13px;line-height:1.7;margin:0;color:#566b5b}
+.v47-case>a{margin-top:auto;align-self:flex-start;border-bottom:1px solid #bc9d69;padding-bottom:4px;color:#715127!important;font-size:12px;font-weight:800}
+.v47-example{background:#0b241a;color:#f3f0e8}
+.v47-example .v47-heading>p{color:#bad0c1}
+.v47-example .v47-kicker,.v47-process .v47-kicker{color:#dabd91}
+.v47-example-layout{display:grid;grid-template-columns:1.5fr .7fr;gap:30px}
+.v47-process-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.v47-process-steps article{padding:19px 0;border-top:1px solid rgba(219,193,146,.27)}
+.v47-process-steps article>span{font:800 11px 'Be Vietnam Pro';color:#ddc396}
+.v47-process-steps article h3{font-size:19px;margin:12px 0}
+.v47-process-steps article p{font-size:13px;line-height:1.76;color:#bed0c0}
+.v47-handoff{align-self:start;background:#183528;border:1px solid rgba(219,193,146,.3);border-radius:14px;padding:29px}
+.v47-handoff h3{font-size:20px;color:#f3ede0;margin:0 0 16px}
+.v47-handoff ul{list-style:none;padding:0;margin:0}.v47-handoff li{font-size:12px;color:#c9d8cb;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.09)}
+.v47-handoff li:before{content:'✓';color:#dfc69c;margin-right:9px}
+.v47-catalog{background:#ebeee8;color:#153025}
+.v47-catalog .v47-heading>p{color:#53695a}
+.v47-service-list{border-top:1px solid #bfcdc1}
+.v47-service{display:grid;grid-template-columns:52px 1.15fr 1fr;gap:28px;padding:27px 5px;border-bottom:1px solid #bfcdc1;align-items:start}
+.v47-service>span{font-size:12px;color:#967747;font-weight:800}
+.v47-service h3{color:#163025;font-size:22px;margin-bottom:8px}
+.v47-service p{color:#53695a;font-size:13px;line-height:1.7}
+.v47-service a{display:inline-block;margin-top:13px;color:#74552e!important;font-weight:800;font-size:12px;text-decoration:underline;text-underline-offset:4px}
+.v47-catalog .v47-note{font-size:11px;color:#607666;margin:25px 0 0}
+.v47-process{background:#102b20;color:#f2f0e9}
+.v47-process h2{margin:15px 0 34px}
+.v47-process-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.v47-process-grid>div{padding:20px 0 0;border-top:1px solid rgba(219,193,146,.35)}
+.v47-process-grid span{display:block;color:#e3c594;font-size:11px;font-weight:800}
+.v47-process-grid strong{display:block;margin:18px 0 9px;font-size:16px}
+.v47-process-grid p{font-size:12px;line-height:1.75;color:#bfd1c3}
+.v47-close{background:#0a1c14;color:#f4efe6;padding:clamp(55px,6vw,90px) 0}
+.v47-close>.v47-container{display:grid;grid-template-columns:1fr auto;gap:50px;align-items:center}
+.v47-close h2{max-width:775px}
+.v47-close p{max-width:790px;font-size:14px;color:#bfcfc2;line-height:1.75;margin:14px 0 0}
+@media(max-width:940px){.v47-container{width:calc(100% - 44px)}.v47-case{padding:22px}.v47-example-layout{grid-template-columns:1fr}.v47-process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.v47-container{width:calc(100% - 36px)}.v47-section{padding:54px 0}.v47-heading{grid-template-columns:1fr;gap:12px}.v47-heading>p{font-size:13px}.v47-heading h2{font-size:clamp(30px,8vw,42px)}.v47-case-grid{grid-template-columns:1fr;gap:11px}.v47-case{padding:23px}.v47-case dl{gap:12px}.v47-hero h1{font-size:clamp(36px,9.4vw,51px)!important}.v47-hero .lead{font-size:14px!important}.v47-actions{gap:9px;margin:20px 0}.v47-primary,.v47-secondary{width:100%}.v47-process-steps{grid-template-columns:1fr;gap:15px}.v47-handoff{padding:22px}.v47-service{grid-template-columns:35px 1fr;gap:11px;padding:22px 0}.v47-service>div:last-child{grid-column:2}.v47-process-grid{grid-template-columns:1fr 1fr;gap:18px}.v47-close>.v47-container{grid-template-columns:1fr;gap:25px}.v47-close .v47-primary{width:100%}}
+@media(max-width:420px){.v47-process-grid{grid-template-columns:1fr}}
