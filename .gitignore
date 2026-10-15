@@ -7,3 +7,6 @@
 /.env.*
 !/.env.example
 /QA-REPORT-V19.json
+
+__pycache__/
+*.pyc
