@@ -86,3 +86,19 @@
  .s44-hero h1{position:relative;z-index:2}
  .s44-hero .s44-lead{position:relative;z-index:2}
 }
+
+/* V44 pilot art-direction review: purposefully alternate mineral light and
+   dark sections, so the business problems are easy to scan, not one dark wall. */
+.s44-problems{background:linear-gradient(160deg,#f3f0e8,#e9eee6)!important;color:#1d392d!important}
+.s44-problems .s44-heading h2,.s44-problems .s44-case h3{color:#183226!important}
+.s44-problems .s44-heading>p{color:#506455!important}
+.s44-problems .s44-kicker{color:#936a3d!important}
+.s44-problems .s44-case{background:linear-gradient(150deg,#fffdf7,#f7f7f0)!important;border-color:#dae0d5!important;box-shadow:0 15px 32px rgba(18,44,28,.055)!important}
+.s44-problems .s44-case:hover{border-color:#bc9764!important}
+.s44-problems .s44-case-top,.s44-problems .s44-case-flow small{color:#906c3c!important}
+.s44-problems .s44-case-flow>div{border-left-color:#d4ded1}
+.s44-problems .s44-case-flow .s44-deliver{border-left-color:#c6a16e}
+.s44-problems .s44-case-flow p{color:#536557!important}
+.s44-problems .s44-inline-link{color:#77552a!important;border-bottom-color:#bca07b!important}
+.s44-problems .s44-inline-link:hover{color:#334f3c!important}
+@media(max-width:700px){.s44-object{width:138px!important;opacity:.29!important;top:0!important;right:0!important}}
