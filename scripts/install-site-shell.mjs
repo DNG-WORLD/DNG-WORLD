@@ -33,9 +33,9 @@ function walk(dir){for(const item of fs.readdirSync(dir,{withFileTypes:true})){c
  if(!/<body\b/i.test(html)||!/<\/body\s*>/i.test(html)||!/<main\b/i.test(html)||/<meta\b[^>]*http-equiv\s*=\s*["']?refresh/i.test(html)){skipped++;continue}
  if(html.includes('data-dng-common="header"')){errors.push('Duplicate call: '+relative);continue}
  // V40 validator and CSS expect this tag on every actual page, including 404.
- html=html.replace(/<body\\b([^>]*)>/i,(m,attrs)=>{
+ html=html.replace(/<body\b([^>]*)>/i,(m,attrs)=>{
    if(attrs.includes('dng-unified-v40'))return m;
-   if(/\\bclass=(["'])/.test(attrs))return '<body'+attrs.replace(/\\bclass=(["'])(.*?)\\1/i,(_match,q,value)=>'class='+q+value+' dng-unified-v40'+q)+'>';
+   if(/\bclass=(["'])/.test(attrs))return '<body'+attrs.replace(/\bclass=(["'])(.*?)\1/i,(_match,q,value)=>'class='+q+value+' dng-unified-v40'+q)+'>';
    return '<body'+attrs+' class="dng-unified-v40">';
  });
  const oldHeader=/<header\b[^>]*>/i.exec(html);const mainAt=html.search(/<main\b/i);
