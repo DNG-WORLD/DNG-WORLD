@@ -32,3 +32,6 @@ body.dng-unified-v40 .n45-video-first .dng-spatial{display:none!important}
  body.dng-unified-v40 .n45-video-first .tv-tabs{padding:15px 0!important}
  body.dng-unified-v40 .n45-video-first .top-stories{margin-top:29px}
 }
+
+/* Branded video-loading fallback for browsers which block external thumbnails. */
+body.dng-unified-v40 .n45-video-first .tv-stage:not(:has(.tv-cover img)):not(:has(iframe))::after{content:'DNGWORLD TV';position:absolute;left:50%;top:70%;transform:translate(-50%,-50%);font:700 12px/1.4 'Be Vietnam Pro','DM Sans',sans-serif;letter-spacing:.18em;color:rgba(230,197,145,.59);white-space:nowrap;pointer-events:none}

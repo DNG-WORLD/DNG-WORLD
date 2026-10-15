@@ -16,6 +16,15 @@ for(const lang of ['','en/','zh/']){
  html=html.slice(0,at)+html.slice(close+'</section>'.length);
  const point=html.indexOf('<div class="top-stories"');
  html=html.slice(0,point)+'<!-- V45 FIRST STORY IS A VERIFIED VIDEO -->\n'+video+'\n'+html.slice(point);
+ // Keep the video player's existing disclosure target, but replace technical
+ // thumbnail counts with editorial copy relevant to the visitor's language.
+ const copy=lang==='en/'?{heading:'Featured <em>video.</em>',intro:'Watch selected reporting and analysis from clearly attributed channels.'}
+          :lang==='zh/'?{heading:'精选 <em>视频.</em>',intro:'来自可识别来源的新闻视频与解读，选择主题并播放。'}
+          :{heading:'Video <em>nổi bật.</em>',intro:'Video thời sự và phân tích từ các kênh có nguồn rõ ràng. Chọn chủ đề và xem ngay.'};
+ html=html.replace(/<h2 id="tvHeading">[\\s\\S]*?<\\/h2>/i,'<h2 id="tvHeading">'+copy.heading+'</h2>');
+ const caption=/<div class="tv-caption">[\\s\\S]*?(?=<div id="videoDisclosure")/;
+ if(!caption.test(html))throw Error('V45 video caption/disclosure structure changed');
+ html=html.replace(caption,'<div class="tv-caption">'+copy.intro+' ');
  html=html.replace(/<main class="news-wrap"/,'<main class="news-wrap n45-video-first"');
  const css='<link rel="stylesheet" href="/assets/css/dngworld-news-video-v45.css" data-video-first="v45">';
  if(!html.includes('data-video-first="v45"'))html=html.replace(/<\/head\s*>/i,css+'</head>');

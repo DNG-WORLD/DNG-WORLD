@@ -38,6 +38,7 @@ try{
     const isOpen=await page.locator('.dng-global-panel').isVisible();
     if(!isOpen)errors.push(route+': mobile menu fails to open');
    }
+   if(route==='/insights/'&&width===390){await page.waitForSelector('#startVideo',{timeout:8000});await page.locator('#startVideo').click();const iframe=await page.locator('.tv-stage iframe.tv-frame').getAttribute('src');if(!iframe?.includes('youtube.com/embed/'))errors.push('V45 embedded video playback did not initialize');}
    if(route==='/'&&width===390&&metrics.art&&(metrics.art.width>width+7||metrics.art.height>420||metrics.art.x<0))errors.push('Homepage mobile 3D geometry is offscreen: '+JSON.stringify(metrics.art));
    await page.close();
   }
