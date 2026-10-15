@@ -21,10 +21,14 @@ for(const lang of ['','en/','zh/']){
  const copy=lang==='en/'?{heading:'Featured <em>video.</em>',intro:'Watch selected reporting and analysis from clearly attributed channels.'}
           :lang==='zh/'?{heading:'精选 <em>视频.</em>',intro:'来自可识别来源的新闻视频与解读，选择主题并播放。'}
           :{heading:'Video <em>nổi bật.</em>',intro:'Video thời sự và phân tích từ các kênh có nguồn rõ ràng. Chọn chủ đề và xem ngay.'};
- html=html.replace(/<h2 id="tvHeading">[\\s\\S]*?<\\/h2>/i,'<h2 id="tvHeading">'+copy.heading+'</h2>');
- const caption=/<div class="tv-caption">[\\s\\S]*?(?=<div id="videoDisclosure")/;
- if(!caption.test(html))throw Error('V45 video caption/disclosure structure changed');
- html=html.replace(caption,'<div class="tv-caption">'+copy.intro+' ');
+ const headingAt=html.indexOf('<h2 id="tvHeading">');
+ const headingEnd=html.indexOf('</h2>',headingAt);
+ if(headingAt<0||headingEnd<headingAt)throw Error('V45 headline missing');
+ html=html.slice(0,headingAt)+'<h2 id="tvHeading">'+copy.heading+'</h2>'+html.slice(headingEnd+5);
+ const captionAt=html.indexOf('<div class="tv-caption">');
+ const disclosureAt=html.indexOf('<div id="videoDisclosure"',captionAt);
+ if(captionAt<0||disclosureAt<captionAt)throw Error('V45 disclosure anchor missing');
+ html=html.slice(0,captionAt)+'<div class="tv-caption">'+copy.intro+' '+html.slice(disclosureAt);
  html=html.replace(/<main class="news-wrap"/,'<main class="news-wrap n45-video-first"');
  const css='<link rel="stylesheet" href="/assets/css/dngworld-news-video-v45.css" data-video-first="v45">';
  if(!html.includes('data-video-first="v45"'))html=html.replace(/<\/head\s*>/i,css+'</head>');
