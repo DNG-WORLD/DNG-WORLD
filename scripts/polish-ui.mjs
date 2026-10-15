@@ -12,7 +12,9 @@ function walk(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
  if(!/<\/head\s*>/i.test(s)||!/<body\b/i.test(s))continue;
  const redirect=/<meta\b[^>]*http-equiv=["']?refresh/i.test(s);
  for(const sheet of sheets){if(!s.includes('href="'+sheet+'"'))s=s.replace(/<\/head\s*>/i,'<link rel="stylesheet" href="'+sheet+'" data-dng-ui="'+(sheet.includes('v38')?'v38':'v40')+'"></head>');}
- if(!redirect&&/<main\b/i.test(s)){
+ const mainAtOriginal=s.search(/<main\b/i);
+ const siteHeader=/<header\b[^>]*>/i.exec(s),siteFoot=/<footer\b[^>]*>/i.exec(s);
+ if(!redirect&&mainAtOriginal>=0&&siteHeader&&siteHeader.index<mainAtOriginal&&siteFoot&&siteFoot.index>mainAtOriginal){
    const initial=s; s=s.replace(/<body\b([^>]*)>/i,(m,a)=>'<body'+(a.includes('dng-unified-v40')?a:a.replace(/\bclass=(["'])(.*?)\1/i,(_m,q,cl)=>'class='+q+cl+' dng-unified-v40'+q)+(a.match(/\bclass=/i)?'':' class="dng-unified-v40"'))+'>');
    // Some pages include article headings and tool panels; mark ONLY site shells.
    const mainAt=s.search(/<main\b/i);
