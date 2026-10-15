@@ -1,17 +1,24 @@
 # DNGWORLD — Business Growth Intelligence
 
-**Integrated source package: V24 approved visual baseline + legacy DNGWORKS repository.**
+Source for the DNGWORLD GitHub Pages website. This repository contains the current static site, 3D homepage, five-service pricing catalog, News & TV, marketing tools, and invitation-only Portfolio.
 
-- `index.html`: homepage using V24 WebGL/sculpture, orbit lights, particles, satellites and motion interactions. Original graphical engine retained.
-- `assets/`, `public/`, `services/`, `tools/`, `insights/`, `about/`, `contact/`, `en/`, `zh/`: assets and public content from previous repository, rebranded and given V24-inspired shared tokens.
-- `app/`, `resources/`, `database/`, `routes/`, `config/`: preserved legacy application source for audit; NOT deployed to static GitHub Pages.
-- `docs/DNGWORLD_AUDIT.md`, `docs/DNGWORLD_CONTENT_MAP.md`, `docs/DNGWORLD_DEPLOY.md`: inspection, editorial and deployment documentation.
-- `scripts/build-static.mjs`: creates public `_site/` artifact.
+## Development
+- `npm run build` — regenerate `_site/`, apply legacy News & TV compatibility, current pricing pages, the three private Portfolio pages and the shared V38 UI layer.
+- `npm run check:ui` — validate the generated artifact (run build first).
+- `npm run dev` — local Express preview server.
+- `npm run qa` — build and smoke check.
 
-**Deploy**: `npm run build`, then publish `_site/` using GitHub Pages workflow. The existing domain is NOT assumed to be the new brand's official domain. Configure a real domain before adding SEO canonical URLs.
+## Source map
+- `index.html`: the approved embedded V24 WebGL homepage. Preserve the original 3D engine.
+- `portfolio/index.html`, `en/portfolio/index.html`, `zh/portfolio/index.html`: standalone private-access Portfolio entrances, **not listed on the public homepage/menu**. The five case studies remain direct-link/noindex, exactly as before.
+- `pricing/` + `scripts/dngworld-v37-pricing.mjs`: the five-service price catalog generated at build time, in three languages.
+- `content/`: editorial content and encrypted private portfolio payload.
+- `data/` + `scripts/update_news.py`: hourly News & TV data snapshots and update tool.
+- `assets/` + `public/`: compatible site assets, including direct-link pages and their images.
+- `scripts/`: deployment transforms, news fixes and CI validators.
+- `.github/workflows/`: current Pages deploy, hourly newsroom, CI QA checks.
+- `docs/`: current operational and privacy documentation.
 
-**Contact**: The home page copies a project brief. The contact page opens a mail draft; no automated sending or CRM endpoint is claimed.
+The Pages artifact `_site/` is generated and ignored. There is no active Laravel/PHP or Netlify backend in this deployment. Obsolete source was removed from `main` in V39; see `docs/V39_REPO_CLEANUP.md` and the permanent backup branch `backup/dngworld-pre-v39-cleanup-20261015`.
 
-## V38 · Design system & source maintenance
-
-The original V24 WebGL scene, text, all five service pricing groups and news automation are preserved. The post-build UI layer and smoke tests are applied by `npm run build` / `npm run check:ui`. `_site/` is now generated, not committed. See [V38 audit](docs/V38_UI_CLEANUP.md).
+**Privacy note:** `noindex` and an unlisted URL are not authentication. The Portfolio index decrypts only the separately encrypted payload after code entry; individual legacy direct-link case pages remain accessible to anyone who knows their URL. Do not place secrets in this public repository.
