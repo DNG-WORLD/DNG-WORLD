@@ -1,0 +1,23 @@
+name: V42 repository asset reference audit
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit-assets-v42.mjs'
+      - '.github/workflows/audit-assets-v42.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm run build
+      - run: node scripts/audit-assets-v42.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dngworld-v42-unused-assets-audit
+          path: audit-output/
