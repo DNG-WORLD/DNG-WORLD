@@ -1,0 +1,34 @@
+/* DNGWORLD V45: editorial hierarchy should start with video, not text.
+   Scoped only to first-video News & TV output. Original player remains intact. */
+body.dng-unified-v40 .n45-video-first .masthead{min-height:0!important;padding:24px 0 21px!important}
+body.dng-unified-v40 .n45-video-first .masthead-title{font-size:clamp(36px,5.7vw,83px)!important;line-height:1.08!important}
+body.dng-unified-v40 .n45-video-first .tv-portal{margin:25px 0 58px!important;padding:clamp(20px,3vw,39px)!important;border:1px solid rgba(229,191,136,.3)!important;border-radius:22px!important;background:radial-gradient(ellipse at 86% 5%,rgba(188,156,99,.16),transparent 41%),#132b20!important;box-shadow:0 16px 46px rgba(1,13,8,.13)}
+body.dng-unified-v40 .n45-video-first .tv-head{align-items:end;gap:22px}
+body.dng-unified-v40 .n45-video-first .tv-head h2{font-size:clamp(30px,3.6vw,54px)!important;letter-spacing:-.045em!important;line-height:1.13!important}
+body.dng-unified-v40 .n45-video-first .tv-stage{border-radius:14px!important;border-color:rgba(229,191,136,.23)!important;aspect-ratio:16/9!important;background:#091f16!important}
+body.dng-unified-v40 .n45-video-first .tv-main{grid-template-columns:minmax(0,1.58fr) minmax(0,.62fr)!important;gap:21px!important}
+body.dng-unified-v40 .n45-video-first .tv-tabs{padding:19px 0!important;gap:8px!important}
+body.dng-unified-v40 .n45-video-first .tv-tabs button{border-radius:25px!important;min-height:41px!important}
+body.dng-unified-v40 .n45-video-first .tv-info{margin-top:15px}
+body.dng-unified-v40 .n45-video-first .tv-thumb img{border-radius:8px}
+body.dng-unified-v40 .n45-video-first .newsnav{margin-top:20px}
+body.dng-unified-v40 .n45-video-first .top-stories{margin-top:42px}
+body.dng-unified-v40 .n45-video-first .dng-spatial{display:none!important}
+/* editorial page shouldn't include a second decorative orb competing with videos */
+@media(max-width:930px){
+ body.dng-unified-v40 .n45-video-first .tv-main{grid-template-columns:1fr!important}
+ body.dng-unified-v40 .n45-video-first .tv-thumbs{display:flex;gap:12px;overflow-x:auto}
+}
+@media(max-width:640px){
+ body.dng-unified-v40 .n45-video-first .masthead{padding:20px 0 16px!important}
+ body.dng-unified-v40 .n45-video-first .issuebar{font-size:9px;gap:8px}
+ body.dng-unified-v40 .n45-video-first .masthead-title{font-size:clamp(36px,9.4vw,52px)!important}
+ body.dng-unified-v40 .n45-video-first .tv-portal{padding:18px 14px 23px!important;margin:19px 0 36px!important;border-radius:15px!important}
+ body.dng-unified-v40 .n45-video-first .tv-head{display:block}
+ body.dng-unified-v40 .n45-video-first .tv-caption{max-width:none;margin-top:12px;font-size:11px}
+ body.dng-unified-v40 .n45-video-first .tv-head h2{font-size:30px!important}
+ body.dng-unified-v40 .n45-video-first .tv-stage{aspect-ratio:16/9!important}
+ body.dng-unified-v40 .n45-video-first .tv-info{flex-wrap:wrap;gap:10px}
+ body.dng-unified-v40 .n45-video-first .tv-tabs{padding:15px 0!important}
+ body.dng-unified-v40 .n45-video-first .top-stories{margin-top:29px}
+}
