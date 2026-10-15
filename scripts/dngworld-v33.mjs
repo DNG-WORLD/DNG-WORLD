@@ -140,3 +140,6 @@ if(fs.existsSync(sitemapPath)){
 }
 
 console.log('DNGWORLD V33 applied: pricing hub + 4 detailed pages in VI/EN/ZH, matched locale paths, and non-destructive homepage mobile styling.');
+
+// V37: Replace only generated pricing pages after V33 has finished.
+await import('./dngworld-v37-pricing.mjs');
