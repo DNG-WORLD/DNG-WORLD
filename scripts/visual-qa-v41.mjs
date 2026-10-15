@@ -28,6 +28,7 @@ try{
    results.push({route,width,...metrics});
    const id=route==='/'?'home':route.replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-|-$/g,'');
    if((width===390||width===1440)&&['home','services','about','contact','pricing','tools','insights','portfolio','404-html'].includes(id))await page.screenshot({path:path.join(out,id+'-'+width+'.png'),animations:'disabled',timeout:13000});
+   if((route==='/'||route==='/en/'||route==='/zh/')&&(width===390||width===1440))await page.screenshot({path:path.join(out,'homepage-'+(route==='/'?'vi':route.replace(/\//g,''))+'-'+width+'-full.png'),fullPage:true,animations:'disabled',timeout:18000});
    if(id==='insights'&&(width===390||width===1440))await page.screenshot({path:path.join(out,'news-video-first-'+width+'-full.png'),fullPage:true,animations:'disabled',timeout:18000});
    if(id==='services'&&(width===390||width===1440))await page.screenshot({path:path.join(out,'solutions-'+width+'-full.png'),animations:'disabled',fullPage:true,timeout:17000});
    if(response?.status()!==200)errors.push(route+' @'+width+': HTTP '+response?.status());
@@ -58,7 +59,17 @@ try{
       const frame=await page.locator('#tvStage iframe').getAttribute('src');
       if(!frame?.includes('youtube.com/embed/'))errors.push('V48 video player did not open a YouTube embed');
    }
-   if(route==='/'&&width===390&&metrics.art&&(metrics.art.width>width+7||metrics.art.height>420||metrics.art.x<0))errors.push('Homepage mobile 3D geometry is offscreen: '+JSON.stringify(metrics.art));
+   if((route==='/'||route==='/en/'||route==='/zh/')&&width===390){
+      const offers=await page.locator('.v49-service').count(),problems=await page.locator('.v49-problem').count();
+      if(offers!==5||problems!==3)errors.push('V49 home content wrong '+route+': '+offers+'/'+problems);
+      if(route!=='/'){
+        const isNews=await page.locator('#newsGrid').count();
+        if(isNews)errors.push('V49 localized home still shows News at '+route);
+        const art=await page.locator('.dng-master-art-v46 img').count();
+        if(art!==1)errors.push('V49 localized home missing shared sculpture at '+route);
+      }
+    }
+    if(route==='/'&&width===390&&metrics.art&&(metrics.art.width>width+7||metrics.art.height>420||metrics.art.x<0))errors.push('Homepage mobile 3D geometry is offscreen: '+JSON.stringify(metrics.art));
    await page.close();
   }
   await context.close();
