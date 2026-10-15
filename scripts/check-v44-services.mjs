@@ -12,4 +12,5 @@ for(const x of paths){
  const css=fs.readFileSync(path.join(root,'assets/css/dngworld-services-v44.css'),'utf8');
  if(!css.includes('prefers-reduced-motion'))throw Error('V44 reduced-motion contract missing');
 }
+const motion=fs.readFileSync(path.join(root,'assets/js/dngworld-v31-motion.js'),'utf8');if(!motion.includes("!document.querySelector('.s44-object')"))throw Error('V44 duplicate 3D injection not disabled');
 console.log('V44 Phase 1 QA: three localized Solutions pages and 5×3 valid service links; original WebGL intact.');

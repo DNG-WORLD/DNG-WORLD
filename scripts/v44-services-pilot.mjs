@@ -78,4 +78,13 @@ for(const lang of ['vi','en','zh']){
  if(!next.includes('data-dng-common="header"')||!next.includes('data-dng-common="footer"')||!next.includes('s44-case-grid')||!next.includes('s44-object'))throw Error('V44 changed unsupported content');
  count++;changed.push(relative);
 }
+// V31 originally injects an unrelated second 3D sphere into every hero.
+// Keep the legacy motion script and other pages unchanged; suppress duplicate
+// art only when the new V44 object already owns the hero stage.
+const motionFile=path.join(root,'assets/js/dngworld-v31-motion.js');
+let motion=fs.readFileSync(motionFile,'utf8');
+const legacyCondition="if(area&& !document.body.classList.contains('dng-home-v31')){";
+if(!motion.includes(legacyCondition))throw Error('V44 V31-motion compatibility anchor missing');
+motion=motion.replace(legacyCondition,"if(area&& !document.body.classList.contains('dng-home-v31') && !document.querySelector('.s44-object')){");
+fs.writeFileSync(motionFile,motion);
 console.log('V44 Phase 1: redesigned',count,'localized Solutions pages with one 3D orbit identity; originals unchanged:',changed.join(', '));

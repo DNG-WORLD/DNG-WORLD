@@ -75,3 +75,14 @@
 @media(max-width:700px){.s44-container{width:calc(100% - 36px)}.s44-hero-grid{min-height:0;grid-template-columns:1fr;padding:52px 0 38px;gap:10px}.s44-hero h1{font-size:clamp(39px,10vw,57px);margin:19px 0!important}.s44-hero-actions{gap:10px;margin:23px 0 17px}.s44-button{min-height:48px;width:100%;font-size:12px}.s44-lead{font-size:14px!important}.s44-object{width:min(295px,78vw);margin:8px auto 0}.s44-object-caption{font-size:8px;letter-spacing:.1em}.s44-heading{grid-template-columns:1fr;gap:16px;margin-bottom:25px}.s44-heading h2{font-size:clamp(31px,8.4vw,43px)}.s44-heading>p{font-size:14px}.s44-section{padding:58px 0}.s44-case-grid{grid-template-columns:1fr}.s44-case{min-height:0;padding:25px}.s44-case h3{margin:17px 0 18px;font-size:23px}.s44-case-flow{gap:15px}.s44-output-grid{grid-template-columns:1fr 1fr;gap:20px}.s44-output h3{font-size:19px}.s44-step-grid{grid-template-columns:1fr;gap:24px}.s44-step-grid h3{margin:13px 0 7px}.s44-close-inner{grid-template-columns:1fr;gap:26px}.s44-close h2{font-size:clamp(30px,8vw,44px)}}
 @media(max-width:380px){.s44-container{width:calc(100% - 28px)}.s44-output-grid{grid-template-columns:1fr}.s44-hero h1{font-size:37px}}
 @media(prefers-reduced-motion:reduce){.s44-orbit{animation:none!important}.s44-case,.s44-button{transition:none!important}}
+
+/* V44 visual-QA correction: art is a single quiet identity marker on a phone,
+   not a second 300px section below the decision/action content. */
+@media(max-width:700px){
+ .s44-hero-grid{position:relative!important;display:block!important;padding:47px 0 50px!important;min-height:0!important}
+ .s44-hero-copy{position:relative!important;z-index:2!important}
+ .s44-object{position:absolute!important;top:0!important;right:-83px!important;width:205px!important;max-width:none!important;aspect-ratio:1!important;margin:0!important;opacity:.29!important;z-index:1!important;pointer-events:none!important}
+ .s44-object-caption{display:none!important}
+ .s44-hero h1{position:relative;z-index:2}
+ .s44-hero .s44-lead{position:relative;z-index:2}
+}
