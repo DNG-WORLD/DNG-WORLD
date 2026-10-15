@@ -1,12 +1,10 @@
 name: DNGWORLD News & TV — Hourly Refresh
 on:
-  # Run a first synchronization immediately after this workflow is updated.
-  # Data-only bot commits do not match these paths, so no update loop.
   push:
     branches: [main]
     paths:
-      - ".github/workflows/update-news.yml"
-      - "scripts/update_news.py"
+      - '.github/workflows/update-news.yml'
+      - 'scripts/update_news.py'
   workflow_dispatch:
   schedule:
     - cron: '17 * * * *'
@@ -20,34 +18,45 @@ concurrency:
 jobs:
   refresh-and-publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 18
+    timeout-minutes: 20
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Allow bootstrap from known-good snapshot in Git history.
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Refresh news and official-channel videos
+      - name: Collect articles and verified embeddable YouTube videos
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           DNG_TRANSLATE_MODEL: gpt-4o-mini
-        run: python scripts/update_news.py
-      - name: Commit current snapshot (no history database)
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python scripts/update_news.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=json.loads(Path('data/newsroom.json').read_text(encoding='utf-8'))
+          counts={k:len(v) for k,v in p['videos'].items()}
+          print('Video counts:', counts, 'status:', p.get('video_status'))
+          assert all(counts.get(c,0)>0 for c in ('vietnam','world','economy','technology','ai-trends'))
+          PY
+      - name: Commit current verified snapshot
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/newsroom.json
           if ! git diff --cached --quiet; then
-            git commit -m "data: refresh DNGWORLD newsroom snapshot [skip ci]"
+            git commit -m 'data: refresh verified DNGWORLD news/video snapshot [skip ci]'
             git push
           fi
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Build public GitHub Pages artifact
+      - name: Build public Pages artifact
         run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
