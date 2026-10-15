@@ -87,3 +87,13 @@ body.dng-unified-v40 footer.dng-global-footer{background:var(--dng-ui-deep)!impo
  body.dng-unified-v40 .p37-hub-hero .p37-scene{width:min(220px,60vw)!important}
 }
 @media(prefers-reduced-motion:reduce){.dng-global-toggle span{transition:none!important}}
+
+/* Owner browser QA follow-up: prevent flexbox from shrinking hamburger strokes to zero. */
+.dng-global-toggle{padding:0!important;align-items:center!important;justify-content:center!important}
+.dng-global-toggle span{flex:0 0 2px!important;height:2px!important;min-height:2px!important;max-height:2px!important;width:21px!important;margin:2px auto!important;background:#f1eee5!important;opacity:1}
+.dng-global-header.dng-global-open .dng-global-toggle span:nth-child(2){opacity:0!important}
+/* Two deliberate editorial lines in the desktop pricing hero, no broken final word. */
+@media(min-width:981px){
+ body.dng-unified-v40 .p37-hub-hero .p37-hero-grid{grid-template-columns:minmax(0,1.28fr) minmax(0,.72fr)!important;gap:18px!important}
+ body.dng-unified-v40 .p37-hub-hero .p37-hero h1,body.dng-unified-v40 .p37-hub-hero h1{font-size:clamp(46px,4.9vw,69px)!important;max-width:760px!important;text-wrap:normal!important;letter-spacing:-.05em!important;line-height:1.13!important}
+}
