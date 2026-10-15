@@ -1,0 +1,38 @@
+name: V41 — Real browser mobile/desktop visual QA
+on:
+  pull_request:
+    paths:
+      - 'assets/css/**'
+      - 'assets/js/dngworld-shell-v41.js'
+      - 'scripts/install-site-shell.mjs'
+      - 'scripts/check-shell-v41.mjs'
+      - 'scripts/visual-qa-v41.mjs'
+      - 'package.json'
+      - '.github/workflows/visual-qa-v41.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Generate production Pages
+        run: npm run build
+      - name: Install isolated browser QA runner
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Measure layout and capture actual screenshots
+        run: node scripts/visual-qa-v41.mjs
+      - name: Save browser screenshots and metrics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dngworld-v41-browser-qa
+          path: visual-qa-v41/
+          if-no-files-found: warn
