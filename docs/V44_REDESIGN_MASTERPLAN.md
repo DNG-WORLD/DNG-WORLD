@@ -22,8 +22,8 @@ The objective is **qualified conversations**, not a static beauty page. Every se
 
 ## D. Phased rollout (no full website replacement in one release)
 - **Phase 1, V44 — Solutions pilot**: end-to-end problem-led landing page in VI/EN/ZH, with the pilot orbital visual system, specific deliverables and pricing routes. Original source HTML unchanged; generated HTML rewritten in build. No homepage or pricing logic change. Screenshot/UX QA before merge.
-- **Phase 2 — Global hero system**: bring Home and other page heroes into the same art direction, sizes, gradients, camera/framing and motion; audit real WebGL source, fallback and performance. Consolidate/retire redundant overrides where safe. No simultaneous source replacement.
-- **Phase 3 — News & TV**: lead with playable video and editorial priority, latest news second, categories/search after; validate all languages, live data health, lazy loading and editorial source attribution.
+- **Phase 2, V45 — News & TV**: show featured playable video before the article feed with a calmer editorial masthead, then categories/individual headlines; validate all languages, live data health, lazy loading and attribution. Implemented as independent PR #8, not merged pending visual approval.
+- **Phase 3 — Global hero system**: bring Home and other page heroes into the same art direction, sizes, lighting, camera/framing and motion; audit real V24 WebGL source, fallback and performance. Consolidate/retire redundant overrides where safe. No simultaneous source replacement.
 - **Phase 4 — Homepage lower modules & site endings**: map all current sections, remove duplicate narratives, improve rhythm and one primary CTA, retain functional sections and legitimate content; user journey test.
 - **Phase 5 — QA, accessibility & performance**: measure mobile/browser screenshots, 3D FPS/LCP/CLS, color contrast, keyboard navigation and conversion events; update only proven unnecessary assets.
 
@@ -38,3 +38,6 @@ The objective is **qualified conversations**, not a static beauty page. Every se
 
 ## F. Other known repository debt
 V38/V40/V41 inject cumulative CSS overrides. Consolidate *after* a validated baseline, not with blind asset deletion. An HTML-only smoke test is not enough to certify design quality.
+
+## G. Technical root cause discovered in Phase 1 QA
+The pre-existing `assets/dngworld-v31-motion.js` indiscriminately injects a second decorative 3D orb into an arbitrary first-page hero. This caused two competing orbital scenes on the VI/EN/ZH Solutions prototype. The V44 generated-build adapter now guards against the duplicate only on pages with `.s44-object`; globally, this legacy motion policy must be replaced when the shared 3D system is rolled out. Do not add a third CSS-only orb to solve this issue.
