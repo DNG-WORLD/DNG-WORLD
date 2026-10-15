@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "node server.mjs",
     "start": "node server.mjs",
-    "build": "node scripts/build-static.mjs && node scripts/repair-v31-assets.mjs && node scripts/dngworld-v33.mjs && node scripts/restore-private-portfolio.mjs && node scripts/refresh-news-client.mjs && node scripts/polish-ui.mjs && node scripts/check-ui.mjs",
+    "build": "node scripts/build-static.mjs && node scripts/repair-v31-assets.mjs && node scripts/dngworld-v33.mjs && node scripts/restore-private-portfolio.mjs && node scripts/refresh-news-client.mjs && node scripts/polish-ui.mjs && node scripts/install-site-shell.mjs && node scripts/check-ui.mjs && node scripts/check-shell-v41.mjs",
     "validate": "python3 scripts/validate_v19.py",
     "qa": "python3 scripts/validate_v19.py && npm run build",
     "check:ui": "node scripts/check-ui.mjs"
