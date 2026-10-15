@@ -1,0 +1,64 @@
+/* DNGWORLD V38: reversible visual-only refinement, injected last into the generated pages. */
+:root{--dw38-night:#0d231b;--dw38-forest:#10281e;--dw38-deep:#0b2018;--dw38-surface:#193428;--dw38-ivory:#f3f0e7;--dw38-gold:#e5bf88;--dw38-muted:#bdcebe;--dw38-line:rgba(228,200,156,.22);--dw38-radius:22px;--dw38-shadow:0 18px 48px rgba(3,17,11,.18);--dw38-font:'Be Vietnam Pro','DM Sans',system-ui,sans-serif}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:90px}
+:where(.p37-body,body.v33,body.dngv25){font-family:var(--dw38-font);-webkit-font-smoothing:antialiased}
+:where(.p37-body,body.v33,body.dngv25) :where(p,li){overflow-wrap:break-word}
+:where(.p37-body,body.v33,body.dngv25) :where(a,button,input,select,textarea,summary):focus-visible,body:has(.news-wrap) :where(a,button,input,select,textarea):focus-visible{outline:2px solid var(--dw38-gold);outline-offset:4px}
+:where(.p37-body,body.v33,body.dngv25) :where(input,textarea,select){min-height:44px}
+:where(.p37-body,body.v33,body.dngv25) :where(img,video){max-width:100%}
+/* Consistent editorial grids and breathing room, without moving the 3D canvas. */
+.p37-body .p37-container,body.v33 .v33-wrap,body.dngv25 .shell{width:min(1220px,calc(100% - 64px))}
+.p37-body .p37-section{padding-block:clamp(62px,6.8vw,96px)}
+body.v33 .v33-section,body.dngv25 .section{padding-block:clamp(60px,6vw,88px)}
+.p37-body .p37-section-intro,body.v33 .v33-toprow{margin-bottom:clamp(26px,3vw,42px)}
+.p37-body .p37-section-intro p,body.v33 .v33-lead,body.dngv25 .lead{line-height:1.78}
+/* Typography with balanced Vietnamese diacritics and comfortable copy sizes. */
+.p37-body{font-size:15px;line-height:1.74}
+.p37-body .p37-hero h1{letter-spacing:-.058em;line-height:1.09}
+.p37-body :where(.p37-section h2,.p37-talk h2){letter-spacing:-.048em;line-height:1.15}
+.p37-body :where(.p37-service-desc,.p37-section-intro p,.p37-plan li,.p37-faq p,.p37-included li){font-size:14px;line-height:1.76}
+.p37-body :where(.p37-eyebrow,.p37-hero-caption){letter-spacing:.13em}
+.p37-body .p37-menu a{font-size:12.5px}
+.p37-body .p37-service-title{line-height:1.2;letter-spacing:-.042em}
+body.v33{font-size:15px;line-height:1.72}
+body.v33 h1{line-height:1.1;letter-spacing:-.057em}
+body.v33 :where(.v33-card p,.v33-step p,.v33-note,.v33-faq p){font-size:14px;line-height:1.72}
+body.dngv25{font-size:15px;line-height:1.7}
+body.dngv25 h1{letter-spacing:-.052em;line-height:1.08}
+body.dngv25 :where(.panel p,details p,.feature p,.news-copy p){font-size:14px;line-height:1.74}
+/* Navigation: coherent brand proportions, intact existing links and language switches. */
+.p37-body .p37-header,body.v33 .v33-head,body.dngv25 header{border-bottom-color:var(--dw38-line)}
+.p37-body .p37-header{box-shadow:0 8px 28px rgba(1,11,7,.11)}
+.p37-body .p37-logo{font-size:25px;line-height:1.3}
+.p37-body .p37-navcontact,body.dngv25 .topcontact{min-height:42px;display:inline-flex;align-items:center}
+.p37-body .p37-menu a,body.v33 .v33-nav a,body.dngv25 .mainnav a{text-underline-offset:.3em}
+/* Cards and buttons */
+.p37-body :where(.p37-service,.p37-plan,.p37-alt),body.v33 :where(.v33-card,.v33-step,.v33-calc),body.dngv25 :where(.panel,.feature){border-radius:var(--dw38-radius);box-shadow:var(--dw38-shadow)}
+.p37-body :where(.p37-service,.p37-plan,.p37-alt),body.v33 .v33-card{border-color:var(--dw38-line)}
+.p37-body .p37-catalog,.p37-body .p37-plan-grid,.p37-body .p37-related-grid{gap:18px}
+.p37-body .p37-service{transition:border-color .22s ease,box-shadow .22s ease,transform .22s ease}
+@media(hover:hover){.p37-body .p37-service:hover,body.v33 .v33-card:hover,body.dngv25 .panel:hover{border-color:rgba(229,191,136,.53);box-shadow:0 22px 52px rgba(3,17,11,.25)}}
+.p37-body :where(.p37-button,.p37-plan-link){min-height:48px;padding-inline:22px}
+body.v33 .v33-btn,body.dngv25 .btn{min-height:46px}
+.p37-body .p37-step{min-width:0}
+.p37-body .p37-faq summary,body.v33 .v33-faq summary,body.dngv25 summary{padding-block:8px;line-height:1.55}
+.p37-body :where(input,select,textarea),body.v33 :where(input,select),body.dngv25 .input{border-radius:12px}
+/* Homepage: hero content only; deliberately never set canvas sizing, camera, art stage or animation. */
+body .hero .hero-intro{line-height:1.78}
+body .hero .hero-copy{isolation:isolate}
+body .hero .hero-actions :where(a,button){min-height:44px}
+body .hero :where(.hero-eyebrow,.hero-intro,h1){text-shadow:0 1px 16px rgba(4,20,12,.14)}
+body .site-head :where(a,button):focus-visible{outline:2px solid var(--dw38-gold);outline-offset:4px}
+/* News & TV: refine, do not replace the newsroom theme. */
+body:has(.news-wrap){font-family:var(--dw38-font)}
+body:has(.news-wrap) .masthead-title{letter-spacing:-.05em;text-wrap:balance}
+body:has(.news-wrap) :where(.story-card h3,.side-feature h3){line-height:1.4}
+body:has(.news-wrap) :where(.news-search,.tv-portal){border-radius:18px}
+body:has(.news-wrap) .article-body{line-height:1.83}
+body:has(.news-wrap) :where(.news-media img,.lead-story img){object-fit:cover}
+@media(max-width:1020px){.p37-body .p37-container,body.v33 .v33-wrap,body.dngv25 .shell{width:calc(100% - 44px)}.p37-body .p37-hero h1{font-size:clamp(45px,6.6vw,76px)}body.v33 .v33-grid,body.dngv25 .cols3{gap:16px}}
+@media(max-width:760px){html{scroll-padding-top:76px}.p37-body .p37-container,body.v33 .v33-wrap,body.dngv25 .shell{width:calc(100% - 36px)}.p37-body .p37-section,body.v33 .v33-section,body.dngv25 .section{padding-block:50px}.p37-body .p37-hero h1{font-size:clamp(41px,9.6vw,60px);line-height:1.12;letter-spacing:-.048em}.p37-body .p37-hero .p37-intro,body.v33 .v33-lead,body.dngv25 .lead{font-size:15px;line-height:1.73}.p37-body .p37-service{padding:24px 22px}.p37-body .p37-service-desc{font-size:14px}.p37-body .p37-plan{padding:25px 22px}.p37-body .p37-button{min-height:47px}.p37-body .p37-catalog,.p37-body .p37-plan-grid{gap:14px}body.dngv25 h1{font-size:clamp(40px,10vw,62px)}body.dngv25 .hero25{padding-block:58px 42px}body .hero .hero-intro{line-height:1.65}body:has(.news-wrap) .masthead-title{line-height:1.15}}
+@media(max-width:520px){.p37-body .p37-footer-grid,body.dngv25 .footerinner,body.v33 .v33-footer .v33-wrap{grid-template-columns:1fr}.p37-body .p37-footer-grid>div:first-child,body.v33 .v33-footer .v33-wrap>:first-child{grid-column:auto}.p37-body .p37-ctas .p37-button{max-width:100%}.p37-body .p37-calc-cols,body.v33 .v33-inputs,body.dngv25 .formgrid{grid-template-columns:1fr}body:has(.news-wrap) .news-grid{grid-template-columns:1fr;gap:22px}body:has(.news-wrap) .story-card p{display:block}body:has(.news-wrap) .story-card .news-media{aspect-ratio:16/10}}
+@media(max-width:380px){.p37-body .p37-container,body.v33 .v33-wrap,body.dngv25 .shell{width:calc(100% - 28px)}.p37-body .p37-service{padding-inline:18px}.p37-body .p37-hero h1{font-size:clamp(36px,10.5vw,45px)}body.dngv25 .panel{padding:20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.p37-body .p37-service,body.v33 .v33-card,body.dngv25 .panel{transition:none}}
+@media print{.p37-body :where(.p37-service,.p37-plan),body.v33 .v33-card,body.dngv25 .panel{box-shadow:none}}

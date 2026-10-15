@@ -1,3 +1,0 @@
-Contact: mailto:nguyendhungdung@gmail.com
-Preferred-Languages: vi, en, zh
-Canonical: https://example.com/.well-known/security.txt
