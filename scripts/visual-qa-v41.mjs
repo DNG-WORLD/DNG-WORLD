@@ -23,11 +23,11 @@ try{
     const header=document.querySelector('[data-dng-common="header"]'),footer=document.querySelector('[data-dng-common="footer"]');
     const rect=header?.getBoundingClientRect(),toggle=header?.querySelector('.dng-global-toggle'),art=document.querySelector('.hero .hero-art');
     const box=e=>{const r=e?.getBoundingClientRect();return r?{x:Math.round(r.x),right:Math.round(r.right),width:Math.round(r.width),height:Math.round(r.height),top:Math.round(r.top)}:null};
-    return {title:document.title,width:innerWidth,scrollWidth:document.documentElement.scrollWidth,headers:[...document.querySelectorAll('header')].filter(visible).length,footers:[...document.querySelectorAll('footer')].filter(visible).length,visibleOriginal:[...document.querySelectorAll('[data-dng-original-shell]')].filter(visible).length,header:box(header),toggle:box(toggle),art:box(art),font:getComputedStyle(document.body).fontFamily,cssLoaded:[...document.styleSheets].some(x=>x.href?.includes('dngworld-shell-v41.css'))};
+    return {title:document.title,width:innerWidth,scrollWidth:document.documentElement.scrollWidth,headers:[...document.querySelectorAll('header')].filter(visible).length,footers:[...document.querySelectorAll('footer')].filter(visible).length,visibleOriginal:[...document.querySelectorAll('[data-dng-original-shell]')].filter(visible).length,header:box(header),toggle:box(toggle),art:box(art),masterArt:box(document.querySelector('.dng-master-art-v46')),font:getComputedStyle(document.body).fontFamily,cssLoaded:[...document.styleSheets].some(x=>x.href?.includes('dngworld-shell-v41.css'))};
    });
    results.push({route,width,...metrics});
    const id=route==='/'?'home':route.replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-|-$/g,'');
-   if((width===390||width===1440)&&['home','pricing','tools','insights','portfolio','404-html'].includes(id))await page.screenshot({path:path.join(out,id+'-'+width+'.png'),animations:'disabled',timeout:13000});
+   if((width===390||width===1440)&&['home','services','about','contact','pricing','tools','insights','portfolio','404-html'].includes(id))await page.screenshot({path:path.join(out,id+'-'+width+'.png'),animations:'disabled',timeout:13000});
    if(response?.status()!==200)errors.push(route+' @'+width+': HTTP '+response?.status());
    if(metrics.headers!==1||metrics.footers!==1||metrics.visibleOriginal!==0)errors.push(route+' @'+width+': duplicate visible site shells '+JSON.stringify([metrics.headers,metrics.footers,metrics.visibleOriginal]));
    if(metrics.scrollWidth>width+7)errors.push(route+' @'+width+': horizontal overflow '+metrics.scrollWidth);
@@ -38,7 +38,14 @@ try{
     const isOpen=await page.locator('.dng-global-panel').isVisible();
     if(!isOpen)errors.push(route+': mobile menu fails to open');
    }
-   if(route==='/'&&width===390&&metrics.art&&(metrics.art.width>width+7||metrics.art.height>420||metrics.art.x<0))errors.push('Homepage mobile 3D geometry is offscreen: '+JSON.stringify(metrics.art));
+   if(['services','tools','about','contact','pricing','portfolio'].includes(id)&&width===390){
+      const master=metrics.masterArt;
+      if(!master)errors.push(route+' @390: missing canonical V24 sculpture');
+      else if(master.x < -2 || master.right >width+2 || master.height>355)errors.push(route+' @390: canonical 3D art clipped: '+JSON.stringify(master));
+      const img=page.locator('.dng-master-art-v46 img');
+      if(await img.count()){const ok=await img.evaluate(el=>el.complete&&el.naturalWidth>100);if(!ok)errors.push(route+' @390: original V24 sculpture failed to load');}
+    }
+    if(route==='/'&&width===390&&metrics.art&&(metrics.art.width>width+7||metrics.art.height>420||metrics.art.x<0))errors.push('Homepage mobile 3D geometry is offscreen: '+JSON.stringify(metrics.art));
    await page.close();
   }
   await context.close();

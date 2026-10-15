@@ -1,0 +1,59 @@
+/* DNGWORLD V46 DESIGN FOUNDATION: SINGLE V24 APPROVED 3D SCULPTURE */
+:root{--dw46-night:#0b1d15;--dw46-panel:#142e22;--dw46-ivory:#f3f0e8;--dw46-sage:#bbccbe;--dw46-gold:#dcc197;--dw46-line:rgba(220,193,151,.22);--dw46-display:'DM Sans','Be Vietnam Pro',system-ui,sans-serif;--dw46-body:'Be Vietnam Pro','DM Sans',system-ui,sans-serif;--dw46-serif:'DM Serif Display',Georgia,serif;--dw46-width:1192px;--dw46-radius:14px}
+body.dng-design-v46{font-family:var(--dw46-body)!important;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body.dng-design-v46 :where(h1,h2,h3){font-family:var(--dw46-display)!important;line-height:1.15!important;letter-spacing:-.048em!important;text-wrap:balance}
+body.dng-design-v46 :where(h1 em,h2 em,h1 .serif,h2 .serif,h1 .signature){font-family:var(--dw46-serif)!important;font-weight:400!important;letter-spacing:-.025em!important}
+body.dng-design-v46 :where(.shell,.p37-container,.v33-wrap,.pf-wrap){max-width:var(--dw46-width)}
+body.dng-design-v46 :where(button,input,select,textarea){font-family:var(--dw46-body)!important}
+body.dng-design-v46 :where(.panel,.v33-card,.p37-service,.p37-plan,.pf-steps article){border-radius:var(--dw46-radius)!important;border-color:var(--dw46-line)!important;box-shadow:none!important}
+body.dng-design-v46 :where(a,button,input,select,textarea):focus-visible{outline:2px solid var(--dw46-gold)!important;outline-offset:4px}
+/* Same top-page architecture. News is not obscured by decorative 3D. */
+body.dng-design-v46 :where(.hero25,.v33-hero,.p37-hero,.pf-hero){position:relative!important;isolation:isolate;overflow:hidden!important;background:radial-gradient(ellipse at 80% 35%,rgba(102,154,119,.15),transparent 45%),linear-gradient(135deg,#102b20,#091c14)!important;border-bottom:1px solid var(--dw46-line)!important}
+body.dng-design-v46 .hero25{display:flex;align-items:center;min-height:530px!important}
+body.dng-design-v46 .hero25>.shell{width:min(var(--dw46-width),calc(100% - 64px));padding:74px 0!important;position:relative;z-index:3;margin-inline:auto}
+body.dng-design-v46 .hero25>.shell>:where(h1,h2,p,a){max-width:min(650px,57%)}
+body.dng-design-v46 .hero25 h1{font-size:clamp(44px,4.9vw,71px)!important}
+body.dng-design-v46 .hero25 .lead{font-size:clamp(14px,1.25vw,17px)!important;line-height:1.8!important}
+body.dng-design-v46 .hero25 .eyebrow{color:var(--dw46-gold)!important;font-size:11px!important;letter-spacing:.14em!important}
+body.dng-design-v46 .v33-hero>.v33-wrap{position:relative;z-index:3;padding-block:75px!important}
+body.dng-design-v46 .v33-hero>.v33-wrap>:where(h1,p){max-width:58%}
+body.dng-design-v46 .p37-hero{min-height:0!important}
+body.dng-design-v46 .p37-hero .p37-hero-grid{min-height:510px!important;display:block!important}
+body.dng-design-v46 .p37-hero .p37-hero-copy{width:57%!important;padding:76px 0!important}
+body.dng-design-v46 .p37-hero h1{font-size:clamp(43px,4.85vw,68px)!important;line-height:1.12!important}
+body.dng-design-v46 .p37-hero .p37-intro{line-height:1.78!important}
+body.dng-design-v46 :where(.p37-scene,.pf-art,.v33-orbit,.v33-scene,.dng-spatial){display:none!important}
+body.dng-design-v46 .pf-hero .pf-hero-grid{display:block!important;min-height:510px!important;padding:70px 0!important}
+body.dng-design-v46 .pf-hero .pf-hero-grid>div:first-child{width:58%!important}
+body.dng-design-v46 .pf-hero h1{font-size:clamp(45px,5vw,70px)!important}
+/* ONE approved 3D model. Subpages reuse the HOME V24 sculpture fallback,
+   not newly invented spheres, planets or independent art scenes. */
+body.dng-design-v46 .dng-master-art-v46{position:absolute!important;z-index:1;top:50%;right:max(2%,calc((100vw - var(--dw46-width))/2 - 12px));width:clamp(290px,37vw,490px);height:clamp(290px,37vw,490px);margin:0!important;transform:translateY(-50%);display:grid;place-items:center;pointer-events:none;isolation:isolate}
+body.dng-design-v46 .dng-master-art-v46:before{content:'';position:absolute;inset:22%;border-radius:50%;background:radial-gradient(circle,rgba(220,191,140,.18),transparent 71%);filter:blur(35px);z-index:-1}
+body.dng-design-v46 .dng-master-art-v46 img{position:relative;z-index:2;width:100%;height:100%;max-width:100%;object-fit:contain;filter:drop-shadow(0 28px 30px rgba(0,13,7,.29));transform:translateY(0) rotate(-2deg);animation:dw46-float 16s ease-in-out infinite}
+body.dng-design-v46 .dng-master-ground-v46{position:absolute;bottom:9%;left:24%;width:52%;height:8%;border-radius:50%;background:rgba(0,12,6,.37);filter:blur(20px)}
+@keyframes dw46-float{50%{transform:translateY(-11px) rotate(1deg)}}
+body.dng-design-v46 :where(.section,.p37-section,.v33-section){scroll-margin-top:85px}
+@media(max-width:980px){body.dng-design-v46 .dng-master-art-v46{right:2%;width:34vw;height:34vw;max-width:345px;max-height:345px}body.dng-design-v46 .hero25>.shell>:where(h1,h2,p,a){max-width:64%}body.dng-design-v46 .p37-hero .p37-hero-copy{width:64%!important}}
+@media(max-width:760px){
+ body.dng-design-v46 :where(.hero25,.v33-hero,.p37-hero,.pf-hero){min-height:0!important}
+ body.dng-design-v46 .hero25{display:block}
+ body.dng-design-v46 .hero25>.shell{width:calc(100% - 38px);padding:53px 0 8px!important}
+ body.dng-design-v46 .hero25>.shell>:where(h1,h2,p,a){max-width:100%!important}
+ body.dng-design-v46 .hero25 h1{font-size:clamp(37px,9.4vw,52px)!important}
+ body.dng-design-v46 .hero25 .lead{font-size:14px!important;line-height:1.75!important}
+ body.dng-design-v46 .v33-hero>.v33-wrap{padding:48px 0 8px!important}
+ body.dng-design-v46 .v33-hero>.v33-wrap>:where(h1,p){max-width:100%!important}
+ body.dng-design-v46 .p37-hero .p37-hero-grid{min-height:0!important}
+ body.dng-design-v46 .p37-hero .p37-hero-copy{width:100%!important;padding:48px 0 6px!important}
+ body.dng-design-v46 .p37-hero h1{font-size:clamp(37px,9.3vw,52px)!important}
+ body.dng-design-v46 .p37-hero .p37-hero-caption{margin-top:16px!important}
+ body.dng-design-v46 .pf-hero .pf-hero-grid{min-height:0!important;padding:52px 0 7px!important}
+ body.dng-design-v46 .pf-hero .pf-hero-grid>div:first-child{width:100%!important}
+ body.dng-design-v46 .pf-hero h1{font-size:clamp(38px,9vw,54px)!important}
+ body.dng-design-v46 .dng-master-art-v46{position:relative!important;top:auto!important;right:auto!important;width:min(290px,75vw)!important;height:min(290px,75vw)!important;max-width:100%!important;max-height:none!important;margin:0 auto 10px!important;transform:none!important}
+ body.dng-design-v46 .dng-master-art-v46 img{filter:drop-shadow(0 19px 20px rgba(0,13,7,.25))}
+ body.dng-design-v46 .p37-catalog{gap:13px}
+}
+@media(max-width:420px){body.dng-design-v46 .dng-master-art-v46{width:min(245px,70vw)!important;height:min(245px,70vw)!important}}
+@media(prefers-reduced-motion:reduce){body.dng-design-v46 .dng-master-art-v46 img{animation:none!important}}
