@@ -1,0 +1,50 @@
+/** Browser-level release gate for the mobile issues reported in owner screenshots. */
+import fs from 'node:fs';
+import http from 'node:http';
+import path from 'node:path';
+import { chromium } from 'playwright';
+const root=path.resolve('_site'),out=path.resolve('visual-qa-v41');
+fs.mkdirSync(out,{recursive:true});
+const types={html:'text/html; charset=utf-8',css:'text/css; charset=utf-8',js:'text/javascript; charset=utf-8',json:'application/json',svg:'image/svg+xml',webp:'image/webp',png:'image/png',jpg:'image/jpeg',woff2:'font/woff2'};
+const server=http.createServer((req,res)=>{let p;try{p=decodeURIComponent(req.url.split('?')[0])}catch{res.writeHead(400).end();return;}let f=path.resolve(root,'.'+p);if(!f.startsWith(root+path.sep)&&f!==root){res.writeHead(403).end();return;}if(fs.existsSync(f)&&fs.statSync(f).isDirectory())f=path.join(f,'index.html');else if(!fs.existsSync(f)&&!path.extname(f))f=path.join(f,'index.html');if(!fs.existsSync(f)){res.writeHead(404).end('Not found');return;}res.writeHead(200,{'Content-Type':types[path.extname(f).slice(1)]||'application/octet-stream','Cache-Control':'no-store'});fs.createReadStream(f).pipe(res)});
+await new Promise(resolve=>server.listen(4179,'127.0.0.1',resolve));
+let browser=null;const results=[],errors=[];
+const routes=['/','/pricing/','/tools/','/insights/','/about/','/services/','/contact/','/portfolio/','/en/','/zh/','/404.html'];
+try{
+ browser=await chromium.launch({headless:true,args:['--no-sandbox','--disable-dev-shm-usage']});
+ for(const width of [390,768,1440]){
+  const context=await browser.newContext({viewport:{width,height:844},deviceScaleFactor:1,reducedMotion:'reduce'});
+  for(const route of routes){
+   const page=await context.newPage();page.setDefaultTimeout(11000);
+   const response=await page.goto('http://127.0.0.1:4179'+route,{waitUntil:'domcontentloaded',timeout:20000});
+   await page.waitForTimeout(180);
+   const metrics=await page.evaluate(()=>{
+    const visible=e=>e&&getComputedStyle(e).display!=='none'&&getComputedStyle(e).visibility!=='hidden'&&e.getBoundingClientRect().height>0;
+    const header=document.querySelector('[data-dng-common="header"]'),footer=document.querySelector('[data-dng-common="footer"]');
+    const rect=header?.getBoundingClientRect(),toggle=header?.querySelector('.dng-global-toggle'),art=document.querySelector('.hero .hero-art');
+    const box=e=>{const r=e?.getBoundingClientRect();return r?{x:Math.round(r.x),right:Math.round(r.right),width:Math.round(r.width),height:Math.round(r.height),top:Math.round(r.top)}:null};
+    return {title:document.title,width:innerWidth,scrollWidth:document.documentElement.scrollWidth,headers:[...document.querySelectorAll('header')].filter(visible).length,footers:[...document.querySelectorAll('footer')].filter(visible).length,visibleOriginal:[...document.querySelectorAll('[data-dng-original-shell]')].filter(visible).length,header:box(header),toggle:box(toggle),art:box(art),font:getComputedStyle(document.body).fontFamily,cssLoaded:[...document.styleSheets].some(x=>x.href?.includes('dngworld-shell-v41.css'))};
+   });
+   results.push({route,width,...metrics});
+   const id=route==='/'?'home':route.replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-|-$/g,'');
+   if((width===390||width===1440)&&['home','pricing','tools','insights','portfolio','404-html'].includes(id))await page.screenshot({path:path.join(out,id+'-'+width+'.png'),animations:'disabled',timeout:13000});
+   if(response?.status()!==200)errors.push(route+' @'+width+': HTTP '+response?.status());
+   if(metrics.headers!==1||metrics.footers!==1||metrics.visibleOriginal!==0)errors.push(route+' @'+width+': duplicate visible site shells '+JSON.stringify([metrics.headers,metrics.footers,metrics.visibleOriginal]));
+   if(metrics.scrollWidth>width+7)errors.push(route+' @'+width+': horizontal overflow '+metrics.scrollWidth);
+   if(!metrics.cssLoaded||!metrics.font.includes('Be Vietnam Pro'))errors.push(route+' @'+width+': missing shared CSS/font');
+   if(width===390){
+    if(metrics.header?.width>width+2||metrics.toggle?.right>width||!metrics.toggle||metrics.toggle.height<40)errors.push(route+': menu clipped/outside mobile');
+    await page.locator('.dng-global-toggle').click();
+    const isOpen=await page.locator('.dng-global-panel').isVisible();
+    if(!isOpen)errors.push(route+': mobile menu fails to open');
+   }
+   if(route==='/'&&width===390&&metrics.art&&(metrics.art.width>width+7||metrics.art.height>420||metrics.art.x<0))errors.push('Homepage mobile 3D geometry is offscreen: '+JSON.stringify(metrics.art));
+   await page.close();
+  }
+  await context.close();
+ }
+}finally{if(browser)await browser.close();await new Promise(resolve=>server.close(resolve))}
+fs.writeFileSync(path.join(out,'metrics.json'),JSON.stringify({results,errors},null,2));
+console.log('Browser QA:',results.length,'viewports, screenshots captured. Errors:',errors.length);
+for(const e of errors)console.error('ISSUE:',e);
+if(errors.length)process.exitCode=1;
