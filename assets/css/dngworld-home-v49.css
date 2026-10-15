@@ -1,0 +1,49 @@
+/* DNGWORLD V49 / Homepage: calm, decisive, buyer-first closing modules.
+   VI V24 WebGL unchanged, EN/ZH primary homes corrected, V46 owns 3D. */
+.v49-problems,.v49-services,.v49-method,.v49-close,.v49-local-home{font-family:'Be Vietnam Pro','DM Sans',system-ui,sans-serif;box-sizing:border-box}
+.v49-problems *,.v49-services *,.v49-method *,.v49-close *{box-sizing:border-box}
+.v49-container{width:min(1192px,calc(100% - 64px));margin-inline:auto}
+:where(.v49-problems,.v49-services,.v49-method,.v49-close) :where(h2,h3,p){margin:0}
+:where(.v49-problems,.v49-services,.v49-method,.v49-close) :where(h2,h3){font-family:'DM Sans','Be Vietnam Pro',sans-serif!important;letter-spacing:-.05em!important;line-height:1.18!important;text-wrap:balance}
+.v49-kicker{color:#a77c47;font-size:10px!important;letter-spacing:.17em!important;font-weight:800!important}
+.v49-heading{display:grid;grid-template-columns:1.2fr .8fr;align-items:end;gap:45px;margin-bottom:34px}
+.v49-heading h2{font-size:clamp(32px,3.8vw,52px);margin-top:14px!important}
+.v49-heading>p{font-size:14px;line-height:1.8}
+.v49-problems{background:#f3f1e9;color:#173027;padding:clamp(65px,6.5vw,98px) 0}
+.v49-problems .v49-heading>p{color:#596f61}
+.v49-problem-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.v49-problem{background:#fffefa;border:1px solid #d9e0d4;border-radius:14px;padding:25px;display:flex;flex-direction:column;min-height:270px}
+.v49-problem>span{font-size:11px;font-weight:800;color:#967243}
+.v49-problem h3{font-size:clamp(20px,1.6vw,24px);margin:26px 0 12px!important;color:#163327}
+.v49-problem p{font-size:13px;color:#5a6e60;line-height:1.75}
+.v49-problem a{align-self:flex-start;margin-top:auto;padding:24px 0 5px;border-bottom:1px solid #bca174;color:#6a4b24!important;text-decoration:none!important;font-size:12px;font-weight:800}
+.v49-services{background:#0e251b;color:#f2f0e7;padding:clamp(65px,6.4vw,98px) 0}
+.v49-services .v49-kicker{color:#ddc18f}.v49-services .v49-heading>p{color:#b9ccbe}
+.v49-service-list{border-top:1px solid rgba(223,193,149,.26)}
+.v49-service{display:grid;grid-template-columns:55px minmax(0,1fr) auto;gap:26px;align-items:center;padding:24px 0;border-bottom:1px solid rgba(223,193,149,.26)}
+.v49-num{color:#dabb8c;font-size:12px;font-weight:800}
+.v49-service h3{font-size:clamp(20px,1.9vw,25px);margin:0 0 6px!important;color:#f2f0e8}
+.v49-service p{font-size:13px;color:#bbcebe;max-width:680px;line-height:1.7}
+.v49-service a{display:inline-flex;justify-content:flex-end;white-space:nowrap;min-width:152px;color:#e6c899!important;font-size:12px;font-weight:800;text-decoration:underline!important;text-underline-offset:5px}
+.v49-method{padding:clamp(65px,6vw,90px) 0;background:#ecf0e9;color:#173125}
+.v49-method .v49-heading>p{color:#5d7463}
+.v49-how-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}
+.v49-how-step{padding:25px 7px 0 0;border-top:2px solid #a9bda8}
+.v49-how-step span{font-size:11px;font-weight:800;color:#977344}
+.v49-how-step h3{font-size:24px;margin:20px 0 10px!important}
+.v49-how-step p{font-size:13px;line-height:1.74;color:#5c7061}
+.v49-how-step small{display:inline-block;color:#385640;font-weight:800;font-size:11px;margin-top:15px}
+.v49-close{background:#0b1d15;padding:clamp(62px,6.5vw,94px) 0;color:#f2efe6}
+.v49-close .v49-kicker{color:#e2c392}
+.v49-close-layout{display:grid;grid-template-columns:minmax(0,1.4fr) auto;align-items:center;gap:54px}
+.v49-close h2{font-size:clamp(33px,3.9vw,55px);margin:16px 0!important;max-width:820px}
+.v49-close p{font-size:14px;line-height:1.8;color:#c5d4c5;max-width:760px}
+.v49-close small{display:block;margin-top:15px;font-size:10px;line-height:1.7;color:#8da797}
+.v49-cta{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border-radius:40px;background:#dfbd89;color:#122a1f!important;text-decoration:none!important;text-align:center;font:800 12px/1.45 'Be Vietnam Pro','DM Sans',sans-serif}
+.v49-cta:hover{background:#f2d5a6}
+.v49-local-home{background:#0e251b}
+.v49-local-hero .v49-local-actions{display:flex;gap:11px;flex-wrap:wrap;margin:24px 0 18px}
+.v49-local-hero h1 em{color:#dabe91;font:400 italic 1.04em 'DM Serif Display',Georgia,serif!important}
+.v49-local-hero .v49-secondary{display:inline-flex;min-height:48px;align-items:center;padding:10px 17px;border:1px solid rgba(222,194,151,.4);border-radius:40px;color:#efcf9e!important;text-decoration:none!important;font-weight:700;font-size:12px}
+@media(max-width:960px){.v49-container{width:calc(100% - 42px)}.v49-problem-grid{gap:11px}.v49-problem{padding:21px}.v49-service{grid-template-columns:38px 1fr auto;gap:14px}}
+@media(max-width:760px){.v49-container{width:calc(100% - 36px)}.v49-problems,.v49-services,.v49-method,.v49-close{padding:58px 0}.v49-heading{grid-template-columns:1fr;gap:12px;margin-bottom:24px}.v49-heading h2{font-size:clamp(32px,8.5vw,44px)}.v49-heading>p{font-size:13px}.v49-problem-grid{grid-template-columns:1fr}.v49-problem{min-height:0;padding:22px}.v49-problem h3{margin:16px 0 9px!important;font-size:23px}.v49-problem a{margin-top:8px;padding-top:15px}.v49-service{grid-template-columns:32px 1fr;gap:11px;padding:19px 0}.v49-service a{grid-column:2;justify-content:flex-start;min-width:0}.v49-service h3{font-size:20px}.v49-service p{font-size:12px}.v49-how-grid{grid-template-columns:1fr;gap:26px}.v49-how-step h3{font-size:22px;margin:15px 0 8px!important}.v49-close-layout{grid-template-columns:1fr;gap:24px}.v49-cta{width:100%}.v49-local-hero .v49-local-actions{gap:8px}.v49-local-hero .v49-secondary{width:100%;justify-content:center}}

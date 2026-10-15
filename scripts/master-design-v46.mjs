@@ -25,7 +25,7 @@ function walk(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
  const rel=path.relative(root,file).replaceAll(path.sep,'/');
  if(!/<body\b/i.test(html)||!/<main\b/i.test(html)||/<meta\b[^>]*http-equiv\s*=\s*["']?refresh/i.test(html))continue;
  if(html.includes('data-dng-master="v46"'))throw Error('V46 duplicate build pass: '+rel);
- const homeRoute=/^(index\.html|en\/index\.html|zh\/index\.html)$/.test(rel);
+ const homeRoute=rel==='index.html';
  const newsroom=/(^|\/)(insights|insight)\//.test(rel);
  html=html.replace(/<body\b([^>]*)>/i,(m,a)=>{
    if(a.includes('dng-design-v46'))return m;
