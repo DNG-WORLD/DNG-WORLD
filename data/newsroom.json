@@ -1,15 +1,15 @@
 {
   "version": 36,
   "translation_status": "not_configured",
-  "updated_at": "2026-10-15T03:13:08.190005+00:00",
-  "attempted_at": "2026-10-15T03:13:08.190005+00:00",
+  "updated_at": "2026-10-15T03:14:20.670733+00:00",
+  "attempted_at": "2026-10-15T03:14:20.670733+00:00",
   "status": "ok",
-  "video_status": "waiting_for_api_key",
-  "video_warning": "YouTube Data API key has not been configured. Displaying previously collected videos; new videos are NOT refreshing.",
-  "video_last_success_at": "2026-10-14T22:19:08.903565+00:00",
-  "video_mode": "official_channels_latest",
-  "video_api_note": "YOUTUBE_API_KEY missing",
-  "source_count": 13,
+  "video_status": "fresh",
+  "video_warning": "",
+  "video_last_success_at": "2026-10-15T03:14:20.670733+00:00",
+  "video_mode": "popular_and_channel",
+  "video_api_note": "YouTube Data API v3 / verified embeddable public videos",
+  "source_count": 22,
   "sources_ok": [
     "Ars Technica / technology",
     "BBC News / economy",
@@ -23,15 +23,23 @@
     "The Verge / technology",
     "VnExpress / economy",
     "VnExpress / technology",
-    "VnExpress / vietnam"
+    "VnExpress / vietnam",
+    "YouTube API / BBC News",
+    "YouTube API / Bloomberg Quicktake",
+    "YouTube API / Bloomberg Television",
+    "YouTube API / CNBC Television",
+    "YouTube API / Google Developers",
+    "YouTube API / The Verge",
+    "YouTube API / VTV24",
+    "YouTube mostPopular / US",
+    "YouTube mostPopular / VN"
   ],
   "sources_failed": [
     "Tuổi Trẻ / world (empty or no recent records)",
     "Tuổi Trẻ / vietnam (empty or no recent records)",
     "Tuổi Trẻ / economy (empty or no recent records)",
-    "Search Engine Land / marketing (HTTP Error 403: Forbidden)",
     "VietnamPlus / vietnam (not well-formed (invalid token): line 1, column 0)",
-    "YOUTUBE_API_KEY not configured; live video updates disabled"
+    "Search Engine Land / marketing (HTTP Error 403: Forbidden)"
   ],
   "news": [
     {
@@ -42,7 +50,7 @@
       "category": "world",
       "url": "https://www.theguardian.com/australia-news/live/2026/oct/15/anthony-albanese-labor-pauline-hanson-monoculture-victorian-election-coalition-angus-taylor-ntwnfb",
       "image": "https://i.guim.co.uk/img/media/f4493b7fc0d7030937f30cea5b8c8b5f0f119f49/634_0_6341_5073/master/6341.jpg?width=140&quality=85&auto=format&fit=max&s=37d2feecba5c9408e7c2a00d4924f8d2",
-      "published_at": "2026-10-15T02:55:28+00:00",
+      "published_at": "2026-10-15T03:00:53+00:00",
       "kind": "source_brief",
       "source_lang": "en",
       "translations": {
@@ -1889,128 +1897,128 @@
       }
     },
     {
-      "id": "a9a75c23612d689b84",
-      "title": "Why 'cool kids' won't let Swindon in Thames Valley",
-      "summary": "Why the \"popular kids\" in Oxfordshire are not letting Swindon in on the Thames Valley devolution deal.",
-      "source": "BBC News",
-      "category": "politics",
-      "url": "https://www.bbc.co.uk/news/articles/cx8dz4235vnyo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/268f/live/c260a180-c7a5-11f1-a624-a3d8608fc192.jpg",
-      "published_at": "2026-10-14T05:31:14+00:00",
+      "id": "46430d13eb73948468",
+      "title": "Áo đấu của Michael Jordan được bán giá 14 triệu USD",
+      "summary": "Chiếc áo huyền thoại Michael Jordan mặc ở chung kết NBA 1998 được bán với giá 14 triệu USD, lập kỷ lục cho một kỷ vật bóng rổ, theo nhà đấu giá Hunt Auctions.",
+      "source": "VnExpress",
+      "category": "vietnam",
+      "url": "https://vnexpress.net/ao-dau-cua-michael-jordan-duoc-ban-gia-14-trieu-usd-5132091.html",
+      "image": "https://vcdn1-thethao.vnecdn.net/2026/10/14/848598564149748710552612313895-5483-5473-1791946918.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=DbSQsiJyen1KmbMOoaQ30w",
+      "published_at": "2026-10-14T07:42:27+00:00",
       "kind": "source_brief",
-      "source_lang": "en",
+      "source_lang": "vi",
       "translations": {
-        "en": {
-          "title": "Why 'cool kids' won't let Swindon in Thames Valley",
-          "summary": "Why the \"popular kids\" in Oxfordshire are not letting Swindon in on the Thames Valley devolution deal."
+        "vi": {
+          "title": "Áo đấu của Michael Jordan được bán giá 14 triệu USD",
+          "summary": "Chiếc áo huyền thoại Michael Jordan mặc ở chung kết NBA 1998 được bán với giá 14 triệu USD, lập kỷ lục cho một kỷ vật bóng rổ, theo nhà đấu giá Hunt Auctions."
         }
       }
     },
     {
-      "id": "20fb37288f37085a77",
-      "title": "Chris Mason: Lib Dems rally behind Davey as he pledges change",
-      "summary": "The BBC's political editor Chris Mason looks at the fallout from the Lib Dem frontbench resignations.",
-      "source": "BBC News",
-      "category": "politics",
-      "url": "https://www.bbc.co.uk/news/articles/cqy7l03ydkyko?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1d25/live/2922f8c0-c768-11f1-b10a-17422b0170eb.jpg",
-      "published_at": "2026-10-14T05:11:33+00:00",
+      "id": "2662451ffd59f634a3",
+      "title": "Enrique: 'Man City xứng đáng với mọi danh hiệu đã giành được'",
+      "summary": "HLV Luis Enrique khẳng định trong buổi họp báo ngày 13/10 rằng Man City xứng đáng với những danh hiệu đã giành được, bất chấp cuộc tranh chấp pháp lý với Ngoại hạng Anh cho ra kết quả cuối cùng thế nào.",
+      "source": "VnExpress",
+      "category": "vietnam",
+      "url": "https://vnexpress.net/enrique-man-city-xung-dang-voi-moi-danh-hieu-da-gianh-duoc-5131958.html",
+      "image": "https://vcdn1-thethao.vnecdn.net/2026/10/14/20261013T164842Z267401277MT1SI-3979-3002-1791914662.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=iEuB04PIhaBj4TCruuU4-Q",
+      "published_at": "2026-10-14T07:41:08+00:00",
       "kind": "source_brief",
-      "source_lang": "en",
+      "source_lang": "vi",
       "translations": {
-        "en": {
-          "title": "Chris Mason: Lib Dems rally behind Davey as he pledges change",
-          "summary": "The BBC's political editor Chris Mason looks at the fallout from the Lib Dem frontbench resignations."
+        "vi": {
+          "title": "Enrique: 'Man City xứng đáng với mọi danh hiệu đã giành được'",
+          "summary": "HLV Luis Enrique khẳng định trong buổi họp báo ngày 13/10 rằng Man City xứng đáng với những danh hiệu đã giành được, bất chấp cuộc tranh chấp pháp lý với Ngoại hạng Anh cho ra kết quả cuối cùng thế nào."
         }
       }
     },
     {
-      "id": "4092a753c1b1f9a608",
-      "title": "World's oldest shipwreck found off coast of Turkey",
-      "summary": "Archaeologists say the wreck is up to 4,700 years old, dating to the Early Bronze Age.",
-      "source": "BBC News",
-      "category": "world",
-      "url": "https://www.bbc.co.uk/news/articles/c6gr80rk1yyko?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/19d5/live/72e7aa00-c71d-11f1-a82f-35874a3aae81.jpg",
-      "published_at": "2026-10-14T05:00:35+00:00",
+      "id": "096cab6c3d0e2875cd",
+      "title": "Hơn 856.000 tỷ đồng tín dụng xanh rót vào nền kinh tế",
+      "summary": "Cho vay lĩnh vực xanh đạt trên 856.000 tỷ đồng trong 6 tháng đầu năm, tập trung vào lĩnh vực nông nghiệp, năng lượng xanh, bảo tồn đa dạng sinh học.",
+      "source": "VnExpress",
+      "category": "vietnam",
+      "url": "https://vnexpress.net/hon-856-000-ty-dong-tin-dung-xanh-rot-vao-nen-kinh-te-5132209.html",
+      "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/10/14/HUY712069371757090204-17919541-3501-4949-1791954395.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=YE_GRJCw1OKSJwWWkU_rNQ",
+      "published_at": "2026-10-14T07:40:51+00:00",
       "kind": "source_brief",
-      "source_lang": "en",
+      "source_lang": "vi",
       "translations": {
-        "en": {
-          "title": "World's oldest shipwreck found off coast of Turkey",
-          "summary": "Archaeologists say the wreck is up to 4,700 years old, dating to the Early Bronze Age."
+        "vi": {
+          "title": "Hơn 856.000 tỷ đồng tín dụng xanh rót vào nền kinh tế",
+          "summary": "Cho vay lĩnh vực xanh đạt trên 856.000 tỷ đồng trong 6 tháng đầu năm, tập trung vào lĩnh vực nông nghiệp, năng lượng xanh, bảo tồn đa dạng sinh học."
         }
       }
     },
     {
-      "id": "2e200ae9512d132c6d",
-      "title": "Watch: Hong Kong crowds queue to see Van Gogh painting unveiled for first time in 60 years",
-      "summary": "Châtaigniers en fleurs, also known as Chestnut Trees in Blossom, is expected to receive record bids at auction this weekend.",
-      "source": "BBC News",
-      "category": "world",
-      "url": "https://www.bbc.co.uk/news/videos/ck0e0l3le555o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d895/live/9b1f8260-c784-11f1-9a39-31b474234113.jpg",
-      "published_at": "2026-10-14T04:21:25+00:00",
+      "id": "c533591effe40bcac3",
+      "title": "Ung thư phổi - từ bệnh tiên lượng rất xấu đến cơ hội sống nhiều năm",
+      "summary": "Từng được xem là bệnh có tiên lượng rất xấu, thời gian sống trung bình chỉ khoảng vài tháng, ung thư phổi nay có thể giúp người bệnh sống thêm nhiều năm nhờ những tiến bộ trong điều trị.",
+      "source": "VnExpress",
+      "category": "vietnam",
+      "url": "https://vnexpress.net/ung-thu-phoi-tu-benh-tien-luong-rat-xau-den-co-hoi-song-nhieu-nam-5132065.html",
+      "image": "https://vcdn1-suckhoe.vnecdn.net/2026/10/14/ta-m-soa-t-ung-thu-1791949126-4784-1791949135.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=_OMK3C_fA-QjCpvKh8yEXg",
+      "published_at": "2026-10-14T07:40:22+00:00",
       "kind": "source_brief",
-      "source_lang": "en",
+      "source_lang": "vi",
       "translations": {
-        "en": {
-          "title": "Watch: Hong Kong crowds queue to see Van Gogh painting unveiled for first time in 60 years",
-          "summary": "Châtaigniers en fleurs, also known as Chestnut Trees in Blossom, is expected to receive record bids at auction this weekend."
+        "vi": {
+          "title": "Ung thư phổi - từ bệnh tiên lượng rất xấu đến cơ hội sống nhiều năm",
+          "summary": "Từng được xem là bệnh có tiên lượng rất xấu, thời gian sống trung bình chỉ khoảng vài tháng, ung thư phổi nay có thể giúp người bệnh sống thêm nhiều năm nhờ những tiến bộ trong điều trị."
         }
       }
     },
     {
-      "id": "0883ac512f2e2de65b",
-      "title": "UK asks Interpol to reject Argentina’s ‘politically motivated’ requests for Falklands oil arrests",
-      "summary": "Exclusive: Caution urged over Javier Milei government’s ‘red notice’ requests for arrest of individuals linked to oil project Britain has appealed to Interpol to reject Argentina’s requests for the arrest of individuals involved in a large oil project off the Falkland Islands. With tensions over the sovereignty of the British ov…",
-      "source": "The Guardian",
-      "category": "politics",
-      "url": "https://www.theguardian.com/uk-news/2026/oct/13/britain-interpol-reject-argentina-falkland-islands-arrests",
-      "image": "https://i.guim.co.uk/img/media/1651600a577e16c6617520e787af63fe99b21bc4/587_0_7911_6328/master/7911.jpg?width=140&quality=85&auto=format&fit=max&s=c6b84154990272b0af42fb8f13dc970b",
-      "published_at": "2026-10-13T17:42:03+00:00",
+      "id": "1a73f999771ded0bb2",
+      "title": "Năm bước chọn trái phiếu an toàn",
+      "summary": "Trước khi mua trái phiếu, hãy xem doanh nghiệp làm ăn ra sao trong 3 năm qua, đang nợ bao nhiêu và dùng tiền huy động để làm gì, theo chuyên gia Trần Đức Trung.",
+      "source": "VnExpress",
+      "category": "vietnam",
+      "url": "https://vnexpress.net/nam-buoc-chon-trai-phieu-an-toan-5132211.html",
+      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/10/14/thumbtccn16X9221-1791955102-5154-1791955144.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=fObu-qn_C_PSBm-BW1xqew",
+      "published_at": "2026-10-14T07:39:52+00:00",
       "kind": "source_brief",
-      "source_lang": "en",
+      "source_lang": "vi",
       "translations": {
-        "en": {
-          "title": "UK asks Interpol to reject Argentina’s ‘politically motivated’ requests for Falklands oil arrests",
-          "summary": "Exclusive: Caution urged over Javier Milei government’s ‘red notice’ requests for arrest of individuals linked to oil project Britain has appealed to Interpol to reject Argentina’s requests for the arrest of individuals involved in a large oil project off the Falkland Islands. With tensions over the sovereignty of the British ov…"
+        "vi": {
+          "title": "Năm bước chọn trái phiếu an toàn",
+          "summary": "Trước khi mua trái phiếu, hãy xem doanh nghiệp làm ăn ra sao trong 3 năm qua, đang nợ bao nhiêu và dùng tiền huy động để làm gì, theo chuyên gia Trần Đức Trung."
         }
       }
     },
     {
-      "id": "01be0e5eb75cbb57e4",
-      "title": "Argentina targets UK in legal claim over Falklands oil exploration",
-      "summary": "The action filed with an international maritime tribunal is the latest development in an escalating row over the Falkland Islands.",
-      "source": "BBC News",
-      "category": "politics",
-      "url": "https://www.bbc.co.uk/news/articles/cmp3g14p3z2ko?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c36b/live/a481bb50-c72c-11f1-b881-4391ac746e04.jpg",
-      "published_at": "2026-10-13T17:36:43+00:00",
+      "id": "48f17376f6a02aa033",
+      "title": "Cảnh sát ngăn gia đình nam sinh chuyển 1,2 tỷ đồng cho nhóm 'bắt cóc online'",
+      "summary": "Nhận trình báo nam sinh 18 tuổi hối thúc gia đình chuyển gấp 1,2 tỷ đồng cho người lạ, cảnh sát lập tức ngăn chặn, tìm thấy nạn nhân bị \"bắt cóc online\" sau 30 phút.",
+      "source": "VnExpress",
+      "category": "vietnam",
+      "url": "https://vnexpress.net/canh-sat-ngan-gia-dinh-nam-sinh-chuyen-1-2-ty-dong-cho-nhom-bat-coc-online-5132242.html",
+      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/10/14/bat-coc-online-1791962841-4807-1791962890.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=7QqurNTIc21-PsYc986NJA",
+      "published_at": "2026-10-14T07:28:10+00:00",
       "kind": "source_brief",
-      "source_lang": "en",
+      "source_lang": "vi",
       "translations": {
-        "en": {
-          "title": "Argentina targets UK in legal claim over Falklands oil exploration",
-          "summary": "The action filed with an international maritime tribunal is the latest development in an escalating row over the Falkland Islands."
+        "vi": {
+          "title": "Cảnh sát ngăn gia đình nam sinh chuyển 1,2 tỷ đồng cho nhóm 'bắt cóc online'",
+          "summary": "Nhận trình báo nam sinh 18 tuổi hối thúc gia đình chuyển gấp 1,2 tỷ đồng cho người lạ, cảnh sát lập tức ngăn chặn, tìm thấy nạn nhân bị \"bắt cóc online\" sau 30 phút."
         }
       }
     },
     {
-      "id": "97d663ee1e040cd56b",
-      "title": "MI5 chief warns against overstating Russian interference in Brexit vote",
-      "summary": "It comes after Andy Burnham said Moscow had tried to interfere in the 2016 referendum.",
-      "source": "BBC News",
-      "category": "politics",
-      "url": "https://www.bbc.co.uk/news/articles/cky83q49e4w0o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0b01/live/7a54b2f0-c723-11f1-b881-4391ac746e04.jpg",
-      "published_at": "2026-10-13T17:06:18+00:00",
+      "id": "cece07b854b8d2ae45",
+      "title": "Smart #2 - xe điện giá rẻ của châu Âu",
+      "summary": "Smart #2 ra mắt tại Triển lãm Ôtô Paris, đánh dấu sự trở lại của dòng xe hai chỗ cỡ nhỏ biểu tượng với mức giá 23.700 USD.",
+      "source": "VnExpress",
+      "category": "vietnam",
+      "url": "https://vnexpress.net/smart-2-xe-dien-gia-re-cua-chau-au-5131978.html",
+      "image": "https://vcdn1-vnexpress.vnecdn.net/2026/10/14/Smart21-1791961965-9533-1791961970.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=n6Uh6urQxAaizEUb3JAFJw",
+      "published_at": "2026-10-14T07:27:33+00:00",
       "kind": "source_brief",
-      "source_lang": "en",
+      "source_lang": "vi",
       "translations": {
-        "en": {
-          "title": "MI5 chief warns against overstating Russian interference in Brexit vote",
-          "summary": "It comes after Andy Burnham said Moscow had tried to interfere in the 2016 referendum."
+        "vi": {
+          "title": "Smart #2 - xe điện giá rẻ của châu Âu",
+          "summary": "Smart #2 ra mắt tại Triển lãm Ôtô Paris, đánh dấu sự trở lại của dòng xe hai chỗ cỡ nhỏ biểu tượng với mức giá 23.700 USD."
         }
       }
     }
@@ -2018,137 +2026,137 @@
   "videos": {
     "vietnam": [
       {
-        "id": "XMAWfZvE4rI",
-        "title": "Thật - Giả, Kiểm chứng: \"Cẩm nang\" ngăn chặn tin giả | VTV24",
-        "channel": "VTV24",
+        "id": "PPeIGIyzx4M",
+        "title": "Tàu Cá Trung Quốc Áp Sát Hoàng Sa: Ý Đồ Thâm Sâu Của Bắc Kinh?",
+        "channel": "La Bàn Thời Sự",
         "category": "vietnam",
-        "published_at": "2026-10-14T16:20:47+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/XMAWfZvE4rI/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-14T14:31:37+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/PPeIGIyzx4M/hqdefault.jpg",
+        "popularity": 347636,
+        "provenance": "youtube_popular",
         "source_lang": "vi",
         "translations": {
           "vi": {
-            "title": "Thật - Giả, Kiểm chứng: \"Cẩm nang\" ngăn chặn tin giả | VTV24",
+            "title": "Tàu Cá Trung Quốc Áp Sát Hoàng Sa: Ý Đồ Thâm Sâu Của Bắc Kinh?",
             "summary": ""
           }
         }
       },
       {
-        "id": "_dpDWi_-RAs",
-        "title": "11,5 triệu lao động Việt Nam có thể chịu tác động của A.I tạo sinh | VTV24",
-        "channel": "VTV24",
+        "id": "NWLoBn19hk4",
+        "title": "Elon Musk Cảnh Báo Hậu Quả Kinh Hoàng Nếu Tắt Starlink: An Ninh Ukraine Lâm Nguy? || Bàn Cờ Quân Sự",
+        "channel": "Bàn Cờ Quân Sự",
         "category": "vietnam",
-        "published_at": "2026-10-14T14:45:15+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/_dpDWi_-RAs/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-14T12:00:08+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/NWLoBn19hk4/hqdefault.jpg",
+        "popularity": 142904,
+        "provenance": "youtube_popular",
         "source_lang": "vi",
         "translations": {
           "vi": {
-            "title": "11,5 triệu lao động Việt Nam có thể chịu tác động của A.I tạo sinh | VTV24",
+            "title": "Elon Musk Cảnh Báo Hậu Quả Kinh Hoàng Nếu Tắt Starlink: An Ninh Ukraine Lâm Nguy? || Bàn Cờ Quân Sự",
             "summary": ""
           }
         }
       },
       {
-        "id": "PNdg-6N_mnA",
-        "title": "Thời sự toàn cảnh 14/10: Tăng cường hợp tác quốc phòng Việt Nam - Lào - Campuchia | VTV24",
-        "channel": "VTV24",
+        "id": "cgWQqTRb2kU",
+        "title": "Thảm kịch Doro đến hồi kết! Chăm lùa gà Putin ZLSky, ráo riết úp sọt Iran! HútTi tiến chiếm khó tin!",
+        "channel": "Phan Sơn",
         "category": "vietnam",
-        "published_at": "2026-10-14T13:58:48+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/PNdg-6N_mnA/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-14T03:57:54+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/cgWQqTRb2kU/hqdefault.jpg",
+        "popularity": 92216,
+        "provenance": "youtube_popular",
         "source_lang": "vi",
         "translations": {
           "vi": {
-            "title": "Thời sự toàn cảnh 14/10: Tăng cường hợp tác quốc phòng Việt Nam - Lào - Campuchia | VTV24",
+            "title": "Thảm kịch Doro đến hồi kết! Chăm lùa gà Putin ZLSky, ráo riết úp sọt Iran! HútTi tiến chiếm khó tin!",
             "summary": ""
           }
         }
       },
       {
-        "id": "r2VdR2N-D6Q",
-        "title": "Trung Quốc tuyên án tử hình ông trùm gia tộc lừa đảo | Cụm tin Quốc tế | VTV24",
-        "channel": "VTV24",
+        "id": "uoB-MUOE5pA",
+        "title": "“DANH HÀI” ZELENSKY VÀ UKRAINE TRẢ GIÁ VÌ DÁM BẬT “BỐ MẼO”",
+        "channel": "KHỐI CÊ",
         "category": "vietnam",
-        "published_at": "2026-10-14T12:18:25+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/r2VdR2N-D6Q/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-14T03:11:48+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/uoB-MUOE5pA/hqdefault.jpg",
+        "popularity": 94561,
+        "provenance": "youtube_popular",
         "source_lang": "vi",
         "translations": {
           "vi": {
-            "title": "Trung Quốc tuyên án tử hình ông trùm gia tộc lừa đảo | Cụm tin Quốc tế | VTV24",
+            "title": "“DANH HÀI” ZELENSKY VÀ UKRAINE TRẢ GIÁ VÌ DÁM BẬT “BỐ MẼO”",
             "summary": ""
           }
         }
       },
       {
-        "id": "pZXM5UNDwrw",
-        "title": "Việt Nam - Lào - Campuchia diễn tập chung về phòng thủ dân sự | Cụm tin | VTV24",
-        "channel": "VTV24",
+        "id": "ckUcVHsd4wE",
+        "title": "Nhà Trắng “xử nóng” Đại sứ Mỹ tại NATO vì bê bối rúng động, ông Trump cho cơ hội cuối cùng",
+        "channel": "Báo Hà Tĩnh",
         "category": "vietnam",
-        "published_at": "2026-10-14T12:00:21+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/pZXM5UNDwrw/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-14T03:10:23+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/ckUcVHsd4wE/hqdefault.jpg",
+        "popularity": 129180,
+        "provenance": "youtube_popular",
         "source_lang": "vi",
         "translations": {
           "vi": {
-            "title": "Việt Nam - Lào - Campuchia diễn tập chung về phòng thủ dân sự | Cụm tin | VTV24",
+            "title": "Nhà Trắng “xử nóng” Đại sứ Mỹ tại NATO vì bê bối rúng động, ông Trump cho cơ hội cuối cùng",
             "summary": ""
           }
         }
       },
       {
-        "id": "6QoyIF_OnKQ",
-        "title": "Lan tỏa lời tri ân: Xúc động hành trình đưa hài cốt liệt sĩ trở về đất mẹ | VTV24",
-        "channel": "VTV24",
+        "id": "DwNXsAqiYoY",
+        "title": "Tin quân sự quốc tế | Triều Tiên Cảnh Báo Mỹ Sau Khi Đài Loan Nhận F-16V #tinquansu #quansu",
+        "channel": "Tin Quân Sự Quốc Tế",
         "category": "vietnam",
-        "published_at": "2026-10-14T11:40:17+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/6QoyIF_OnKQ/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-13T13:00:35+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/DwNXsAqiYoY/hqdefault.jpg",
+        "popularity": 227785,
+        "provenance": "youtube_popular",
         "source_lang": "vi",
         "translations": {
           "vi": {
-            "title": "Lan tỏa lời tri ân: Xúc động hành trình đưa hài cốt liệt sĩ trở về đất mẹ | VTV24",
+            "title": "Tin quân sự quốc tế | Triều Tiên Cảnh Báo Mỹ Sau Khi Đài Loan Nhận F-16V #tinquansu #quansu",
             "summary": ""
           }
         }
       },
       {
-        "id": "4qdFk184MSE",
-        "title": "Xử lý 300 tấn rác quần áo bị đổ trộm tại phường Từ Liêm, TP. Hà Nội | VTV24",
-        "channel": "VTV24",
+        "id": "FvP30jny97E",
+        "title": "Ngày 15-10 tuyên án vụ tai nạn làm nữ sinh tử vong ở Vĩnh Long",
+        "channel": "Báo Tuổi Trẻ",
         "category": "vietnam",
-        "published_at": "2026-10-14T11:06:42+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/4qdFk184MSE/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-13T11:35:02+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/FvP30jny97E/hqdefault.jpg",
+        "popularity": 119190,
+        "provenance": "youtube_popular",
         "source_lang": "vi",
         "translations": {
           "vi": {
-            "title": "Xử lý 300 tấn rác quần áo bị đổ trộm tại phường Từ Liêm, TP. Hà Nội | VTV24",
+            "title": "Ngày 15-10 tuyên án vụ tai nạn làm nữ sinh tử vong ở Vĩnh Long",
             "summary": ""
           }
         }
       },
       {
-        "id": "sZPcOrn2VE4",
-        "title": "Bắc Ninh: Khen thưởng học sinh dũng cảm ngăn chặn trộm cắp | Cụm tin | VTV24",
-        "channel": "VTV24",
+        "id": "EdAOS5AYwNI",
+        "title": "Suýt bị dụ sang Campuchia vì lương 1,8 triệu/ngày #Shorts",
+        "channel": "XT NEWS",
         "category": "vietnam",
-        "published_at": "2026-10-14T09:30:04+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/sZPcOrn2VE4/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-13T06:30:37+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/EdAOS5AYwNI/hqdefault.jpg",
+        "popularity": 111713,
+        "provenance": "youtube_popular",
         "source_lang": "vi",
         "translations": {
           "vi": {
-            "title": "Bắc Ninh: Khen thưởng học sinh dũng cảm ngăn chặn trộm cắp | Cụm tin | VTV24",
+            "title": "Suýt bị dụ sang Campuchia vì lương 1,8 triệu/ngày #Shorts",
             "summary": ""
           }
         }
@@ -2156,137 +2164,137 @@
     ],
     "world": [
       {
-        "id": "kymNLc1ZCtM",
-        "title": "President Trump has ousted Kimberly Guilfoyle as US ambassador to Greece - but who is she? #BBCNews",
-        "channel": "BBC News",
+        "id": "PzoYmikU10o",
+        "title": "Jon Stewart & The News Team Recap the Endless War in Iran Pt. 1 | The Daily Show",
+        "channel": "The Daily Show",
         "category": "world",
-        "published_at": "2026-10-14T22:00:24+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/kymNLc1ZCtM/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-14T13:54:58+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/PzoYmikU10o/hqdefault.jpg",
+        "popularity": 1174042,
+        "provenance": "youtube_popular",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "President Trump has ousted Kimberly Guilfoyle as US ambassador to Greece - but who is she? #BBCNews",
+            "title": "Jon Stewart & The News Team Recap the Endless War in Iran Pt. 1 | The Daily Show",
             "summary": ""
           }
         }
       },
       {
-        "id": "G8KzjAkrWMc",
-        "title": "Kelly Clarkson in feud with New York City store. #BBCNews",
-        "channel": "BBC News",
+        "id": "4dGneYwEDZU",
+        "title": "Trump’s new press secretary has one big question mark on her resume",
+        "channel": "MS NOW",
         "category": "world",
-        "published_at": "2026-10-14T21:35:26+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/G8KzjAkrWMc/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-14T05:00:01+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/4dGneYwEDZU/hqdefault.jpg",
+        "popularity": 764874,
+        "provenance": "youtube_popular",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Kelly Clarkson in feud with New York City store. #BBCNews",
+            "title": "Trump’s new press secretary has one big question mark on her resume",
             "summary": ""
           }
         }
       },
       {
-        "id": "huxEUQ-HoqI",
-        "title": "Did An OpenAI Employee Bug Their Boardroom? | BBC Newscast",
-        "channel": "BBC News",
+        "id": "9B5A_8I8X9U",
+        "title": "Full 2026 New York Governor Debate | Kathy Hochul & Bruce Blakeman",
+        "channel": "NY1",
         "category": "world",
-        "published_at": "2026-10-14T21:30:03+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/huxEUQ-HoqI/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-14T01:03:05+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/9B5A_8I8X9U/hqdefault.jpg",
+        "popularity": 266536,
+        "provenance": "youtube_popular",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Did An OpenAI Employee Bug Their Boardroom? | BBC Newscast",
+            "title": "Full 2026 New York Governor Debate | Kathy Hochul & Bruce Blakeman",
             "summary": ""
           }
         }
       },
       {
-        "id": "rl3bO_uiLfc",
-        "title": "Could India's gen Z bring down Narendra Modi? #BBCNews",
-        "channel": "BBC News",
+        "id": "7f6xlHh1fok",
+        "title": "Kelly Clarkson Brooklyn Store Video, Revealed: What REALLY Happened? | PTFO",
+        "channel": "PABLO TORRE FINDS OUT",
         "category": "world",
-        "published_at": "2026-10-14T21:00:28+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/rl3bO_uiLfc/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-14T01:00:10+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/7f6xlHh1fok/hqdefault.jpg",
+        "popularity": 480817,
+        "provenance": "youtube_popular",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Could India's gen Z bring down Narendra Modi? #BBCNews",
+            "title": "Kelly Clarkson Brooklyn Store Video, Revealed: What REALLY Happened? | PTFO",
             "summary": ""
           }
         }
       },
       {
-        "id": "0amQPCRWhXc",
-        "title": "Inside the Nord Stream trial: How pipeline blast evidence leads back to Ukraine | BBC News",
-        "channel": "BBC News",
+        "id": "17ZW2uVA1h0",
+        "title": "Trump Insiders Are Already Trashing the New Press Secretary | The Next Level",
+        "channel": "The Bulwark",
         "category": "world",
-        "published_at": "2026-10-14T20:45:04+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/0amQPCRWhXc/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-14T00:31:10+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/17ZW2uVA1h0/hqdefault.jpg",
+        "popularity": 370499,
+        "provenance": "youtube_popular",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Inside the Nord Stream trial: How pipeline blast evidence leads back to Ukraine | BBC News",
+            "title": "Trump Insiders Are Already Trashing the New Press Secretary | The Next Level",
             "summary": ""
           }
         }
       },
       {
-        "id": "uzYEdy5S3hU",
-        "title": "Ukraine was just hit. Did the US know it was coming? | BBC News",
-        "channel": "BBC News",
+        "id": "Kivw6WzsFl4",
+        "title": "Encuentran a cubano flotando en una balsa improvisada frente costas de Florida",
+        "channel": "Telemundo 51 Miami",
         "category": "world",
-        "published_at": "2026-10-14T20:05:01+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/uzYEdy5S3hU/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-13T23:45:13+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/Kivw6WzsFl4/hqdefault.jpg",
+        "popularity": 170785,
+        "provenance": "youtube_popular",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Ukraine was just hit. Did the US know it was coming? | BBC News",
+            "title": "Encuentran a cubano flotando en una balsa improvisada frente costas de Florida",
             "summary": ""
           }
         }
       },
       {
-        "id": "5Fn4NSWzBiU",
-        "title": "Man 'faked illness with make-up' to juggle five jobs worth £350k. #BBCNews",
-        "channel": "BBC News",
+        "id": "V-phmW9f0pM",
+        "title": "America The Ugly: A General, A Cop & A Missing Bloodied Bag. Plus, The Cornell 7. | Ep 401",
+        "channel": "Candace Owens",
         "category": "world",
-        "published_at": "2026-10-14T20:00:05+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/5Fn4NSWzBiU/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-13T23:40:45+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/V-phmW9f0pM/hqdefault.jpg",
+        "popularity": 1354931,
+        "provenance": "youtube_popular",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Man 'faked illness with make-up' to juggle five jobs worth £350k. #BBCNews",
+            "title": "America The Ugly: A General, A Cop & A Missing Bloodied Bag. Plus, The Cornell 7. | Ep 401",
             "summary": ""
           }
         }
       },
       {
-        "id": "B2QtJKMlYTo",
-        "title": "How Gen Z are fighting to change India | BBC News",
-        "channel": "BBC News",
+        "id": "YlPbmpwGn8M",
+        "title": "Inside Louisiana’s Most Crowded Jail (Episode 2)",
+        "channel": "Tommy G",
         "category": "world",
-        "published_at": "2026-10-14T19:30:30+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/B2QtJKMlYTo/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-13T22:02:01+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/YlPbmpwGn8M/hqdefault.jpg",
+        "popularity": 944139,
+        "provenance": "youtube_popular",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "How Gen Z are fighting to change India | BBC News",
+            "title": "Inside Louisiana’s Most Crowded Jail (Episode 2)",
             "summary": ""
           }
         }
@@ -2294,137 +2302,137 @@
     ],
     "economy": [
       {
-        "id": "Y4lMuvapTik",
-        "title": "Stocks Slide as Hot Inflation & AI Credit Fears Hit Markets",
-        "channel": "Bloomberg Television",
+        "id": "TKar8rr4pIE",
+        "title": "3 tin tức Quân Sự quan trọng trong ngày. Tỷ phú Elon Musk nói ông Zelensky đang đi quá xa rồi #news",
+        "channel": "Quân Bắt Sóng",
         "category": "economy",
-        "published_at": "2026-10-14T22:11:35+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/Y4lMuvapTik/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-13T04:00:05+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/TKar8rr4pIE/hqdefault.jpg",
+        "popularity": 91834,
+        "provenance": "youtube_popular",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Stocks Slide as Hot Inflation & AI Credit Fears Hit Markets",
+            "title": "3 tin tức Quân Sự quan trọng trong ngày. Tỷ phú Elon Musk nói ông Zelensky đang đi quá xa rồi #news",
             "summary": ""
           }
         }
       },
       {
-        "id": "coEl3Sxi41k",
-        "title": "Apple to Release AI Platform in Mainland China",
-        "channel": "Bloomberg Television",
+        "id": "8Eqtg8IcOqQ",
+        "title": "Ukraine Đứng Trước Nguy Cơ Đổi Chủ Trước Mùa Đông 2026? | LSQS Hiểu Rõ Hơn",
+        "channel": "LSQS Hiểu Rõ Hơn",
         "category": "economy",
-        "published_at": "2026-10-14T20:52:06+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/coEl3Sxi41k/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-11T05:44:52+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/8Eqtg8IcOqQ/hqdefault.jpg",
+        "popularity": 245693,
+        "provenance": "youtube_popular",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Apple to Release AI Platform in Mainland China",
+            "title": "Ukraine Đứng Trước Nguy Cơ Đổi Chủ Trước Mùa Đông 2026? | LSQS Hiểu Rõ Hơn",
             "summary": ""
           }
         }
       },
       {
-        "id": "R_pW9EQOXyM",
-        "title": "US Prices Rise Most Since April",
-        "channel": "Bloomberg Television",
+        "id": "gtK_JOIXoxs",
+        "title": "Dự báo thời tiết mới nhất khu vực Bắc Bộ ngày và đêm nay 11/10 #thoitiet #baonhandan #bacbo",
+        "channel": "Báo Nhân Dân",
         "category": "economy",
-        "published_at": "2026-10-14T20:24:19+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/R_pW9EQOXyM/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-10T22:00:00+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/gtK_JOIXoxs/hqdefault.jpg",
+        "popularity": 170862,
+        "provenance": "youtube_popular",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "US Prices Rise Most Since April",
+            "title": "Dự báo thời tiết mới nhất khu vực Bắc Bộ ngày và đêm nay 11/10 #thoitiet #baonhandan #bacbo",
             "summary": ""
           }
         }
       },
       {
-        "id": "PZoa93Cyuio",
-        "title": "Bank of America Slides on $1.21 Billion Fine as Chip Stocks Tumble | Closing Bell",
-        "channel": "Bloomberg Television",
+        "id": "xQjJobM1RNs",
+        "title": "Judge tells rapper Rick Ross: ‘I have no idea who you are’ | NBC4 Washington",
+        "channel": "NBC4 Washington",
         "category": "economy",
-        "published_at": "2026-10-14T20:17:51+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/PZoa93Cyuio/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-01T20:40:24+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/xQjJobM1RNs/hqdefault.jpg",
+        "popularity": 3486280,
+        "provenance": "youtube_popular",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Bank of America Slides on $1.21 Billion Fine as Chip Stocks Tumble | Closing Bell",
+            "title": "Judge tells rapper Rick Ross: ‘I have no idea who you are’ | NBC4 Washington",
             "summary": ""
           }
         }
       },
       {
-        "id": "FLtdtTMi46U",
-        "title": "Oak Hill, Fortress at CAIS, Bumble Goes Private, Media Moves",
+        "id": "PonYELUZhIo",
+        "title": "JPMorgan's Dimon Sees Benefits From AI, Warns of Risks",
         "channel": "Bloomberg Television",
         "category": "economy",
-        "published_at": "2026-10-14T19:47:29+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/FLtdtTMi46U/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-15T01:41:44+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/PonYELUZhIo/hqdefault.jpg",
+        "popularity": 988,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Oak Hill, Fortress at CAIS, Bumble Goes Private, Media Moves",
+            "title": "JPMorgan's Dimon Sees Benefits From AI, Warns of Risks",
             "summary": ""
           }
         }
       },
       {
-        "id": "1yaFmxoCMdA",
-        "title": "Republicans Need to Unite in Texas, Latcham Says",
+        "id": "CTKel7tdrg4",
+        "title": "Valterra CFO Guides Market Development Investments",
         "channel": "Bloomberg Television",
         "category": "economy",
-        "published_at": "2026-10-14T19:26:21+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/1yaFmxoCMdA/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-15T01:31:42+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/CTKel7tdrg4/hqdefault.jpg",
+        "popularity": 73,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Republicans Need to Unite in Texas, Latcham Says",
+            "title": "Valterra CFO Guides Market Development Investments",
             "summary": ""
           }
         }
       },
       {
-        "id": "17d8iSjJK48",
-        "title": "Texas Has Always Been Vexing for Democrats, Poersch Says",
+        "id": "-UtZQOG8POA",
+        "title": "Valterra Platinum Bets on Underground Mining Project",
         "channel": "Bloomberg Television",
         "category": "economy",
-        "published_at": "2026-10-14T19:24:24+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/17d8iSjJK48/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-15T01:31:40+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/-UtZQOG8POA/hqdefault.jpg",
+        "popularity": 58,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Texas Has Always Been Vexing for Democrats, Poersch Says",
+            "title": "Valterra Platinum Bets on Underground Mining Project",
             "summary": ""
           }
         }
       },
       {
-        "id": "6kYP2XIAHDE",
-        "title": "BofA Takes US Regulatory Fines Seriously, CEO Moynihan Says",
+        "id": "taxqXSUZivA",
+        "title": "Value & Vision: How Valterra's Forging the Future of Platinum | Chief Future Officer",
         "channel": "Bloomberg Television",
         "category": "economy",
-        "published_at": "2026-10-14T18:45:41+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/6kYP2XIAHDE/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "published_at": "2026-10-15T01:30:01+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/taxqXSUZivA/hqdefault.jpg",
+        "popularity": 113,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "BofA Takes US Regulatory Fines Seriously, CEO Moynihan Says",
+            "title": "Value & Vision: How Valterra's Forging the Future of Platinum | Chief Future Officer",
             "summary": ""
           }
         }
@@ -2432,14 +2440,31 @@
     ],
     "technology": [
       {
+        "id": "wqQO4-gQogA",
+        "title": "“ÁC MỘNG” TRUNG ĐÔNG: VÌ SAO VŨ KHÍ TỶ ĐÔ CỦA MỸ VÀ SAUDI BẤT LỰC TRƯỚC LỰC LƯỢNG HOUTHI?",
+        "channel": "Chính Trị Gia",
+        "category": "technology",
+        "published_at": "2026-10-12T12:00:00+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/wqQO4-gQogA/hqdefault.jpg",
+        "popularity": 98084,
+        "provenance": "youtube_popular",
+        "source_lang": "en",
+        "translations": {
+          "en": {
+            "title": "“ÁC MỘNG” TRUNG ĐÔNG: VÌ SAO VŨ KHÍ TỶ ĐÔ CỦA MỸ VÀ SAUDI BẤT LỰC TRƯỚC LỰC LƯỢNG HOUTHI?",
+            "summary": ""
+          }
+        }
+      },
+      {
         "id": "oLBr_nYkfCc",
         "title": "Apple's HomeView ad is confusing #Vergecast",
         "channel": "The Verge",
         "category": "technology",
         "published_at": "2026-10-14T19:38:33+00:00",
         "thumbnail": "https://i.ytimg.com/vi/oLBr_nYkfCc/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "popularity": 9660,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
@@ -2455,8 +2480,8 @@
         "category": "technology",
         "published_at": "2026-10-14T18:30:53+00:00",
         "thumbnail": "https://i.ytimg.com/vi/OzCSF16I_fQ/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "popularity": 16835,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
@@ -2472,8 +2497,8 @@
         "category": "technology",
         "published_at": "2026-10-13T23:14:51+00:00",
         "thumbnail": "https://i.ytimg.com/vi/byHg3Dn3VSQ/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "popularity": 38230,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
@@ -2489,8 +2514,8 @@
         "category": "technology",
         "published_at": "2026-10-13T21:35:30+00:00",
         "thumbnail": "https://i.ytimg.com/vi/CG5UlQLExCw/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "popularity": 161446,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
@@ -2506,8 +2531,8 @@
         "category": "technology",
         "published_at": "2026-10-13T19:28:53+00:00",
         "thumbnail": "https://i.ytimg.com/vi/bHQ-kdep7Og/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "popularity": 88064,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
@@ -2523,8 +2548,8 @@
         "category": "technology",
         "published_at": "2026-10-13T18:20:13+00:00",
         "thumbnail": "https://i.ytimg.com/vi/y-MODo3Hye4/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "popularity": 428591,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
@@ -2540,8 +2565,8 @@
         "category": "technology",
         "published_at": "2026-10-10T18:23:21+00:00",
         "thumbnail": "https://i.ytimg.com/vi/wFOFs4KF1C4/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "popularity": 114120,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
@@ -2549,35 +2574,52 @@
             "summary": ""
           }
         }
-      },
-      {
-        "id": "veSXpZVVI84",
-        "title": "Would you drive the Telo MT1?",
-        "channel": "The Verge",
-        "category": "technology",
-        "published_at": "2026-10-10T15:30:00+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/veSXpZVVI84/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
-        "source_lang": "en",
-        "translations": {
-          "en": {
-            "title": "Would you drive the Telo MT1?",
-            "summary": ""
-          }
-        }
       }
     ],
     "ai-trends": [
       {
+        "id": "-esGZFvvnKE",
+        "title": "TRƯA 12/10: Lũ quét Nepal cuốn trôi nhà, sập cầu; Triều cường ở TPHCM đạt đỉnh gây ngập sâu",
+        "channel": "KHỎE TỰ NHIÊN",
+        "category": "ai-trends",
+        "published_at": "2026-10-12T05:06:07+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/-esGZFvvnKE/hqdefault.jpg",
+        "popularity": 295045,
+        "provenance": "youtube_popular",
+        "source_lang": "en",
+        "translations": {
+          "en": {
+            "title": "TRƯA 12/10: Lũ quét Nepal cuốn trôi nhà, sập cầu; Triều cường ở TPHCM đạt đỉnh gây ngập sâu",
+            "summary": ""
+          }
+        }
+      },
+      {
+        "id": "6BCGOL84-po",
+        "title": "Trump-Putin Điện Đàm 90 Phút: Cú Bắt Tay Chung Sức Bình Ổn Giá Dầu, Ai Đang Cứu Ai? || Bàn Cờ Thế Sự",
+        "channel": "Bàn Cờ Thế Sự",
+        "category": "ai-trends",
+        "published_at": "2026-10-11T11:00:10+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/6BCGOL84-po/hqdefault.jpg",
+        "popularity": 151331,
+        "provenance": "youtube_popular",
+        "source_lang": "en",
+        "translations": {
+          "en": {
+            "title": "Trump-Putin Điện Đàm 90 Phút: Cú Bắt Tay Chung Sức Bình Ổn Giá Dầu, Ai Đang Cứu Ai? || Bàn Cờ Thế Sự",
+            "summary": ""
+          }
+        }
+      },
+      {
         "id": "Jh6mgf9M06M",
         "title": "Gemini 4 Argon: What’s new and what’s next",
-        "channel": "Google Developers",
+        "channel": "Google for Developers",
         "category": "ai-trends",
         "published_at": "2026-10-14T17:01:36+00:00",
         "thumbnail": "https://i.ytimg.com/vi/Jh6mgf9M06M/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "popularity": 32593,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
@@ -2589,12 +2631,12 @@
       {
         "id": "OYp5j2RihPE",
         "title": "Gemini 4 Argon and Google Antigravity: From 2D concept to 3D cathedral",
-        "channel": "Google Developers",
+        "channel": "Google for Developers",
         "category": "ai-trends",
         "published_at": "2026-10-13T19:00:11+00:00",
         "thumbnail": "https://i.ytimg.com/vi/OYp5j2RihPE/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "popularity": 81545,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
@@ -2606,12 +2648,12 @@
       {
         "id": "IBVmenOroPs",
         "title": "Order in any language with Gemini 3.5 Live Translate",
-        "channel": "Google Developers",
+        "channel": "Google for Developers",
         "category": "ai-trends",
         "published_at": "2026-10-09T23:00:24+00:00",
         "thumbnail": "https://i.ytimg.com/vi/IBVmenOroPs/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "popularity": 8462,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
@@ -2623,12 +2665,12 @@
       {
         "id": "fMgcm9aXZyY",
         "title": "🤖 Operating real hardware with Gemini AI",
-        "channel": "Google Developers",
+        "channel": "Google for Developers",
         "category": "ai-trends",
         "published_at": "2026-10-09T19:00:36+00:00",
         "thumbnail": "https://i.ytimg.com/vi/fMgcm9aXZyY/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "popularity": 8268,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
@@ -2640,12 +2682,12 @@
       {
         "id": "7sKHiuE7J-Y",
         "title": "Building low-latency remote robotics with Gemini",
-        "channel": "Google Developers",
+        "channel": "Google for Developers",
         "category": "ai-trends",
         "published_at": "2026-10-09T16:00:10+00:00",
         "thumbnail": "https://i.ytimg.com/vi/7sKHiuE7J-Y/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "popularity": 30076,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
@@ -2657,50 +2699,16 @@
       {
         "id": "fL9OBJO3Gu8",
         "title": "Building with Gemma 4",
-        "channel": "Google Developers",
+        "channel": "Google for Developers",
         "category": "ai-trends",
         "published_at": "2026-10-08T23:00:09+00:00",
         "thumbnail": "https://i.ytimg.com/vi/fL9OBJO3Gu8/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
+        "popularity": 43362,
+        "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
             "title": "Building with Gemma 4",
-            "summary": ""
-          }
-        }
-      },
-      {
-        "id": "XnIXupxiRo4",
-        "title": "📷 Searching for images from text with EmbeddingGemma 2",
-        "channel": "Google Developers",
-        "category": "ai-trends",
-        "published_at": "2026-10-08T16:00:00+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/XnIXupxiRo4/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
-        "source_lang": "en",
-        "translations": {
-          "en": {
-            "title": "📷 Searching for images from text with EmbeddingGemma 2",
-            "summary": ""
-          }
-        }
-      },
-      {
-        "id": "7Ol-0Iq0JMA",
-        "title": "Real-time golf swing coaching with Gemini 3.8 Live",
-        "channel": "Google Developers",
-        "category": "ai-trends",
-        "published_at": "2026-10-07T23:00:12+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/7Ol-0Iq0JMA/hqdefault.jpg",
-        "popularity": null,
-        "provenance": "official_channel",
-        "source_lang": "en",
-        "translations": {
-          "en": {
-            "title": "Real-time golf swing coaching with Gemini 3.8 Live",
             "summary": ""
           }
         }
