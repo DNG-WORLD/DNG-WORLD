@@ -28,6 +28,7 @@ try{
    results.push({route,width,...metrics});
    const id=route==='/'?'home':route.replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-|-$/g,'');
    if((width===390||width===1440)&&['home','services','pricing','tools','insights','portfolio','404-html'].includes(id))await page.screenshot({path:path.join(out,id+'-'+width+'.png'),animations:'disabled',timeout:13000});
+   if(id==='services'&&(width===390||width===1440))await page.screenshot({path:path.join(out,'services-'+width+'-full.png'),fullPage:true,animations:'disabled',timeout:15000});
    if(response?.status()!==200)errors.push(route+' @'+width+': HTTP '+response?.status());
    if(metrics.headers!==1||metrics.footers!==1||metrics.visibleOriginal!==0)errors.push(route+' @'+width+': duplicate visible site shells '+JSON.stringify([metrics.headers,metrics.footers,metrics.visibleOriginal]));
    if(metrics.scrollWidth>width+7)errors.push(route+' @'+width+': horizontal overflow '+metrics.scrollWidth);
