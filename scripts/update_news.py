@@ -415,8 +415,12 @@ def main():
         if by_category.get(it['category'],0)>=22:continue
         if len(selected)>=110:break
         selected.append(it);by_category[it['category']]+=1
-    if not selected and previous.get('news'):
-        selected=previous['news'];failed.append('All news feeds failed; previous current news snapshot preserved')
+    if not info_ok:
+        # Preserve previous snapshot and its real updated_at. Never mark old
+        # headlines as refreshed when every RSS source failed.
+        raise RuntimeError('All news RSS feeds failed: keeping last verified snapshot intact.')
+    if not selected:
+        raise RuntimeError('All collected RSS feeds produced no usable fresh headlines.')
     selected.sort(key=lambda v:v.get('published_at',''),reverse=True)
     translation_status=enrich_languages(selected,grouped)
     video_health='fresh' if not fallback_categories else ('partial' if fresh else 'stale')
