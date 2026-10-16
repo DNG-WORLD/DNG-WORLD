@@ -7,7 +7,9 @@ import fs from 'node:fs';import path from 'node:path';
 const root=path.resolve('_site'),home=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const mesh=/<script id="mesh-data" type="application\/octet-stream">([\s\S]*?)<\/script>/i.exec(home);
 const from=home.lastIndexOf('  function perspective(');
-const endMarker='  requestAnimationFrame(draw);',to=home.indexOf(endMarker,from);
+const endMarker='  requestAnimationFrame(draw);';
+const rendererScriptEnd=home.indexOf('</script>',from);
+const to=home.lastIndexOf(endMarker,rendererScriptEnd);
 if(!mesh||mesh[1].length<1500000||from<0||to<0||!home.includes('id="artCanvas"'))
  throw Error('V52 original V24 WebGL mesh/renderer missing; do not create a fake replacement.');
 const render=home.slice(from,to+endMarker.length);
