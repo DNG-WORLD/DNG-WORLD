@@ -1,12 +1,12 @@
 {
   "version": 36,
   "translation_status": "not_configured",
-  "updated_at": "2026-10-16T18:56:00.351153+00:00",
-  "attempted_at": "2026-10-16T18:56:00.351153+00:00",
+  "updated_at": "2026-10-16T21:54:57.583820+00:00",
+  "attempted_at": "2026-10-16T21:54:57.583820+00:00",
   "status": "ok",
   "video_status": "fresh",
   "video_warning": "",
-  "video_last_success_at": "2026-10-16T18:56:00.351153+00:00",
+  "video_last_success_at": "2026-10-16T21:54:57.583820+00:00",
   "video_mode": "popular_and_channel",
   "video_api_note": "YouTube Data API v3 / verified embeddable public videos",
   "source_count": 22,
@@ -36,12 +36,192 @@
   ],
   "sources_failed": [
     "Search Engine Land / marketing (HTTP Error 403: Forbidden)",
-    "Tuổi Trẻ / economy (empty or no recent records)",
     "Tuổi Trẻ / world (empty or no recent records)",
     "Tuổi Trẻ / vietnam (empty or no recent records)",
-    "VietnamPlus / vietnam (not well-formed (invalid token): line 1, column 0)"
+    "VietnamPlus / vietnam (not well-formed (invalid token): line 1, column 0)",
+    "Tuổi Trẻ / economy (empty or no recent records)"
   ],
   "news": [
+    {
+      "id": "fdd4c6f578d6ab89d3",
+      "title": "Replit is no longer working with Anthropic, CEO says",
+      "summary": "Masad said the decision was made for a number of different reasons, including cost. Replit announced a partnership with OpenAI in August, but there was never any indication that it was no longer with Anthropic.",
+      "source": "TechCrunch",
+      "category": "ai",
+      "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "image": "",
+      "published_at": "2026-10-16T21:22:28+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Replit is no longer working with Anthropic, CEO says",
+          "summary": "Masad said the decision was made for a number of different reasons, including cost. Replit announced a partnership with OpenAI in August, but there was never any indication that it was no longer with Anthropic."
+        }
+      }
+    },
+    {
+      "id": "09244700ab26057693",
+      "title": "We can finally hear some of Wu-Tang Clan’s Once Upon A Time in Shaolin album",
+      "summary": "Wu-Tang's Once Upon A Time in Shaolin album has, for the most part, been extremely difficult to listen to, but you can now hear two snippets of the album thanks to the podcast Pablo Torre Finds Out, which just published an episode all about the exclusive record. Once Upon A Time in Shaolin has a […]",
+      "source": "The Verge",
+      "category": "technology",
+      "url": "https://www.theverge.com/entertainment/1013277/wu-tang-once-upon-a-time-in-shaolin-pablo-torre-martin-shkreli",
+      "image": "",
+      "published_at": "2026-10-16T20:50:27+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "We can finally hear some of Wu-Tang Clan’s Once Upon A Time in Shaolin album",
+          "summary": "Wu-Tang's Once Upon A Time in Shaolin album has, for the most part, been extremely difficult to listen to, but you can now hear two snippets of the album thanks to the podcast Pablo Torre Finds Out, which just published an episode all about the exclusive record. Once Upon A Time in Shaolin has a […]"
+        }
+      }
+    },
+    {
+      "id": "be1f6d896cd0ca7c16",
+      "title": "Tesla driver says he was asleep and using FSD when he crashed into highway patrol cars",
+      "summary": "After this horrific crash involving a Tesla driver who said he was asleep and using the driver assist mode, the California Highway Patrol warns that \"Despite its name, full self-driving is not fully autonomous. Technology does not relieve drivers of their responsibility to safely operate their vehicles.\" Video released by CHP sh…",
+      "source": "The Verge",
+      "category": "technology",
+      "url": "https://www.theverge.com/transportation/1013280/tesla-chp-fsd-crash",
+      "image": "",
+      "published_at": "2026-10-16T20:49:04+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Tesla driver says he was asleep and using FSD when he crashed into highway patrol cars",
+          "summary": "After this horrific crash involving a Tesla driver who said he was asleep and using the driver assist mode, the California Highway Patrol warns that \"Despite its name, full self-driving is not fully autonomous. Technology does not relieve drivers of their responsibility to safely operate their vehicles.\" Video released by CHP sh…"
+        }
+      }
+    },
+    {
+      "id": "7353a42c67b5a3214c",
+      "title": "“thegentlemanpervert” producing AI CSAM is a NJ prosecutor, say cops",
+      "summary": "Discord user flagged AI CSAM, triggering arrest of New Jersey deputy AG.",
+      "source": "Ars Technica",
+      "category": "ai",
+      "url": "https://arstechnica.com/tech-policy/2026/10/thegentlemanpervert-producing-ai-csam-is-a-nj-prosecutor-say-cops/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2233803629-2-1152x648.jpg",
+      "published_at": "2026-10-16T20:20:07+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "“thegentlemanpervert” producing AI CSAM is a NJ prosecutor, say cops",
+          "summary": "Discord user flagged AI CSAM, triggering arrest of New Jersey deputy AG."
+        }
+      }
+    },
+    {
+      "id": "76457f6ede32e47cb9",
+      "title": "US Rep proposes bill to give video game buyers \"ownership,\" not \"a license\"",
+      "summary": "There are still significant hurdles ahead, both technical and legislative.",
+      "source": "Ars Technica",
+      "category": "technology",
+      "url": "https://arstechnica.com/gaming/2026/10/us-rep-proposes-bill-to-give-video-game-buyers-ownership-not-a-license/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Torres-headshot-1152x648.jpg",
+      "published_at": "2026-10-16T19:41:18+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "US Rep proposes bill to give video game buyers \"ownership,\" not \"a license\"",
+          "summary": "There are still significant hurdles ahead, both technical and legislative."
+        }
+      }
+    },
+    {
+      "id": "4287ed896294fcc346",
+      "title": "Porsche’s electric Macan Turbo is an automotive existential crisis",
+      "summary": "The 2026 Porsche Macan Turbo EV is a two-row crossover with 630 horsepower and a 100-kilowatt-hour battery.",
+      "source": "TechCrunch",
+      "category": "technology",
+      "url": "https://techcrunch.com/2026/10/16/porsches-electric-macan-turbo-is-an-automotive-existential-crisis/",
+      "image": "",
+      "published_at": "2026-10-16T19:40:00+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Porsche’s electric Macan Turbo is an automotive existential crisis",
+          "summary": "The 2026 Porsche Macan Turbo EV is a two-row crossover with 630 horsepower and a 100-kilowatt-hour battery."
+        }
+      }
+    },
+    {
+      "id": "bfbf9ca78ba6e3fc97",
+      "title": "Brazilian Amazon deforestation falls to lowest on record as pivotal vote looms",
+      "summary": "Forest clearance at smallest total since records began in 1988 in success for Lula ahead of presidential run-off Deforestation in the Brazilian Amazon has fallen to its lowest level since records began, new government data shows. But whether this globally important success is maintained or reversed is on a knife edge ahead of a…",
+      "source": "The Guardian",
+      "category": "politics",
+      "url": "https://www.theguardian.com/environment/2026/oct/16/brazil-amazon-deforestation-lowest-on-record-election",
+      "image": "https://i.guim.co.uk/img/media/1ab732d5e231b07fef02c8b733fbf39933a3f591/420_0_4200_3360/master/4200.jpg?width=140&quality=85&auto=format&fit=max&s=fbafa9b10ba28b2d75e5b663dd38e53c",
+      "published_at": "2026-10-16T19:37:53+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Brazilian Amazon deforestation falls to lowest on record as pivotal vote looms",
+          "summary": "Forest clearance at smallest total since records began in 1988 in success for Lula ahead of presidential run-off Deforestation in the Brazilian Amazon has fallen to its lowest level since records began, new government data shows. But whether this globally important success is maintained or reversed is on a knife edge ahead of a…"
+        }
+      }
+    },
+    {
+      "id": "74e8f5bb1ee5ef0644",
+      "title": "Trump denies limiting Ukraine access to Starlink network",
+      "summary": "Speed curbs limited Ukraine's defences against deadly Russian attacks on Tuesday night.",
+      "source": "BBC News",
+      "category": "world",
+      "url": "https://www.bbc.co.uk/news/articles/ckz65g34wyd8o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8a95/live/08a3c460-c990-11f1-adc3-01d8629f0470.jpg",
+      "published_at": "2026-10-16T19:33:48+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Trump denies limiting Ukraine access to Starlink network",
+          "summary": "Speed curbs limited Ukraine's defences against deadly Russian attacks on Tuesday night."
+        }
+      }
+    },
+    {
+      "id": "a9bfc73b70d7a162c0",
+      "title": "Bug turns one of the biggest fears about Ray-Ban Meta smart glasses into reality",
+      "summary": "The bug is fixed, but privacy concerns remain.",
+      "source": "Ars Technica",
+      "category": "technology",
+      "url": "https://arstechnica.com/gadgets/2026/10/ray-ban-meta-smart-glasses-found-recording-audio-without-wearers-consent/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/unnamed-1-875x648.jpg",
+      "published_at": "2026-10-16T19:11:50+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Bug turns one of the biggest fears about Ray-Ban Meta smart glasses into reality",
+          "summary": "The bug is fixed, but privacy concerns remain."
+        }
+      }
+    },
+    {
+      "id": "55db9d32e5cf154cb3",
+      "title": "Police assess Palestine Action post by national security adviser's wife",
+      "summary": "Downing Street says Sarah Helm, the wife of Jonathan Powell, \"does not represent the government in any capacity\".",
+      "source": "BBC News",
+      "category": "politics",
+      "url": "https://www.bbc.co.uk/news/articles/crn4el88y7p2o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1144/live/5fea0720-c977-11f1-8791-fbfa2cae660f.jpg",
+      "published_at": "2026-10-16T18:58:05+00:00",
+      "kind": "source_brief",
+      "source_lang": "en",
+      "translations": {
+        "en": {
+          "title": "Police assess Palestine Action post by national security adviser's wife",
+          "summary": "Downing Street says Sarah Helm, the wife of Jonathan Powell, \"does not represent the government in any capacity\"."
+        }
+      }
+    },
     {
       "id": "18d2de7ca86cfc5b90",
       "title": "Reform councillor quits over offensive remarks",
@@ -75,6 +255,60 @@
         "en": {
           "title": "Why Apple is finally making its own smart home devices",
           "summary": "For more than a decade, Apple has told other companies to build smart home devices for its platform. This week, Apple launched its own. The Apple Home Collection is a lineup of cameras, thermostats, sensors, a smart door lock, and a video doorbell, all codeveloped with LG Electronics and Schneider Electric. They arrive alongside…"
+        }
+      }
+    },
+    {
+      "id": "178dd2973ba1ea4dbc",
+      "title": "Phó thủ tướng yêu cầu giảm lãi suất cho vay 1,5-2%",
+      "summary": "Phó thủ tướng Nguyễn Văn Thắng yêu cầu giảm lãi suất cho vay 1,5-2% với sản xuất, kinh doanh và lĩnh vực ưu tiên, hỗ trợ người dân, doanh nghiệp.",
+      "source": "VnExpress",
+      "category": "economy",
+      "url": "https://vnexpress.net/pho-thu-tuong-yeu-cau-giam-lai-suat-cho-vay-1-5-2-5133422.html",
+      "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/10/16/wm31-wm31-ndt5701179216463480712020-8788-4561-1792166550.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=t4kOcdO0eKrYMKbvFsiRBQ",
+      "published_at": "2026-10-16T18:30:00+00:00",
+      "kind": "source_brief",
+      "source_lang": "vi",
+      "translations": {
+        "vi": {
+          "title": "Phó thủ tướng yêu cầu giảm lãi suất cho vay 1,5-2%",
+          "summary": "Phó thủ tướng Nguyễn Văn Thắng yêu cầu giảm lãi suất cho vay 1,5-2% với sản xuất, kinh doanh và lĩnh vực ưu tiên, hỗ trợ người dân, doanh nghiệp."
+        }
+      }
+    },
+    {
+      "id": "2660aa7d3af21156e6",
+      "title": "Thủ tướng: Sẽ thu hồi thương hiệu quốc gia nếu không còn đạt tiêu chí",
+      "summary": "Thủ tướng Lê Minh Hưng yêu cầu tăng kiểm tra sau công nhận, thu hồi danh hiệu thương hiệu quốc gia với những trường hợp không còn đáp ứng tiêu chí.",
+      "source": "VnExpress",
+      "category": "economy",
+      "url": "https://vnexpress.net/thu-tuong-se-thu-hoi-thuong-hieu-quoc-gia-neu-khong-con-dat-tieu-chi-5133406.html",
+      "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/10/16/wm6-wm6-thtng-1792160317-5324-1792162930.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=-k_IiO5B_dgHIriI_djiHA",
+      "published_at": "2026-10-16T18:17:39+00:00",
+      "kind": "source_brief",
+      "source_lang": "vi",
+      "translations": {
+        "vi": {
+          "title": "Thủ tướng: Sẽ thu hồi thương hiệu quốc gia nếu không còn đạt tiêu chí",
+          "summary": "Thủ tướng Lê Minh Hưng yêu cầu tăng kiểm tra sau công nhận, thu hồi danh hiệu thương hiệu quốc gia với những trường hợp không còn đáp ứng tiêu chí."
+        }
+      }
+    },
+    {
+      "id": "bfdb4c6373c8875b45",
+      "title": "Tập đoàn dầu khí Malaysia muốn cung cấp LNG dài hạn cho Việt Nam",
+      "summary": "Tập đoàn Dầu khí quốc gia Malaysia (Petronas) đề xuất cung cấp khí tự nhiên hóa lỏng (LNG) theo hợp đồng dài hạn, hợp tác phát triển hạ tầng LNG tại Việt Nam.",
+      "source": "VnExpress",
+      "category": "economy",
+      "url": "https://vnexpress.net/tap-doan-dau-khi-malaysia-muon-cung-cap-lng-dai-han-cho-viet-nam-5133408.html",
+      "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/10/16/base6417921438365521128375175-4297-7514-1792161867.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=HCOL2O1j8exgW0ArUUDByQ",
+      "published_at": "2026-10-16T18:13:55+00:00",
+      "kind": "source_brief",
+      "source_lang": "vi",
+      "translations": {
+        "vi": {
+          "title": "Tập đoàn dầu khí Malaysia muốn cung cấp LNG dài hạn cho Việt Nam",
+          "summary": "Tập đoàn Dầu khí quốc gia Malaysia (Petronas) đề xuất cung cấp khí tự nhiên hóa lỏng (LNG) theo hợp đồng dài hạn, hợp tác phát triển hạ tầng LNG tại Việt Nam."
         }
       }
     },
@@ -385,24 +619,6 @@
       }
     },
     {
-      "id": "3ef08d1596a4bfa105",
-      "title": "Zelensky says Ukraine has right to defend itself after Trump calls latest strikes a 'disgrace'",
-      "summary": "EU leaders rally around Ukraine's president after new criticism from Donald Trump, who says Zelensky is \"more difficult to work with than Putin\".",
-      "source": "BBC News",
-      "category": "politics",
-      "url": "https://www.bbc.co.uk/news/articles/c58jz174w89ro?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3fdf/live/b08eef30-c975-11f1-bc2e-018d645d8d21.jpg",
-      "published_at": "2026-10-16T15:59:30+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Zelensky says Ukraine has right to defend itself after Trump calls latest strikes a 'disgrace'",
-          "summary": "EU leaders rally around Ukraine's president after new criticism from Donald Trump, who says Zelensky is \"more difficult to work with than Putin\"."
-        }
-      }
-    },
-    {
       "id": "985e76a6c4e39285ee",
       "title": "Housing loans granted while Burnham was mayor investigated by councillors",
       "summary": "A senior councillor says concerns have been raised about the transparency of the process to approve the loans.",
@@ -691,24 +907,6 @@
       }
     },
     {
-      "id": "0446e5ab7c62b13240",
-      "title": "US senators call for investigation into Ukraine's Starlink restrictions",
-      "summary": "Ukraine says temporary speed limits to the Starlink internet network disrupted its battlefield missions.",
-      "source": "BBC News",
-      "category": "world",
-      "url": "https://www.bbc.co.uk/news/articles/cq398zl8jmvdo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/36aa/live/cac07320-c951-11f1-8879-9d9deeb686e1.jpg",
-      "published_at": "2026-10-16T14:19:50+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "US senators call for investigation into Ukraine's Starlink restrictions",
-          "summary": "Ukraine says temporary speed limits to the Starlink internet network disrupted its battlefield missions."
-        }
-      }
-    },
-    {
       "id": "979b582e93e0244bc2",
       "title": "Polymarket saw $600 million in election trades after the elections were over",
       "summary": "Millions kept changing hands long after the election outcomes were effectively settled.",
@@ -729,7 +927,7 @@
     {
       "id": "8753c3420820c48827",
       "title": "The incredible flying Tesla Roadster is just for show",
-      "summary": "Last night, Elon Musk gave the people what they want: a car driving vertically up a multi-story ramp, launching off the edge, executing a mid-air \"kickflip\" over a lineup of Teslas, and landing via cold-gas thrusters. That's what the people want, right? \"We were promised flying cars,\" sure, but isn't the operative word in that […",
+      "summary": "Last night, Elon Musk gave the people what they want: a car driving vertically up a multistory ramp, launching off the edge, executing a midair \"kickflip\" over a lineup of Teslas, and landing via cold-gas thrusters. That's what the people want, right? \"We were promised flying cars,\" sure, but isn't the operative word in that […]",
       "source": "The Verge",
       "category": "technology",
       "url": "https://www.theverge.com/transportation/1012783/tesla-roadster-flying-stunt-production-reality-musk",
@@ -740,7 +938,7 @@
       "translations": {
         "en": {
           "title": "The incredible flying Tesla Roadster is just for show",
-          "summary": "Last night, Elon Musk gave the people what they want: a car driving vertically up a multi-story ramp, launching off the edge, executing a mid-air \"kickflip\" over a lineup of Teslas, and landing via cold-gas thrusters. That's what the people want, right? \"We were promised flying cars,\" sure, but isn't the operative word in that […"
+          "summary": "Last night, Elon Musk gave the people what they want: a car driving vertically up a multistory ramp, launching off the edge, executing a midair \"kickflip\" over a lineup of Teslas, and landing via cold-gas thrusters. That's what the people want, right? \"We were promised flying cars,\" sure, but isn't the operative word in that […]"
         }
       }
     },
@@ -849,42 +1047,6 @@
         "vi": {
           "title": "Tập đoàn Citigroup muốn huy động vốn cho ngành năng lượng Việt Nam",
           "summary": "Citigroup - tập đoàn dịch vụ tài chính, ngân hàng của Mỹ - đang tìm kiếm các giải pháp huy động vốn phục vụ phát triển ngành năng lượng Việt Nam."
-        }
-      }
-    },
-    {
-      "id": "aa86c9bbf2a8b92170",
-      "title": "This stretchy MagSafe storage pouch gives your phone a sizable trunk",
-      "summary": "There's a new storage upgrade option for smartphones compatible with wireless chargers and other magnetic accessories, but it won't help if you've run out of room for apps, pics, and videos. The MagSafe Flex Pouch looks like a magnetic wallet for pairing a small stack of credit cards to your phone, but its storage capacity […]",
-      "source": "The Verge",
-      "category": "technology",
-      "url": "https://www.theverge.com/tech/1012828/ninja-labs-magsafe-flex-pouch-silicone-smartphone-storage",
-      "image": "",
-      "published_at": "2026-10-16T13:33:21+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "This stretchy MagSafe storage pouch gives your phone a sizable trunk",
-          "summary": "There's a new storage upgrade option for smartphones compatible with wireless chargers and other magnetic accessories, but it won't help if you've run out of room for apps, pics, and videos. The MagSafe Flex Pouch looks like a magnetic wallet for pairing a small stack of credit cards to your phone, but its storage capacity […]"
-        }
-      }
-    },
-    {
-      "id": "22aca6448df508fee6",
-      "title": "iPhone Duo orders are already delayed into 2027",
-      "summary": "Delivery estimates for the iPhone Duo slipped into next year in less than an hour after Apple opened preorders for it at 8AM ET on Friday. At the time of writing we are seeing late January delivery dates for every configuration on Apple's website. The foldable is slated to launch in stores on October 23rd, […]",
-      "source": "The Verge",
-      "category": "technology",
-      "url": "https://www.theverge.com/tech/1012805/apple-iphone-duo-preorder-delay",
-      "image": "",
-      "published_at": "2026-10-16T13:10:11+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "iPhone Duo orders are already delayed into 2027",
-          "summary": "Delivery estimates for the iPhone Duo slipped into next year in less than an hour after Apple opened preorders for it at 8AM ET on Friday. At the time of writing we are seeing late January delivery dates for every configuration on Apple's website. The foldable is slated to launch in stores on October 23rd, […]"
         }
       }
     },
@@ -1015,24 +1177,6 @@
       }
     },
     {
-      "id": "3f84c52880100d5100",
-      "title": "How to dress a tech oligarch: The Social Reckoning’s costume designer on Zuckerberg’s style evolution",
-      "summary": "Susan Lyall worked with actor Jeremy Strong to research the Meta CEO’s favorite Nikes and luxury sweaters The first Aaron Sorkin Facebook movie, 2010’s The Social Network, helped cement the early aughts image of Mark Zuckerberg rebelling against corporate norms in rumpled hoodies and T-shirts. The follow-up, The Social Reckoning…",
-      "source": "The Guardian",
-      "category": "technology",
-      "url": "https://www.theguardian.com/fashion/2026/oct/16/social-reckoning-zuckerberg-fashion-costume-design",
-      "image": "https://i.guim.co.uk/img/media/5f77be0b14a2f3a0c3b168ce5bdcf5ed989dcc51/610_75_1532_1227/master/1532.jpg?width=140&quality=85&auto=format&fit=max&s=de76213c5ccd85dc05e8c7ad0ab7ae76",
-      "published_at": "2026-10-16T12:00:10+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "How to dress a tech oligarch: The Social Reckoning’s costume designer on Zuckerberg’s style evolution",
-          "summary": "Susan Lyall worked with actor Jeremy Strong to research the Meta CEO’s favorite Nikes and luxury sweaters The first Aaron Sorkin Facebook movie, 2010’s The Social Network, helped cement the early aughts image of Mark Zuckerberg rebelling against corporate norms in rumpled hoodies and T-shirts. The follow-up, The Social Reckoning…"
-        }
-      }
-    },
-    {
       "id": "534f2c5b0f32a18ebf",
       "title": "The Surface Laptop Ultra delivers on most of Microsoft's promises",
       "summary": "Microsoft promises one machine for dev, AI, and gaming, and mostly gets there.",
@@ -1047,24 +1191,6 @@
         "en": {
           "title": "The Surface Laptop Ultra delivers on most of Microsoft's promises",
           "summary": "Microsoft promises one machine for dev, AI, and gaming, and mostly gets there."
-        }
-      }
-    },
-    {
-      "id": "c4e1a5dacc1fa22bee",
-      "title": "Elon Musk reveals ‘world’s first flying car’ at Tesla event",
-      "summary": "The Tesla Roadster 2 drove up a curved ramp before using SpaceX rocket thrusters to fly, flip and land Elon Musk has revealed Tesla’s latest model, which he claims will be the world’s first flying car, using technology from his aerospace company SpaceX to “basically fly like a rocket”. The billionaire, who hosted a demonstration…",
-      "source": "The Guardian",
-      "category": "technology",
-      "url": "https://www.theguardian.com/technology/2026/oct/16/elon-musk-reveals-worlds-first-flying-car-spacex",
-      "image": "https://i.guim.co.uk/img/media/667c1429bf75b3b0a29168c236f2ebc4611413bd/266_0_2649_2119/master/2649.jpg?width=140&quality=85&auto=format&fit=max&s=6e238831dabf8bacccc5a84e683ffe42",
-      "published_at": "2026-10-16T11:53:04+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Elon Musk reveals ‘world’s first flying car’ at Tesla event",
-          "summary": "The Tesla Roadster 2 drove up a curved ramp before using SpaceX rocket thrusters to fly, flip and land Elon Musk has revealed Tesla’s latest model, which he claims will be the world’s first flying car, using technology from his aerospace company SpaceX to “basically fly like a rocket”. The billionaire, who hosted a demonstration…"
         }
       }
     },
@@ -1137,24 +1263,6 @@
         "en": {
           "title": "Equality watchdog writes to Greens over 'Zionism is racism' motion",
           "summary": "The party was reported to the Equality and Human Rights Commission by MPs and antisemitism campaigners."
-        }
-      }
-    },
-    {
-      "id": "be828d785dcf1765b8",
-      "title": "Rocket Report: FAA eyes more Starbase traffic; India's Skyroot snares US customer",
-      "summary": "The pioneering reusable upper stage for Stoke Space's Nova rocket ships out for testing.",
-      "source": "Ars Technica",
-      "category": "technology",
-      "url": "https://arstechnica.com/space/2026/10/rocket-report-faa-eyes-more-starbase-traffic-indias-skyroot-snares-us-customer/",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/stoke1-1152x648.jpg",
-      "published_at": "2026-10-16T11:00:53+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Rocket Report: FAA eyes more Starbase traffic; India's Skyroot snares US customer",
-          "summary": "The pioneering reusable upper stage for Stoke Space's Nova rocket ships out for testing."
         }
       }
     },
@@ -1789,24 +1897,6 @@
       }
     },
     {
-      "id": "dff0d5600294391bd1",
-      "title": "Ngân hàng ADB có giám đốc quốc gia mới tại Việt Nam",
-      "summary": "Ông Scott Roberts, người đã làm việc 27 năm tại Ngân hàng Phát triển châu Á (ADB), được bổ nhiệm làm Giám đốc quốc gia mới của ngân hàng này tại Việt Nam.",
-      "source": "VnExpress",
-      "category": "economy",
-      "url": "https://vnexpress.net/ngan-hang-adb-co-giam-doc-quoc-gia-moi-tai-viet-nam-5132976.html",
-      "image": "https://vcdn1-kinhdoanh.vnecdn.net/2026/10/16/gdadbvietnam-1792116001-3812-1792116090.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=P2xra9IdVwcjnbSvaZQKNA",
-      "published_at": "2026-10-16T02:02:53+00:00",
-      "kind": "source_brief",
-      "source_lang": "vi",
-      "translations": {
-        "vi": {
-          "title": "Ngân hàng ADB có giám đốc quốc gia mới tại Việt Nam",
-          "summary": "Ông Scott Roberts, người đã làm việc 27 năm tại Ngân hàng Phát triển châu Á (ADB), được bổ nhiệm làm Giám đốc quốc gia mới của ngân hàng này tại Việt Nam."
-        }
-      }
-    },
-    {
       "id": "efba77569468c0f0a9",
       "title": "Meta releases Muse Spark Open, a new ‘open-weight’ AI model",
       "summary": "Meta says Muse excels at ‘multi-step reasoning’ and ‘complex software engineering’ as it races to catch up to Chinese rivals Meta on Thursday launched a new open-weight AI model which it claims rivals, and in some cases outperforms, similar products from leading Chinese developers. Muse Spark Open “is the most capable US open-we…",
@@ -1861,24 +1951,6 @@
       }
     },
     {
-      "id": "4ef4b8a45d4caff22b",
-      "title": "Porn showing choking or incest to be banned from early November, government says",
-      "summary": "The move follows a review into pornography regulation in 2025 by Conservative peer Baroness Gabby Bertin",
-      "source": "BBC News",
-      "category": "politics",
-      "url": "https://www.bbc.co.uk/news/articles/cmpqgepejr2ro?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ee76/live/db556ac0-c8b5-11f1-bdfb-e3788aeae9ec.jpg",
-      "published_at": "2026-10-15T23:27:57+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Porn showing choking or incest to be banned from early November, government says",
-          "summary": "The move follows a review into pornography regulation in 2025 by Conservative peer Baroness Gabby Bertin"
-        }
-      }
-    },
-    {
       "id": "5e8772258e5906da86",
       "title": "Tip-off foiled US teen suspect's plot to attack Hindu temple, police say",
       "summary": "The alleged plot only failed because the 19-year-old suspect's gun jammed outside the place of worship, say police.",
@@ -1893,42 +1965,6 @@
         "en": {
           "title": "Tip-off foiled US teen suspect's plot to attack Hindu temple, police say",
           "summary": "The alleged plot only failed because the 19-year-old suspect's gun jammed outside the place of worship, say police."
-        }
-      }
-    },
-    {
-      "id": "2554deac31f8536bae",
-      "title": "Living with a stink? Technology might help",
-      "summary": "Smells from rubbish dumps and industrial facilities are being more carefully monitored.",
-      "source": "BBC News",
-      "category": "economy",
-      "url": "https://www.bbc.co.uk/news/articles/cr6240q1w136o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/80ac/live/fbba3b20-c652-11f1-9a39-31b474234113.jpg",
-      "published_at": "2026-10-15T23:18:21+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Living with a stink? Technology might help",
-          "summary": "Smells from rubbish dumps and industrial facilities are being more carefully monitored."
-        }
-      }
-    },
-    {
-      "id": "f85fd84baf5665c27c",
-      "title": "I find it quite demoralising in store - why I do all my shopping online",
-      "summary": "After Primark announced plans for home delivery, we hear from women who never go into clothes stores.",
-      "source": "BBC News",
-      "category": "economy",
-      "url": "https://www.bbc.co.uk/news/articles/c36lk280kd1o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c7cc/live/e0cf8ba0-c92f-11f1-bc2e-018d645d8d21.jpg",
-      "published_at": "2026-10-15T23:16:12+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "I find it quite demoralising in store - why I do all my shopping online",
-          "summary": "After Primark announced plans for home delivery, we hear from women who never go into clothes stores."
         }
       }
     },
@@ -1985,42 +2021,6 @@
           "summary": "Speaking at TechCrunch Disrupt, Amazon devices chief Panos Panay described a future where ambient AI devices work in the background, anticipating users' needs instead of waiting for commands."
         }
       }
-    },
-    {
-      "id": "20dfecfa26f1e2fc7a",
-      "title": "Anthropic is letting METR researchers look under the hood with employee-level access",
-      "summary": "METR will publish its own assessments of Anthropic’s risks, incidents, and practices, and the frontier AI model maker has given up the right to block them.",
-      "source": "TechCrunch",
-      "category": "ai",
-      "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
-      "image": "",
-      "published_at": "2026-10-15T19:14:26+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Anthropic is letting METR researchers look under the hood with employee-level access",
-          "summary": "METR will publish its own assessments of Anthropic’s risks, incidents, and practices, and the frontier AI model maker has given up the right to block them."
-        }
-      }
-    },
-    {
-      "id": "70eb8d3db75495311c",
-      "title": "Bluesky expands its AI-powered Attie app to let anyone build websites, games, and more",
-      "summary": "Bluesky is bringing “social vibe coding” to its experimental Attie platform, allowing users to create interactive experiences like games, quizzes, and websites that can tap into the social network's audience.",
-      "source": "TechCrunch",
-      "category": "ai",
-      "url": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/",
-      "image": "",
-      "published_at": "2026-10-15T18:56:46+00:00",
-      "kind": "source_brief",
-      "source_lang": "en",
-      "translations": {
-        "en": {
-          "title": "Bluesky expands its AI-powered Attie app to let anyone build websites, games, and more",
-          "summary": "Bluesky is bringing “social vibe coding” to its experimental Attie platform, allowing users to create interactive experiences like games, quizzes, and websites that can tap into the social network's audience."
-        }
-      }
     }
   ],
   "videos": {
@@ -2032,7 +2032,7 @@
         "category": "vietnam",
         "published_at": "2026-10-16T16:00:24+00:00",
         "thumbnail": "https://i.ytimg.com/vi/a-2D9Wb4dI8/hqdefault.jpg",
-        "popularity": 1719,
+        "popularity": 3032,
         "provenance": "official_channel_api",
         "source_lang": "vi",
         "translations": {
@@ -2049,7 +2049,7 @@
         "category": "vietnam",
         "published_at": "2026-10-16T14:30:37+00:00",
         "thumbnail": "https://i.ytimg.com/vi/Ba_GUKAIy1U/hqdefault.jpg",
-        "popularity": 4136,
+        "popularity": 6132,
         "provenance": "official_channel_api",
         "source_lang": "vi",
         "translations": {
@@ -2066,7 +2066,7 @@
         "category": "vietnam",
         "published_at": "2026-10-16T14:30:36+00:00",
         "thumbnail": "https://i.ytimg.com/vi/l97q6fkvvzo/hqdefault.jpg",
-        "popularity": 1993,
+        "popularity": 2649,
         "provenance": "official_channel_api",
         "source_lang": "vi",
         "translations": {
@@ -2083,7 +2083,7 @@
         "category": "vietnam",
         "published_at": "2026-10-16T14:00:32+00:00",
         "thumbnail": "https://i.ytimg.com/vi/cPA3TOLjGPI/hqdefault.jpg",
-        "popularity": 7134,
+        "popularity": 7915,
         "provenance": "official_channel_api",
         "source_lang": "vi",
         "translations": {
@@ -2100,7 +2100,7 @@
         "category": "vietnam",
         "published_at": "2026-10-16T13:30:01+00:00",
         "thumbnail": "https://i.ytimg.com/vi/W4aB_jUDLv8/hqdefault.jpg",
-        "popularity": 16609,
+        "popularity": 20035,
         "provenance": "official_channel_api",
         "source_lang": "vi",
         "translations": {
@@ -2117,7 +2117,7 @@
         "category": "vietnam",
         "published_at": "2026-10-16T13:15:31+00:00",
         "thumbnail": "https://i.ytimg.com/vi/bEAEAdsvVE4/hqdefault.jpg",
-        "popularity": 9636,
+        "popularity": 10101,
         "provenance": "official_channel_api",
         "source_lang": "vi",
         "translations": {
@@ -2134,7 +2134,7 @@
         "category": "vietnam",
         "published_at": "2026-10-16T12:30:22+00:00",
         "thumbnail": "https://i.ytimg.com/vi/JzCBe0a0xYM/hqdefault.jpg",
-        "popularity": 8471,
+        "popularity": 9417,
         "provenance": "official_channel_api",
         "source_lang": "vi",
         "translations": {
@@ -2145,18 +2145,18 @@
         }
       },
       {
-        "id": "CNAass9zqW4",
-        "title": "Lễ viếng, truy điệu và an táng hài cốt liệt sĩ được quan tâm đặc biệt trên mạng xã hội",
-        "channel": "VTV24",
+        "id": "xZFhE5dOLYg",
+        "title": "Nga Đã Sở Hữu \"Quái Vật\" Tầm Xa, Nato Lo Sợ Trước Mật Danh \"Sản Phẩm 506\" || Bàn Cờ Quân Sự",
+        "channel": "Bàn Cờ Quân Sự",
         "category": "vietnam",
-        "published_at": "2026-10-16T11:30:40+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/CNAass9zqW4/hqdefault.jpg",
-        "popularity": 10949,
-        "provenance": "official_channel_api",
+        "published_at": "2026-10-16T12:00:07+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/xZFhE5dOLYg/hqdefault.jpg",
+        "popularity": 102825,
+        "provenance": "youtube_popular",
         "source_lang": "vi",
         "translations": {
           "vi": {
-            "title": "Lễ viếng, truy điệu và an táng hài cốt liệt sĩ được quan tâm đặc biệt trên mạng xã hội",
+            "title": "Nga Đã Sở Hữu \"Quái Vật\" Tầm Xa, Nato Lo Sợ Trước Mật Danh \"Sản Phẩm 506\" || Bàn Cờ Quân Sự",
             "summary": ""
           }
         }
@@ -2164,137 +2164,137 @@
     ],
     "world": [
       {
-        "id": "v36FeYEMowE",
-        "title": "White House says Zacharia leaving press secretary role days after taking job | BBC News",
+        "id": "GQnQj29shKw",
+        "title": "Donald Trump says he won’t use a nuclear weapon in the war on Iran | BBC News",
         "channel": "BBC News",
         "category": "world",
-        "published_at": "2026-10-16T18:42:32+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/v36FeYEMowE/hqdefault.jpg",
-        "popularity": 2842,
+        "published_at": "2026-10-16T21:15:09+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/GQnQj29shKw/hqdefault.jpg",
+        "popularity": 5420,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "White House says Zacharia leaving press secretary role days after taking job | BBC News",
+            "title": "Donald Trump says he won’t use a nuclear weapon in the war on Iran | BBC News",
             "summary": ""
           }
         }
       },
       {
-        "id": "-nqq5zKogJs",
-        "title": "Albania's anti-government demonstrations continue for fourth day | BBC News",
+        "id": "yrdr3UgBl2o",
+        "title": "Rising numbers of anti-war Russians deported by the West. #Deportation #Russia #BBCNews",
         "channel": "BBC News",
         "category": "world",
-        "published_at": "2026-10-16T18:00:21+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/-nqq5zKogJs/hqdefault.jpg",
-        "popularity": 870,
+        "published_at": "2026-10-16T21:00:25+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/yrdr3UgBl2o/hqdefault.jpg",
+        "popularity": 1133,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Albania's anti-government demonstrations continue for fourth day | BBC News",
+            "title": "Rising numbers of anti-war Russians deported by the West. #Deportation #Russia #BBCNews",
             "summary": ""
           }
         }
       },
       {
-        "id": "yjJN9CNPQk8",
-        "title": "Trump says press secretary Katie Zacharia should 'reconsider' job days after starting. #BBCNews",
-        "channel": "BBC News",
-        "category": "world",
-        "published_at": "2026-10-16T17:53:52+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/yjJN9CNPQk8/hqdefault.jpg",
-        "popularity": 11038,
-        "provenance": "official_channel_api",
-        "source_lang": "en",
-        "translations": {
-          "en": {
-            "title": "Trump says press secretary Katie Zacharia should 'reconsider' job days after starting. #BBCNews",
-            "summary": ""
-          }
-        }
-      },
-      {
-        "id": "Cc9HfkthkMo",
-        "title": "India's Cockroach Party Leader Detained Before Delhi Protest",
+        "id": "x9vs27gSY44",
+        "title": "Trump Press Secretary Katie Zacharia Out After Five Days",
         "channel": "Bloomberg News",
         "category": "world",
-        "published_at": "2026-10-16T17:35:44+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/Cc9HfkthkMo/hqdefault.jpg",
-        "popularity": 116,
+        "published_at": "2026-10-16T21:00:21+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/x9vs27gSY44/hqdefault.jpg",
+        "popularity": 983,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "India's Cockroach Party Leader Detained Before Delhi Protest",
+            "title": "Trump Press Secretary Katie Zacharia Out After Five Days",
             "summary": ""
           }
         }
       },
       {
-        "id": "MW3AJMUL9yo",
-        "title": "India's Cockroach Janta Party founder detained ahead of march. #India #BBCNews",
+        "id": "KqRMgUN6aIg",
+        "title": "Gen Z is taking to the streets. But why? | BBC News",
         "channel": "BBC News",
         "category": "world",
-        "published_at": "2026-10-16T17:15:35+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/MW3AJMUL9yo/hqdefault.jpg",
-        "popularity": 998,
+        "published_at": "2026-10-16T21:00:05+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/KqRMgUN6aIg/hqdefault.jpg",
+        "popularity": 1898,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "India's Cockroach Janta Party founder detained ahead of march. #India #BBCNews",
+            "title": "Gen Z is taking to the streets. But why? | BBC News",
             "summary": ""
           }
         }
       },
       {
-        "id": "eRRiAEdHtDY",
-        "title": "Are we building the AI that destroys us? | BBC News",
+        "id": "hwXmUpCLxU4",
+        "title": "Are Labour ready to talk about welfare? | BBC Newscast",
         "channel": "BBC News",
         "category": "world",
-        "published_at": "2026-10-16T17:00:25+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/eRRiAEdHtDY/hqdefault.jpg",
-        "popularity": 4709,
+        "published_at": "2026-10-16T20:15:13+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/hwXmUpCLxU4/hqdefault.jpg",
+        "popularity": 481,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Are we building the AI that destroys us? | BBC News",
+            "title": "Are Labour ready to talk about welfare? | BBC Newscast",
             "summary": ""
           }
         }
       },
       {
-        "id": "zDFwFEoyq1A",
-        "title": "Tech CEOs Heavily Funding Trump's $330 Million Ballroom",
+        "id": "H7ug4yN1gYA",
+        "title": "Brewers Beat Dodgers to Reach First World Series Since 1982",
         "channel": "Bloomberg News",
         "category": "world",
-        "published_at": "2026-10-16T17:00:07+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/zDFwFEoyq1A/hqdefault.jpg",
-        "popularity": 1553,
+        "published_at": "2026-10-16T20:00:31+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/H7ug4yN1gYA/hqdefault.jpg",
+        "popularity": 352,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Tech CEOs Heavily Funding Trump's $330 Million Ballroom",
+            "title": "Brewers Beat Dodgers to Reach First World Series Since 1982",
             "summary": ""
           }
         }
       },
       {
-        "id": "moL5e5BJaCk",
-        "title": "Alice Cooper says he's 'totally opposite' to his on-stage persona | BBC News",
+        "id": "jmLNIZdWsv4",
+        "title": "White House confirms Katie Zacharia is leaving role. #BBCNews",
         "channel": "BBC News",
         "category": "world",
-        "published_at": "2026-10-16T16:00:35+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/moL5e5BJaCk/hqdefault.jpg",
-        "popularity": 7267,
+        "published_at": "2026-10-16T20:00:23+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/jmLNIZdWsv4/hqdefault.jpg",
+        "popularity": 6744,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Alice Cooper says he's 'totally opposite' to his on-stage persona | BBC News",
+            "title": "White House confirms Katie Zacharia is leaving role. #BBCNews",
+            "summary": ""
+          }
+        }
+      },
+      {
+        "id": "6R3gBfn7Dro",
+        "title": "How AI 'reskins' are stealing human content | BBC News",
+        "channel": "BBC News",
+        "category": "world",
+        "published_at": "2026-10-16T19:30:26+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/6R3gBfn7Dro/hqdefault.jpg",
+        "popularity": 6153,
+        "provenance": "official_channel_api",
+        "source_lang": "en",
+        "translations": {
+          "en": {
+            "title": "How AI 'reskins' are stealing human content | BBC News",
             "summary": ""
           }
         }
@@ -2302,137 +2302,137 @@
     ],
     "economy": [
       {
-        "id": "fwf0do_d5rs",
-        "title": "Zacharia Out as Trump's White House Press Secretary",
+        "id": "M2mYI5Fak18",
+        "title": "Warsh Touts ‘Consequential’ AI, Trump Press Secretary Out After Five Days",
         "channel": "Bloomberg Television",
         "category": "economy",
-        "published_at": "2026-10-16T18:43:37+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/fwf0do_d5rs/hqdefault.jpg",
-        "popularity": 728,
+        "published_at": "2026-10-16T21:25:29+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/M2mYI5Fak18/hqdefault.jpg",
+        "popularity": 95,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Zacharia Out as Trump's White House Press Secretary",
+            "title": "Warsh Touts ‘Consequential’ AI, Trump Press Secretary Out After Five Days",
             "summary": ""
           }
         }
       },
       {
-        "id": "SQ4GzRM6xN8",
-        "title": "Personal Balance Sheet Encouraging Consumption: Porcelli",
+        "id": "BsiJdU33sro",
+        "title": "Housing Crisis, Inflation Worries, Midterms Loom",
         "channel": "Bloomberg Television",
         "category": "economy",
-        "published_at": "2026-10-16T18:43:08+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/SQ4GzRM6xN8/hqdefault.jpg",
-        "popularity": 52,
+        "published_at": "2026-10-16T20:56:50+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/BsiJdU33sro/hqdefault.jpg",
+        "popularity": 456,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Personal Balance Sheet Encouraging Consumption: Porcelli",
+            "title": "Housing Crisis, Inflation Worries, Midterms Loom",
             "summary": ""
           }
         }
       },
       {
-        "id": "f7WptlMsMcg",
-        "title": "Charles Schwab CEO explains block on unauthorized AI agents",
+        "id": "bCb2h9NzMwE",
+        "title": "People Losing Out On Home Equity: Brown Harris CEO",
         "channel": "Bloomberg Television",
         "category": "economy",
-        "published_at": "2026-10-16T18:08:00+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/f7WptlMsMcg/hqdefault.jpg",
+        "published_at": "2026-10-16T20:50:29+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/bCb2h9NzMwE/hqdefault.jpg",
+        "popularity": 458,
+        "provenance": "official_channel_api",
+        "source_lang": "en",
+        "translations": {
+          "en": {
+            "title": "People Losing Out On Home Equity: Brown Harris CEO",
+            "summary": ""
+          }
+        }
+      },
+      {
+        "id": "LPuPghRFu6s",
+        "title": "Tesla Showcases Long-Awaited Roadster With Aerial Tricks",
+        "channel": "Bloomberg Television",
+        "category": "economy",
+        "published_at": "2026-10-16T20:41:53+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/LPuPghRFu6s/hqdefault.jpg",
+        "popularity": 1350,
+        "provenance": "official_channel_api",
+        "source_lang": "en",
+        "translations": {
+          "en": {
+            "title": "Tesla Showcases Long-Awaited Roadster With Aerial Tricks",
+            "summary": ""
+          }
+        }
+      },
+      {
+        "id": "gVsVozzX4SY",
+        "title": "Power On: Exclusive News About Apple’s October Launch Event",
+        "channel": "Bloomberg Television",
+        "category": "economy",
+        "published_at": "2026-10-16T20:41:53+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/gVsVozzX4SY/hqdefault.jpg",
+        "popularity": 152,
+        "provenance": "official_channel_api",
+        "source_lang": "en",
+        "translations": {
+          "en": {
+            "title": "Power On: Exclusive News About Apple’s October Launch Event",
+            "summary": ""
+          }
+        }
+      },
+      {
+        "id": "2POoEetH_lU",
+        "title": "Coreweave Slides 25% for the Week as AI Credit Concerns Grow | Closing Bell",
+        "channel": "Bloomberg Television",
+        "category": "economy",
+        "published_at": "2026-10-16T20:26:37+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/2POoEetH_lU/hqdefault.jpg",
+        "popularity": 2265,
+        "provenance": "official_channel_api",
+        "source_lang": "en",
+        "translations": {
+          "en": {
+            "title": "Coreweave Slides 25% for the Week as AI Credit Concerns Grow | Closing Bell",
+            "summary": ""
+          }
+        }
+      },
+      {
+        "id": "mkMTTZNDzlU",
+        "title": "Trump Press Secretary Zacharia Out",
+        "channel": "Bloomberg Television",
+        "category": "economy",
+        "published_at": "2026-10-16T20:11:43+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/mkMTTZNDzlU/hqdefault.jpg",
+        "popularity": 373,
+        "provenance": "official_channel_api",
+        "source_lang": "en",
+        "translations": {
+          "en": {
+            "title": "Trump Press Secretary Zacharia Out",
+            "summary": ""
+          }
+        }
+      },
+      {
+        "id": "YZqAWT3MBFc",
+        "title": "Blowback Against Data Centers Becomes Top 2026 Midterm Election Issue",
+        "channel": "Bloomberg Television",
+        "category": "economy",
+        "published_at": "2026-10-16T20:04:04+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/YZqAWT3MBFc/hqdefault.jpg",
         "popularity": 269,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
-            "title": "Charles Schwab CEO explains block on unauthorized AI agents",
-            "summary": ""
-          }
-        }
-      },
-      {
-        "id": "YXN-M57kG0s",
-        "title": "Anger Is Rare Unifying Theme for Divided American Voters",
-        "channel": "Bloomberg Television",
-        "category": "economy",
-        "published_at": "2026-10-16T17:32:18+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/YXN-M57kG0s/hqdefault.jpg",
-        "popularity": 308,
-        "provenance": "official_channel_api",
-        "source_lang": "en",
-        "translations": {
-          "en": {
-            "title": "Anger Is Rare Unifying Theme for Divided American Voters",
-            "summary": ""
-          }
-        }
-      },
-      {
-        "id": "FNKloNiWMw0",
-        "title": "Open Interest 10/16/2026",
-        "channel": "Bloomberg Television",
-        "category": "economy",
-        "published_at": "2026-10-16T16:48:41+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/FNKloNiWMw0/hqdefault.jpg",
-        "popularity": 515,
-        "provenance": "official_channel_api",
-        "source_lang": "en",
-        "translations": {
-          "en": {
-            "title": "Open Interest 10/16/2026",
-            "summary": ""
-          }
-        }
-      },
-      {
-        "id": "j2jSLruhTz8",
-        "title": "Bloomberg Surveillance 10/16/2026",
-        "channel": "Bloomberg Television",
-        "category": "economy",
-        "published_at": "2026-10-16T15:45:26+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/j2jSLruhTz8/hqdefault.jpg",
-        "popularity": 3207,
-        "provenance": "official_channel_api",
-        "source_lang": "en",
-        "translations": {
-          "en": {
-            "title": "Bloomberg Surveillance 10/16/2026",
-            "summary": ""
-          }
-        }
-      },
-      {
-        "id": "1hv5rgcpRUg",
-        "title": "Molavi: Saudis & Houthis Can Hit Hard; Not End War",
-        "channel": "Bloomberg Television",
-        "category": "economy",
-        "published_at": "2026-10-16T15:41:18+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/1hv5rgcpRUg/hqdefault.jpg",
-        "popularity": 3301,
-        "provenance": "official_channel_api",
-        "source_lang": "en",
-        "translations": {
-          "en": {
-            "title": "Molavi: Saudis & Houthis Can Hit Hard; Not End War",
-            "summary": ""
-          }
-        }
-      },
-      {
-        "id": "Gc7Zsxb-Gx0",
-        "title": "Full Interview: Fed's Warsh on the Global Economy, AI",
-        "channel": "Bloomberg Television",
-        "category": "economy",
-        "published_at": "2026-10-16T15:40:36+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/Gc7Zsxb-Gx0/hqdefault.jpg",
-        "popularity": 4074,
-        "provenance": "official_channel_api",
-        "source_lang": "en",
-        "translations": {
-          "en": {
-            "title": "Full Interview: Fed's Warsh on the Global Economy, AI",
+            "title": "Blowback Against Data Centers Becomes Top 2026 Midterm Election Issue",
             "summary": ""
           }
         }
@@ -2440,13 +2440,30 @@
     ],
     "technology": [
       {
+        "id": "9h5naV9Ms4s",
+        "title": "X is politically irrelevant #Vergecast",
+        "channel": "The Verge",
+        "category": "technology",
+        "published_at": "2026-10-16T19:15:30+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/9h5naV9Ms4s/hqdefault.jpg",
+        "popularity": 2030,
+        "provenance": "official_channel_api",
+        "source_lang": "en",
+        "translations": {
+          "en": {
+            "title": "X is politically irrelevant #Vergecast",
+            "summary": ""
+          }
+        }
+      },
+      {
         "id": "HTqc5fMitok",
         "title": "CarPlay for your kitchen #Vergecast",
         "channel": "The Verge",
         "category": "technology",
         "published_at": "2026-10-16T17:39:18+00:00",
         "thumbnail": "https://i.ytimg.com/vi/HTqc5fMitok/hqdefault.jpg",
-        "popularity": 814,
+        "popularity": 2656,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
@@ -2463,7 +2480,7 @@
         "category": "technology",
         "published_at": "2026-10-16T15:36:53+00:00",
         "thumbnail": "https://i.ytimg.com/vi/z00Lhm3CqAM/hqdefault.jpg",
-        "popularity": 6796,
+        "popularity": 16256,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
@@ -2480,7 +2497,7 @@
         "category": "technology",
         "published_at": "2026-10-16T15:00:20+00:00",
         "thumbnail": "https://i.ytimg.com/vi/dWmEKM4_lKQ/hqdefault.jpg",
-        "popularity": 1893,
+        "popularity": 3482,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
@@ -2497,12 +2514,29 @@
         "category": "technology",
         "published_at": "2026-10-16T13:49:43+00:00",
         "thumbnail": "https://i.ytimg.com/vi/_EW8O9SLSXs/hqdefault.jpg",
-        "popularity": 31838,
+        "popularity": 102650,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
             "title": "Will Tesla's new Roadster ship?",
+            "summary": ""
+          }
+        }
+      },
+      {
+        "id": "BYWy6SyJRZo",
+        "title": "Elon Musk unveils Tesla's new Roadster, and it can fly",
+        "channel": "ABC News",
+        "category": "technology",
+        "published_at": "2026-10-16T10:55:14+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/BYWy6SyJRZo/hqdefault.jpg",
+        "popularity": 1913304,
+        "provenance": "youtube_popular",
+        "source_lang": "en",
+        "translations": {
+          "en": {
+            "title": "Elon Musk unveils Tesla's new Roadster, and it can fly",
             "summary": ""
           }
         }
@@ -2514,7 +2548,7 @@
         "category": "technology",
         "published_at": "2026-10-16T01:35:50+00:00",
         "thumbnail": "https://i.ytimg.com/vi/s-dZWcoLmRE/hqdefault.jpg",
-        "popularity": 333357,
+        "popularity": 357024,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
@@ -2531,7 +2565,7 @@
         "category": "technology",
         "published_at": "2026-10-16T01:21:23+00:00",
         "thumbnail": "https://i.ytimg.com/vi/dqTzB6NbdCE/hqdefault.jpg",
-        "popularity": 253986,
+        "popularity": 268340,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
@@ -2540,43 +2574,26 @@
             "summary": ""
           }
         }
-      },
-      {
-        "id": "u0oM6hIg0bk",
-        "title": "Tesla announces the new Roadster",
-        "channel": "The Verge",
-        "category": "technology",
-        "published_at": "2026-10-16T01:14:38+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/u0oM6hIg0bk/hqdefault.jpg",
-        "popularity": 315413,
-        "provenance": "official_channel_api",
-        "source_lang": "en",
-        "translations": {
-          "en": {
-            "title": "Tesla announces the new Roadster",
-            "summary": ""
-          }
-        }
-      },
-      {
-        "id": "-5gihf05I9I",
-        "title": "iPhone Duo preorders open tomorrow #Vergecast",
-        "channel": "The Verge",
-        "category": "technology",
-        "published_at": "2026-10-15T21:54:19+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/-5gihf05I9I/hqdefault.jpg",
-        "popularity": 7990,
-        "provenance": "official_channel_api",
-        "source_lang": "en",
-        "translations": {
-          "en": {
-            "title": "iPhone Duo preorders open tomorrow #Vergecast",
-            "summary": ""
-          }
-        }
       }
     ],
     "ai-trends": [
+      {
+        "id": "LJ2v4-FvPcA",
+        "title": "🧰 Builders building with Gemini Audio",
+        "channel": "Google for Developers",
+        "category": "ai-trends",
+        "published_at": "2026-10-16T21:00:00+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/LJ2v4-FvPcA/hqdefault.jpg",
+        "popularity": 196,
+        "provenance": "official_channel_api",
+        "source_lang": "en",
+        "translations": {
+          "en": {
+            "title": "🧰 Builders building with Gemini Audio",
+            "summary": ""
+          }
+        }
+      },
       {
         "id": "-nmcYcO-EE8",
         "title": "🎵 Turning motion into music with Gemini",
@@ -2584,7 +2601,7 @@
         "category": "ai-trends",
         "published_at": "2026-10-16T16:00:00+00:00",
         "thumbnail": "https://i.ytimg.com/vi/-nmcYcO-EE8/hqdefault.jpg",
-        "popularity": 652,
+        "popularity": 1268,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
@@ -2601,7 +2618,7 @@
         "category": "ai-trends",
         "published_at": "2026-10-15T23:00:26+00:00",
         "thumbnail": "https://i.ytimg.com/vi/qJplHFjyv2A/hqdefault.jpg",
-        "popularity": 2202,
+        "popularity": 2413,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
@@ -2618,7 +2635,7 @@
         "category": "ai-trends",
         "published_at": "2026-10-15T19:00:22+00:00",
         "thumbnail": "https://i.ytimg.com/vi/i3X7Fv0Z3Uc/hqdefault.jpg",
-        "popularity": 10016,
+        "popularity": 10428,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
@@ -2635,7 +2652,7 @@
         "category": "ai-trends",
         "published_at": "2026-10-15T16:00:02+00:00",
         "thumbnail": "https://i.ytimg.com/vi/nSwmcs37Jd4/hqdefault.jpg",
-        "popularity": 17591,
+        "popularity": 19082,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
@@ -2652,7 +2669,7 @@
         "category": "ai-trends",
         "published_at": "2026-10-14T17:01:36+00:00",
         "thumbnail": "https://i.ytimg.com/vi/Jh6mgf9M06M/hqdefault.jpg",
-        "popularity": 63102,
+        "popularity": 63968,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
@@ -2669,7 +2686,7 @@
         "category": "ai-trends",
         "published_at": "2026-10-13T19:00:11+00:00",
         "thumbnail": "https://i.ytimg.com/vi/OYp5j2RihPE/hqdefault.jpg",
-        "popularity": 109795,
+        "popularity": 134503,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
@@ -2686,29 +2703,12 @@
         "category": "ai-trends",
         "published_at": "2026-10-09T23:00:24+00:00",
         "thumbnail": "https://i.ytimg.com/vi/IBVmenOroPs/hqdefault.jpg",
-        "popularity": 8703,
+        "popularity": 8718,
         "provenance": "official_channel_api",
         "source_lang": "en",
         "translations": {
           "en": {
             "title": "Order in any language with Gemini 3.5 Live Translate",
-            "summary": ""
-          }
-        }
-      },
-      {
-        "id": "fMgcm9aXZyY",
-        "title": "🤖 Operating real hardware with Gemini AI",
-        "channel": "Google for Developers",
-        "category": "ai-trends",
-        "published_at": "2026-10-09T19:00:36+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/fMgcm9aXZyY/hqdefault.jpg",
-        "popularity": 8557,
-        "provenance": "official_channel_api",
-        "source_lang": "en",
-        "translations": {
-          "en": {
-            "title": "🤖 Operating real hardware with Gemini AI",
             "summary": ""
           }
         }
