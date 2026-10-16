@@ -99,3 +99,25 @@ body.dng-design-v46 .pf-hero[data-dng-cover="v50"] .pf-hero-grid{min-height:0!im
  body.dng-design-v46 .v33-hero[data-dng-cover="v50"]>.v33-wrap>:where(h1,p){max-width:53%!important}
  body.dng-design-v46 .pf-hero[data-dng-cover="v50"] .pf-hero-grid>div:first-child{width:53%!important}
 }
+
+/* Detail pricing pages have their own 2-column heading + decorative stamp.
+   Reserve a REAL text column for the cover (not a 1070px floating heading). */
+body.dng-design-v46 .p37-detail-hero[data-dng-cover="v50"]>.p37-container{position:relative;z-index:3}
+body.dng-design-v46 .p37-detail-hero[data-dng-cover="v50"] .p37-detail-heading{
+ display:block!important;width:53%!important;max-width:630px!important;
+ grid-template-columns:none!important;margin-top:31px!important;
+}
+body.dng-design-v46 .p37-detail-hero[data-dng-cover="v50"] .p37-detail-heading>div:first-child{width:100%!important}
+body.dng-design-v46 .p37-detail-hero[data-dng-cover="v50"] .p37-detail-heading h1{
+ width:100%!important;max-width:100%!important;
+ font-size:clamp(38px,4.5vw,64px)!important;overflow-wrap:break-word;
+}
+body.dng-design-v46 .p37-detail-hero[data-dng-cover="v50"] .p37-detail-stamp{display:none!important}
+@media(max-width:760px){
+ body.dng-design-v46 .p37-detail-hero[data-dng-cover="v50"] .p37-detail-heading{
+  width:100%!important;max-width:100%!important;margin-top:24px!important;
+ }
+ body.dng-design-v46 .p37-detail-hero[data-dng-cover="v50"] .p37-detail-heading h1{
+  font-size:clamp(37px,9vw,49px)!important;line-height:1.14!important;
+ }
+}
