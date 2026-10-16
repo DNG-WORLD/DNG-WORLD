@@ -6,16 +6,18 @@ const $=s=>document.querySelector(s),esc=v=>String(v??'').replace(/[&<>"']/g,c=>
 const url=v=>{try{let u=new URL(v);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}};
 const fmt=x=>{if(!x)return '';let d=new Date(x);return Number.isFinite(d.getTime())?new Intl.DateTimeFormat(LOCALE,{day:'2-digit',month:'long',year:'numeric',hour:'2-digit',minute:'2-digit',timeZone:'Asia/Ho_Chi_Minh'}).format(d):''};
 const allCats={vi:{vietnam:'Việt Nam',world:'Thế giới',politics:'Chính trị',economy:'Kinh tế',technology:'Công nghệ',ai:'AI',marketing:'Marketing'},en:{vietnam:'Vietnam',world:'World',politics:'Politics',economy:'Economy',technology:'Technology',ai:'AI',marketing:'Marketing'},zh:{vietnam:'越南',world:'世界',politics:'政治',economy:'经济',technology:'科技',ai:'AI',marketing:'营销'}};const cats=allCats[LANG];
-const display=x=>{const part=x?.translations?.[LANG]||((x?.source_lang||(String(x?.source||'').match(/VnExpress|Tuổi Trẻ|VietnamPlus/i)?'vi':'en'))===LANG?{title:x.title,summary:x.summary}:null);return part?{...x,title:part.title,summary:part.summary}:null};
+const display=x=>{const origin=x?.source_lang||(String(x?.source||'').match(/VnExpress|Tuổi Trẻ|VietnamPlus/i)?'vi':'en');const part=x?.translations?.[LANG]||(origin===LANG?{title:x.title,summary:x.summary}:null);return part?{...x,title:part.title||x.title,summary:part.summary||x.summary}:{...x,untranslated:true};};
 const id=new URLSearchParams(location.search).get('id');
 $('#menuToggle').addEventListener('click',()=>{let menu=$('#siteNav');const v=menu.classList.toggle('open');$('#menuToggle').setAttribute('aria-expanded',String(v))});
 function detail(article,news){document.title=article.title+' | DNGWORLD NEWS';const side=news.filter(x=>x.id!==article.id && (x.category===article.category)).slice(0,5);
  const long=article.summary||'';
+ const untranslatedNote=article.untranslated?(LANG==='en'?'Shown in original language; no verified translation available.':LANG==='zh'?'原文展示；暂无已核实的翻译。':'Đang hiển thị nguyên ngữ; chưa có bản dịch được xác minh.'):'';
  const safeImage=url(article.image);const safeSource=url(article.url);
  $('#articleBody').innerHTML=`<div class="article-label"><span>${esc(cats[article.category]||dict.news)}</span><span>·</span><span>DNGWORLD NEWS</span></div>
  <h1 class="article-title">${esc(article.title)}</h1>
  <div class="article-meta"><strong>${esc(article.source)}</strong><time>${esc(fmt(article.published_at))}</time><span>${esc(dict.details)}</span></div>
  ${safeImage?`<figure style="margin:0"><img class="article-image" alt="" src="${esc(safeImage)}" onerror="this.style.display='none'"><figcaption class="article-image-caption">${esc(dict.from)}: ${esc(article.source)}. ${esc(dict.notice)}</figcaption></figure>`:''}
+ ${untranslatedNote?`<p class="article-notice">${esc(untranslatedNote)}</p>`:''}
  <p class="article-intro">${esc(article.summary||dict.note)}</p>
  <div class="article-body"><p>${esc(dict.note)}</p>
  <p>${esc(dict.notice)}</p></div>

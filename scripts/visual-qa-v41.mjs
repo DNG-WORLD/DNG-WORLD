@@ -9,7 +9,7 @@ const types={html:'text/html; charset=utf-8',css:'text/css; charset=utf-8',js:'t
 const server=http.createServer((req,res)=>{let p;try{p=decodeURIComponent(req.url.split('?')[0])}catch{res.writeHead(400).end();return;}let f=path.resolve(root,'.'+p);if(!f.startsWith(root+path.sep)&&f!==root){res.writeHead(403).end();return;}if(fs.existsSync(f)&&fs.statSync(f).isDirectory())f=path.join(f,'index.html');else if(!fs.existsSync(f)&&!path.extname(f))f=path.join(f,'index.html');if(!fs.existsSync(f)){res.writeHead(404).end('Not found');return;}res.writeHead(200,{'Content-Type':types[path.extname(f).slice(1)]||'application/octet-stream','Cache-Control':'no-store'});fs.createReadStream(f).pipe(res)});
 await new Promise(resolve=>server.listen(4179,'127.0.0.1',resolve));
 let browser=null;const results=[],errors=[];
-const routes=['/','/pricing/','/pricing/courses/','/pricing/ads/','/pricing/design-editor/','/pricing/remote-marketing/','/pricing/business-strategy/','/tools/','/insights/','/about/','/services/','/en/services/','/zh/services/','/contact/','/portfolio/','/en/','/zh/','/404.html'];
+const routes=['/','/pricing/','/pricing/courses/','/pricing/ads/','/pricing/design-editor/','/pricing/remote-marketing/','/pricing/business-strategy/','/tools/','/insights/','/en/insights/','/zh/insights/','/about/','/services/','/en/services/','/zh/services/','/contact/','/portfolio/','/en/','/zh/','/404.html'];
 try{
  browser=await chromium.launch({headless:true,args:['--no-sandbox','--disable-dev-shm-usage']});
  for(const width of [390,768,1440]){
@@ -48,6 +48,16 @@ try{
       if(await img.count()){const ok=await img.evaluate(el=>el.complete&&el.naturalWidth>100);if(!ok)errors.push(route+' @390: original V24 sculpture failed to load');}
     }
     if(route==='/services/'&&width===390){const count=await page.locator('.v47-case').count();const tiers=await page.locator('.v47-service').count();if(count!==6||tiers!==5)errors.push('V47 missing authentic scopes: '+count+'/'+tiers);}
+   if((route==='/insights/'||route==='/en/insights/'||route==='/zh/insights/')&&width===390){
+      await page.waitForFunction(()=>document.querySelector('#headlineCount')?.textContent?.includes('60'),{timeout:11000}).catch(()=>{});
+      const feedTotal=await page.locator('#headlineCount').textContent();
+      const snapshot=JSON.parse(fs.readFileSync(path.join(root,'data/newsroom.json'),'utf8'));
+      const shownTotal=Number(feedTotal?.match(/^\d+/)?.[0]||0);
+      if(shownTotal!==snapshot.news.length)errors.push('V51 source-language article suppression '+route+': '+shownTotal+'/'+snapshot.news.length);
+      if(!feedTotal?.includes('60'))errors.push('V51 recent article counter missing '+route);
+      const links=await page.locator('#leadArea .lead-story').count();
+      if(links!==1)errors.push('V51 featured article missing '+route);
+   }
    if(route==='/insights/'&&width===390){
       const y=await page.locator('#tvPortal').boundingBox();
       const n=await page.locator('#categoryBar').boundingBox();

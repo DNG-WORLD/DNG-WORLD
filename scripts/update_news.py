@@ -327,9 +327,9 @@ def combine_video_groups(fresh,previous,bootstrap):
     for row in uniq.values():
         if row.get('category') in categories:categories[row['category']].append(row)
     for cat in VIDEO_CATEGORIES:
-        # Popular chart first, then recent official channels; do not sort by
-        # lifetime views only (which would bury genuine new stories).
-        categories[cat].sort(key=lambda x:(x.get('provenance')=='youtube_popular',x['published_at']),reverse=True)
+        # Newest verified publication first; official source wins time ties.
+        # MostPopular chart position is not a freshness signal.
+        categories[cat].sort(key=lambda x:(x['published_at'],x.get('provenance')!='youtube_popular'),reverse=True)
         old=valid_old_videos(previous,cat)
         if not old:old=valid_old_videos(bootstrap,cat)
         seen={x['id'] for x in categories[cat]}
