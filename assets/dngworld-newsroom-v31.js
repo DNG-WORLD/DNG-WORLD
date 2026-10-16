@@ -9,7 +9,7 @@ zh:{all:'全部',vietnam:'越南',world:'国际',politics:'政治',economy:'经�
 };const T=TRANS[LANG];const CATS={all:T.all,vietnam:T.vietnam,world:T.world,politics:T.politics,economy:T.economy,technology:T.technology,ai:T.ai,marketing:T.marketing};
 const origin=x=>x?.source_lang||(String(x?.source||x?.channel||'').match(/VnExpress|Tuổi Trẻ|VietnamPlus|VTV24/i)?'vi':'en');
 const localized=x=>x?.translations?.[LANG]||(origin(x)===LANG?{title:x.title,summary:x.summary}:null);
-const displayed=x=>{let part=localized(x);return part?{...x,title:part.title||'',summary:part.summary||''}:null};
+const displayed=x=>{let part=localized(x);return part?{...x,title:part.title||'',summary:part.summary||'',untranslated:false}:{...x,untranslated:origin(x)!==LANG};};
 const VCATS=[['vietnam',T.vietnam],['world',T.world],['economy',T.economy],['technology',T.technology],['ai-trends',LANG==='en'?'AI & Trends':LANG==='zh'?'人工智能与趋势':'AI & Xu hướng']];
 let news=[],videos={},activeCat='all',search='',limit=16,selectedVideo=null,activeVideoCat='vietnam',payload={};
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -18,7 +18,7 @@ const fmt=x=>{if(!x)return '';let d=new Date(x);return Number.isFinite(d.getTime
 const articleUrl=x=>(LANG==='vi'?'/':`/${LANG}/`)+'insights/read/?id='+encodeURIComponent(x.id);
 const duration=x=>x?(String(x).length>130?String(x).slice(0,128)+'…':String(x)):'';
 const thumb=(x,cls='')=>{let u=safe(x.image||'');return `<div class="news-media ${u?'':'image-fallback'} ${cls}">${u?`<img loading="lazy" src="${esc(u)}" alt="" onerror="this.parentNode?.classList.add('image-fallback');this.remove()">`:''}</div>`};
-function itemLabel(x){return `<span class="cap-label">${esc(CATS[x.category]||T.news)}</span>`}
+function itemLabel(x){return `<span class="cap-label">${esc(CATS[x.category]||T.news)}${x.untranslated?' · '+esc(origin(x).toUpperCase()):''}</span>`}
 function source(x){return `<div class="source-line">${esc(x.source)} <span class="bullet">·</span> ${esc(fmt(x.published_at))}</div>`}
 function lead(x){return `<a class="lead-story" href="${articleUrl(x)}">${thumb(x,'news-picture')}<div class="lead-copy">${itemLabel(x)}<h2>${esc(x.title)}</h2><p>${esc(duration(x.summary)||(LANG==='en'?'Read this DNGWORLD news brief.':LANG==='zh'?'阅读 DNGWORLD 新闻摘要。':'Đọc tóm tắt DNGWORLD và nguồn tham khảo.'))}</p><div style="margin-top:14px;font-size:11px;color:#f2e4ce">${esc(x.source)} · ${esc(fmt(x.published_at))} &nbsp; ↗</div></div></a>`}
 function side(x){return `<a class="side-feature" href="${articleUrl(x)}">${thumb(x)}<div>${itemLabel(x)}<h3>${esc(x.title)}</h3>${source(x)}</div></a>`}
@@ -56,12 +56,15 @@ function initVideo(){
  renderVideo();
 }
 function initNav(){const m=$('#menuToggle'),nav=$('#siteNav');m.addEventListener('click',()=>{const opened=nav.classList.toggle('open');m.setAttribute('aria-expanded',String(opened))});$$('#siteNav a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');m.setAttribute('aria-expanded','false')}));$$('#categoryBar button[data-cat]').forEach(button=>button.addEventListener('click',()=>{let c=button.dataset.cat;if(c==='video'){document.querySelector('#tvPortal').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});return}activeCat=c;limit=16;$$('#categoryBar button').forEach(b=>b.classList.toggle('active',b===button));draw();if(c!=='all')$('#latestNews').scrollIntoView({behavior:'smooth',block:'start'})}));$('#newsQuery').addEventListener('input',e=>{search=e.target.value.trim().toLocaleLowerCase(LOCALE);limit=16;draw()});$('#showMore').addEventListener('click',()=>{limit+=16;draw()});}
-function populate(data){payload=data;news=Array.isArray(data.news)?data.news.map(displayed).filter(x=>x?.id&&x?.title&&safe(x.url)).sort((a,b)=>String(b.published_at).localeCompare(String(a.published_at))):[];videos=Object.fromEntries(Object.entries(data.videos||{}).map(([cat,arr])=>[cat,Array.isArray(arr)?arr.map(displayed).filter(v=>v?.title):[]]));drawTop();draw();renderVideo();
+function populate(data){payload=data;const playing=!!$('#tvStage iframe');if(!playing)selectedVideo=null;news=Array.isArray(data.news)?data.news.map(displayed).filter(x=>x?.id&&x?.title&&safe(x.url)).sort((a,b)=>String(b.published_at).localeCompare(String(a.published_at))):[];videos=Object.fromEntries(Object.entries(data.videos||{}).map(([cat,arr])=>[cat,Array.isArray(arr)?arr.map(displayed).filter(v=>v?.title):[]]));drawTop();draw();if(!playing)renderVideo();
  const date=fmt(data.updated_at);const state=data.status==='seed'?T.first:data.status==='stale'?T.outage:data.updated_at?T.sync:T.first;
- $('#syncState').textContent=state;$('#syncTime').textContent=date?`${T.time}: ${date}`:T.first;
- $('#headlineCount').textContent=`${news.length} ${T.newsCount} · ${Object.values(videos).reduce((s,a)=>s+(Array.isArray(a)?a.length:0),0)} ${T.videos}`;
+ const publishedInHour=news.filter(x=>{const d=Date.parse(x.published_at||'');return Number.isFinite(d)&&d>=Date.now()-60*60*1000&&d<=Date.now()+120000}).length;
+ const updatedStamp=Date.parse(data.updated_at||'');const syncAge=Number.isFinite(updatedStamp)?Math.max(0,(Date.now()-updatedStamp)/60000):Infinity;
+ const visibleState=syncAge>110?T.outage:state;
+ $('#syncState').textContent=visibleState;$('#syncTime').textContent=date?`${T.time}: ${date}`:T.first;
+ $('#headlineCount').textContent=`${news.length} ${T.newsCount} · ${Object.values(videos).reduce((s,a)=>s+(Array.isArray(a)?a.length:0),0)} ${T.videos} · ${LANG==='en'?'Published last 60 min':LANG==='zh'?'近60分钟发布':'Đăng trong 60 phút'}: ${publishedInHour}`;
  $('#videoDisclosure').textContent=data.video_mode==='popular_and_channel'?T.popular:T.official;
- if(data.translation_status==='not_configured'&&LANG!=='en')$('#syncState').title='Translation API is not configured; only articles already in this language are displayed.';
+ if(data.translation_status==='not_configured'&&LANG!=='en')$('#syncState').title=LANG==='zh'?'未配置翻译；显示已获取的原语言标题。':'Chưa cấu hình dịch tự động; tin được hiển thị theo ngôn ngữ gốc (EN/VI).';
 }
 async function load(){try{let r=await fetch('/data/newsroom.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error(r.status);populate(await r.json())}catch(e){console.warn('news feed unavailable',e);populate({news:[],videos:{},status:'unavailable',source_count:0});$('#syncState').textContent=T.unavailable;}}
 initNav();initVideo();load();

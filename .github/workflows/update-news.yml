@@ -7,10 +7,10 @@ on:
       - 'scripts/update_news.py'
       - 'scripts/check_news_freshness.py'
   workflow_dispatch:
-  # Four recovery opportunities/hour to mitigate delayed/skipped GitHub schedules.
+  # Six best-effort recovery opportunities/hour to mitigate delayed/skipped GitHub schedules.
   # The freshness gate collects at most about once an hour.
   schedule:
-    - cron: '7,22,37,52 * * * *'
+    - cron: '4,14,24,34,44,54 * * * *'
 permissions:
   contents: write
   actions: write
