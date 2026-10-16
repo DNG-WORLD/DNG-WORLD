@@ -9,7 +9,7 @@ for(const token of ['id="mesh-data"','id="artCanvas"','function getMesh()','cons
  if(!scene.includes(token))throw Error('Not actual V24 WebGL, missing '+token);
 if(scene.length<1500000)throw Error('V24 original 3D mesh was truncated');
 const css=fs.readFileSync(path.join(root,'assets/css/dngworld-hero-band-v52.css'),'utf8');
-if(!css.includes('33.333svh')||!css.includes('width:100%!important')||!css.includes('data-dw52-stage'))
+if(!css.includes('33.333svh')||!css.includes('width:100%!important')||!css.includes('.dw52-stage'))
  throw Error('Full width 1/3 viewport contract violated');
 const routes=['services/index.html','about/index.html','contact/index.html','tools/index.html','portfolio/index.html','pricing/index.html','pricing/courses/index.html','pricing/ads/index.html','pricing/design-editor/index.html','pricing/remote-marketing/index.html','pricing/business-strategy/index.html','en/services/index.html','zh/services/index.html'];
 let total=0;const groups=new Set();
