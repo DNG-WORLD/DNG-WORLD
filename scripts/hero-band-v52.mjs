@@ -18,10 +18,10 @@ for(const term of ['const VERTEX=','const FRAGMENT=','function getMesh()','funct
 const fallback='/assets/images/dngworld-master-sculpture-v46.webp';
 if(!fs.existsSync(path.join(root,fallback.slice(1))))throw Error('V52 V24 fallback unavailable');
 const start='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DNGWORLD original WebGL 3D</title><link rel="stylesheet" href="/assets/css/dngworld-scene-v52.css"></head><body><canvas id="dw52Field" aria-hidden="true"></canvas><div id="art"><img src="'+fallback+'" class="sculpt-fallback" alt=""><canvas id="artCanvas"></canvas></div><script id="mesh-data" type="application/octet-stream">';
-const middle='</script><script>(()=>{"use strict";const art=document.getElementById("art"),canvas=document.getElementById("artCanvas"),isReduced=matchMedia("(prefers-reduced-motion: reduce)").matches;const state={selection:0,rot:[.20,-.40,-.14],target:[.20,-.40,-.14],dragging:false,pointer:null,last:performance.now(),visible:true};window.DNGFusion={x:0,y:0,paused:isReduced};window.__DNGV52_STATE=state;\\n';
-const end='\\n})();</script><script src="/assets/js/dngworld-scene-v52.js"></script></body></html>';
+const middle='</script><script>(()=>{"use strict";const art=document.getElementById("art"),canvas=document.getElementById("artCanvas"),isReduced=matchMedia("(prefers-reduced-motion: reduce)").matches;const state={selection:0,rot:[.20,-.40,-.14],target:[.20,-.40,-.14],dragging:false,pointer:null,last:performance.now(),visible:true};window.DNGFusion={x:0,y:0,paused:isReduced};window.__DNGV52_STATE=state;\n';
+const end='\n})();</script><script src="/assets/js/dngworld-scene-v52.js"></script></body></html>';
 fs.writeFileSync(path.join(root,'assets/dngworld-v52-live-scene.html'),
- start+mesh[1]+middle.replace('\\\\n','\n')+render+end.replace('\\\\n','\n'));
+ start+mesh[1]+middle+render+end);
 const original='<figure class="dng-master-art-v46" aria-hidden="true"><img src="'+fallback+'" width="880" height="880" alt="" decoding="async"><span class="dng-master-ground-v46"></span></figure>';
 const band='<div class="dw52-stage" data-dw52-stage="true"><iframe class="dw52-iframe" title="DNGWORLD — original interactive WebGL 3D" src="/assets/dngworld-v52-live-scene.html" loading="eager" scrolling="no"></iframe><span class="dw52-stage-label" aria-hidden="true">DNGWORLD / LIVING DEPTH</span></div>';
 let n=0;const classes={},errors=[];
