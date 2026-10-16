@@ -1,16 +1,18 @@
-/* Real V24 WebGL renderer inside a lightweight standalone 1/3-screen scene. */
+/* DNGWORLD V53 / Exact V24 WebGL sculpture in the dark cinematic atmosphere
+   of the Homepage. One shared cached scene serves every business subpage. */
 *{box-sizing:border-box}
-html,body{height:100%;width:100%;margin:0;overflow:hidden}
-html{background:#ede9df}
-body{position:relative;isolation:isolate;background:radial-gradient(ellipse at 51% 49%,#f9f6ef 0%,#ecebe0 52%,#dde7dc 100%)}
-body:before{content:"";position:absolute;inset:0;z-index:4;pointer-events:none;background:linear-gradient(90deg,rgba(255,255,255,.28),transparent 17% 82%,rgba(255,255,255,.18))}
+:root{color-scheme:dark}
+html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#0a2118}
+body{position:relative;isolation:isolate;background:radial-gradient(ellipse 62% 90% at 50% 50%,rgba(69,109,79,.34),transparent 79%),linear-gradient(180deg,#101f18 0%,#0b1e16 54%,#071911 100%)}
+body:before{content:"";position:absolute;inset:0;z-index:4;pointer-events:none;background:linear-gradient(90deg,rgba(3,18,12,.22),transparent 19% 80%,rgba(3,18,12,.21)),linear-gradient(180deg,rgba(3,14,10,.14),transparent 18% 80%,rgba(5,16,11,.36))}
+body:after{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(rgba(209,194,161,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(210,201,177,.017) 1px,transparent 1px);background-size:104px 104px;mask-image:linear-gradient(to bottom,transparent,black 20% 80%,transparent)}
 #dw52Field{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
 #art{position:absolute;inset:0;width:100%;height:100%;z-index:2;cursor:grab;touch-action:pan-y;user-select:none}
 #art:active{cursor:grabbing}
-#art:before{content:"";position:absolute;z-index:0;left:26%;bottom:6%;width:48%;height:23%;border-radius:50%;background:radial-gradient(ellipse,rgba(45,63,47,.13),transparent 65%);filter:blur(16px)}
+#art:before{content:"";position:absolute;left:33%;top:16%;width:34%;height:78%;border-radius:50%;z-index:0;background:radial-gradient(ellipse at center,rgba(218,185,127,.18),rgba(97,148,110,.06) 45%,transparent 73%);filter:blur(28px)}
 #art img,#art canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
-#art img{z-index:1;filter:drop-shadow(0 17px 16px rgba(33,47,33,.16))}
-#art canvas{z-index:2;opacity:0;transition:opacity .5s}
+#art img{z-index:1;filter:drop-shadow(0 19px 17px rgba(0,11,8,.36))}
+#art canvas{z-index:2;opacity:0;transition:opacity .55s ease}
 #art.is-3d canvas{opacity:1}
 #art.is-3d img{opacity:0}
 @media(prefers-reduced-motion:reduce){#art canvas{transition:none}}

@@ -11,6 +11,15 @@ if(scene.length<1500000)throw Error('V24 original 3D mesh was truncated');
 const css=fs.readFileSync(path.join(root,'assets/css/dngworld-hero-band-v52.css'),'utf8');
 if(!css.includes('33.333svh')||!css.includes('width:100%!important')||!css.includes('.dw52-stage'))
  throw Error('Full width 1/3 viewport contract violated');
+// Homepage-derived scene must use the same dark forest atmosphere rather than
+// the beige V52 experiment which the owner rejected.
+const sceneCSS=fs.readFileSync(path.join(root,'assets/css/dngworld-scene-v52.css'),'utf8');
+const fieldJS=fs.readFileSync(path.join(root,'assets/js/dngworld-scene-v52.js'),'utf8');
+if(!sceneCSS.includes('background:#0a2118')||!sceneCSS.includes('#0b1e16')||sceneCSS.includes('background:#ede9df'))
+ throw Error('V53 dark Homepage scene not applied');
+for(const term of ['paths=[','requestAnimationFrame(ambient)','globalCompositeOperation=\'lighter\'','pointerdown']){
+ if(!fieldJS.includes(term))throw Error('V53 moving atmosphere or native drag missing: '+term);
+}
 const routes=['services/index.html','about/index.html','contact/index.html','tools/index.html','portfolio/index.html','pricing/index.html','pricing/courses/index.html','pricing/ads/index.html','pricing/design-editor/index.html','pricing/remote-marketing/index.html','pricing/business-strategy/index.html','en/services/index.html','zh/services/index.html'];
 let total=0;const groups=new Set();
 function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){
