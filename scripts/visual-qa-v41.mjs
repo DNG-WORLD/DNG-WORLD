@@ -64,7 +64,7 @@ try{
    if(route.startsWith('/pricing/')||['/pricing/','/tools/','/about/','/services/','/en/services/','/zh/services/','/contact/','/portfolio/'].includes(route)){
      const band=metrics.band,expected=Math.min(370,Math.max(210,844/3));
      const actualExpected=width<=760?Math.min(290,Math.max(190,844*.31)):expected;
-     if(!band)errors.push('V52 live WebGL band missing '+route+' @'+width);
+     if(!band){if(route==='/pricing/'&&width===390){const diag=await page.evaluate(()=>({url:location.href,title:document.title,htmlHasBand:document.documentElement.outerHTML.includes('data-dw52-stage="true"'),stageCount:document.querySelectorAll('.dw52-stage').length,iframes:document.querySelectorAll('iframe').length,bodyClass:document.body.className,bodyStart:document.body.innerHTML.slice(0,550),mainStart:document.querySelector('main')?.outerHTML.slice(0,700)}));throw Error('V53 browser generated-HTML mismatch '+JSON.stringify(diag));}errors.push('V52 live WebGL band missing '+route+' @'+width);}
      else {
        if(band.x< -2||band.right>width+2||Math.abs(band.width-width)>4)errors.push('V52 band not full-bleed '+route+' '+JSON.stringify(band));
        if(Math.abs(band.height-actualExpected)>3)errors.push('V52 band height is not one-third screen '+route+' @'+width+': '+band.height+' expected '+actualExpected);
