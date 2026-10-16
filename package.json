@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "node server.mjs",
     "start": "node server.mjs",
-    "build": "node scripts/build-static.mjs && node scripts/repair-v31-assets.mjs && node scripts/dngworld-v33.mjs && node scripts/restore-private-portfolio.mjs && node scripts/refresh-news-client.mjs && node scripts/polish-ui.mjs && node scripts/install-site-shell.mjs && node scripts/solutions-v47.mjs && node scripts/video-first-v48.mjs && node scripts/master-design-v46.mjs && node scripts/check-ui.mjs && node scripts/check-shell-v41.mjs && node scripts/check-master-v46.mjs && node scripts/check-solutions-v47.mjs && node scripts/check-video-v48.mjs",
+    "build": "node scripts/build-static.mjs && node scripts/repair-v31-assets.mjs && node scripts/dngworld-v33.mjs && node scripts/restore-private-portfolio.mjs && node scripts/refresh-news-client.mjs && node scripts/polish-ui.mjs && node scripts/install-site-shell.mjs && node scripts/solutions-v47.mjs && node scripts/video-first-v48.mjs && node scripts/master-design-v46.mjs && node scripts/hero-cover-v50.mjs && node scripts/check-ui.mjs && node scripts/check-shell-v41.mjs && node scripts/check-master-v46.mjs && node scripts/check-solutions-v47.mjs && node scripts/check-video-v48.mjs && node scripts/check-cover-v50.mjs",
     "validate": "python3 scripts/validate_v19.py",
     "qa": "python3 scripts/validate_v19.py && npm run build",
     "check:ui": "node scripts/check-ui.mjs"

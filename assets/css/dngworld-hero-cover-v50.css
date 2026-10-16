@@ -1,0 +1,93 @@
+/* DNGWORLD V50 / shared HeroCover3D
+ * All non-News subpage heroes reuse the exact approved V24 WebGL sculpture
+ * as one compact 16:10 cover. Interactive WebGL on homepage is untouched. */
+:root{--dw50-base:#11281e;--dw50-keyline:rgba(221,193,147,.25)}
+body.dng-design-v46 [data-dng-cover="v50"]{position:relative!important;isolation:isolate;min-height:0!important}
+body.dng-design-v46 [data-dng-cover="v50"]>.dng-cover-3d-v50{
+ position:absolute!important;z-index:2!important;top:50%!important;
+ right:max(3.5%,calc((100vw - 1192px)/2 + 8px))!important;
+ bottom:auto!important;left:auto!important;
+ transform:translateY(-50%)!important;
+ width:clamp(315px,34vw,450px)!important;height:auto!important;max-width:43%!important;
+ aspect-ratio:16 / 10!important;margin:0!important;
+ background:linear-gradient(145deg,#1c3b2b,#112b20 55%,#092018)!important;
+ border:1px solid var(--dw50-keyline)!important;border-radius:20px!important;
+ box-shadow:0 20px 42px rgba(2,16,9,.18),inset 0 1px rgba(255,255,255,.05)!important;
+ overflow:hidden!important;pointer-events:auto;display:grid!important;place-items:center!important;
+ perspective:780px;contain:layout paint style;
+}
+body.dng-design-v46 .dng-cover-3d-v50:before{
+ content:'';position:absolute;inset:0;z-index:0;pointer-events:none;
+ background:radial-gradient(ellipse at 38% 30%,rgba(190,220,177,.11),transparent 60%);
+}
+body.dng-design-v46 .dng-cover-glow-v50{
+ position:absolute;z-index:0;inset:14%;border-radius:50%;pointer-events:none;
+ background:radial-gradient(ellipse,rgba(226,186,116,.19),transparent 68%);filter:blur(24px);
+}
+body.dng-design-v46 .dng-cover-sculpt-v50{
+ position:absolute;z-index:2;inset:5% 4%;
+ display:flex;justify-content:center;align-items:center;
+ transform-style:preserve-3d;animation:dw50-float 10s ease-in-out infinite;
+}
+body.dng-design-v46 [data-dng-cover="v50"] .dng-master-art-v46{
+ position:relative!important;inset:auto!important;top:auto!important;right:auto!important;
+ bottom:auto!important;left:auto!important;
+ width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;
+ margin:0!important;transform:none!important;display:grid!important;place-items:center!important;
+ overflow:visible!important;
+}
+body.dng-design-v46 [data-dng-cover="v50"] .dng-master-art-v46:before{display:none!important}
+body.dng-design-v46 [data-dng-cover="v50"] .dng-master-art-v46 img{
+ position:relative;z-index:2;width:100%!important;height:100%!important;
+ max-width:none!important;object-fit:contain!important;animation:none!important;
+ transform:perspective(780px) rotateX(var(--dw50-x,0deg)) rotateY(var(--dw50-y,0deg)) scale(.97)!important;
+ transition:transform .22s ease-out;
+ filter:drop-shadow(0 14px 15px rgba(0,15,9,.23))!important;will-change:transform;
+}
+body.dng-design-v46 [data-dng-cover="v50"] .dng-master-ground-v46{
+ position:absolute!important;bottom:8%!important;left:25%!important;width:50%!important;height:8%!important;
+ background:rgba(0,12,7,.25)!important;filter:blur(13px)!important;
+}
+body.dng-design-v46 .dng-cover-sheen-v50{
+ position:absolute;z-index:3;inset:0;pointer-events:none;
+ background:linear-gradient(135deg,rgba(255,255,255,.07),transparent 34%,transparent 74%,rgba(226,193,148,.05));
+}
+/* The card is a cover, not a full second hero illustration. */
+body.dng-design-v46 .hero25[data-dng-cover="v50"]{min-height:450px!important}
+body.dng-design-v46 .hero25[data-dng-cover="v50"]>.shell{padding:clamp(57px,5.5vw,75px) 0!important}
+body.dng-design-v46 .p37-hero[data-dng-cover="v50"] .p37-hero-grid{min-height:0!important}
+body.dng-design-v46 .p37-hero[data-dng-cover="v50"] .p37-hero-copy{padding:clamp(55px,5.4vw,82px) 0!important}
+body.dng-design-v46 .v33-hero[data-dng-cover="v50"]>.v33-wrap{padding:clamp(56px,5.5vw,78px) 0!important}
+body.dng-design-v46 .pf-hero[data-dng-cover="v50"] .pf-hero-grid{min-height:0!important;padding:clamp(56px,5.5vw,78px) 0!important}
+@media(min-width:981px){
+ body.dng-design-v46 .hero25[data-dng-cover="v50"]>.shell>:where(h1,h2,p,a){max-width:min(650px,55%)!important}
+ body.dng-design-v46 .p37-hero[data-dng-cover="v50"] .p37-hero-copy{width:56%!important}
+ body.dng-design-v46 .v33-hero[data-dng-cover="v50"]>.v33-wrap>:where(h1,p){max-width:55%!important}
+ body.dng-design-v46 .pf-hero[data-dng-cover="v50"] .pf-hero-grid>div:first-child{width:55%!important}
+}
+@media(min-width:761px) and (max-width:1120px){
+ body.dng-design-v46 [data-dng-cover="v50"]>.dng-cover-3d-v50{
+ right:3%!important;width:clamp(290px,34vw,385px)!important;max-width:40%!important;
+ }
+}
+@media(max-width:760px){
+ body.dng-design-v46 [data-dng-cover="v50"]{display:block!important;min-height:0!important}
+ body.dng-design-v46 [data-dng-cover="v50"]>.dng-cover-3d-v50{
+ position:relative!important;inset:auto!important;top:auto!important;left:auto!important;right:auto!important;bottom:auto!important;
+ width:min(420px,calc(100% - 36px))!important;max-width:100%!important;
+ aspect-ratio:16 / 10!important;height:auto!important;margin:3px auto 27px!important;
+ transform:none!important;border-radius:16px!important;
+ box-shadow:0 12px 28px rgba(0,12,7,.13)!important;
+ }
+ body.dng-design-v46 .hero25[data-dng-cover="v50"]{min-height:0!important}
+ body.dng-design-v46 .hero25[data-dng-cover="v50"]>.shell{width:calc(100% - 38px)!important;padding:44px 0 14px!important}
+ body.dng-design-v46 .p37-hero[data-dng-cover="v50"] .p37-hero-copy{width:100%!important;padding:44px 0 14px!important}
+ body.dng-design-v46 .v33-hero[data-dng-cover="v50"]>.v33-wrap{padding:44px 0 14px!important}
+ body.dng-design-v46 .pf-hero[data-dng-cover="v50"] .pf-hero-grid{padding:44px 0 14px!important}
+ body.dng-design-v46 .pf-hero[data-dng-cover="v50"] .pf-hero-grid>div:first-child{width:100%!important}
+}
+@keyframes dw50-float{0%,100%{transform:translate3d(0,2px,0)}50%{transform:translate3d(0,-7px,0)}}
+@media(prefers-reduced-motion:reduce){
+ body.dng-design-v46 .dng-cover-sculpt-v50{animation:none!important}
+ body.dng-design-v46 [data-dng-cover="v50"] .dng-master-art-v46 img{transition:none!important;will-change:auto!important}
+}

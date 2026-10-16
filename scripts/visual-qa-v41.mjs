@@ -9,7 +9,7 @@ const types={html:'text/html; charset=utf-8',css:'text/css; charset=utf-8',js:'t
 const server=http.createServer((req,res)=>{let p;try{p=decodeURIComponent(req.url.split('?')[0])}catch{res.writeHead(400).end();return;}let f=path.resolve(root,'.'+p);if(!f.startsWith(root+path.sep)&&f!==root){res.writeHead(403).end();return;}if(fs.existsSync(f)&&fs.statSync(f).isDirectory())f=path.join(f,'index.html');else if(!fs.existsSync(f)&&!path.extname(f))f=path.join(f,'index.html');if(!fs.existsSync(f)){res.writeHead(404).end('Not found');return;}res.writeHead(200,{'Content-Type':types[path.extname(f).slice(1)]||'application/octet-stream','Cache-Control':'no-store'});fs.createReadStream(f).pipe(res)});
 await new Promise(resolve=>server.listen(4179,'127.0.0.1',resolve));
 let browser=null;const results=[],errors=[];
-const routes=['/','/pricing/','/tools/','/insights/','/about/','/services/','/contact/','/portfolio/','/en/','/zh/','/404.html'];
+const routes=['/','/pricing/','/pricing/courses/','/pricing/ads/','/pricing/design-editor/','/pricing/remote-marketing/','/pricing/business-strategy/','/tools/','/insights/','/about/','/services/','/en/services/','/zh/services/','/contact/','/portfolio/','/en/','/zh/','/404.html'];
 try{
  browser=await chromium.launch({headless:true,args:['--no-sandbox','--disable-dev-shm-usage']});
  for(const width of [390,768,1440]){
@@ -23,7 +23,7 @@ try{
     const header=document.querySelector('[data-dng-common="header"]'),footer=document.querySelector('[data-dng-common="footer"]');
     const rect=header?.getBoundingClientRect(),toggle=header?.querySelector('.dng-global-toggle'),art=document.querySelector('.hero .hero-art');
     const box=e=>{const r=e?.getBoundingClientRect();return r?{x:Math.round(r.x),right:Math.round(r.right),width:Math.round(r.width),height:Math.round(r.height),top:Math.round(r.top)}:null};
-    return {title:document.title,width:innerWidth,scrollWidth:document.documentElement.scrollWidth,headers:[...document.querySelectorAll('header')].filter(visible).length,footers:[...document.querySelectorAll('footer')].filter(visible).length,visibleOriginal:[...document.querySelectorAll('[data-dng-original-shell]')].filter(visible).length,header:box(header),toggle:box(toggle),art:box(art),masterArt:box(document.querySelector('.dng-master-art-v46')),font:getComputedStyle(document.body).fontFamily,cssLoaded:[...document.styleSheets].some(x=>x.href?.includes('dngworld-shell-v41.css'))};
+    return {title:document.title,width:innerWidth,scrollWidth:document.documentElement.scrollWidth,headers:[...document.querySelectorAll('header')].filter(visible).length,footers:[...document.querySelectorAll('footer')].filter(visible).length,visibleOriginal:[...document.querySelectorAll('[data-dng-original-shell]')].filter(visible).length,header:box(header),toggle:box(toggle),art:box(art),masterArt:box(document.querySelector('.dng-master-art-v46')),cover:box(document.querySelector('[data-dng-cover-version="v50"]')),coverImageReady:(()=>{const e=document.querySelector('[data-dng-cover-version="v50"] img');return !!e&&e.complete&&e.naturalWidth>100})(),heroTitle:box(document.querySelector('[data-dng-cover="v50"] h1')),font:getComputedStyle(document.body).fontFamily,cssLoaded:[...document.styleSheets].some(x=>x.href?.includes('dngworld-shell-v41.css'))};
    });
    results.push({route,width,...metrics});
    const id=route==='/'?'home':route.replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-|-$/g,'');
@@ -57,6 +57,17 @@ try{
       await button.click({timeout:8000});
       const frame=await page.locator('#tvStage iframe').getAttribute('src');
       if(!frame?.includes('youtube.com/embed/'))errors.push('V48 video player did not open a YouTube embed');
+   }
+   if((route.startsWith('/pricing/')||['/pricing/','/tools/','/about/','/services/','/en/services/','/zh/services/','/contact/','/portfolio/'].includes(route))){
+     const box=metrics.cover;
+     if(!box)errors.push('V50 no framed cover '+route+' @'+width);
+     else{
+      if(box.width<180||box.width>462||Math.abs(box.width/box.height-1.6)>.13)errors.push('V50 wrong cover ratio/size '+route+' @'+width+': '+JSON.stringify(box));
+      if(box.x< -2 ||box.right>width+2)errors.push('V50 cover clipped '+route+' @'+width+': '+JSON.stringify(box));
+      if(width===390&&box.height>280)errors.push('V50 cover too tall on mobile '+route+': '+box.height);
+      if(width===390&&metrics.heroTitle&&box.top<metrics.heroTitle.top+metrics.heroTitle.height-3)errors.push('V50 cover overlaps headline '+route);
+     }
+     if(!metrics.coverImageReady)errors.push('V50 V24 sculpture not loaded '+route+' @'+width);
    }
    if(route==='/'&&width===390&&metrics.art&&(metrics.art.width>width+7||metrics.art.height>420||metrics.art.x<0))errors.push('Homepage mobile 3D geometry is offscreen: '+JSON.stringify(metrics.art));
    await page.close();
