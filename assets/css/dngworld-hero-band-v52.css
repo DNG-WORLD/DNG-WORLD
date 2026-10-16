@@ -1,0 +1,108 @@
+/* DNGWORLD V52 — FULL-BLEED LIVE 3D BAND.
+ * This is actual V24 WebGL, not the V50 card / static image simulation.
+ * 100vw wide; 1/3 viewport tall. Text and CTA in an orderly second band.
+ */
+:root{--dw52-height:clamp(210px,33.333svh,370px)}
+body.dng-design-v46 [data-dng-hero-v46]:has(>.dw52-stage){
+  position:relative!important;display:block!important;min-height:0!important;
+  isolation:isolate;overflow:hidden!important;
+  padding:0!important;
+}
+body.dng-design-v46 .dw52-stage{
+  position:relative!important;inset:auto!important;display:block!important;
+  width:100%!important;max-width:none!important;height:var(--dw52-height)!important;
+  min-height:0!important;margin:0!important;padding:0!important;
+  border:0!important;border-bottom:1px solid rgba(48,86,63,.25)!important;
+  border-radius:0!important;overflow:hidden!important;
+  background:#eeeae0!important;box-shadow:none!important;z-index:1!important;
+}
+body.dng-design-v46 .dw52-iframe{
+  position:absolute!important;inset:0!important;display:block!important;
+  width:100%!important;height:100%!important;margin:0!important;padding:0!important;
+  border:0!important;pointer-events:auto!important;background:#eeeae0!important;
+}
+body.dng-design-v46 .dw52-stage-label{
+  position:absolute;bottom:16px;left:max(26px,calc((100vw - 1192px)/2 + 8px));
+  pointer-events:none;z-index:5;color:#51715d!important;
+  font:700 9px/1.4 'DM Sans','Be Vietnam Pro',sans-serif!important;
+  letter-spacing:.18em!important;text-transform:uppercase;opacity:.82;
+}
+body.dng-design-v46 [data-dng-hero-v46]:has(>.dw52-stage)>.shell,
+body.dng-design-v46 [data-dng-hero-v46]:has(>.dw52-stage)>.v33-wrap,
+body.dng-design-v46 [data-dng-hero-v46]:has(>.dw52-stage)>.p37-container{
+  position:relative!important;z-index:2!important;
+}
+/* Give the real content a proper compact editorial row UNDER the 3D band.
+ * Never overlay a large multi-line headline on the live sculpture. */
+body.dng-design-v46 .hero25:has(>.dw52-stage)>.shell{
+  width:min(1192px,calc(100% - 64px))!important;
+  padding:44px 0 47px!important;margin-inline:auto!important;
+}
+body.dng-design-v46 .hero25:has(>.dw52-stage)>.shell>:where(h1,h2,p,a){
+  max-width:900px!important;
+}
+body.dng-design-v46 .hero25:has(>.dw52-stage) h1{
+  font-size:clamp(38px,4.7vw,67px)!important;
+  line-height:1.13!important;max-width:900px!important;
+}
+body.dng-design-v46 .hero25:has(>.dw52-stage) .lead{
+  font-size:clamp(14px,1.2vw,17px)!important;max-width:860px!important;
+}
+body.dng-design-v46 .p37-hero:has(>.dw52-stage) .p37-hero-grid{
+  display:block!important;min-height:0!important;
+}
+body.dng-design-v46 .p37-hero:has(>.dw52-stage) .p37-hero-copy{
+  width:100%!important;max-width:920px!important;padding:42px 0 45px!important;
+}
+body.dng-design-v46 .p37-hero:has(>.dw52-stage) h1{
+  max-width:940px!important;font-size:clamp(39px,4.6vw,65px)!important;
+  line-height:1.13!important;
+}
+body.dng-design-v46 .p37-detail-hero:has(>.dw52-stage) .p37-detail-heading{
+  display:block!important;grid-template-columns:none!important;
+  width:100%!important;max-width:1030px!important;margin:28px 0!important;
+}
+body.dng-design-v46 .p37-detail-hero:has(>.dw52-stage) .p37-detail-heading h1{
+  max-width:100%!important;font-size:clamp(38px,4.6vw,64px)!important;
+}
+body.dng-design-v46 .p37-detail-hero:has(>.dw52-stage) .p37-detail-stamp{display:none!important}
+body.dng-design-v46 .v33-hero:has(>.dw52-stage)>.v33-wrap{
+  padding:43px 0 46px!important;
+}
+body.dng-design-v46 .v33-hero:has(>.dw52-stage)>.v33-wrap>:where(h1,p){
+  max-width:900px!important;
+}
+body.dng-design-v46 .pf-hero:has(>.dw52-stage) .pf-hero-grid{
+  display:block!important;min-height:0!important;padding:43px 0 46px!important;
+}
+body.dng-design-v46 .pf-hero:has(>.dw52-stage) .pf-hero-grid>div:first-child{
+  width:100%!important;max-width:910px!important;
+}
+/* Old ornament renderer must stay off, including independent pricing orbs. */
+body.dng-design-v46 [data-dng-hero-v46]:has(>.dw52-stage) :where(.p37-scene,.v33-scene,.v33-orbit,.pf-art,.dng-spatial){display:none!important}
+@media(max-width:760px){
+ :root{--dw52-height:clamp(190px,31svh,290px)}
+ body.dng-design-v46 .hero25:has(>.dw52-stage)>.shell{
+   width:calc(100% - 36px)!important;padding:30px 0 38px!important;
+ }
+ body.dng-design-v46 .hero25:has(>.dw52-stage) h1{
+   font-size:clamp(35px,9vw,49px)!important;
+ }
+ body.dng-design-v46 .p37-hero:has(>.dw52-stage) .p37-hero-copy{
+   padding:31px 0 38px!important;
+ }
+ body.dng-design-v46 .p37-hero:has(>.dw52-stage) h1{
+   font-size:clamp(35px,8.8vw,49px)!important;
+ }
+ body.dng-design-v46 .p37-detail-hero:has(>.dw52-stage) .p37-detail-heading h1{
+   font-size:clamp(35px,8.8vw,48px)!important;
+ }
+ body.dng-design-v46 .v33-hero:has(>.dw52-stage)>.v33-wrap,
+ body.dng-design-v46 .pf-hero:has(>.dw52-stage) .pf-hero-grid{
+   padding:32px 0 39px!important;
+ }
+ body.dng-design-v46 .dw52-stage-label{left:18px;bottom:12px;font-size:8px!important}
+}
+@media(prefers-reduced-motion:reduce){
+ body.dng-design-v46 .dw52-iframe{scroll-behavior:auto}
+}
