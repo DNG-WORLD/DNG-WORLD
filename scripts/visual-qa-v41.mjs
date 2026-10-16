@@ -23,7 +23,7 @@ try{
     const header=document.querySelector('[data-dng-common="header"]'),footer=document.querySelector('[data-dng-common="footer"]');
     const rect=header?.getBoundingClientRect(),toggle=header?.querySelector('.dng-global-toggle'),art=document.querySelector('.hero .hero-art');
     const box=e=>{const r=e?.getBoundingClientRect();return r?{x:Math.round(r.x),right:Math.round(r.right),width:Math.round(r.width),height:Math.round(r.height),top:Math.round(r.top)}:null};
-    return {title:document.title,width:innerWidth,scrollWidth:document.documentElement.scrollWidth,headers:[...document.querySelectorAll('header')].filter(visible).length,footers:[...document.querySelectorAll('footer')].filter(visible).length,visibleOriginal:[...document.querySelectorAll('[data-dng-original-shell]')].filter(visible).length,header:box(header),toggle:box(toggle),art:box(art),masterArt:box(document.querySelector('.dng-master-art-v46')),cover:box(document.querySelector('[data-dng-cover-version="v50"]')),coverImageReady:(()=>{const e=document.querySelector('[data-dng-cover-version="v50"] img');return !!e&&e.complete&&e.naturalWidth>100})(),heroTitle:box(document.querySelector('[data-dng-cover="v50"] h1')),font:getComputedStyle(document.body).fontFamily,cssLoaded:[...document.styleSheets].some(x=>x.href?.includes('dngworld-shell-v41.css'))};
+    return {title:document.title,width:innerWidth,scrollWidth:document.documentElement.scrollWidth,headers:[...document.querySelectorAll('header')].filter(visible).length,footers:[...document.querySelectorAll('footer')].filter(visible).length,visibleOriginal:[...document.querySelectorAll('[data-dng-original-shell]')].filter(visible).length,header:box(header),toggle:box(toggle),art:box(art),masterArt:box(document.querySelector('.dng-master-art-v46')),band:box(document.querySelector('[data-dw52-stage="true"]')),heroTitle:box(document.querySelector('[data-dng-hero-v46] h1')),font:getComputedStyle(document.body).fontFamily,cssLoaded:[...document.styleSheets].some(x=>x.href?.includes('dngworld-shell-v41.css'))};
    });
    results.push({route,width,...metrics});
    const id=route==='/'?'home':route.replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-|-$/g,'');
@@ -40,13 +40,6 @@ try{
     const isOpen=await page.locator('.dng-global-panel').isVisible();
     if(!isOpen)errors.push(route+': mobile menu fails to open');
    }
-   if(['services','tools','about','contact','pricing','portfolio'].includes(id)&&width===390){
-      const master=metrics.masterArt;
-      if(!master)errors.push(route+' @390: missing canonical V24 sculpture');
-      else if(master.x < -2 || master.right >width+2 || master.height>355)errors.push(route+' @390: canonical 3D art clipped: '+JSON.stringify(master));
-      const img=page.locator('.dng-master-art-v46 img');
-      if(await img.count()){const ok=await img.evaluate(el=>el.complete&&el.naturalWidth>100);if(!ok)errors.push(route+' @390: original V24 sculpture failed to load');}
-    }
     if(route==='/services/'&&width===390){const count=await page.locator('.v47-case').count();const tiers=await page.locator('.v47-service').count();if(count!==6||tiers!==5)errors.push('V47 missing authentic scopes: '+count+'/'+tiers);}
    if((route==='/insights/'||route==='/en/insights/'||route==='/zh/insights/')&&width===390){
       await page.waitForFunction(()=>document.querySelector('#headlineCount')?.textContent?.includes('60'),{timeout:11000}).catch(()=>{});
@@ -68,17 +61,23 @@ try{
       const frame=await page.locator('#tvStage iframe').getAttribute('src');
       if(!frame?.includes('youtube.com/embed/'))errors.push('V48 video player did not open a YouTube embed');
    }
-   if((route.startsWith('/pricing/')||['/pricing/','/tools/','/about/','/services/','/en/services/','/zh/services/','/contact/','/portfolio/'].includes(route))){
-     const box=metrics.cover;
-     if(!box)errors.push('V50 no framed cover '+route+' @'+width);
-     else{
-      if(box.width<180||box.width>462||Math.abs(box.width/box.height-1.6)>.13)errors.push('V50 wrong cover ratio/size '+route+' @'+width+': '+JSON.stringify(box));
-      if(box.x< -2 ||box.right>width+2)errors.push('V50 cover clipped '+route+' @'+width+': '+JSON.stringify(box));
-      if(width===390&&box.height>280)errors.push('V50 cover too tall on mobile '+route+': '+box.height);
-      if(width>=768&&metrics.heroTitle&&metrics.heroTitle.right>box.x-8)errors.push('V50 headline/card overlap '+route+' @'+width+': title right '+metrics.heroTitle.right+', card left '+box.x);
-      if(width===390&&metrics.heroTitle&&box.top<metrics.heroTitle.top+metrics.heroTitle.height-3)errors.push('V50 cover overlaps headline '+route);
+   if(route.startsWith('/pricing/')||['/pricing/','/tools/','/about/','/services/','/en/services/','/zh/services/','/contact/','/portfolio/'].includes(route)){
+     const band=metrics.band,expected=Math.min(370,Math.max(210,844/3));
+     const actualExpected=width<=760?Math.min(290,Math.max(190,844*.31)):expected;
+     if(!band)errors.push('V52 live WebGL band missing '+route+' @'+width);
+     else {
+       if(band.x< -2||band.right>width+2||Math.abs(band.width-width)>4)errors.push('V52 band not full-bleed '+route+' '+JSON.stringify(band));
+       if(Math.abs(band.height-actualExpected)>3)errors.push('V52 band height is not one-third screen '+route+' @'+width+': '+band.height+' expected '+actualExpected);
+       if(metrics.heroTitle && band.top+band.height>metrics.heroTitle.top+3)errors.push('V52 WebGL overlaps hero copy '+route+' @'+width);
      }
-     if(!metrics.coverImageReady)errors.push('V50 V24 sculpture not loaded '+route+' @'+width);
+     const frame=page.frameLocator('iframe.dw52-iframe');
+     if((route==='/services/'||route==='/pricing/'||route==='/tools/')&&(width===390||width===1440)){
+       try {
+         await frame.locator('#art.is-3d canvas#artCanvas').waitFor({state:'attached',timeout:16000});
+         const ready=await frame.locator('#art.is-3d').evaluate(el=>{const c=el.querySelector('canvas');return !!c&&c.width>100&&c.height>100});
+         if(!ready)errors.push('V52 original V24 GL canvas not actively rendered '+route+' @'+width);
+       }catch(e){errors.push('V52 WebGL failed to initialize '+route+' @'+width+': '+String(e).slice(0,160))}
+     }
    }
    if(route==='/'&&width===390&&metrics.art&&(metrics.art.width>width+7||metrics.art.height>420||metrics.art.x<0))errors.push('Homepage mobile 3D geometry is offscreen: '+JSON.stringify(metrics.art));
    await page.close();
