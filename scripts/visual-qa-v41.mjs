@@ -72,15 +72,14 @@ try{
      }
      const frame=page.frameLocator('iframe.dw52-iframe');
      if((route==='/services/'||route==='/pricing/'||route==='/tools/')&&(width===390||width===1440)){
-       const bg=await frame.locator('html').evaluate(e=>getComputedStyle(e).backgroundColor);
-       if(bg!=='rgb(10, 33, 24)')errors.push('V53 scene must match dark Homepage, not light V52: '+route+' bg '+bg);
-       const effects=await frame.locator('#dw52Field').evaluate(e=>({w:e.width,h:e.height}));
-       if(effects.w<200||effects.h<120)errors.push('V53 full-width animated field failed to initialize '+route);
-     }
-     if((route==='/services/'||route==='/pricing/'||route==='/tools/')&&(width===390||width===1440)){
        try {
          await frame.locator('#art.is-3d canvas#artCanvas').waitFor({state:'attached',timeout:16000});
          const ready=await frame.locator('#art.is-3d').evaluate(el=>{const c=el.querySelector('canvas');return !!c&&c.width>100&&c.height>100});
+         const bg=await frame.locator('html').evaluate(e=>getComputedStyle(e).backgroundColor);
+         if(bg!=='rgb(10, 33, 24)')errors.push('V53 dark Homepage atmosphere missing '+route+' bg '+bg);
+         const effects=await frame.locator('#dw52Field').evaluate(e=>({w:e.width,h:e.height}));
+         if(effects.w<200||effects.h<120)errors.push('V53 moving background field not active '+route+' @'+width);
+
          if(!ready)errors.push('V52 original V24 GL canvas not actively rendered '+route+' @'+width);
        }catch(e){errors.push('V52 WebGL failed to initialize '+route+' @'+width+': '+String(e).slice(0,160))}
      }
