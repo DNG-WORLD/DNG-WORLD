@@ -91,3 +91,11 @@ body.dng-design-v46 .pf-hero[data-dng-cover="v50"] .pf-hero-grid{min-height:0!im
  body.dng-design-v46 .dng-cover-sculpt-v50{animation:none!important}
  body.dng-design-v46 [data-dng-cover="v50"] .dng-master-art-v46 img{transition:none!important;will-change:auto!important}
 }
+
+/* Keep a real editorial gutter between copy and cover at tablet widths. */
+@media(min-width:761px) and (max-width:1120px){
+ body.dng-design-v46 .hero25[data-dng-cover="v50"]>.shell>:where(h1,h2,p,a){max-width:53%!important}
+ body.dng-design-v46 .p37-hero[data-dng-cover="v50"] .p37-hero-copy{width:53%!important}
+ body.dng-design-v46 .v33-hero[data-dng-cover="v50"]>.v33-wrap>:where(h1,p){max-width:53%!important}
+ body.dng-design-v46 .pf-hero[data-dng-cover="v50"] .pf-hero-grid>div:first-child{width:53%!important}
+}

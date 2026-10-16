@@ -65,6 +65,7 @@ try{
       if(box.width<180||box.width>462||Math.abs(box.width/box.height-1.6)>.13)errors.push('V50 wrong cover ratio/size '+route+' @'+width+': '+JSON.stringify(box));
       if(box.x< -2 ||box.right>width+2)errors.push('V50 cover clipped '+route+' @'+width+': '+JSON.stringify(box));
       if(width===390&&box.height>280)errors.push('V50 cover too tall on mobile '+route+': '+box.height);
+      if(width>=768&&metrics.heroTitle&&metrics.heroTitle.right>box.x-8)errors.push('V50 headline/card overlap '+route+' @'+width+': title right '+metrics.heroTitle.right+', card left '+box.x);
       if(width===390&&metrics.heroTitle&&box.top<metrics.heroTitle.top+metrics.heroTitle.height-3)errors.push('V50 cover overlaps headline '+route);
      }
      if(!metrics.coverImageReady)errors.push('V50 V24 sculpture not loaded '+route+' @'+width);
